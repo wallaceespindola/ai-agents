@@ -313,6 +313,133 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 
 ## Supporting/Cross-Platform Skills
 
+### Architecture & Software Design
+**Location**: `skills/architecture-design/SKILL.md`
+**Purpose**: Write comprehensive articles on software architecture, system design, and architectural patterns
+
+**Key Features**:
+- Architectural patterns (monolithic, microservices, event-driven, CQRS, Event Sourcing, hexagonal)
+- Design principles (SOLID, DRY, KISS, YAGNI, GRASP)
+- System design concepts (scalability, reliability, consistency, databases, APIs, deployment)
+- Article structures for patterns, system design interviews, case studies
+- Real-world examples (Netflix, Uber, Amazon, Airbnb)
+- Trade-offs and when to use/not use each approach
+- Tools for architecture diagrams (Draw.io, Lucidchart, C4 model)
+
+**Best For**:
+- Architectural pattern articles
+- System design interview prep
+- Case studies on architectural decisions
+- Enterprise architecture content
+- DDD (Domain-Driven Design) articles
+
+---
+
+### Image Generator for Blog
+**Location**: `skills/image-generator-blog/SKILL.md`
+**Purpose**: Generate professional featured images and in-article visuals for technical blogs
+
+**Key Features**:
+- Featured image specifications (1200x628px, design approaches)
+- Design approaches (Figma templates, stock photos, Canva, screenshots)
+- In-article image types (diagrams, flowcharts, screenshots, comparisons, infographics, photos)
+- Image optimization and file size reduction
+- Alt text and accessibility guidelines
+- Tools comparison (Canva, Figma, GIMP, stock photos, screenshot tools)
+- Workflow (fast 15-min vs quality 30-min approaches)
+
+**Tools Recommended**:
+- Canva Pro ($13/month) - Easiest, best value
+- Figma Free/Pro - Professional quality, reusable templates
+- Draw.io - Diagrams
+- Unsplash/Pexels - Free stock photos
+- TinyPNG - Image optimization
+
+**Best For**:
+- Featured/hero images for blog posts
+- Architecture and flow diagrams
+- Code screenshots and tutorials
+- Comparison graphics
+- Infographics and data visualization
+
+---
+
+### Mermaid Diagrams
+**Location**: `skills/diagram-mermaid/SKILL.md`
+**Purpose**: Generate diagrams using Mermaid diagram-as-code syntax (Git-friendly)
+
+**Diagram Types**:
+1. **Flowchart** - Process flows, decision trees
+2. **Sequence** - API interactions, protocols
+3. **Class** - OOP design, domain models
+4. **State** - State machines, FSM
+5. **Entity-Relationship** - Database schemas
+6. **C4 Model** - Architecture levels
+7. **Git Graph** - Branching strategies
+8. **Timeline** - Milestones, processes
+
+**Key Features**:
+- Text-based, version control friendly
+- GitHub/GitLab native support
+- Simple syntax, quick to write
+- Responsive and auto-scaling
+- Embed in Markdown directly
+- Styling and customization options
+- C4 architecture diagrams
+- API/microservice flows
+
+**Best For**:
+- Quick architecture diagrams
+- GitHub documentation
+- Blog posts and articles
+- Flowcharts and processes
+- Simple to moderate complexity
+- When version control matters
+
+**Example**: Monolithic vs Microservices architecture, API request flows, database schemas, auth flows
+
+---
+
+### PlantUML Diagrams
+**Location**: `skills/diagram-plantuml/SKILL.md`
+**Purpose**: Generate professional UML and architecture diagrams with full UML notation
+
+**Diagram Types**:
+1. **Class Diagram** - OOP design, detailed classes
+2. **Sequence Diagram** - Complex interactions, advanced features
+3. **Use Case** - User stories, system capabilities
+4. **State Machine** - Detailed state transitions
+5. **Component** - Architecture and dependencies
+6. **Deployment** - Infrastructure layout
+7. **Activity** - Process flows and algorithms
+8. **Object** - Instance diagrams
+
+**Key Features**:
+- Full UML 2.5 standard support
+- Professional-grade notation
+- Advanced styling and customization
+- Complex diagram support
+- IDE integration (VS Code, IntelliJ)
+- SVG/PNG export
+- Enterprise documentation support
+
+**Best For**:
+- Complex class hierarchies
+- UML documentation
+- Enterprise architecture
+- Detailed design specifications
+- When precision matters
+- Professional publications
+
+**Best When**:
+- Microservices architecture (component diagram)
+- Object-oriented design documentation
+- Enterprise systems design
+- Detailed API flows
+- Academic/formal documentation
+
+---
+
 ### Markdown Formatter
 **Location**: `skills/markdown-formatter/SKILL.md`
 **Purpose**: Format all articles in standard Markdown for universal compatibility

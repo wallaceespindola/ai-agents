@@ -21,8 +21,12 @@ This repository contains a comprehensive system of AI agents and reusable skills
 - **JavaPro Magazine** (`skills/javapro-magazine/`): Enterprise Java, 3000-6000 words, publication-grade, peer review
 - **Sr Tech Blog Writer** (`skills/sr-tech-blog/`): Personal/company blog, 2000-10,000+ words, full creative control, monetization
 
-### Supporting Skills
+### Supporting/Cross-Platform Skills
+- **Architecture & Design** (`skills/architecture-design/`): Software architecture patterns, system design, design principles (SOLID, DDD, CQRS)
 - **Markdown Formatter** (`skills/markdown-formatter/`): Universal Markdown formatting with metadata, code blocks, images, for archiving and version control
+- **Mermaid Diagrams** (`skills/diagram-mermaid/`): Flowcharts, architecture, sequence diagrams using diagram-as-code (version control friendly)
+- **PlantUML Diagrams** (`skills/diagram-plantuml/`): UML class, component, deployment diagrams with full UML notation
+- **Blog Image Generator** (`skills/image-generator-blog/`): Featured images, in-article visuals, design tools, optimization
 - **SEO Optimizer** (`skills/seo-optimizer/`): Keyword research, content optimization, discovery, ranking strategies
 - **Code Examples Generator** (`skills/code-examples-generator/`): Production-ready code, multiple languages, testing examples
 
