@@ -17,9 +17,12 @@ This repository contains a comprehensive system of AI agents and reusable skills
 - **Medium Optimizer** (`skills/medium-optimizer/`): Deep-dive technical articles, 2000-7000 words, authority building
 - **Dev.to Formatter** (`skills/devto-formatter/`): Community-focused, practical tutorials, 1000-3000 words, quick wins
 - **Substack Newsletter** (`skills/substack-newsletter/`): Weekly/monthly newsletters, subscriber growth, paid tier strategy
+- **DZone Article Writer** (`skills/dzone-article/`): Curated technical platform, 1500-4000 words, enterprise audience, editorial review
 - **JavaPro Magazine** (`skills/javapro-magazine/`): Enterprise Java, 3000-6000 words, publication-grade, peer review
+- **Sr Tech Blog Writer** (`skills/sr-tech-blog/`): Personal/company blog, 2000-10,000+ words, full creative control, monetization
 
 ### Supporting Skills
+- **Markdown Formatter** (`skills/markdown-formatter/`): Universal Markdown formatting with metadata, code blocks, images, for archiving and version control
 - **SEO Optimizer** (`skills/seo-optimizer/`): Keyword research, content optimization, discovery, ranking strategies
 - **Code Examples Generator** (`skills/code-examples-generator/`): Production-ready code, multiple languages, testing examples
 
@@ -107,6 +110,55 @@ skills_directory: ".claude/skills/"
 
 3. **Get actionable content plan** ready to execute
 
+### Example 4: Publishing to DZone and Building a Blog Archive
+
+1. **Write and format your technical content**:
+   ```
+   I've written a deep article on microservices patterns.
+   Help me:
+   - Format for DZone publication (curated platform)
+   - Create a Markdown version for my blog archive
+   - Optimize for SEO search discovery
+   - Include all code examples properly formatted
+   ```
+
+2. **Claude will**:
+   - Use `dzone-article` skill for DZone submission requirements
+   - Use `markdown-formatter` to create universal Markdown version
+   - Use `seo-optimizer` for search rankings
+   - Use `code-examples-generator` for all code blocks
+
+3. **Get**:
+   - DZone-ready article with editorial requirements
+   - Markdown file for version control and archiving
+   - SEO-optimized metadata and keywords
+
+### Example 5: Building Your Personal Tech Blog
+
+1. **Plan your blog**:
+   ```
+   I want to start a technical blog on Python and JavaScript.
+   Help me with:
+   - Blog platform recommendation (Ghost, Hugo, Substack?)
+   - Content strategy (5-10 pillar topics)
+   - Monetization options
+   - Growth and SEO strategy
+   - First 5 articles to publish
+   ```
+
+2. **Claude will use**:
+   - `sr-tech-blog` for blog strategy and long-form content
+   - Language-content skills (python-content, javascript-content)
+   - `markdown-formatter` for universal content format
+   - `seo-optimizer` for search authority building
+   - `code-examples-generator` for production examples
+
+3. **Get**:
+   - Complete blog strategy and architecture
+   - Content calendar for first month
+   - Articles ready to publish (in Markdown)
+   - SEO and growth roadmap
+
 ## Skill Architecture
 
 Each skill follows this structure:
@@ -184,7 +236,11 @@ Each skill includes checklists and validation steps to ensure publication-ready 
 | **Medium** | Deep technical | 2000-7000 | 1-2/month | Learning-oriented |
 | **Dev.to** | Quick wins | 1000-3000 | 1-2/week | Community-driven |
 | **Substack** | Building audience | 1500-3000 | 1/week | Subscribers, newsletter |
-| **JavaPro** | Enterprise patterns | 3000-6000 | 1-2/month | Senior developers |
+| **DZone** | Production patterns | 1500-4000 | Flexible | Enterprise devs |
+| **JavaPro** | Enterprise Java | 3000-6000 | 1-2/month | Senior architects |
+| **Personal Blog** | Complete control | 2000-10k+ | Your pace | Your audience |
+
+**Format Support**: All platforms support **Markdown export** for archiving and version control
 
 ## Content Strategy Framework
 
@@ -299,15 +355,32 @@ See the existing skills for patterns and examples.
 
 ## Next Steps
 
-1. **Choose a platform** where you want to publish
-2. **Pick a language** (Java, Python, or JavaScript)
-3. **Identify a topic** you know well
-4. **Use the relevant skills** to structure and optimize
-5. **Write and publish** your first article
-6. **Track metrics** to understand what works
-7. **Iterate** based on feedback and data
+1. **Choose a platform** where you want to publish:
+   - Quick wins: Dev.to or LinkedIn
+   - Deep dives: Medium or your blog
+   - Enterprise patterns: DZone or JavaPro
+   - Long-term: Personal blog or Substack
 
-Start with one platform to build momentum, then expand to others once you have a system.
+2. **Pick a language** (Java, Python, or JavaScript)
+
+3. **Identify a topic** you know well and your audience cares about
+
+4. **Use the relevant skills** to structure and optimize:
+   - Start with language-specific skill (java-content, python-content, javascript-content)
+   - Use platform-specific formatter
+   - Apply seo-optimizer for discovery
+   - Use code-examples-generator for production code
+   - Export as markdown-formatter for universal format
+
+5. **Write and publish** your first article
+
+6. **Export as Markdown** for archiving and version control
+
+7. **Track metrics** (views, engagement, conversion) to understand what works
+
+8. **Iterate** based on feedback and data
+
+**Pro tip**: Start with one platform to build momentum, then expand to others. Adapt your best article for 2-3 different platforms using the formatter skills to maximize reach.
 
 ## Resources
 

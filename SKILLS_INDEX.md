@@ -134,6 +134,66 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 
 ---
 
+### DZone Article Writer
+**Location**: `skills/dzone-article/SKILL.md`
+**Purpose**: Create curated technical articles for DZone publication
+
+**Specifications**:
+- **Length**: 1,500-4,000 words
+- **Tone**: Professional, practical, enterprise-focused
+- **Audience**: Enterprise developers and architects
+- **Review**: Editorial review process (3-7 days)
+- **Frequency**: Flexible (article-based submission)
+
+**Key Features**:
+- Article types (tutorials, patterns, case studies, research)
+- Editorial review guidance
+- DZone curation algorithm optimization
+- Production-grade code examples
+- Real-world scenario examples
+- Performance and scalability sections
+- Best practices and pitfalls guidance
+- Submission process and requirements
+
+**Best For**:
+- Production patterns and techniques
+- Enterprise architecture insights
+- Data-driven technical articles
+- Case studies and real-world examples
+- Thought leadership pieces
+
+---
+
+### Sr Tech Blog Writer
+**Location**: `skills/sr-tech-blog/SKILL.md`
+**Purpose**: Write comprehensive technical articles for personal or company blog
+
+**Specifications**:
+- **Length**: 2,000-10,000+ words (unlimited)
+- **Tone**: Authoritative, personal, opinionated
+- **Audience**: Your target technical audience
+- **Format**: Full creative control
+- **Frequency**: Your pace (1-2/week recommended)
+
+**Key Features**:
+- Multiple post types (tutorials, deep dives, case studies, opinions, benchmarks)
+- Blog platform recommendations (Ghost, Hugo, Substack)
+- Monetization strategies (ads, sponsorships, products, subscriptions)
+- SEO and growth strategy
+- Content pillar and cluster strategy
+- Analytics and performance tracking
+- Comment moderation and community building
+- Long-form content mastery
+
+**Best For**:
+- Ultimate guides and definitive references
+- Building personal brand and authority
+- Monetizing technical content
+- Creating evergreen archive of knowledge
+- Full control over presentation and audience
+
+---
+
 ### Medium Optimizer
 **Location**: `skills/medium-optimizer/SKILL.md`
 **Purpose**: Create authoritative technical deep-dives for Medium
@@ -253,6 +313,37 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 
 ## Supporting/Cross-Platform Skills
 
+### Markdown Formatter
+**Location**: `skills/markdown-formatter/SKILL.md`
+**Purpose**: Format all articles in standard Markdown for universal compatibility
+
+**Key Features**:
+- YAML front matter structure and metadata
+- Proper heading hierarchy (H1, H2, H3)
+- Code block formatting (all languages)
+- Image formatting with alt text and captions
+- Link syntax and best practices
+- Table formatting and structure
+- Lists (ordered, unordered, definition)
+- Emphasis and special formatting
+- Blockquotes and callouts
+- Document layout templates
+- Advanced features (footnotes, collapsible sections, embeds)
+- Conversion from Google Docs, Word, Notion
+- Consistency style guide
+- Export and compatibility
+
+**Covers**:
+- Markdown basics and best practices
+- All code languages (Java, Python, JavaScript, SQL, Bash, YAML)
+- Image and media handling
+- SEO-friendly formatting
+- Accessibility (alt text, semantic HTML)
+- Git-friendly version control
+- Multi-format export (HTML, PDF, EPUB)
+
+---
+
 ### SEO Optimizer
 **Location**: `skills/seo-optimizer/SKILL.md`
 **Purpose**: Improve long-term content discovery through search
@@ -268,7 +359,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Schema markup and structured data
 - Topic cluster strategy
 - Backlink building
-- Platform-specific SEO (Medium, Dev.to, LinkedIn, Substack)
+- Platform-specific SEO (Medium, Dev.to, LinkedIn, Substack, DZone)
 - Monitoring and iteration process
 
 **Covers**:
@@ -336,20 +427,31 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - **Medium**: medium-optimizer
 - **Dev.to**: devto-formatter
 - **Substack**: substack-newsletter
+- **DZone**: dzone-article
 - **JavaPro**: javapro-magazine
-- **Multi-platform**: seo-optimizer, code-examples-generator
+- **Personal/Company Blog**: sr-tech-blog
+- **All platforms**: markdown-formatter, seo-optimizer, code-examples-generator
 
 ### By Language
-- **Java**: java-content, javapro-magazine (best combination)
-- **Python**: python-content, devto-formatter or substack-newsletter
-- **JavaScript**: javascript-content, medium-optimizer or devto-formatter
+- **Java**: java-content, javapro-magazine or dzone-article (best combination)
+- **Python**: python-content, devto-formatter, substack-newsletter, or sr-tech-blog
+- **JavaScript**: javascript-content, medium-optimizer, devto-formatter, or sr-tech-blog
 
 ### By Content Type
-- **Tutorial**: code-examples-generator + (devto-formatter or medium-optimizer)
+- **Tutorial**: code-examples-generator + (devto-formatter, medium-optimizer, or sr-tech-blog)
 - **Opinion/Insight**: linkedin-pulse-formatter or substack-newsletter
 - **Deep-dive**: medium-optimizer + (language-content skill)
-- **Enterprise Pattern**: javapro-magazine + java-content
+- **Enterprise Pattern**: javapro-magazine or dzone-article + java-content
 - **Newsletter**: substack-newsletter + (language-content skill)
+- **Blog Archive**: sr-tech-blog + markdown-formatter
+- **Production Pattern**: dzone-article + java-content or python-content
+
+### By Workflow
+- **Quick article** (1-2 hours): devto-formatter + code-examples-generator
+- **Medium depth** (2-3 hours): medium-optimizer or dzone-article + seo-optimizer
+- **Long-form** (4+ hours): sr-tech-blog + markdown-formatter + seo-optimizer
+- **Multi-platform** (3-4 hours): Write once, adapt with different formatters
+- **Newsletter series**: substack-newsletter + language-content skill + markdown-formatter
 
 ---
 
