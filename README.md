@@ -36,6 +36,32 @@ This repository contains a comprehensive system of AI agents and reusable skills
 - **SEO Optimizer** (`skills/seo-optimizer/`): Keyword research, content optimization, discovery, ranking strategies
 - **Code Examples Generator** (`skills/code-examples-generator/`): Production-ready code, multiple languages, testing examples
 
+## Configuration & Personal Data
+
+Your personal information (name, email, social links) should be kept secure and not committed to git.
+
+### Setup Your Profile
+
+1. Copy the configuration template:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit `.env` with your personal information:
+   ```env
+   AUTHOR_NAME=Your Name
+   AUTHOR_EMAIL=your.email@example.com
+   GITHUB_URL=https://github.com/yourname
+   LINKEDIN_URL=https://linkedin.com/in/yourname
+   # ... see .env.example for all options
+   ```
+
+3. Your `.env` file is automatically in `.gitignore` (won't be committed)
+
+4. Skills automatically use these variables when generating articles and projects
+
+See **CONFIG.md** for complete configuration documentation.
+
 ## Quick Start
 
 ### Using with Claude Code
