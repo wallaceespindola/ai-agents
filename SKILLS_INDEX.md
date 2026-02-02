@@ -26,6 +26,87 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 
 ---
 
+## Coder Skills (Generate Complete Production Projects)
+
+### Java Coder
+**Location**: `skills/java-coder/SKILL.md`
+**Purpose**: Generate complete Maven/Spring Boot projects with source code, tests, and documentation
+
+**What it generates:**
+- pom.xml with all dependencies configured
+- Source code in src/main/java/ (controllers, services, repositories, models)
+- Tests in src/test/java/ (unit and integration tests)
+- README.md linking to article in docs/ARTICLE.md
+- Full project structure and setup
+
+**Best For:**
+- Java tutorials with runnable code
+- Design pattern implementations
+- REST API examples
+- Spring Boot demonstrations
+- Enterprise Java examples
+
+**Project Templates:**
+- REST API with Spring Boot
+- Design pattern showcase
+- Concurrent programming examples
+- Spring Boot full stack application
+
+---
+
+### Python Coder
+**Location**: `skills/python-coder/SKILL.md`
+**Purpose**: Generate complete poetry/uv projects with source code, tests, and documentation
+
+**What it generates:**
+- pyproject.toml with all dependencies configured
+- Source code in src/project_name/ (API, services, repositories, models)
+- Tests in tests/ with pytest (unit and integration tests)
+- README.md linking to article in docs/ARTICLE.md
+- Type hints throughout, full project structure
+
+**Best For:**
+- Python tutorials with runnable code
+- FastAPI/Django demonstrations
+- Design pattern implementations
+- Async/await pattern examples
+- Data processing examples
+
+**Project Templates:**
+- FastAPI REST API
+- Design pattern showcase
+- Async/concurrent programming examples
+- Data processing pipeline
+
+---
+
+### JavaScript/TypeScript Coder
+**Location**: `skills/javascript-coder/SKILL.md`
+**Purpose**: Generate complete npm/pnpm React or Node.js projects with TypeScript
+
+**What it generates:**
+- package.json with all dependencies configured
+- tsconfig.json in strict mode
+- Source code in src/ (components, hooks, services, types)
+- Tests with Jest and React Testing Library
+- README.md linking to article in docs/ARTICLE.md
+- Full TypeScript configuration and testing setup
+
+**Best For:**
+- React/TypeScript tutorials with runnable code
+- Node.js/Express demonstrations
+- Design pattern implementations
+- React hooks examples
+- Async/promise pattern examples
+
+**Project Templates:**
+- React component library with hooks
+- Node.js REST API
+- Design pattern showcase
+- Async/promise patterns
+
+---
+
 ## Language-Specific Content Skills
 
 ### Java Content Skill
