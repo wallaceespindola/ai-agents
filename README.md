@@ -2,7 +2,7 @@
 
 A complete, production-ready system for generating high-quality technical content across multiple platforms with personalized code projects.
 
-**1 Agent + 21 Skills + Secure Configuration = Complete technical writing ecosystem**
+**1 Agent + 22 Skills + Secure Configuration = Complete technical writing ecosystem**
 
 ## ⚡ Quick Start (2 Minutes)
 
@@ -25,9 +25,9 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 ## What's Included
 
 ### 1 Main Agent
-- **Senior Technical Software Writer** - Orchestrates all 21 skills
+- **Senior Technical Software Writer** - Orchestrates all 22 skills
 
-### 21 Specialized Skills
+### 22 Specialized Skills
 
 **Language Skills (3)**
 - Java, Python, JavaScript content expertise
@@ -40,10 +40,14 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 - Generate complete Python/FastAPI projects
 - Generate complete JavaScript/React projects
 
-**Supporting Skills (7)**
-- Architecture & design patterns
+**Visual & Presentation Skills (4)**
+- Slides Creator - Convert articles to PowerPoint/Google Slides/Speaker Deck
 - Image generation (1024x768, 3MB max, abstract futuristic)
-- Mermaid & PlantUML diagrams
+- Mermaid diagrams (simple, Git-friendly)
+- PlantUML diagrams (complex, professional)
+
+**Supporting Skills (4)**
+- Architecture & design patterns
 - Markdown formatter
 - SEO optimizer
 - Code examples generator
@@ -118,8 +122,9 @@ LINKEDIN_URL=https://linkedin.com/in/you
 **Reference**:
 - **[Complete System Overview](docs/guides/COMPLETE_SYSTEM.md)** - Full details
 - **[System Architecture](docs/guides/SYSTEM_MAP.md)** - Relationships & flows
-- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 21 skills described
+- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 22 skills described
 - **[Agent Profile](agents/technical-writer/AGENT.md)** - Agent details
+- **[Slides Creator Guide](docs/SLIDES_CREATOR_GUIDE.md)** - Convert articles to presentations
 
 ---
 
@@ -273,8 +278,9 @@ All automatically linked in your generated content:
 
 ## Key Points
 
-✅ **1 Agent + 21 Skills** - Complete system ready to use
+✅ **1 Agent + 22 Skills** - Complete system ready to use
 ✅ **3 Coder Skills** - Generate Java, Python, JavaScript projects
+✅ **Slides Creator** - Convert articles to presentations
 ✅ **8 Platforms** - Publish to LinkedIn, Medium, Dev.to, and more
 ✅ **Secure Configuration** - Your data stays local in `.env`
 ✅ **Humanization Standards** - Write like a real person, not AI
@@ -293,3 +299,33 @@ All automatically linked in your generated content:
 6. Publish!
 
 **Welcome to your AI-powered technical writing system!** 🚀
+
+---
+
+## About the Author
+
+**Wallace Espindola** - Senior Software Engineer
+- Expertise: Java, Python, JavaScript, Cloud Architecture
+- Focus: Building production-ready systems and sharing knowledge
+
+### Connect & Follow
+
+- **GitHub**: https://github.com/wallaceespindola
+- **LinkedIn**: https://www.linkedin.com/in/wallaceespindola/
+- **Dev.to**: https://dev.to/wallaceespindola
+- **Medium**: https://medium.com/@wallaceespindola
+- **Speaker Deck**: https://speakerdeck.com/wallacese
+- **Substack**: https://wallaceespindola.substack.com
+- **DZone**: https://dzone.com/users/1254611/wallacese.html
+- **Sessionize**: https://sessionize.com/wallace-espindola/
+- **Twitter/X**: https://x.com/wsespindola
+
+### Quick Links
+
+- **Linktree**: https://linktr.ee/wallace.espindola
+- **Solo.to**: https://solo.to/wallace.espindola
+- **Gravatar**: https://gravatar.com/wallacese
+
+---
+
+*This system is designed for technical writers who want to create high-quality content across multiple platforms efficiently. Built with AI assistance, following strict humanization standards, and maintaining personal branding consistency.*
