@@ -618,18 +618,150 @@ Research, related articles, tools
 
 ---
 
+## 🔹 InfoQ
+
+### Platform Profile
+- **Audience**: Software architects, senior engineers, tech leads, CTOs, decision-makers
+- **Reader Type**: Enterprise and large-scale system professionals
+- **Article Length**: 2,500-5,000 words
+- **Posting Frequency**: Flexible (editorial submission)
+- **Format**: Editorial review, research-informed, high editorial standards
+
+### Main Style Guide
+
+**Voice**: Editorial, analytical, research-informed
+- Neutral, objective tone (almost journalistic)
+- Strong focus on why something matters to the industry
+- Little to no personal storytelling
+- Clear structure with evidence and references
+- Credibility-first approach
+
+**Tone Guidelines**:
+- ✅ "The industry is shifting toward X, and here's why..."
+- ✅ "Research shows that organizations using X see Y benefit..."
+- ✅ "This architectural choice has trade-offs: A, B, and C..."
+- ✅ "Based on case studies from Netflix, Airbnb, and Uber..."
+- ✅ "The evidence suggests this approach works when..."
+- ❌ Avoid: "I believe X is the future..."
+- ❌ Avoid: Personal anecdotes
+- ❌ Avoid: Hype or marketing language
+- ❌ Avoid: Unsubstantiated claims
+- ❌ Avoid: "Everyone should do X"
+
+### What Works Best on InfoQ
+
+1. **Software architecture patterns and trade-offs**
+   - "Microservices vs. Monolith: An architectural trade-off analysis"
+   - "Event-driven architecture: When it makes sense"
+   - "Understanding the CAP theorem in distributed systems"
+
+2. **Distributed systems, scalability, reliability**
+   - "Scaling databases: Strategies and when to apply them"
+   - "Building highly available systems: Patterns from Google"
+   - "Consensus algorithms explained: Raft vs. Paxos"
+
+3. **Case studies from real organizations (without hype)**
+   - "How Netflix handles 300 million concurrent streams"
+   - "Airbnb's journey to microservices architecture"
+   - "Lessons from Twitter's infrastructure evolution"
+
+4. **Emerging trends explained pragmatically**
+   - "AI in software architecture: Realistic opportunities and challenges"
+   - "Kubernetes in production: Lessons from large deployments"
+   - "Serverless architecture: When it's practical (and when it's not)"
+
+5. **Industry analysis and research**
+   - "The state of cloud adoption: Survey results and implications"
+   - "Developer productivity trends: What the data shows"
+   - "Security in microservices: Challenges and solutions"
+
+### Content Structure for InfoQ
+
+```
+Headline with clear value proposition
+[Optional: Industry graphic or data visualization]
+
+Opening/Context (200-300 words)
+Industry trend or problem, why it matters now
+Research or survey context if applicable
+
+Analysis section 1 (400-600 words)
+Core concept or approach explained
+Evidence, research, or data supporting
+Industry context and relevance
+
+Analysis section 2 (400-600 words)
+Implementation considerations
+Real-world examples or case studies
+Trade-offs and decision criteria
+
+Case studies (600-900 words)
+Concrete examples from named organizations
+Specific implementation details
+Measurable outcomes or results
+What others can learn
+
+Critical evaluation (400-600 words)
+When this approach works
+When it doesn't work
+Limitations and caveats
+Future implications
+
+Conclusion (200-300 words)
+Summary of findings
+Industry implications
+Recommendations for architects/CTOs
+
+References & sources
+Research papers, studies, organization blogs
+Links to detailed information
+Attribution for data/case studies
+```
+
+### Avoid on InfoQ
+- ❌ Step-by-step tutorials (use Medium for that)
+- ❌ Beginner-level explanations
+- ❌ Opinionated or emotional language
+- ❌ Marketing-driven content or vendor promotion
+- ❌ Personal "I learned this" stories
+- ❌ Unverified claims or speculation
+- ❌ Hype without substance
+- ❌ No references or sources
+
+### InfoQ Success Tips
+✅ Research-backed arguments essential
+✅ Data and metrics strengthen claims
+✅ Real case studies (named organizations)
+✅ Objective analysis of trade-offs
+✅ Consider enterprise context
+✅ Industry relevance is critical
+✅ Credibility through sources and references
+✅ Think about how CTOs will use this information
+✅ Balance breadth with depth
+✅ Clear takeaways for decision-makers
+
+### Example Headline
+"Microservices at Scale: Trade-offs, Case Studies, and When They Actually Make Sense"
+
+### Example Article Hook
+"As organizations move toward microservices, the conversation has shifted from 'should we?' to 'how do we do this effectively at scale?' This analysis examines real case studies from companies like Netflix, Airbnb, and Uber, explores the architectural trade-offs involved, and provides guidance for when microservices are—and aren't—the right choice."
+
+---
+
 ## Platform Comparison Table
 
-| Aspect | LinkedIn | Medium | Dev.to | Substack | DZone | JavaPro |
-|--------|----------|--------|--------|----------|-------|---------|
-| **Tone** | Professional | Educational | Casual | Personal | Authoritative | Formal |
-| **Audience** | Professionals | Learners | Community | Subscribers | Architects | Experts |
-| **Length** | 800-1500 | 2000-7000 | 1000-3000 | 1500-3000 | 1500-4000 | 3000-6000 |
-| **Code** | Minimal | Moderate | Practical | Light | Detailed | Production-grade |
-| **Style** | Storytelling | Teaching | Honest | Reflective | Reference | Technical |
-| **Frequency** | 1-2/week | 1-2/month | 1-2/week | 1/week | Flexible | 1-2/month |
-| **Best For** | Career growth | Learning | Quick wins | Deep thinking | Architecture | Java ecosystem |
-| **Engagement** | Comments | Claps | Reactions | Replies | Views | Authority |
+| Aspect | LinkedIn | Medium | Dev.to | Substack | DZone | InfoQ | JavaPro |
+|--------|----------|--------|--------|----------|-------|-------|---------|
+| **Tone** | Professional | Educational | Casual | Personal | Authoritative | Editorial | Formal |
+| **Audience** | Professionals | Learners | Community | Subscribers | Architects | Architects | Experts |
+| **Length** | 800-1500 | 2000-7000 | 1000-3000 | 1500-3000 | 1500-4000 | 2500-5000 | 3000-6000 |
+| **Code** | Minimal | Moderate | Practical | Light | Detailed | Minimal | Production-grade |
+| **Style** | Storytelling | Teaching | Honest | Reflective | Reference | Analytical | Technical |
+| **Frequency** | 1-2/week | 1-2/month | 1-2/week | 1/week | Flexible | Flexible | 1-2/month |
+| **Best For** | Career growth | Learning | Quick wins | Deep thinking | Patterns | Industry trends | Java ecosystem |
+| **Research** | Light | Moderate | Light | Medium | Moderate | Heavy | Moderate |
+| **Case studies** | Optional | Yes | Yes | Sometimes | Yes | Critical | Yes |
+| **Engagement** | Comments | Claps | Reactions | Replies | Views | Authority | Authority |
 
 ---
 
@@ -667,13 +799,21 @@ Start with **Medium** or **sr-tech-blog** as your comprehensive version.
 - Professional tone throughout
 - Think "reference material"
 
-**Step 5: Markdown Archive**
+**Step 5: InfoQ** (1.5-2 hours)
+- Research-driven analysis approach
+- Add industry context and case studies
+- Focus on trade-offs and implications
+- Neutral, editorial tone
+- Consider architecture/CTO perspective
+- Include references and data
+
+**Step 6: Markdown Archive**
 - Compile best version
 - Add front matter
 - Commit to Git
 - One source of truth
 
-**Total time**: 5-6 hours for 5 platforms from 1 core article
+**Total time**: 6-7 hours for 6 platforms from 1 core article
 
 ---
 
@@ -681,14 +821,17 @@ Start with **Medium** or **sr-tech-blog** as your comprehensive version.
 
 | Content | Best Platforms | Skip |
 |---------|----------------|------|
-| **Career advice** | LinkedIn, Substack | DZone, JavaPro |
-| **Technical tutorial** | Medium, Dev.to, Blog | LinkedIn |
-| **Architecture pattern** | DZone, JavaPro, Substack | LinkedIn, Dev.to |
-| **Personal experience** | Dev.to, Substack, LinkedIn | JavaPro, DZone |
-| **Lessons learned** | Substack, LinkedIn, Dev.to | JavaPro (unless enterprise) |
-| **Best practices** | JavaPro, DZone, Medium | Dev.to |
-| **Opinion piece** | Substack, LinkedIn | JavaPro, DZone |
-| **Deep technical** | Medium, Substack, JavaPro | LinkedIn |
+| **Career advice** | LinkedIn, Substack | DZone, JavaPro, InfoQ |
+| **Technical tutorial** | Medium, Dev.to, Blog | LinkedIn, InfoQ |
+| **Architecture pattern** | InfoQ, DZone, JavaPro, Substack | LinkedIn, Dev.to |
+| **Personal experience** | Dev.to, Substack, LinkedIn | JavaPro, DZone, InfoQ |
+| **Lessons learned** | Substack, LinkedIn, Dev.to | JavaPro, DZone, InfoQ |
+| **Best practices** | JavaPro, DZone, Medium, InfoQ | Dev.to |
+| **Opinion piece** | Substack, LinkedIn | JavaPro, DZone, InfoQ |
+| **Deep technical** | Medium, Substack, JavaPro, InfoQ | LinkedIn |
+| **Industry analysis** | InfoQ, Substack, DZone | Dev.to, LinkedIn |
+| **Case studies** | InfoQ, DZone, Medium, Substack | Dev.to |
+| **Emerging trends** | InfoQ, LinkedIn, Substack | JavaPro |
 
 ---
 
@@ -697,7 +840,9 @@ Start with **Medium** or **sr-tech-blog** as your comprehensive version.
 **You want to:**
 - Build personal brand → **Substack + LinkedIn**
 - Build authority in Java → **JavaPro + DZone**
+- Influence architecture decisions → **InfoQ + DZone + Substack**
 - Help junior developers learn → **Medium + Dev.to**
+- Cover emerging trends → **InfoQ + LinkedIn + Substack**
 - Mix everything → **Blog + adapt to platforms**
 - One platform only → **Start with blog (sr-tech-blog)**
 
@@ -712,6 +857,7 @@ Start with **Medium** or **sr-tech-blog** as your comprehensive version.
 | **Dev.to** | Comments + reactions | 20+ combined |
 | **Substack** | Subscriber growth | 10% monthly |
 | **DZone** | Views | 5,000+ |
+| **InfoQ** | Views & citations | 3,000+ views, mentioned in articles |
 | **JavaPro** | Acceptances | 50%+ acceptance rate |
 | **Blog** | Organic traffic | Double monthly |
 
@@ -719,10 +865,19 @@ Start with **Medium** or **sr-tech-blog** as your comprehensive version.
 
 ## Final Platform-Selection Guide
 
-🎯 **For Authority**: JavaPro + DZone + Blog
+🎯 **For Authority with Architects**: InfoQ + DZone + JavaPro
+🎯 **For Authority with Java Devs**: JavaPro + DZone + Blog
+🎯 **For Industry Influence**: InfoQ + Substack + LinkedIn
 🎯 **For Community**: Dev.to + LinkedIn + Blog
 🎯 **For Subscribers**: Substack + Blog
 🎯 **For Broad Reach**: Medium + LinkedIn + Blog
-🎯 **Complete coverage**: All platforms + Blog (but requires discipline)
+🎯 **For Research/Analysis**: InfoQ + Medium + Substack
+🎯 **Complete coverage**: All 7 platforms + Blog (requires discipline but highest reach)
+
+**Recommended starter combinations:**
+- **Quick start** (1-2 hours/week): LinkedIn + Dev.to
+- **Sustainable pace** (3-4 hours/week): LinkedIn + Medium + Substack
+- **Authority building** (5-6 hours/week): InfoQ + DZone + Blog
+- **Maximum reach** (8-10 hours/week): All platforms (requires discipline)
 
 Pick 2-3 platforms to start. Master them. Then expand.
