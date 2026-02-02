@@ -22,6 +22,8 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Substack newsletters
 - JavaPro Magazine articles
 
+**Writing Standard**: All content follows humanization guidelines for conversational, accessible, genuinely human-written tone. See **HUMANIZATION_GUIDE.md** for complete standards.
+
 ---
 
 ## Language-Specific Content Skills
