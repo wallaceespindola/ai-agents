@@ -1,8 +1,8 @@
-# AI Agents & Skills for Technical Writers
+# AI Agents & Skills for Software Engineering
 
-A complete, production-ready system for generating high-quality technical content across multiple platforms with personalized code projects.
+A comprehensive system of specialized AI agents for software engineering, technical content creation, and project management.
 
-**1 Agent + 22 Skills + Secure Configuration = Complete technical writing ecosystem**
+**8 Agents + 67 Skills = Complete software engineering ecosystem**
 
 ## ⚡ Quick Start (2 Minutes)
 
@@ -24,65 +24,89 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 
 ## What's Included
 
-### 1 Main Agent
-- **Senior Technical Software Writer** - Orchestrates all 22 skills
+### 8 Specialized Agents
 
-### 22 Specialized Skills
+#### **Technical Writer Agent** (Original)
+- Expertise: Content creation, documentation, multi-platform publishing
+- Skills: 22 skills for writing, formatting, and code generation
 
-**Language Skills (3)**
-- Java, Python, JavaScript content expertise
+#### **Java Developer Agent**
+- Expertise: Java 17+, Spring Boot, microservices
+- Skills: Code review, testing strategy, performance tuning, security audit, project setup, documentation
 
-**Platform Skills (8)**
-- LinkedIn, Medium, Dev.to, Substack, DZone, JavaPro, InfoQ, Personal Blog
+#### **Python Developer Agent**
+- Expertise: Python 3.10+, FastAPI, async programming
+- Skills: Code review, testing strategy, performance tuning, type checking, project setup, documentation
 
-**Coder Skills (3)** ⭐
-- Generate complete Java/Spring Boot projects
-- Generate complete Python/FastAPI projects
-- Generate complete JavaScript/React projects
+#### **JavaScript/Frontend Developer Agent**
+- Expertise: React, Next.js, TypeScript, modern web
+- Skills: Code review, testing strategy, performance optimization, TypeScript migration, project setup, documentation
 
-**Visual & Presentation Skills (4)**
-- Slides Creator - Convert articles to PowerPoint/Google Slides/Speaker Deck
-- Image generation (1024x768, 3MB max, abstract futuristic)
-- Mermaid diagrams (simple, Git-friendly)
-- PlantUML diagrams (complex, professional)
+#### **Software Architect Agent**
+- Expertise: System design, scalability, microservices architecture
+- Skills: Architecture review, system design documentation, scalability analysis, design patterns, API design, database design, architecture diagrams
 
-**Supporting Skills (4)**
-- Architecture & design patterns
-- Markdown formatter
-- SEO optimizer
-- Code examples generator
+#### **QA/Software Tester Agent**
+- Expertise: Test automation, quality assurance, continuous testing
+- Skills: Test strategy, test automation setup, test case generation, API testing, E2E testing, performance testing, bug reporting
 
-**All skills automatically**:
-- Use your `.env` configuration
-- Follow humanization standards (conversational, human-written)
-- Include your personal branding & sign-off
-- Link to your GitHub, LinkedIn, Speaker Deck
+#### **DevOps Engineer Agent**
+- Expertise: CI/CD, containerization, infrastructure-as-code, cloud operations
+- Skills: CI/CD pipeline setup, Docker configuration, Kubernetes setup, IaC templates, monitoring setup, security scanning, deployment strategies
+
+#### **Project Manager Agent**
+- Expertise: Agile methodologies, planning, risk management, stakeholder communication
+- Skills: Project planning, sprint planning, risk assessment, status reporting, retrospectives, roadmap planning
+
+### 67 Specialized Skills
+
+**Technical Writing (22 skills)** - Content creation, platform optimization, code generation, diagrams, SEO
+
+**Java Development (6 skills)** - Code review, testing, performance, security, project setup, documentation
+
+**Python Development (6 skills)** - Code review, testing, performance, type checking, project setup, documentation
+
+**JavaScript/Frontend (6 skills)** - Code review, testing, performance, TypeScript migration, project setup, documentation
+
+**Software Architecture (7 skills)** - System review, design documentation, scalability, patterns, API design, database design, diagrams
+
+**QA & Testing (7 skills)** - Test strategy, automation setup, test case generation, API testing, E2E testing, performance testing, bug reporting
+
+**DevOps & Infrastructure (7 skills)** - CI/CD pipelines, Docker, Kubernetes, IaC, monitoring, security scanning, deployment strategies
+
+**Project Management (6 skills)** - Project planning, sprint planning, risk assessment, status reports, retrospectives, roadmap planning
 
 ---
 
 ## 📊 System Capabilities
 
-### Write For 8 Platforms
-| Platform | Length | Frequency | Best For |
-|----------|--------|-----------|----------|
-| Dev.to | 1-3k words | 1-2/week | Quick tutorials |
-| LinkedIn | 0.8-1.5k | 1-2/week | Career insights |
-| Medium | 2-7k words | 1-2/month | Deep dives |
-| Substack | 1.5-3k | Weekly | Newsletter |
-| DZone | 1.5-4k | Flexible | Enterprise |
-| JavaPro | 3-6k words | 1-2/month | Enterprise Java |
-| InfoQ | 2-3k words | Flexible | Research |
-| Blog | 2-10k+ | Your pace | Full control |
+### Software Engineering Coverage
+- **Code Development**: Java, Python, JavaScript with specialized expertise
+- **Quality Assurance**: Comprehensive testing from unit tests to E2E automation
+- **Architecture**: System design, scalability analysis, design patterns
+- **Infrastructure**: CI/CD pipelines, containerization, Kubernetes, infrastructure-as-code
+- **Project Management**: Agile planning, sprint management, risk assessment, roadmaps
+- **Technical Writing**: Multi-platform content creation, documentation, code generation
 
-### Generate Projects For 3 Languages
-- **Java**: Maven/Spring Boot with tests & docs
-- **Python**: Poetry/FastAPI with tests & type hints
-- **JavaScript**: npm/React with TypeScript & Jest
+### Agent Collaboration Workflows
+```
+Full-Stack Feature Development:
+Project Manager → Architect → Java/Python/JS Developers →
+QA/Tester → DevOps Engineer → Technical Writer
 
-### Cover 3 Programming Languages
-- Java (Spring Boot, patterns, concurrency)
-- Python (FastAPI, async, data science)
-- JavaScript (React, Node.js, TypeScript)
+System Redesign:
+Architect → Project Manager → All Developers → QA/Tester →
+DevOps Engineer → Technical Writer
+
+Performance Optimization:
+Architect → Developers → DevOps Engineer → QA/Tester →
+Technical Writer
+```
+
+### Multi-Language Project Generation
+- **Java**: Maven/Spring Boot with tests, documentation, Dockerfile
+- **Python**: Poetry/FastAPI with tests, type hints, Dockerfile
+- **JavaScript**: npm/React with TypeScript, Jest, Dockerfile
 
 ---
 
@@ -230,38 +254,47 @@ All automatically linked in your generated content:
 
 ```
 .
-├── README.md                          ← You are here
-├── CLAUDE.md                          ← Claude Code configuration
-├── .env.example                       ← Configuration template
-├── .env                               ← Your personal data (not committed)
+├── README.md                              ← You are here
+├── CLAUDE.md                              ← Claude Code configuration
+├── .env.example                           ← Configuration template
+├── .env                                   ← Your personal data (not committed)
 ├── LICENSE
 ├── .gitignore
 │
-├── agents/technical-writer/
-│   └── AGENT.md                       ← Main agent
+├── agents/
+│   ├── technical-writer/AGENT.md          ← Writing expertise
+│   ├── java-developer/AGENT.md            ← Java/Spring Boot development
+│   ├── python-developer/AGENT.md          ← Python/FastAPI development
+│   ├── javascript-developer/AGENT.md      ← React/Next.js development
+│   ├── software-architect/AGENT.md        ← System design & architecture
+│   ├── qa-tester/AGENT.md                 ← Test automation & QA
+│   ├── devops-engineer/AGENT.md           ← CI/CD & infrastructure
+│   └── project-manager/AGENT.md           ← Agile planning & management
 │
 ├── skills/
-│   ├── java-content/SKILL.md          ← Java expertise
-│   ├── python-content/SKILL.md        ← Python expertise
-│   ├── javascript-content/SKILL.md    ← JavaScript expertise
-│   ├── ... (8 platform skills)
-│   ├── java-coder/SKILL.md            ← Generate Java projects
-│   ├── python-coder/SKILL.md          ← Generate Python projects
-│   ├── javascript-coder/SKILL.md      ← Generate JS projects
-│   ├── ... (7 supporting skills)
+│   ├── java-*/                            ← 6 Java development skills
+│   ├── python-*/                          ← 6 Python development skills
+│   ├── javascript-*/                      ← 6 JavaScript development skills
+│   ├── architecture-*/                    ← 7 Architecture & design skills
+│   ├── test-*/                            ← 7 QA & testing skills
+│   ├── cicd-*/                            ← 7 DevOps & infrastructure skills
+│   ├── project-*/                         ← 6 Project management skills
+│   ├── ...                                ← 22 Technical writing skills
+│   └── */SKILL.md                         ← 67 total skills
 │
 └── docs/
-    ├── GETTING_STARTED.md             ← START HERE
-    ├── CONFIGURATION.md               ← Setup guide
-    ├── HUMANIZATION_GUIDE.md          ← Writing standards
-    ├── ARTICLE_TEMPLATE.md            ← Article template
-    ├── ARTICLE_SIGNOFF.md             ← Sign-off variations
-    ├── PLATFORM_STYLES.md             ← Platform guides
+    ├── GETTING_STARTED.md                 ← START HERE
+    ├── CONFIGURATION.md                   ← Setup guide
+    ├── AGENTS_GUIDE.md                    ← Complete agent guide (NEW)
+    ├── HUMANIZATION_GUIDE.md              ← Writing standards
+    ├── ARTICLE_TEMPLATE.md                ← Article template
+    ├── ARTICLE_SIGNOFF.md                 ← Sign-off variations
+    ├── PLATFORM_STYLES.md                 ← Platform guides
     │
     └── guides/
-        ├── COMPLETE_SYSTEM.md         ← Full system details
-        ├── SYSTEM_MAP.md              ← Architecture
-        └── SKILLS_INDEX.md            ← All skills reference
+        ├── COMPLETE_SYSTEM.md             ← Full system details
+        ├── SYSTEM_MAP.md                  ← Architecture
+        └── SKILLS_INDEX.md                ← All 67 skills reference
 ```
 
 ---
@@ -278,27 +311,28 @@ All automatically linked in your generated content:
 
 ## Key Points
 
-✅ **1 Agent + 22 Skills** - Complete system ready to use
-✅ **3 Coder Skills** - Generate Java, Python, JavaScript projects
-✅ **Slides Creator** - Convert articles to presentations
-✅ **8 Platforms** - Publish to LinkedIn, Medium, Dev.to, and more
-✅ **Secure Configuration** - Your data stays local in `.env`
-✅ **Humanization Standards** - Write like a real person, not AI
-✅ **Professional Branding** - Your sign-off on every article
-✅ **Pre-Configured URLs** - All your profiles auto-linked
+✅ **8 Agents + 67 Skills** - Complete software engineering ecosystem
+✅ **Full-Stack Development** - Java, Python, JavaScript development agents
+✅ **Quality & Testing** - Comprehensive QA and test automation
+✅ **Infrastructure & DevOps** - CI/CD, containerization, Kubernetes
+✅ **System Architecture** - Design patterns, scalability, API design
+✅ **Project Management** - Agile planning, sprint management, roadmaps
+✅ **Technical Writing** - Multi-platform publishing, code generation, documentation
+✅ **Agent Collaboration** - Agents work together on complex workflows
 
 ---
 
 ## Next Steps
 
 1. Read **[Getting Started Guide](docs/GETTING_STARTED.md)**
-2. Create `.env` file: `cp .env.example .env`
-3. Fill in your personal information
-4. Copy `docs/ARTICLE_TEMPLATE.md` for your first article
-5. Choose a platform and use the appropriate skill
-6. Publish!
+2. Review **[Agents Guide](docs/AGENTS_GUIDE.md)** to understand available agents
+3. Check **[Skills Index](docs/guides/SKILLS_INDEX.md)** for detailed skill descriptions
+4. Create `.env` file: `cp .env.example .env`
+5. Choose an agent based on your task
+6. Use the appropriate skill with that agent
+7. Explore agent collaboration workflows
 
-**Welcome to your AI-powered technical writing system!** 🚀
+**Welcome to your AI-powered software engineering system!** 🚀
 
 ---
 
@@ -328,4 +362,4 @@ All automatically linked in your generated content:
 
 ---
 
-*This system is designed for technical writers who want to create high-quality content across multiple platforms efficiently. Built with AI assistance, following strict humanization standards, and maintaining personal branding consistency.*
+*This system provides specialized AI agents for comprehensive software engineering tasks. Whether you're developing code, managing quality assurance, designing architecture, setting up infrastructure, or managing projects - there's an agent ready to help. All agents work together seamlessly for complex, multi-team workflows.*
