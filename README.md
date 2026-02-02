@@ -20,6 +20,12 @@ This repository contains a comprehensive system of AI agents and reusable skills
 - **DZone Article Writer** (`skills/dzone-article/`): Curated technical platform, 1500-4000 words, enterprise audience, editorial review
 - **JavaPro Magazine** (`skills/javapro-magazine/`): Enterprise Java, 3000-6000 words, publication-grade, peer review
 - **Sr Tech Blog Writer** (`skills/sr-tech-blog/`): Personal/company blog, 2000-10,000+ words, full creative control, monetization
+- **InfoQ Article Writer** (`skills/infoq-article/`): Research-informed editorial articles, 2000-3000 words, five key takeaways, editorial review, 4-week exclusive
+
+### Coder Skills (Generate Production Projects)
+- **Java Coder** (`skills/java-coder/`): Generate Maven/Spring Boot projects with source code, tests, and documentation linked to articles
+- **Python Coder** (`skills/python-coder/`): Generate FastAPI/Django projects with source code, tests, and documentation linked to articles
+- **JavaScript Coder** (`skills/javascript-coder/`): Generate React/Node.js projects with TypeScript, tests, and documentation linked to articles
 
 ### Supporting/Cross-Platform Skills
 - **Architecture & Design** (`skills/architecture-design/`): Software architecture patterns, system design, design principles (SOLID, DDD, CQRS)

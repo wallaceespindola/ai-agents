@@ -192,7 +192,52 @@ These optimize content for specific publication platforms.
 
 ---
 
-### 3. ARCHITECTURE & DESIGN SKILL (1 skill)
+### 3. CODER SKILLS (3 skills)
+
+These generate complete, production-ready projects that link to technical articles. Perfect for creating code that readers can immediately clone and run.
+
+#### Java Coder
+**Location**: `skills/java-coder/SKILL.md`
+- **Purpose**: Generate complete Maven/Spring Boot projects with full source code
+- **Generates**: pom.xml, source in `src/main/java/`, tests in `src/test/java/`
+- **Includes**: README linking to article, full project structure, dependency management
+- **Use When**: Writing Java tutorial, design pattern, or REST API article
+- **Works With**:
+  - `java-content` → Provides Java expertise for generated code
+  - Articles in `docs/ARTICLE.md` → Code links back to explanation
+  - `code-examples-generator` → For snippet examples within article
+  - `architecture-design` → For pattern explanations
+  - `image-generator-blog` → For architecture diagrams in docs
+
+#### Python Coder
+**Location**: `skills/python-coder/SKILL.md`
+- **Purpose**: Generate complete poetry/uv projects with full source code
+- **Generates**: pyproject.toml, source in `src/project_name/`, tests in `tests/`
+- **Includes**: README linking to article, full project structure, type hints
+- **Use When**: Writing FastAPI tutorial, async pattern, or data processing article
+- **Works With**:
+  - `python-content` → Provides Python expertise for generated code
+  - Articles in `docs/ARTICLE.md` → Code links back to explanation
+  - `code-examples-generator` → For snippet examples within article
+  - `architecture-design` → For pattern explanations
+  - `image-generator-blog` → For architecture diagrams in docs
+
+#### JavaScript/TypeScript Coder
+**Location**: `skills/javascript-coder/SKILL.md`
+- **Purpose**: Generate complete npm/pnpm React or Node.js projects
+- **Generates**: package.json, tsconfig.json, source in `src/`, tests with Jest
+- **Includes**: README linking to article, strict TypeScript, full testing
+- **Use When**: Writing React tutorial, async pattern, or Node.js article
+- **Works With**:
+  - `javascript-content` → Provides JavaScript/TypeScript expertise
+  - Articles in `docs/ARTICLE.md` → Code links back to explanation
+  - `code-examples-generator` → For snippet examples within article
+  - `architecture-design` → For pattern explanations
+  - `image-generator-blog` → For architecture diagrams in docs
+
+---
+
+### 4. ARCHITECTURE & DESIGN SKILL (1 skill)
 
 #### Architecture & Software Design
 **Location**: `skills/architecture-design/SKILL.md`
@@ -208,7 +253,7 @@ These optimize content for specific publication platforms.
 
 ---
 
-### 4. VISUAL SKILLS (3 skills)
+### 5. VISUAL SKILLS (3 skills)
 
 These create visual content for articles.
 
@@ -250,7 +295,7 @@ These create visual content for articles.
 
 ---
 
-### 5. SUPPORTING SKILLS (3 skills)
+### 6. SUPPORTING SKILLS (3 skills)
 
 These enhance and optimize content across all platforms.
 
@@ -508,14 +553,16 @@ markdown-formatter (archive issues)
 | Category | Count |
 |----------|-------|
 | **Agents** | 1 |
-| **Total Skills** | 18 |
+| **Total Skills** | 21 |
 | **Language Skills** | 3 |
-| **Platform Skills** | 7 |
+| **Platform Skills** | 8 (7 publications + blog) |
+| **Coder Skills** | 3 |
 | **Architecture/Design** | 1 |
 | **Visual Skills** | 3 |
 | **Supporting Skills** | 3 |
-| **Platforms Supported** | 7 + blog |
+| **Platforms Supported** | 8 (LinkedIn, Medium, Dev.to, Substack, DZone, JavaPro, InfoQ, Blog) |
 | **Languages Supported** | 3 |
+| **Coder Project Types** | 3 (Maven/Spring, Poetry/FastAPI, npm/React) |
 | **Diagram Types** | 16+ (Mermaid + PlantUML combined) |
 
 ---
