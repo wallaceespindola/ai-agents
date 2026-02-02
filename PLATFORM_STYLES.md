@@ -746,6 +746,188 @@ Attribution for data/case studies
 ### Example Article Hook
 "As organizations move toward microservices, the conversation has shifted from 'should we?' to 'how do we do this effectively at scale?' This analysis examines real case studies from companies like Netflix, Airbnb, and Uber, explores the architectural trade-offs involved, and provides guidance for when microservices are—and aren't—the right choice."
 
+### InfoQ Official Submission Guidelines
+
+#### Content Requirements
+- **Original content only** - Article must not be published elsewhere online for free access
+- **Length**: 1,500-4,000 words (optimal: 2,000-3,000 words)
+- **Timely** - Address important trends in software development
+- **Educational** - Teach readers non-trivial concepts
+- **Practical** - Offer processes and practices readers can apply
+- **Marketing-free** - No hidden promotional agendas or vendor promotion
+
+#### Target Audience
+- Senior software engineers
+- Architects
+- Team leads
+- Enterprise and mid-sized companies
+- Decision-makers
+
+#### What to Include in Submission
+
+**Email to**: editors@infoq.com
+
+**Required in submission**:
+1. **Proposed title** and topic focus
+2. **Target reader description** (who is this for?)
+3. **Technologies discussed** (list them clearly)
+4. **Five key takeaways** (as complete, actionable sentences)
+5. **Author biography** (brief, with contact info)
+6. **Timeline** (if submitting outline only)
+
+#### Submission Options
+
+**Option 1: Full Article**
+- Send complete draft
+- Editors review in ~5 business days
+- Provide feedback for iteration
+
+**Option 2: Outline**
+- Send detailed outline if article isn't ready
+- Editors evaluate concept
+- Provide approval/feedback before full writing
+
+#### Content Structure for Submission
+
+```
+Title: [Compelling, specific headline]
+
+Target Reader: [Who is this for? "Senior architects at mid-sized companies looking to..."]
+
+Technologies: [List relevant technologies]
+
+Key Takeaways:
+1. [Complete, actionable sentence]
+2. [Complete, actionable sentence]
+3. [Complete, actionable sentence]
+4. [Complete, actionable sentence]
+5. [Complete, actionable sentence]
+
+[Full article or outline follows]
+```
+
+#### Publishing Rights & Licensing
+
+**Exclusivity**: InfoQ requires exclusive publishing rights for **4 weeks from publication date**
+- After 4 weeks, you may republish elsewhere
+- **Must include proper attribution** when republishing
+- Can republish on your blog, Medium, Dev.to after the 4-week exclusivity window
+
+**AI Disclosure Requirements** (Mandatory):
+- Must disclose any generative AI tools used during creation
+- AI limitations:
+  - ✅ AI may assist with: brainstorming, feedback, grammar checking
+  - ❌ AI cannot: generate substantial article content or core technical explanations
+  - ❌ Substantial AI-generated content will result in rejection
+
+#### Image & Copyright
+
+**Author Responsibility**:
+- You must verify you have legal rights to ALL images
+- Rights may come from:
+  - Original creation (you took the screenshot/made the diagram)
+  - Permissive licensing (CC0, CC-BY, Unsplash, Pexels, etc.)
+  - Written permission from rights holder
+
+**Legal Liability**: Authors bear sole legal and financial liability for copyright infringement claims
+
+#### Review Process
+
+1. **Initial Concept Review** (~5 business days)
+   - Editors assess fit with InfoQ audience
+   - Feedback on angle/approach
+   - Approval to proceed or suggestions for changes
+
+2. **Technical Review** (iterative)
+   - Technical reviewer provides detailed feedback
+   - Requests clarifications or deeper explanations
+   - May ask for code examples or diagrams
+   - Collaborative refinement process
+
+3. **Publication**
+   - After approval, piece is published on InfoQ
+   - Appears in InfoQ's newsletter (high visibility)
+   - Gets promoted to large architect/senior engineer audience
+
+#### Tips for Getting Accepted
+
+✅ **Do**:
+- Write on timely, trending topics (AI, cloud, distributed systems, etc.)
+- Include real case studies with specific examples
+- Provide data, benchmarks, or research to support claims
+- Explain trade-offs clearly
+- Target senior/architect audience explicitly
+- Include actionable insights they can apply
+- Ensure original, high-quality content
+- Follow the format and provide all required metadata
+
+❌ **Don't**:
+- Submit previously published content
+- Include vendor marketing or hidden promotions
+- Write beginner-level tutorials (Medium/Dev.to for that)
+- Forget to disclose AI usage if applicable
+- Include images without proper rights
+- Miss the five key takeaways requirement
+- Write vague titles or unclear takeaways
+
+#### Example Five Key Takeaways
+
+```
+Key Takeaways:
+1. Event-driven architecture reduces coupling between microservices,
+   enabling independent scaling and faster feature deployment in
+   enterprise environments.
+
+2. Organizations should implement event sourcing patterns when audit
+   trails and temporal queries are business requirements, not as a
+   default architectural choice.
+
+3. The CAP theorem's trade-offs mean choosing between consistency
+   guarantees and availability; Netflix chose availability while
+   Airbnb prioritized consistency based on business needs.
+
+4. Distributed tracing and observability are non-negotiable in
+   event-driven systems; teams must invest in monitoring before
+   complexity becomes unmanageable.
+
+5. Most teams underestimate operational complexity; plan for
+   debugging, monitoring, and incident response from day one,
+   not as an afterthought.
+```
+
+#### Timeline Expectations
+
+- **Concept review**: 5 business days
+- **Full review with feedback**: 5-10 business days (depends on depth)
+- **Revisions and final approval**: 5-10 business days
+- **Publication after approval**: 1-3 weeks typically
+- **Total from submission to publication**: 3-6 weeks average
+
+#### Acceptance Rates & Strategy
+
+**InfoQ accepts approximately 30-40% of submissions**. To increase chances:
+- Write on trending, high-impact topics
+- Provide unique insights or case studies
+- Include data and concrete examples
+- Ensure content is practical and actionable
+- Target the senior engineer/architect audience clearly
+- Polish writing and structure before submitting
+- Include comprehensive key takeaways
+
+#### Post-Publication Promotion
+
+Once published:
+- ✅ Featured in InfoQ newsletter (reaches ~100k+ subscribers)
+- ✅ Promoted on social media
+- ✅ May be featured on homepage or topic pages
+- ✅ Attracts high-quality audience (senior engineers)
+- ✅ Great for building authority and credibility
+
+After 4 weeks exclusivity:
+- ✅ Republish on your blog with attribution
+- ✅ Share on LinkedIn, Medium, Dev.to with link to InfoQ original
+- ✅ Extended reach by distributing across platforms
+
 ---
 
 ## Platform Comparison Table
