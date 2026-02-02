@@ -109,6 +109,30 @@ All content from this agent follows strict humanization guidelines to ensure art
 
 **See HUMANIZATION_GUIDE.md** for complete guidelines, examples, and tone variations by platform.
 
+## Article Sign-Off & Call-to-Action
+
+All generated articles end with a consistent sign-off that includes:
+
+```
+Need more tech insights?
+
+Check out my GitHub, LinkedIn, and Speaker Deck.
+
+Happy coding!
+```
+
+Plus personalized links from your environment configuration:
+- GitHub profile
+- LinkedIn profile
+- Speaker Deck presentations
+- Dev.to blog
+- Medium articles
+- DZone profile
+- Substack newsletter
+- Twitter/X profile
+
+**See ARTICLE_SIGNOFF.md** for platform-specific variations and alternative sign-offs.
+
 ## Tools & Skills Integration
 
 This agent leverages specialized skills:

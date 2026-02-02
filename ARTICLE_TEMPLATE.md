@@ -142,6 +142,14 @@ Have questions about this article? Found an error? Let me know in the comments o
 
 ---
 
+## Need more tech insights?
+
+Check out my **[GitHub](${GITHUB_URL})**, **[LinkedIn](${LINKEDIN_URL})**, and **[Speaker Deck](${SPEAKER_DECK_URL})**.
+
+Happy coding!
+
+---
+
 **Share this article**:
 - [Share on LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=[ARTICLE_URL])
 - [Share on Twitter](https://twitter.com/intent/tweet?text=[ARTICLE_TITLE]&url=[ARTICLE_URL])
