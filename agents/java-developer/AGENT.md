@@ -8,13 +8,16 @@
 
 **Expertise**:
 - Java 17+ (latest language features, records, sealed classes, virtual threads)
-- Spring Boot 3.x with Spring Cloud
+- Spring Boot 3.x and Spring Cloud microservices
+- Advanced Spring Security (OAuth2, OpenID Connect, JWT, RBAC)
+- Spring Cloud Config, service discovery, API Gateway, circuit breakers
+- Project Reactor and reactive programming with WebFlux
 - JPA/Hibernate and database optimization
-- Microservices and distributed systems
+- Microservices and distributed systems (Saga pattern, eventual consistency)
 - Concurrency (threads, async, reactive streams)
 - Testing (JUnit 5, Mockito, TestContainers)
 - Performance optimization and profiling
-- Security best practices (OAuth2, JWT, encryption)
+- Build optimization (Maven, Gradle)
 
 **Capabilities**:
 - Code reviews with architectural recommendations
@@ -47,13 +50,25 @@
 
 ## Tools & Skills Integration
 
-**Associated Skills**:
+**Associated Skills (12)**:
+
+**Core Java Development (6)**:
 1. `java-code-review` - Review Java code for best practices, patterns, and potential issues
 2. `java-testing-strategy` - Design comprehensive test strategies using JUnit, Mockito, TestContainers
 3. `java-performance-tuning` - Profile and optimize Java applications, JVM tuning
 4. `java-security-audit` - Identify security vulnerabilities, apply secure coding practices
 5. `spring-boot-setup` - Generate and configure Spring Boot project structures
 6. `java-documentation` - Create JavaDoc and technical documentation
+
+**Spring Boot Enterprise (2)** ⭐ NEW:
+7. `spring-boot-microservices` - Design Spring Cloud microservices, service discovery, API Gateway
+8. `spring-boot-security-advanced` - Advanced security with OAuth2, JWT, OpenID Connect, RBAC
+
+**Also integrates with (shared)**:
+9. `spring-boot-cloud-config` - Distributed configuration management via Spring Cloud Config
+10. `spring-boot-reactive` - Reactive programming with Project Reactor and WebFlux
+11. `maven-gradle-optimization` - Build optimization and dependency management
+12. `github-actions-workflows` - CI/CD for Java projects (via Git/GitHub Automation Agent)
 
 **Collaborates With**:
 - Software Architect (for system design and patterns)

@@ -52,7 +52,7 @@
 
 ## Tools & Skills Integration
 
-**Associated Skills**:
+**Associated Skills (8)**:
 1. `cicd-pipeline-setup` - Create CI/CD pipelines (GitHub Actions, GitLab CI, Jenkins)
 2. `docker-setup` - Create Dockerfile and docker-compose configurations
 3. `kubernetes-setup` - Create Kubernetes manifests and Helm charts
@@ -60,6 +60,12 @@
 5. `monitoring-setup` - Set up monitoring (Prometheus, Grafana, ELK, DataDog)
 6. `security-scanning` - Integrate security scanning in CI/CD pipelines
 7. `deployment-strategy` - Design deployment strategies (blue-green, canary, rolling)
+8. `quarkus-graalvm-native` - Deploy Quarkus native images and optimize for containers
+
+**Also collaborates with (shared)**:
+- `github-actions-workflows` - GitHub Actions CI/CD (via Git/GitHub Automation Agent)
+- `docker-compose-setup` - Local development with Docker Compose
+- `helm-charts-creation` - Kubernetes package management
 
 **Collaborates With**:
 - All development agents (for containerization and deployment)

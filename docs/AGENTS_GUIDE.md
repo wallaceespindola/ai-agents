@@ -1,21 +1,23 @@
 # Complete Agents Guide
 
-Comprehensive guide to all 8 specialized agents in the AI Agents system, their capabilities, when to use them, and how they work together.
+Comprehensive guide to all 10 specialized agents in the AI Agents system, their capabilities, when to use them, and how they work together.
 
-## Overview: 8 Agents, 67 Skills
+## Overview: 10 Agents, 95 Skills
 
 The AI Agents system provides specialized agents for every major software engineering role:
 
 | Agent | Role | Focus | Skills | Team Size |
 |-------|------|-------|--------|-----------|
 | Technical Writer | Content Creator | Writing, documentation, multi-platform publishing | 22 | Solo/Distributed |
-| Java Developer | Backend Engineer | Java/Spring Boot, enterprise applications | 6 | Teams |
+| Java Developer | Backend Engineer | Java/Spring Boot, enterprise applications | 12 | Teams |
 | Python Developer | Backend Engineer | Python/FastAPI, data processing, async | 6 | Teams |
-| JavaScript Developer | Frontend Engineer | React/Next.js, web applications | 6 | Teams |
+| JavaScript Developer | Frontend Engineer | React/Next.js, web applications | 10 | Teams |
 | Software Architect | System Designer | Architecture, scalability, design patterns | 7 | Leadership |
 | QA/Tester | Quality Engineer | Test automation, test strategy, quality assurance | 7 | Teams |
 | DevOps Engineer | Infrastructure | CI/CD, containerization, cloud operations | 7 | Teams |
 | Project Manager | Technical Manager | Planning, sprint management, coordination | 6 | Leadership |
+| Git/GitHub & Automation | DevOps/Automation | GitHub Actions, Git workflows, YAML config, build automation | 14 | DevOps/Teams |
+| Spring/Quarkus & Build Systems | Backend Engineer | Spring Cloud, Quarkus, native builds, build optimization | 10 | Backend Teams |
 
 ---
 
@@ -568,13 +570,15 @@ The AI Agents system provides specialized agents for every major software engine
 | Agent | Works With | For | Frequency |
 |-------|-----------|-----|-----------|
 | Technical Writer | All agents | Documentation, guides, content | Continuous |
-| Java Developer | Architect, QA, DevOps, Writer | Implementation, testing, deployment | Daily |
+| Java Developer | Architect, QA, DevOps, Spring/Quarkus, Git/GitHub, Writer | Implementation, testing, deployment | Daily |
 | Python Developer | Architect, QA, DevOps, Writer | Implementation, testing, deployment | Daily |
 | JavaScript Developer | Architect, QA, DevOps, Writer | Implementation, testing, deployment | Daily |
 | Software Architect | All developers, DevOps, PM | Design, review, guidance | Weekly |
-| QA/Tester | All developers, DevOps | Testing, automation, quality | Daily |
-| DevOps Engineer | All developers, Architect | Deployment, infrastructure, monitoring | Daily |
+| QA/Tester | All developers, DevOps, Git/GitHub | Testing, automation, quality | Daily |
+| DevOps Engineer | All developers, Architect, Git/GitHub, Spring/Quarkus | Deployment, infrastructure, monitoring | Daily |
 | Project Manager | All agents | Planning, coordination, reporting | Daily |
+| Git/GitHub & Automation | All developers, DevOps, Architect | CI/CD, automation, Git workflows | Daily |
+| Spring/Quarkus & Build | Java Developer, DevOps, Git/GitHub, Architect | Microservices, native builds, optimization | Daily |
 
 ---
 
@@ -754,6 +758,158 @@ Week 3:
 
 #### Technical Writing
 - All 22 Technical Writer skills → Technical Writer Agent
+
+---
+
+## 9. Git/GitHub & Automation Engineer Agent
+
+**Description**: Senior Git and GitHub automation specialist with expertise in CI/CD workflows, DevOps automation, YAML configuration, and build systems optimization.
+
+### Expertise
+- GitHub Actions workflows and CI/CD automation
+- Git workflows (Git Flow, GitHub Flow, trunk-based development)
+- GitHub API and CLI automation
+- YAML configuration (Kubernetes, Docker, Helm, GitHub Actions)
+- Build optimization (Maven, Gradle, npm/yarn)
+- Secrets management and SSH security
+- Pre-commit hooks and Git integrations
+- GitHub security scanning (Dependabot, CodeQL, SAST)
+
+### Associated Skills (14)
+
+**Git & GitHub (6)**:
+- `github-actions-workflows` - Design GitHub Actions CI/CD workflows
+- `git-workflow-strategy` - Plan Git workflows and branching strategies
+- `github-pr-management` - Automate PR workflows and code reviews
+- `github-cli-automation` - Automate GitHub operations via CLI
+- `github-security-scanning` - Setup Dependabot, CodeQL, secret scanning
+- `git-commit-strategy` - Implement conventional commits and signing
+
+**Config Management (5)**:
+- `yaml-validation-config` - Validate and optimize YAML configurations
+- `kubernetes-yaml-generation` - Generate K8s manifests and configs
+- `docker-compose-setup` - Configure Docker Compose for local development
+- `helm-charts-creation` - Create and manage Helm charts
+- `github-actions-yaml` - Write complex GitHub Actions YAML workflows
+
+**Build & Secrets (3)**:
+- `build-optimization` - Optimize Maven, Gradle, npm builds
+- `ssh-key-management` - Manage SSH keys and certificates securely
+- `secrets-management` - Implement secure secrets management
+- `pre-commit-hooks-setup` - Configure pre-commit hooks and automation
+
+### When to Use
+- Designing GitHub Actions CI/CD workflows
+- Planning Git branching strategies
+- Automating GitHub operations at scale
+- Validating and generating YAML configurations
+- Optimizing build times and caching
+- Managing secrets and SSH keys securely
+- Setting up pre-commit hooks for code quality
+
+### Example Workflows
+
+**Workflow 1: Complete CI/CD Setup**
+```
+1. Use git-workflow-strategy to plan branching
+2. Use github-actions-workflows to create build pipeline
+3. Use github-security-scanning to add security checks
+4. Use pre-commit-hooks-setup for local checks
+5. Use secrets-management for secure config
+6. Deploy to production
+```
+
+**Workflow 2: Kubernetes Deployment**
+```
+1. Use yaml-validation-config to validate configs
+2. Use kubernetes-yaml-generation to create manifests
+3. Use helm-charts-creation for package management
+4. Use github-actions-workflows to automate deployment
+5. Use docker-compose-setup for local testing
+```
+
+### Collaboration Points
+- **With DevOps Engineer**: Infrastructure and deployment
+- **With All Developers**: CI/CD integration and automation
+- **With Software Architect**: Build architecture and optimization
+- **With Project Manager**: Automation timeline planning
+
+---
+
+## 10. Spring/Quarkus & Build Systems Engineer Agent
+
+**Description**: Senior engineer specializing in Spring Boot enterprise frameworks, Quarkus cloud-native development, and build system optimization.
+
+### Expertise
+- Spring Boot 3.x enterprise frameworks
+- Spring Cloud microservices ecosystem
+- Advanced Spring Security and OAuth2/OpenID Connect
+- Spring WebFlux and reactive programming
+- Quarkus cloud-native framework
+- GraalVM native image compilation
+- Maven and Gradle build optimization
+- Build caching and performance tuning
+
+### Associated Skills (10)
+
+**Spring Boot Enterprise (4)**:
+- `spring-boot-microservices` - Design Spring Cloud microservices
+- `spring-boot-security-advanced` - Implement OAuth2, JWT, OpenID Connect, RBAC
+- `spring-boot-cloud-config` - Distributed configuration management
+- `spring-boot-reactive` - Build reactive applications with WebFlux
+
+**Quarkus & Native (3)**:
+- `quarkus-framework` - Set up Quarkus applications and extensions
+- `quarkus-graalvm-native` - Compile to native images with GraalVM
+- `quarkus-extensions` - Manage and develop Quarkus extensions
+
+**Build Systems (2)**:
+- `maven-gradle-optimization` - Optimize Maven and Gradle builds
+- `build-cache-management` - Implement build caching strategies
+
+### When to Use
+- Building microservices with Spring Cloud
+- Implementing advanced authentication and authorization
+- Creating reactive applications with Reactor/WebFlux
+- Building cloud-native Quarkus applications
+- Optimizing build times and resource usage
+- Compiling applications to native images
+- Implementing distributed configuration
+
+### Example Workflows
+
+**Workflow 1: Microservices Architecture**
+```
+1. Use spring-boot-microservices to design services
+2. Use spring-boot-security-advanced for service auth
+3. Use spring-boot-cloud-config for distributed config
+4. Use maven-gradle-optimization for builds
+5. Integrate with DevOps for deployment
+```
+
+**Workflow 2: Quarkus Native Application**
+```
+1. Use quarkus-framework to set up project
+2. Use quarkus-extensions to add capabilities
+3. Use quarkus-graalvm-native to compile
+4. Use build-cache-management to optimize
+5. Deploy as container or serverless
+```
+
+**Workflow 3: Reactive System**
+```
+1. Use spring-boot-reactive for WebFlux setup
+2. Use spring-boot-microservices for service communication
+3. Use spring-boot-cloud-config for configuration
+4. Use build-optimization for performance
+5. Test under load and optimize further
+```
+
+### Collaboration Points
+- **With Java Developer Agent**: Implementation guidance and patterns
+- **With DevOps Engineer**: Containerization and deployment
+- **With Git/GitHub Automation**: CI/CD integration
+- **With Software Architect**: System design and patterns
 
 ---
 

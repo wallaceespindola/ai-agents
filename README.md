@@ -2,9 +2,9 @@
 
 A comprehensive system of specialized AI agents for software engineering, technical content creation, and project management.
 
-**8 Agents + 71 Skills = Complete software engineering ecosystem**
+**10 Agents + 95 Skills = Complete software engineering ecosystem**
 
-With comprehensive React/Next.js support and component-level development skills.
+With comprehensive React/Next.js support, GitHub automation, Spring Cloud microservices, and Quarkus development.
 
 ## ⚡ Quick Start (2 Minutes)
 
@@ -60,11 +60,11 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 - Expertise: Agile methodologies, planning, risk management, stakeholder communication
 - Skills: Project planning, sprint planning, risk assessment, status reporting, retrospectives, roadmap planning
 
-### 71 Specialized Skills
+### 95 Specialized Skills
 
 **Technical Writing (22 skills)** - Content creation, platform optimization, code generation, diagrams, SEO
 
-**Java Development (6 skills)** - Code review, testing, performance, security, project setup, documentation
+**Java Development (12 skills)** - Code review, testing, performance, security, Spring Boot setup, Spring Cloud microservices, advanced security, documentation
 
 **Python Development (6 skills)** - Code review, testing, performance, type checking, project setup, documentation
 
@@ -77,6 +77,10 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 **DevOps & Infrastructure (7 skills)** - CI/CD pipelines, Docker, Kubernetes, IaC, monitoring, security scanning, deployment strategies
 
 **Project Management (6 skills)** - Project planning, sprint planning, risk assessment, status reports, retrospectives, roadmap planning
+
+**Git/GitHub & Automation (14 skills)** - GitHub Actions workflows, Git workflows, PR management, CLI automation, security scanning, YAML config, Kubernetes manifests, Helm charts, Docker Compose, build optimization, SSH management, secrets management, pre-commit hooks
+
+**Spring/Quarkus & Build Systems (10 skills)** - Spring Cloud microservices, advanced security, cloud config, reactive programming, Quarkus framework, GraalVM native compilation, Quarkus extensions, Maven/Gradle optimization, build caching
 
 ---
 
@@ -313,15 +317,17 @@ All automatically linked in your generated content:
 
 ## Key Points
 
-✅ **8 Agents + 71 Skills** - Complete software engineering ecosystem
+✅ **10 Agents + 95 Skills** - Complete software engineering ecosystem
 ✅ **Full-Stack Development** - Java, Python, JavaScript (with React/Next.js focus)
+✅ **Git/GitHub Automation** - GitHub Actions workflows, git strategies, YAML config, CI/CD automation
+✅ **Spring Cloud & Quarkus** - Microservices, advanced security, reactive programming, native compilation
 ✅ **React & Next.js Focused** - Component patterns, hooks, state management, Storybook, testing
 ✅ **Quality & Testing** - Comprehensive QA and test automation
-✅ **Infrastructure & DevOps** - CI/CD, containerization, Kubernetes
+✅ **Infrastructure & DevOps** - CI/CD, containerization, Kubernetes, monitoring
 ✅ **System Architecture** - Design patterns, scalability, API design
 ✅ **Project Management** - Agile planning, sprint management, roadmaps
 ✅ **Technical Writing** - Multi-platform publishing, code generation, documentation
-✅ **Agent Collaboration** - Agents work together on complex workflows
+✅ **Agent Collaboration** - 10 specialized agents work together on complex workflows
 
 ---
 
