@@ -1,0 +1,119 @@
+# Slide Configuration
+# Customize presentation generation behavior
+
+presentation:
+  aspect_ratio: "16:9"
+  dpi: 300
+  page_size: [10, 5.625]  # inches (16:9 ratio)
+  margin: 0.5  # inches
+
+# Slide Layout Settings
+layouts:
+  title_slide:
+    footer_visible: false
+    author_visible: true
+    date_visible: true
+    tags_visible: true
+
+  content_slide:
+    max_bullet_points: 5
+    text_condensation: true
+    footer_visible: true
+    slide_numbers: true
+    body_font_size: 18
+    heading_font_size: 40
+
+  code_slide:
+    max_lines: 20
+    syntax_highlighting: true
+    line_numbers: true
+    context_lines: 3
+    code_font_size: 10
+    language_label: true
+
+  visual_slide:
+    full_width: true
+    caption_visible: true
+    max_caption_lines: 3
+
+  conclusion_slide:
+    max_takeaways: 5
+    include_cta: true
+    checkmark_prefix: "✓"
+    cta_font_size: 14
+
+# Theme Configuration
+themes:
+  light:
+    background: "#FFFFFF"
+    text: "#333333"
+    primary: "#2E5090"
+    secondary: "#FF6B6B"
+    accent: "#4ECDC4"
+    code_background: "#F5F5F5"
+    description: "Professional white background for corporate presentations"
+
+  dark:
+    background: "#1E1E1E"
+    text: "#FFFFFF"
+    primary: "#4ECDC4"
+    secondary: "#FF6B6B"
+    accent: "#FFE66D"
+    code_background: "#2D2D2D"
+    description: "Modern dark theme with high contrast"
+
+  technical:
+    background: "#0D1117"
+    text: "#E6EDF3"
+    primary: "#58A6FF"
+    secondary: "#79C0FF"
+    accent: "#79C0FF"
+    code_background: "#0D1117"
+    description: "GitHub-inspired theme for technical talks"
+
+# Typography
+fonts:
+  default: "San Francisco"
+  code: "Monaco"
+  fallback: "Arial"
+  heading_scale: 1.5
+  body_scale: 1.0
+  monospace: true
+
+# Content Rules
+content:
+  max_words_per_slide: 100
+  min_lines_code: 5
+  max_lines_code: 20
+  section_to_slides_ratio: 2.5  # 2-3 slides per article section
+  estimate_reading_time: true
+  estimate_1_slide_per_minute: true
+  condense_paragraphs: true
+
+# Slide Generation
+generation:
+  include_speaker_notes: true
+  include_footer: true
+  include_slide_numbers: true
+  title_slide_format: "full"  # full, minimal, or custom
+  conclusion_auto_generate: true
+  archive_previous: true
+
+# Output Configuration
+output:
+  base_directory: "presentations"
+  create_subfolders: true
+  naming_convention: "kebab-case"  # kebab-case, snake_case, or original
+  include_metadata: true
+  include_snapshot: true
+  formats:
+    - pptx
+    - google_slides
+    - speaker_deck
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  verbose: false
+  save_logs: true
+  log_directory: "presentations/logs"
