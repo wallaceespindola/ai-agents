@@ -2,7 +2,9 @@
 
 A comprehensive system of specialized AI agents for software engineering, technical content creation, and project management.
 
-**8 Agents + 67 Skills = Complete software engineering ecosystem**
+**8 Agents + 71 Skills = Complete software engineering ecosystem**
+
+With comprehensive React/Next.js support and component-level development skills.
 
 ## ⚡ Quick Start (2 Minutes)
 
@@ -39,8 +41,8 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 - Skills: Code review, testing strategy, performance tuning, type checking, project setup, documentation
 
 #### **JavaScript/Frontend Developer Agent**
-- Expertise: React, Next.js, TypeScript, modern web
-- Skills: Code review, testing strategy, performance optimization, TypeScript migration, project setup, documentation
+- Expertise: React 18+, Next.js 15+, TypeScript, modern web applications
+- Skills: Code review, component patterns, advanced hooks, state management, testing strategy, performance optimization, TypeScript migration, Storybook setup, project setup, documentation (10 skills total)
 
 #### **Software Architect Agent**
 - Expertise: System design, scalability, microservices architecture
@@ -58,7 +60,7 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 - Expertise: Agile methodologies, planning, risk management, stakeholder communication
 - Skills: Project planning, sprint planning, risk assessment, status reporting, retrospectives, roadmap planning
 
-### 67 Specialized Skills
+### 71 Specialized Skills
 
 **Technical Writing (22 skills)** - Content creation, platform optimization, code generation, diagrams, SEO
 
@@ -66,7 +68,7 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 
 **Python Development (6 skills)** - Code review, testing, performance, type checking, project setup, documentation
 
-**JavaScript/Frontend (6 skills)** - Code review, testing, performance, TypeScript migration, project setup, documentation
+**JavaScript/Frontend (10 skills)** - Code review, component patterns, advanced hooks, state management, testing, performance optimization, TypeScript migration, Storybook setup, project setup, documentation
 
 **Software Architecture (7 skills)** - System review, design documentation, scalability, patterns, API design, database design, diagrams
 
@@ -311,8 +313,9 @@ All automatically linked in your generated content:
 
 ## Key Points
 
-✅ **8 Agents + 67 Skills** - Complete software engineering ecosystem
-✅ **Full-Stack Development** - Java, Python, JavaScript development agents
+✅ **8 Agents + 71 Skills** - Complete software engineering ecosystem
+✅ **Full-Stack Development** - Java, Python, JavaScript (with React/Next.js focus)
+✅ **React & Next.js Focused** - Component patterns, hooks, state management, Storybook, testing
 ✅ **Quality & Testing** - Comprehensive QA and test automation
 ✅ **Infrastructure & DevOps** - CI/CD, containerization, Kubernetes
 ✅ **System Architecture** - Design patterns, scalability, API design

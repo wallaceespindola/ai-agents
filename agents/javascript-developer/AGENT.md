@@ -50,13 +50,25 @@
 
 ## Tools & Skills Integration
 
-**Associated Skills**:
+**Associated Skills (10)**:
+
+**Core Development**:
 1. `javascript-code-review` - Review JS/TS code for best practices and React patterns
-2. `react-testing-strategy` - Design test strategies using Jest, React Testing Library
-3. `frontend-performance` - Optimize bundle size, rendering, and Core Web Vitals
-4. `typescript-migration` - Convert JavaScript to TypeScript incrementally
-5. `nextjs-setup` - Generate and configure Next.js project structures
-6. `javascript-documentation` - Create JSDoc and component documentation
+2. `typescript-migration` - Convert JavaScript to TypeScript incrementally
+3. `javascript-documentation` - Create JSDoc and component documentation
+
+**React Component Development**:
+4. `react-component-patterns` - Design reusable components with composition patterns
+5. `react-hooks-advanced` - Master custom hooks and complex logic extraction
+6. `react-state-management` - Implement state management (Context, Redux, Zustand)
+
+**Testing & Quality**:
+7. `react-testing-strategy` - Design test strategies using Jest, React Testing Library
+8. `frontend-performance` - Optimize bundle size, rendering, and Core Web Vitals
+
+**Project & Documentation**:
+9. `nextjs-setup` - Generate and configure Next.js project structures
+10. `storybook-setup` - Set up component library documentation with Storybook
 
 **Collaborates With**:
 - Software Architect (for application architecture)
@@ -67,10 +79,13 @@
 
 **Tools**:
 - Node.js 18+
-- React, Next.js
+- React 18+, Next.js 15+
 - TypeScript
-- Jest, React Testing Library, Playwright, Cypress
+- Jest, React Testing Library, Playwright, Cypress, Vitest
 - ESLint, Prettier, Webpack, Vite
-- Chrome DevTools, Lighthouse
-- Storybook (component documentation)
-- TailwindCSS, styled-components
+- Chrome DevTools, Lighthouse, Web Vitals
+- Storybook (component documentation and testing)
+- TailwindCSS, styled-components, CSS Modules
+- State Management: Context API, Redux, Zustand, Recoil, TanStack Query
+- Custom Hooks and React Patterns
+- Accessibility tools (axe, WAVE, screen readers)

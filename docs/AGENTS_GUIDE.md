@@ -222,13 +222,25 @@ The AI Agents system provides specialized agents for every major software engine
 - Performance optimization (Core Web Vitals)
 - State management patterns
 
-### Associated Skills (6)
+### Associated Skills (10)
+
+**Core Development**:
 - `javascript-code-review` - Review JS/TS code
+- `typescript-migration` - Convert JS to TS incrementally
+- `javascript-documentation` - Create JSDoc and component docs
+
+**React Component Development**:
+- `react-component-patterns` - Design reusable components with composition patterns
+- `react-hooks-advanced` - Master custom hooks and complex logic extraction
+- `react-state-management` - Implement state management (Context, Redux, Zustand)
+
+**Testing & Quality**:
 - `react-testing-strategy` - Design test strategies
 - `frontend-performance` - Optimize bundle and rendering
-- `typescript-migration` - Convert JS to TS incrementally
+
+**Project & Documentation**:
 - `nextjs-setup` - Generate project structures
-- `javascript-documentation` - Create JSDoc and component docs
+- `storybook-setup` - Set up component library documentation with Storybook
 
 ### When to Use
 - Reviewing React/TypeScript pull requests
