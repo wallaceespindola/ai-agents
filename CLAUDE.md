@@ -215,3 +215,105 @@ my-agent/
 │   └── test_tools.py
 └── logs/                # (ignored, for local debugging)
 ```
+
+---
+
+## AI Agents System Overview
+
+This repository contains a complete ecosystem of 10 specialized AI agents with 95 integrated skills for comprehensive software engineering tasks. Each agent is a Claude-powered specialist designed to handle specific domains of software development.
+
+### The 10 Agents
+
+| # | Agent | Focus | Skills |
+|---|-------|-------|--------|
+| 1️⃣ | **Technical Writer** | Content creation, documentation, multi-platform publishing | 22 |
+| 2️⃣ | **Java Developer** | Java/Spring Boot enterprise development, microservices | 12 |
+| 3️⃣ | **Python Developer** | Python/FastAPI backend, async programming, data processing | 6 |
+| 4️⃣ | **JavaScript Developer** | React/Next.js development, component architecture | 10 |
+| 5️⃣ | **Software Architect** | System design, architecture patterns, scalability | 7 |
+| 6️⃣ | **QA/Tester** | Test automation, quality assurance, testing strategies | 7 |
+| 7️⃣ | **DevOps Engineer** | CI/CD, containerization, infrastructure-as-code | 7 |
+| 8️⃣ | **Git/GitHub Automation** | GitHub Actions, Git workflows, build automation | 14 |
+| 9️⃣ | **Spring/Quarkus Engineer** | Spring Cloud microservices, Quarkus, native compilation | 10 |
+| 🔟 | **Project Manager** | Agile planning, sprint management, project coordination | 6 |
+
+**Total: 10 Agents + 95 Skills**
+
+### Skills by Category
+
+**Technical Writing (22 skills)**
+- Content creation across 8 platforms (Dev.to, Medium, LinkedIn, Substack, DZone, JavaPro, InfoQ, Blog)
+- Code examples, slides, diagrams, image generation, SEO optimization
+
+**Backend Development (28 skills)**
+- **Java** (12): code review, testing, performance tuning, security audit, Spring Boot setup, Spring Cloud microservices, advanced security, distributed config, reactive programming
+- **Python** (6): code review, testing, performance tuning, type checking, FastAPI setup, documentation
+- **Spring/Quarkus** (10): Spring Cloud architecture, OAuth2/JWT security, distributed config, reactive patterns, Quarkus framework, GraalVM native compilation, build optimization
+
+**Frontend Development (10 skills)**
+- **JavaScript/React/Next.js**: code review, component patterns, advanced hooks, state management, testing, performance optimization, TypeScript migration, Storybook setup, project setup
+
+**Architecture & Design (7 skills)**
+- System design, scalability analysis, design patterns, API design (REST/GraphQL), database schema design, architecture diagrams (C4/UML)
+
+**Quality & Testing (7 skills)**
+- Test strategy, test automation setup, test case generation, API testing, E2E testing, performance testing, bug reporting
+
+**Infrastructure & DevOps (7 skills)**
+- CI/CD pipelines (GitHub Actions, GitLab CI, Jenkins)
+- Docker containerization, Kubernetes orchestration, Helm charts
+- Infrastructure-as-code (Terraform, CloudFormation)
+- Monitoring (Prometheus, Grafana, ELK, DataDog)
+- Security scanning and vulnerability management
+- Deployment strategies (blue-green, canary, rolling)
+
+**Git/GitHub Automation (14 skills)**
+- **Git & GitHub (6)**: GitHub Actions workflows, Git workflow strategies, PR management, CLI automation, security scanning, commit strategies
+- **Config Management (5)**: YAML validation, Kubernetes manifests, Docker Compose, Helm charts, GitHub Actions YAML
+- **Build & Secrets (3)**: build optimization, SSH key management, secrets management, pre-commit hooks
+
+**Project Management (6 skills)**
+- Project planning, sprint planning, risk assessment, status reporting, sprint retrospectives, roadmap planning
+
+### Technology Coverage
+
+**Languages & Backends**
+- Java 17+, Spring Boot 3.x, Spring Cloud, Quarkus, GraalVM native
+- Python 3.10+, FastAPI, async/await, type hints
+- JavaScript/TypeScript, React 18+, Next.js 15+
+
+**Frontend Frameworks**
+- React with hooks, state management (Context, Redux, Zustand, TanStack Query)
+- Next.js with App Router
+- Component libraries: shadcn/ui, Storybook
+- TypeScript strict mode
+
+**Infrastructure & DevOps**
+- **Containerization**: Docker, Docker Compose, Podman
+- **Orchestration**: Kubernetes, Helm, Kustomize
+- **CI/CD**: GitHub Actions, GitLab CI, Jenkins, CircleCI
+- **Infrastructure-as-Code**: Terraform, CloudFormation, Ansible
+- **Monitoring**: Prometheus, Grafana, ELK Stack, DataDog
+- **Cloud Platforms**: AWS, Azure, GCP
+
+**Testing & Quality**
+- Java: JUnit 5, Mockito, TestContainers
+- Python: pytest, unittest, hypothesis
+- JavaScript: Jest, React Testing Library, Cypress, Playwright
+- Performance: JMeter, Locust, Artillery
+
+**Architecture & Security**
+- Microservices patterns, distributed systems
+- OAuth2, OpenID Connect, JWT authentication, RBAC
+- Secrets management (Vault, AWS Secrets Manager)
+- Security scanning (SonarQube, Trivy, OWASP Dependency-Check)
+
+### Documentation & References
+
+- **AGENTS.md**: Complete reference of all 10 agents with profiles, skills, and workflows
+- **AGENTS_GUIDE.md**: Comprehensive guide including agent collaboration patterns and multi-agent workflows
+- **SKILLS_INDEX.md**: Detailed catalog of all 95 skills with usage guidance
+- **SYSTEM_MAP.md**: Architecture overview and relationships between agents
+- **GETTING_STARTED.md**: Setup and onboarding guide
+
+See `/agents/{name}/AGENT.md` for individual agent details and `/skills/{name}/SKILL.md` for skill documentation.

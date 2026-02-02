@@ -1,0 +1,228 @@
+# AI Agents System - GitHub Copilot Instructions
+
+This file provides GitHub Copilot with context about the AI Agents system structure and conventions.
+
+## System Overview
+
+The AI Agents system contains 10 specialized agents with 95 skills for comprehensive software engineering tasks.
+
+### Agents
+
+1. **Technical Writer** - Content creation, documentation, multi-platform publishing (22 skills)
+2. **Java Developer** - Java/Spring Boot enterprise development (12 skills)
+3. **Python Developer** - Python/FastAPI backend development (6 skills)
+4. **JavaScript Developer** - React/Next.js frontend development (10 skills)
+5. **Software Architect** - System design, architecture patterns (7 skills)
+6. **QA/Tester** - Test automation, quality assurance (7 skills)
+7. **DevOps Engineer** - CI/CD, containerization, infrastructure (7 skills)
+8. **Git/GitHub Automation** - GitHub Actions, Git workflows, YAML (14 skills)
+9. **Spring/Quarkus Engineer** - Spring Cloud, Quarkus, build systems (10 skills)
+10. **Project Manager** - Project planning, agile management (6 skills)
+
+### Skill Categories
+
+- **Git & GitHub (6)**: github-actions-workflows, git-workflow-strategy, github-pr-management, github-cli-automation, github-security-scanning, git-commit-strategy
+- **Config Management (5)**: yaml-validation-config, kubernetes-yaml-generation, docker-compose-setup, helm-charts-creation, github-actions-yaml
+- **Build & Secrets (4)**: build-optimization, ssh-key-management, secrets-management, pre-commit-hooks-setup
+- **Spring Enterprise (4)**: spring-boot-microservices, spring-boot-security-advanced, spring-boot-cloud-config, spring-boot-reactive
+- **Quarkus & Native (3)**: quarkus-framework, quarkus-graalvm-native, quarkus-extensions
+- **React Components (3)**: react-component-patterns, react-hooks-advanced, react-state-management
+- **Testing (7)**: test-strategy-doc, test-automation-setup, test-case-generator, api-testing-setup, e2e-testing-setup, performance-testing, react-testing-strategy
+- **Documentation (6)**: java-documentation, python-documentation, javascript-documentation, storybook-setup, architecture-diagram, slides-creator
+
+## Directory Structure
+
+```
+ai-agents/
+├── agents/                          # 10 agent profiles
+│   ├── technical-writer/AGENT.md
+│   ├── java-developer/AGENT.md
+│   ├── python-developer/AGENT.md
+│   ├── javascript-developer/AGENT.md
+│   ├── software-architect/AGENT.md
+│   ├── qa-tester/AGENT.md
+│   ├── devops-engineer/AGENT.md
+│   ├── git-automation-engineer/AGENT.md
+│   ├── spring-quarkus-engineer/AGENT.md
+│   └── project-manager/AGENT.md
+├── skills/                          # 95 skill definitions
+│   ├── {skill-name}/SKILL.md
+│   └── (all skills organized by category)
+├── docs/                            # Documentation
+│   ├── GETTING_STARTED.md
+│   ├── AGENTS_GUIDE.md
+│   ├── AGENTS.md (this file context)
+│   └── guides/
+│       ├── SKILLS_INDEX.md
+│       ├── SYSTEM_MAP.md
+│       └── COMPLETE_SYSTEM.md
+└── README.md                        # Main overview
+```
+
+## File Conventions
+
+### Agent Files (agents/{name}/AGENT.md)
+- Title: Agent name and role
+- Sections: Profile, Expertise, Capabilities, Workflow, Quality Standards, Tools & Skills, Collaboration
+- Lists associated skills with brief descriptions
+- Includes "When to Use" guidance
+
+### Skill Files (skills/{name}/SKILL.md)
+- YAML frontmatter: name and description
+- Sections: When to Use, Quick Start, How It Works, Configuration, Examples, Best Practices, Integration
+- Each skill: 2,000-4,000 words with production-ready examples
+- Real code examples with configuration templates
+- Best practices and integration guidance
+
+### Documentation
+- AGENTS.md: Quick reference of all agents and skills
+- AGENTS_GUIDE.md: Comprehensive guide with workflows
+- SKILLS_INDEX.md: Complete skills catalog
+- SYSTEM_MAP.md: Architecture and relationships
+- GETTING_STARTED.md: Setup and onboarding
+
+## Naming Conventions
+
+### Agents
+- Format: descriptive name with role (e.g., "Java Developer Agent")
+- Directory: kebab-case (e.g., java-developer)
+
+### Skills
+- Format: kebab-case with clear purpose (e.g., github-actions-workflows)
+- Directory: matches skill name exactly
+- File: always SKILL.md
+
+### Content
+- Headings: Use consistent markdown hierarchy (# Agent, ## Section)
+- Lists: Use bullet points for capabilities, numbered for steps
+- Code blocks: Use markdown with language specification
+- Links: Relative paths to docs and skills
+
+## Writing Guidelines
+
+### For New Agent Descriptions
+1. Start with clear role and expertise areas
+2. List capabilities concisely (5-8 items)
+3. Include workflow steps (5-8 steps)
+4. Define quality standards
+5. List associated skills
+6. Include collaboration points
+7. Reference agent file location
+
+### For New Skill Descriptions
+1. Start with "When to Use" scenarios
+2. Include Quick Start (usage example)
+3. Explain "How It Works" (5-7 subsections)
+4. Provide Configuration with templates
+5. Include 3-7 production-ready examples
+6. Add Best Practices section
+7. List Integration with other skills
+
+### Common Patterns
+- Use consistent formatting for lists and tables
+- Reference other agents/skills with skill name in backticks
+- Include real-world examples and code
+- Emphasize practical application
+- Reference files with `agents/{name}/AGENT.md` format
+- Use section dividers (---) for clarity
+
+## Code Examples Standards
+
+- Include complete, runnable examples
+- Show both good (✅) and bad (❌) patterns
+- Use proper syntax highlighting
+- Add comments explaining key parts
+- Reference related concepts
+- Provide configuration templates
+
+## Testing & Quality
+
+When suggesting code for skills or agents:
+- Ensure examples are production-ready
+- Include error handling
+- Show security best practices
+- Provide clear explanations
+- Reference documentation links
+
+## Cross-References
+
+When suggesting links between content:
+- Use relative paths: `docs/guides/SKILLS_INDEX.md`
+- Reference agent files: `agents/java-developer/AGENT.md`
+- Reference skills: Use backticks for skill names
+- Use section anchors for deep linking
+
+## Skill Integration Patterns
+
+Common skill combinations:
+- Code review + testing strategy + performance tuning
+- Project planning + risk assessment + status reporting
+- Architecture review + system design + scalability analysis
+- CI/CD setup + Docker setup + Kubernetes setup
+- GitHub Actions + Git workflows + pre-commit hooks
+
+## Platform & Technology Coverage
+
+### Backend
+- Java 17+, Spring Boot 3.x, Spring Cloud
+- Python 3.10+, FastAPI, async/await
+- Quarkus, GraalVM native
+- Microservices, distributed systems
+
+### Frontend
+- React 18+, Next.js 15+
+- TypeScript, component patterns
+- Custom hooks, state management
+- Testing (Jest, RTL), Storybook
+
+### Infrastructure
+- GitHub Actions, Git workflows
+- Docker, Kubernetes, Helm
+- Terraform, Infrastructure as Code
+- Monitoring (Prometheus, Grafana)
+- CI/CD (GitHub Actions, GitLab CI, Jenkins)
+
+### Platforms
+- GitHub (primary)
+- GitLab CI (mentioned)
+- Jenkins (mentioned)
+- AWS, Azure, GCP
+
+### Testing
+- JUnit 5, Mockito, TestContainers (Java)
+- pytest, unittest (Python)
+- Jest, React Testing Library (JS)
+- Cypress, Playwright, Selenium (E2E)
+
+## Key Principles
+
+1. **Comprehensive**: Cover all major aspects of each topic
+2. **Practical**: Include real-world examples and configurations
+3. **Current**: Use modern versions and best practices
+4. **Clear**: Organize with consistent structure
+5. **Interconnected**: Link related skills and agents
+6. **Actionable**: Provide steps users can implement immediately
+
+## Maintenance Notes
+
+- Update agent/skill files when adding new capabilities
+- Keep AGENTS.md in sync with actual agents
+- Update AGENTS_GUIDE.md when adding workflows
+- Maintain skills in categories (same directory patterns)
+- Keep examples current with latest versions
+
+## For Copilot Suggestions
+
+When suggesting content additions:
+1. Check existing files in agents/ and skills/ directories
+2. Maintain consistent formatting and structure
+3. Include cross-references to related skills/agents
+4. Follow YAML frontmatter pattern for skills
+5. Use markdown sections consistently
+6. Include practical examples with code
+7. Reference the appropriate agent for the skill
+
+---
+
+**AI Agents System Version:** 3.0 (10 agents, 95 skills)
+**Last Updated:** 2026-02-02

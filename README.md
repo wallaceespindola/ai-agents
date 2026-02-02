@@ -26,7 +26,7 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 
 ## What's Included
 
-### 8 Specialized Agents
+### 10 Specialized Agents
 
 #### **Technical Writer Agent** (Original)
 - Expertise: Content creation, documentation, multi-platform publishing
@@ -34,11 +34,11 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 
 #### **Java Developer Agent**
 - Expertise: Java 17+, Spring Boot, microservices
-- Skills: Code review, testing strategy, performance tuning, security audit, project setup, documentation
+- Skills: Code review, testing strategy, performance tuning, security audit, project setup, Spring Cloud, advanced security, documentation (12 skills total)
 
 #### **Python Developer Agent**
 - Expertise: Python 3.10+, FastAPI, async programming
-- Skills: Code review, testing strategy, performance tuning, type checking, project setup, documentation
+- Skills: Code review, testing strategy, performance tuning, type checking, project setup, documentation (6 skills)
 
 #### **JavaScript/Frontend Developer Agent**
 - Expertise: React 18+, Next.js 15+, TypeScript, modern web applications
@@ -46,19 +46,27 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 
 #### **Software Architect Agent**
 - Expertise: System design, scalability, microservices architecture
-- Skills: Architecture review, system design documentation, scalability analysis, design patterns, API design, database design, architecture diagrams
+- Skills: Architecture review, system design documentation, scalability analysis, design patterns, API design, database design, architecture diagrams (7 skills)
 
 #### **QA/Software Tester Agent**
 - Expertise: Test automation, quality assurance, continuous testing
-- Skills: Test strategy, test automation setup, test case generation, API testing, E2E testing, performance testing, bug reporting
+- Skills: Test strategy, test automation setup, test case generation, API testing, E2E testing, performance testing, bug reporting (7 skills)
 
 #### **DevOps Engineer Agent**
 - Expertise: CI/CD, containerization, infrastructure-as-code, cloud operations
-- Skills: CI/CD pipeline setup, Docker configuration, Kubernetes setup, IaC templates, monitoring setup, security scanning, deployment strategies
+- Skills: CI/CD pipeline setup, Docker configuration, Kubernetes setup, IaC templates, monitoring setup, security scanning, deployment strategies (7 skills)
+
+#### **Git/GitHub Automation Engineer Agent**
+- Expertise: GitHub Actions, Git workflows, build automation, YAML configuration
+- Skills: GitHub Actions workflows, Git workflow strategies, PR management, CLI automation, security scanning, commit strategies, YAML validation, Kubernetes manifests, Helm charts, Docker Compose, build optimization, SSH management, secrets management, pre-commit hooks (14 skills)
+
+#### **Spring/Quarkus & Build Systems Engineer Agent**
+- Expertise: Spring Cloud enterprise, Quarkus cloud-native, build optimization
+- Skills: Spring Cloud microservices, OAuth2/JWT security, distributed config, reactive patterns, Quarkus framework, GraalVM native compilation, Quarkus extensions, Maven/Gradle optimization, build caching (10 skills)
 
 #### **Project Manager Agent**
 - Expertise: Agile methodologies, planning, risk management, stakeholder communication
-- Skills: Project planning, sprint planning, risk assessment, status reporting, retrospectives, roadmap planning
+- Skills: Project planning, sprint planning, risk assessment, status reporting, retrospectives, roadmap planning (6 skills)
 
 ### 95 Specialized Skills
 
@@ -150,11 +158,13 @@ LINKEDIN_URL=https://linkedin.com/in/you
 - **[Platform Styles](docs/PLATFORM_STYLES.md)** - Platform-specific guides
 
 **Reference**:
+- **[AGENTS.md](AGENTS.md)** - Quick reference for all 10 agents and 95 skills
+- **[AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)** - Comprehensive agent guide with workflows
 - **[Complete System Overview](docs/guides/COMPLETE_SYSTEM.md)** - Full details
 - **[System Architecture](docs/guides/SYSTEM_MAP.md)** - Relationships & flows
-- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 22 skills described
-- **[Agent Profile](agents/technical-writer/AGENT.md)** - Agent details
+- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 95 skills described
 - **[Slides Creator Guide](docs/SLIDES_CREATOR_GUIDE.md)** - Convert articles to presentations
+- **[.copilot-instructions](.copilot-instructions)** - GitHub Copilot context for the system
 
 ---
 
@@ -275,18 +285,23 @@ All automatically linked in your generated content:
 │   ├── software-architect/AGENT.md        ← System design & architecture
 │   ├── qa-tester/AGENT.md                 ← Test automation & QA
 │   ├── devops-engineer/AGENT.md           ← CI/CD & infrastructure
+│   ├── git-automation-engineer/AGENT.md   ← GitHub Actions & Git automation
+│   ├── spring-quarkus-engineer/AGENT.md   ← Spring Cloud & Quarkus development
 │   └── project-manager/AGENT.md           ← Agile planning & management
 │
 ├── skills/
 │   ├── java-*/                            ← 6 Java development skills
 │   ├── python-*/                          ← 6 Python development skills
 │   ├── javascript-*/                      ← 6 JavaScript development skills
+│   ├── react-*/                           ← 4 React component skills
 │   ├── architecture-*/                    ← 7 Architecture & design skills
 │   ├── test-*/                            ← 7 QA & testing skills
-│   ├── cicd-*/                            ← 7 DevOps & infrastructure skills
+│   ├── cicd-*, docker-*, kubernetes-*     ← 7 DevOps & infrastructure skills
+│   ├── github-*, git-*, yaml-*, build-*   ← 14 Git/GitHub automation skills
+│   ├── spring-*, quarkus-*, maven-*       ← 10 Spring/Quarkus & build skills
 │   ├── project-*/                         ← 6 Project management skills
 │   ├── ...                                ← 22 Technical writing skills
-│   └── */SKILL.md                         ← 67 total skills
+│   └── */SKILL.md                         ← 95 total skills
 │
 └── docs/
     ├── GETTING_STARTED.md                 ← START HERE
@@ -300,7 +315,7 @@ All automatically linked in your generated content:
     └── guides/
         ├── COMPLETE_SYSTEM.md             ← Full system details
         ├── SYSTEM_MAP.md                  ← Architecture
-        └── SKILLS_INDEX.md                ← All 67 skills reference
+        └── SKILLS_INDEX.md                ← All 95 skills reference
 ```
 
 ---
@@ -308,10 +323,12 @@ All automatically linked in your generated content:
 ## Getting Help
 
 1. **New to the system?** → [Getting Started Guide](docs/GETTING_STARTED.md)
-2. **Need to configure?** → [Configuration Guide](docs/CONFIGURATION.md)
-3. **Want to write better?** → [Humanization Guide](docs/HUMANIZATION_GUIDE.md)
-4. **Need skill details?** → [Skills Index](docs/guides/SKILLS_INDEX.md)
-5. **Curious about architecture?** → [System Architecture](docs/guides/SYSTEM_MAP.md)
+2. **Which agent to use?** → [Quick Agent Selector](AGENTS.md#-quick-agent-selector)
+3. **Need to configure?** → [Configuration Guide](docs/CONFIGURATION.md)
+4. **Want to write better?** → [Humanization Guide](docs/HUMANIZATION_GUIDE.md)
+5. **Need agent/skill details?** → [AGENTS.md](AGENTS.md) or [AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)
+6. **Need skill details?** → [Skills Index](docs/guides/SKILLS_INDEX.md)
+7. **Curious about architecture?** → [System Architecture](docs/guides/SYSTEM_MAP.md)
 
 ---
 
@@ -334,12 +351,13 @@ All automatically linked in your generated content:
 ## Next Steps
 
 1. Read **[Getting Started Guide](docs/GETTING_STARTED.md)**
-2. Review **[Agents Guide](docs/AGENTS_GUIDE.md)** to understand available agents
-3. Check **[Skills Index](docs/guides/SKILLS_INDEX.md)** for detailed skill descriptions
-4. Create `.env` file: `cp .env.example .env`
-5. Choose an agent based on your task
-6. Use the appropriate skill with that agent
-7. Explore agent collaboration workflows
+2. View **[AGENTS.md](AGENTS.md)** for quick agent selector and skill reference
+3. Review **[AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)** to understand available agents and workflows
+4. Check **[Skills Index](docs/guides/SKILLS_INDEX.md)** for detailed skill descriptions
+5. Create `.env` file: `cp .env.example .env`
+6. Choose an agent based on your task
+7. Use the appropriate skill with that agent
+8. Explore agent collaboration workflows
 
 **Welcome to your AI-powered software engineering system!** 🚀
 
