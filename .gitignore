@@ -1,4 +1,40 @@
+# ============================================
+# SECURITY: Never commit these files
+# ============================================
+
+# Personal configuration (contains sensitive data)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# API keys and tokens
+*.apikey
+*.token
+.anthropic/
+
+# ============================================
+# Claude Code Configuration
+# ============================================
+.claude/
+.cursorignore
+.cursorindexingignore
+
+# ============================================
+# IDE & Editor
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# ============================================
 # Python
+# ============================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -6,7 +42,6 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -21,29 +56,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
-# Node.js / JavaScript
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-dist/
-.next/
-
-# Virtual environments
-.venv/
-venv/
-env/
-ENV/
-env.bak/
-venv.bak/
-.env
-.env.local
-.env.*.local
-
-# Testing & Coverage
 .pytest_cache/
 .tox/
 .nox/
@@ -55,36 +67,55 @@ htmlcov/
 .dmypy.json
 dmypy.json
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-.cursor*
-.cursorignore
-.cursorindexingignore
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# Agent & API specific
-.anthropic/
-*.apikey
-*.token
-agent-logs/
-conversation-history/
-agent-cache/
+# ============================================
+# Node.js / JavaScript
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.next/
 
-# Logs & Output
-*.log
-logs/
-output/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Build & Package managers
+# ============================================
+# Generated & Build Files
+# ============================================
 dist/
 build/
 *.tar.gz
 *.zip
+target/
+out/
+
+# ============================================
+# Agent & Project Specific
+# ============================================
+agent-logs/
+conversation-history/
+agent-cache/
+
+# ============================================
+# Logs & Output
+# ============================================
+*.log
+logs/
+output/
+
+# ============================================
+# Operating System
+# ============================================
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+.TemporaryItems
+ehthumbs.db
