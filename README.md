@@ -1,7 +1,6 @@
 # AI Agents & Skills for Software Engineering
 
-A comprehensive system of specialized AI agents for software engineering, technical content creation, and project
-management.
+A comprehensive system of specialized AI agents for software engineering, system architecture, infrastructure automation, and project management.
 
 **10 Agents + 95 Skills = Complete software engineering ecosystem**
 
@@ -10,15 +9,19 @@ With comprehensive React/Next.js support, GitHub automation, Spring Cloud micros
 ## ⚡ Quick Start (2 Minutes)
 
 ```bash
-# 1. Set up your personal configuration
+# 1. Set up your configuration
 cp .env.example .env
-nano .env  # Fill in your details
+nano .env  # Add your Anthropic API key
 
-# 2. Copy article template
-cp docs/ARTICLE_TEMPLATE.md my-article.md
+# 2. Choose an agent and skill based on your task
+# Examples:
+#   - Java Developer + spring-boot-setup → Generate Spring Boot microservice
+#   - Python Developer + fastapi-setup → Generate FastAPI backend
+#   - Architect + architecture-review → Design system architecture
+#   - DevOps + github-actions-workflow → Set up CI/CD pipeline
 
-# 3. Use a skill to generate/optimize content
-# All skills read from your .env automatically
+# 3. Request what you need from the agent
+# The agent uses skills to complete your task
 ```
 
 **→ [Full Getting Started Guide](docs/GETTING_STARTED.md)**
@@ -29,10 +32,10 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 
 ### 10 Specialized Agents
 
-#### **Technical Writer Agent** (Original)
+#### **Technical Writer Agent**
 
-- Expertise: Content creation, documentation, multi-platform publishing
-- Skills: 22 skills for writing, formatting, and code generation
+- Expertise: Technical documentation, code documentation, multi-platform content publishing
+- Skills: 22 skills for documentation generation, code examples, platform-specific formatting
 
 #### **Java Developer Agent**
 
@@ -183,131 +186,152 @@ LINKEDIN_URL=https://linkedin.com/in/you
 **Start Here**:
 
 - **[Getting Started Guide](docs/GETTING_STARTED.md)** ← Begin here
-- **[Configuration Guide](docs/CONFIGURATION.md)** - Set up `.env`
-- **[Humanization Standards](docs/HUMANIZATION_GUIDE.md)** - Writing style
+- **[Configuration Guide](docs/CONFIGURATION.md)** - Set up `.env` with API keys
+- **[Quick Agent Selector](AGENTS.md)** - Find the right agent for your task
 
-**How-To Guides**:
+**Comprehensive Guides**:
 
-- **[Article Template](docs/ARTICLE_TEMPLATE.md)** - Copy for new articles
-- **[Article Sign-Offs](docs/ARTICLE_SIGNOFF.md)** - Sign-off variations
-- **[Platform Styles](docs/PLATFORM_STYLES.md)** - Platform-specific guides
+- **[AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)** - Complete agent guide with collaboration patterns
+- **[System Architecture](docs/guides/SYSTEM_MAP.md)** - Agent relationships and data flows
+- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 95 skills described with examples
 
 **Reference**:
 
 - **[AGENTS.md](AGENTS.md)** - Quick reference for all 10 agents and 95 skills
-- **[AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)** - Comprehensive agent guide with workflows
-- **[Complete System Overview](docs/guides/COMPLETE_SYSTEM.md)** - Full details
-- **[System Architecture](docs/guides/SYSTEM_MAP.md)** - Relationships & flows
-- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 95 skills described
-- **[Slides Creator Guide](docs/SLIDES_CREATOR_GUIDE.md)** - Convert articles to presentations
+- **[Project Specifications](docs/guides/PROJECT_SPECIFICATIONS.md)** - Java and Python templates
+- **[Complete System Overview](docs/guides/COMPLETE_SYSTEM.md)** - Full system documentation
 - **[.copilot-instructions](.copilot-instructions)** - GitHub Copilot context for the system
 
 ---
 
 ## 🚀 Common Workflows
 
-### Workflow 1: Write & Publish Article
+### Workflow 1: Build a Java Microservice
 
 ```
-1. Write article in docs/ARTICLE_TEMPLATE.md
-2. Use platform skill to optimize (medium-optimizer, devto-formatter, etc.)
-3. Publish to platform
-4. Your article automatically includes:
-   - Your name, email, bio
-   - Links to GitHub, LinkedIn, Speaker Deck
-   - Custom sign-off: "Need more tech insights? Happy coding!"
-```
-
-### Workflow 2: Generate Code Project
-
-```
-1. Write article explaining concept
-2. Request: "Generate Java code for my article [title]"
+1. Use Java Developer Agent with spring-boot-setup skill
+2. Request: "Generate Spring Boot microservice with [requirements]"
 3. Get complete Maven project with:
-   - Source code in src/main/java/
-   - Tests in src/test/java/
-   - README linking to article
-   - pom.xml with dependencies
-4. Readers can clone and run immediately
+   - Spring Boot 3.x with Actuator (health, metrics, info endpoints)
+   - Spring Data JPA + H2 (dev) / PostgreSQL (prod)
+   - Kafka integration for async events
+   - Swagger UI + OpenAPI documentation
+   - >80% unit test coverage with JUnit 5 & Mockito
+   - GitHub Actions CI/CD workflows
+   - Docker multi-stage build + docker-compose.yml
+   - Comprehensive README with setup instructions
+4. Production-ready structure following Spring Boot best practices
 ```
 
-### Workflow 3: Multi-Platform Publishing
+### Workflow 2: Set Up a Python FastAPI Project
 
 ```
-1. Write master article with sr-tech-blog
-2. Export as Markdown
-3. Adapt for each platform:
-   - LinkedIn (1000 words, professional)
-   - Medium (3000 words, deep)
-   - Dev.to (2000 words, practical)
-   - Etc.
+1. Use Python Developer Agent with fastapi-setup skill
+2. Request: "Generate FastAPI project with [requirements]"
+3. Get complete project with:
+   - FastAPI with async SQLAlchemy 2.x + aiokafka
+   - Health, metrics (Prometheus), and info endpoints
+   - Pydantic v2 models with validation
+   - Structured JSON logging with request tracing
+   - >80% test coverage with pytest & pytest-asyncio
+   - GitHub Actions with Black, Ruff, mypy, pytest
+   - Docker multi-stage build + docker-compose.yml
+   - Comprehensive README with API documentation
+4. Ready for async, high-performance backends
+```
+
+### Workflow 3: Design System Architecture
+
+```
+1. Use Software Architect Agent with architecture-review skill
+2. Request: "Review and improve architecture for [system description]"
+3. Get:
+   - Architecture analysis and design recommendations
+   - Scalability analysis with capacity planning
+   - Design patterns recommendations (e.g., SAGA, CQRS, Event Sourcing)
+   - API design review (REST, GraphQL, gRPC)
+   - Database schema design with optimization tips
+   - C4/UML architecture diagrams with Mermaid/PlantUML
+   - Deployment strategy recommendations
+4. Collaborate with DevOps Engineer for infrastructure implementation
+```
+
+### Workflow 4: Set Up CI/CD & Infrastructure
+
+```
+1. Use DevOps Engineer Agent + Git/GitHub Automation Agent
+2. Request: "Set up CI/CD pipeline for [project type]"
+3. Get:
+   - GitHub Actions workflows (build, test, lint, security scanning)
+   - Docker & Docker Compose configurations
+   - Kubernetes manifests & Helm charts (if needed)
+   - Infrastructure-as-Code templates (Terraform, CloudFormation)
+   - Security scanning (CodeQL, OWASP Dependency-Check)
+   - Monitoring setup (Prometheus, Grafana)
+4. Fully automated pipeline from commit to production
+```
+
+### Workflow 5: Full-Stack Feature Development
+
+```
+1. Project Manager Agent: Plan feature + user stories
+2. Architect Agent: Design system changes
+3. Java/Python/JavaScript Developers: Implement features
+4. QA/Tester Agent: Design test strategy & automate tests
+5. DevOps Engineer: Deploy to staging/production
+6. Technical Writer Agent: Document feature (if user-facing)
+7. All agents iterate based on feedback
 ```
 
 ---
 
 ## ✨ Key Features
 
-**🎯 Humanization Standards**
+**🎯 10 Specialized Agents**
 
-- Conversational tone (write like talking to a friend)
-- 8th-10th grade reading level
-- No AI-written phrases ("in today's digital landscape")
-- No Oxford commas
-- Natural contractions and first/second person
+- Each agent is a Claude-powered expert in their domain
+- Agents collaborate seamlessly for complex workflows
+- Consistent coding standards and best practices
+- Full stack coverage from architecture to deployment
 
 **🔐 Secure & Private**
 
-- Personal data in `.env` (local, never committed)
+- API keys in `.env` (local, never committed)
 - `.env.example` safe to share (template only)
-- All URLs pre-filled from your discovered profiles
+- All configuration environment-based
 - Team-friendly (each person has own `.env`)
 
-**📝 Professional Branding**
+**📦 95 Integrated Skills**
 
-- Consistent sign-off on all articles
-- Links to GitHub, LinkedIn, Speaker Deck automatically
-- Drives traffic to your profiles
-- One source of truth for links
+- Each skill is a focused, reusable capability
+- Skills work independently or in combination
+- Clear documentation for each skill
+- Covering all aspects of software engineering
 
-**💻 Code Generation**
+**💻 Production-Ready Code**
 
 - Generate complete, runnable projects
-- Articles link to code, code links back to article
-- Full test coverage included
-- Production-ready structure
+- >80% test coverage included
+- GitHub Actions CI/CD workflows
+- Docker containerization + orchestration
+- Following industry best practices
 
-**🎨 Visual Content**
+**🎨 Architecture & Documentation**
 
-- Image specs: 1024x768px, max 3MB, abstract futuristic
-- Mermaid diagrams (simple, Git-friendly)
-- PlantUML diagrams (complex, professional)
-- All tools and workflows documented
+- System design and architecture diagrams (Mermaid, PlantUML)
+- OpenAPI/Swagger for all APIs
+- Comprehensive README and documentation
+- Database schema design and optimization
+- Clear code comments and JavaDoc
 
-**🌍 Multi-Platform**
+**🚀 Multi-Language Support**
 
-- 8 publishing platforms supported
-- Write once, adapt for multiple platforms
-- Platform-specific optimizations
-- Same branding across all platforms
+- Java 21+ with Spring Boot & Spring Cloud
+- Python 3.12+ with FastAPI & async patterns
+- JavaScript/TypeScript with React & Next.js
+- Unified project structure across languages
 
 ---
-
-## Your Profiles (Pre-Configured)
-
-All automatically linked in your generated content:
-
-- **Dev.to**: https://dev.to/wallaceespindola
-- **GitHub**: https://github.com/wallaceespindola
-- **LinkedIn**: https://www.linkedin.com/in/wallaceespindola/
-- **Speaker Deck**: https://speakerdeck.com/wallacese
-- **Sessionize**: https://sessionize.com/wallace-espindola/
-- **Medium**: https://medium.com/@wallaceespindola
-- **DZone**: https://dzone.com/users/1254611/wallacese.html
-- **Substack**: https://wallaceespindola.substack.com
-- **Twitter/X**: https://x.com/wsespindola
-- **Linktree**: https://linktr.ee/wallace.espindola
-- **Solo.to**: https://solo.to/wallace.espindola
-- **Gravatar**: https://gravatar.com/wallacese
 
 ---
 
@@ -351,16 +375,13 @@ All automatically linked in your generated content:
 └── docs/
     ├── GETTING_STARTED.md                 ← START HERE
     ├── CONFIGURATION.md                   ← Setup guide
-    ├── AGENTS_GUIDE.md                    ← Complete agent guide (NEW)
-    ├── HUMANIZATION_GUIDE.md              ← Writing standards
-    ├── ARTICLE_TEMPLATE.md                ← Article template
-    ├── ARTICLE_SIGNOFF.md                 ← Sign-off variations
-    ├── PLATFORM_STYLES.md                 ← Platform guides
+    ├── AGENTS_GUIDE.md                    ← Complete agent guide with workflows
     │
     └── guides/
-        ├── COMPLETE_SYSTEM.md             ← Full system details
-        ├── SYSTEM_MAP.md                  ← Architecture
-        └── SKILLS_INDEX.md                ← All 95 skills reference
+        ├── COMPLETE_SYSTEM.md             ← Full system documentation
+        ├── SYSTEM_MAP.md                  ← Architecture & relationships
+        ├── SKILLS_INDEX.md                ← All 95 skills reference
+        └── PROJECT_SPECIFICATIONS.md      ← Java & Python project templates
 ```
 
 ---
@@ -368,12 +389,12 @@ All automatically linked in your generated content:
 ## Getting Help
 
 1. **New to the system?** → [Getting Started Guide](docs/GETTING_STARTED.md)
-2. **Which agent to use?** → [Quick Agent Selector](AGENTS.md#-quick-agent-selector)
-3. **Need to configure?** → [Configuration Guide](docs/CONFIGURATION.md)
-4. **Want to write better?** → [Humanization Guide](docs/HUMANIZATION_GUIDE.md)
-5. **Need agent/skill details?** → [AGENTS.md](AGENTS.md) or [AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)
-6. **Need skill details?** → [Skills Index](docs/guides/SKILLS_INDEX.md)
-7. **Curious about architecture?** → [System Architecture](docs/guides/SYSTEM_MAP.md)
+2. **Which agent for my task?** → [Quick Agent Selector](AGENTS.md#-quick-agent-selector)
+3. **Need to configure API keys?** → [Configuration Guide](docs/CONFIGURATION.md)
+4. **Need agent details?** → [AGENTS.md](AGENTS.md) or [AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)
+5. **Looking for a specific skill?** → [Skills Index](docs/guides/SKILLS_INDEX.md)
+6. **Curious about system architecture?** → [System Architecture](docs/guides/SYSTEM_MAP.md)
+7. **Need project templates?** → [Project Specifications](docs/guides/PROJECT_SPECIFICATIONS.md)
 
 ---
 
@@ -408,11 +429,12 @@ All automatically linked in your generated content:
 1. Read **[Getting Started Guide](docs/GETTING_STARTED.md)**
 2. View **[AGENTS.md](AGENTS.md)** for quick agent selector and skill reference
 3. Review **[AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)** to understand available agents and workflows
-4. Check **[Skills Index](docs/guides/SKILLS_INDEX.md)** for detailed skill descriptions
-5. Create `.env` file: `cp .env.example .env`
-6. Choose an agent based on your task
-7. Use the appropriate skill with that agent
-8. Explore agent collaboration workflows
+4. Create `.env` file: `cp .env.example .env` and configure your Anthropic API key
+5. Review **[Skills Index](docs/guides/SKILLS_INDEX.md)** for detailed skill descriptions
+6. Choose an agent based on your software engineering task
+7. Use the appropriate skill with that agent (e.g., `spring-boot-setup` with Java Developer Agent)
+8. Explore agent collaboration workflows for complex multi-team projects
+9. Check **[Project Specifications](docs/guides/PROJECT_SPECIFICATIONS.md)** for Java and Python templates
 
 **Welcome to your AI-powered software engineering system!** 🚀
 
