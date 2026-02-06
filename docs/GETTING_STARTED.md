@@ -239,6 +239,7 @@ Each has expertise skills with best practices and patterns.
 - No Oxford commas
 - Natural contractions
 - Real examples and analogies
+- No over-use of emojis
 
 See `docs/HUMANIZATION_GUIDE.md` for details.
 

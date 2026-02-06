@@ -675,16 +675,187 @@ plantuml -tsvg diagram.puml
 - [ ] Tested in target platform
 - [ ] Accessible (not image-only)
 
-## Common PlantUML Mistakes
+## Best Practices for Beautiful, Readable PlantUML Diagrams
 
-❌ **Too much detail**: Focus on key relationships
-❌ **Unclear relationships**: Make connections explicit
-❌ **Poor naming**: Use clear, descriptive names
-❌ **Inconsistent styling**: Apply consistent theme
-❌ **Circular dependencies**: Usually indicates design issues
-❌ **Not adapted to audience**: Match detail level to reader
-❌ **Missing legend**: Explain notation if non-standard
-❌ **Bad layout**: Let PlantUML auto-layout, adjust if needed
+### Readability Rules (Always Follow)
+
+✅ **Do:**
+- Keep diagrams focused on ONE architectural or design concern
+- Use clear, descriptive names (avoid single letters except for very standard notation)
+- Apply consistent color scheme and styling throughout
+- Test in your target platform and export format
+- Use meaningful comments to explain complex relationships
+- Provide legends for all custom styling or notation
+- Use proper packages/grouping to organize related components
+- Ensure text is readable (min 10pt font, good contrast)
+- Break complex diagrams into multiple simpler diagrams
+- Use spacing to reduce visual clutter
+- Color-code by logical layer or responsibility
+
+❌ **Avoid:**
+- Too many classes/components (max 20-25 elements per diagram)
+- Single-letter or cryptic names (MyClass vs M)
+- Inconsistent styling or theme application
+- Circular dependencies without clear purpose
+- Mixing abstraction levels (don't mix high-level architecture with implementation details)
+- Forgetting legend (always explain custom styling)
+- Deep package nesting (max 2-3 levels)
+- Using colors alone for meaning (add icons/labels)
+- Poor contrast or tiny fonts
+- Cramped layout with overlapping elements
+
+### Legend Implementation (Required)
+
+**Always include a legend that documents:**
+- What each color represents (by layer, type, or responsibility)
+- What each visual style represents (line styles, stereotypes)
+- Any special notation not immediately obvious
+- Component type meanings (interface, abstract, concrete, etc.)
+
+**Legend format in markdown (accompanying diagram):**
+```markdown
+## Architecture Legend
+
+| Element | Meaning |
+|---------|---------|
+| **Green** | User-facing components |
+| **Blue** | Business logic / services |
+| **Purple** | Data access layer |
+| **Orange** | External integrations |
+| **Dashed line** | Async communication |
+| **Solid line** | Direct dependency |
+```
+
+**In-diagram legend (using notes):**
+```plantuml
+@startuml DiagramWithLegend
+
+note top
+  **Legend**
+  - Green: Frontend
+  - Blue: Backend
+  - Purple: Database
+  - Dashed: Optional
+end note
+
+@enduml
+```
+
+### Visual Design Rules
+
+**Color scheme options (choose ONE and apply consistently):**
+
+1. **Professional Layered** - Best for enterprise architecture
+   ```
+   Frontend/UI:     #E8F4F8 (light blue)
+   Business Logic:  #D4E8F0 (medium blue)
+   Data Layer:      #C0D8E8 (darker blue)
+   External:        #F0E8D8 (gold)
+   ```
+
+2. **Semantic Colors** - Best for component diagrams
+   ```
+   Interface:       #90EE90 (green)
+   Service:         #87CEEB (sky blue)
+   Repository:      #DDA0DD (plum)
+   Utility:         #F0E68C (khaki)
+   External:        #FFB6C1 (light pink)
+   ```
+
+3. **Modern Gradient** - Best for sequence diagrams
+   ```
+   Actor:           #4C6EF5 (primary)
+   System:          #5C7CFA (accent)
+   Database:        #748FFC (lighter)
+   External:        #F06595 (secondary)
+   ```
+
+**PlantUML styling template:**
+```plantuml
+@startuml ArchitectureExample
+
+skinparam backgroundColor #f5f5f5
+skinparam note {
+    backgroundColor #fff9c4
+    borderColor #fbc02d
+    textAlignment center
+}
+
+skinparam package {
+    backgroundColor #e8f4f8
+    borderColor #01579b
+    fontColor #000
+}
+
+skinparam class {
+    backgroundColor #d4e8f0
+    borderColor #0277bd
+    fontColor #000
+}
+
+package "Frontend" {
+    [Web UI] as web
+    [Mobile App] as mobile
+}
+
+package "Backend" {
+    [API Server] as api
+    [Auth Service] as auth
+}
+
+package "Data" {
+    [Database] as db
+}
+
+web --> api
+mobile --> api
+api --> auth
+api --> db
+
+@enduml
+```
+
+### Naming Conventions
+
+✅ **Good names:**
+- `UserAuthenticationService` (clear, specific)
+- `OrderRepository` (role is evident)
+- `PaymentGatewayAdapter` (type and purpose clear)
+- `ProductCatalogAPI` (specific service)
+
+❌ **Poor names:**
+- `Service1`, `Service2` (meaningless)
+- `X`, `Y`, `Z` (avoid single letters)
+- `Helper`, `Manager`, `Processor` (too vague)
+- `DomainModel` (which domain?)
+
+### Element Count Guidelines
+
+- **Class diagram**: Max 20-25 classes
+- **Component diagram**: Max 15-20 components
+- **Sequence diagram**: Max 8-10 participants
+- **Use case diagram**: Max 12-15 use cases
+- **Deployment diagram**: Max 10-12 nodes
+
+**If exceeding limits:** Split into multiple focused diagrams
+
+### Diagram Verification Checklist
+
+Before publishing any PlantUML diagram:
+- [ ] Clear, specific names for all elements (no single letters)
+- [ ] Consistent styling and color scheme applied
+- [ ] Legend provided documenting all custom styling
+- [ ] Appropriate diagram type for content (not forcing wrong type)
+- [ ] Max element count not exceeded (or split into multiple diagrams)
+- [ ] Relationships clearly labeled and meaningful
+- [ ] Proper cardinality/multiplicity shown (for applicable diagrams)
+- [ ] No circular dependencies (unless intentional and documented)
+- [ ] Text readable (good contrast, min 10pt)
+- [ ] Whitespace adequate (not cramped or cluttered)
+- [ ] Matches article narrative and explanation
+- [ ] Tested in PlantUML Live Editor
+- [ ] Exported as high-quality SVG or PNG
+- [ ] Accessible without relying on color alone
 
 ---
 

@@ -15,6 +15,51 @@ Use this skill when:
 - Setting up publications and series
 - Creating beginner-friendly technical content
 
+### Multi-Platform Strategy
+
+When publishing same technical concept to multiple platforms (Dev.to, Medium, DZone, InfoQ, LinkedIn, etc.):
+- ✅ Use IDENTICAL code snippets linked to same GitHub repo (critical for consistency)
+- ✅ Create UNIQUE title optimized for Dev.to (different from other platforms)
+- ✅ Write UNIQUE content focusing on practical quick wins (different from other versions)
+- ✅ Match Dev.to's friendly, beginner-accessible tone
+- ✅ Shorter length than Medium/DZone (Dev.to prefers 1000-3000 words)
+- ✅ Different hook emphasizing quick wins and practical value
+- ✅ Different call-to-action (Dev.to community-focused engagement)
+
+**Example:**
+```
+GitHub Repo: error-handling-typescript (single source of truth)
+
+Dev.to version:
+  Title: "TypeScript Error Handling: Simple Patterns That Actually Work"
+  Tone: Friendly, practical, beginner-accessible
+  Hook: "Error handling tripped me up when learning TypeScript. Here's what I figured out..."
+  Focus: Quick wins, practical patterns, beginner tips
+  Length: 1500-2500 words (shorter, scannable)
+  Code: 3-4 practical examples from same GitHub repo
+  CTA: "What error patterns do you use? Share in the comments!"
+
+Medium version:
+  Title: "I Spent a Month Perfecting TypeScript Error Handling—Here's What I Learned"
+  Tone: Personal, conversational, detailed
+  Hook: "When I started writing TypeScript in production..."
+  Focus: Journey, detailed insights, comprehensive patterns
+  Length: 3000-4500 words (longer, narrative)
+  Code: Same examples from same GitHub repo
+  CTA: "Help me improve this—what patterns do you use? Clap if this helped!"
+
+DZone version:
+  Title: "Error Handling in TypeScript: Patterns for Production Systems"
+  Tone: Technical, professional, best-practices focused
+  Hook: "Production TypeScript systems demand robust error handling..."
+  Focus: Production concerns, patterns, architecture
+  Length: 2000-3500 words
+  Code: Same examples from same GitHub repo
+  CTA: "Share your error handling strategies"
+
+Result: All versions link to IDENTICAL code in same repo
+```
+
 ## Dev.to Article Specifications
 
 ### Length & Structure
@@ -236,7 +281,7 @@ published: true
 - ❌ Use profanity excessively
 - ❌ Share credentials or secrets
 - ❌ Engage in harassment
-- ❌ AI-generated content (disallowed)
+- ❌ AI-generated content over-use
 
 ### Publishing Strategy
 

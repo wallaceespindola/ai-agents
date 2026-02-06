@@ -17,6 +17,23 @@ Use this skill when:
 - Submitting to InfoQ (editorial review platform)
 - Building credibility with enterprise decision-makers
 
+### Multi-Platform Strategy
+
+When publishing same technical concept to multiple platforms (InfoQ, DZone, Medium, etc.):
+- ✅ Use IDENTICAL code snippets linked to same GitHub repo
+- ✅ Create UNIQUE title optimized for InfoQ (different from other platforms)
+- ✅ Write UNIQUE content/narrative tailored to InfoQ's audience
+- ✅ Match InfoQ's editorial style (research-driven, neutral tone)
+- ✅ Different length/depth from other platform versions
+- ✅ Different hook and call-to-action from other versions
+
+**Example:**
+- GitHub Repo: `microservices-patterns-java`
+- InfoQ version title: "Event-Driven Microservices: Trade-offs and Real-World Implementation"
+- DZone version title: "Building Event-Driven Systems: Practical Patterns for Production"
+- Medium version title: "I Implemented Event-Driven Microservices—Here's What I Learned"
+- All versions: IDENTICAL code from same GitHub repo
+
 ## InfoQ Platform Overview
 
 **InfoQ** is a curated publication platform for software architects and senior engineers. Unlike Medium or Dev.to, InfoQ has:
@@ -56,6 +73,138 @@ Use this skill when:
 - ❌ Avoid: Personal anecdotes or "I learned"
 - ❌ Avoid: Hype or marketing language
 - ❌ Avoid: "Everyone should do X"
+
+## Diagram Requirements for InfoQ Articles
+
+### Mermaid/PlantUML Diagrams (Always Include When Possible)
+
+**RULE: Include Mermaid or PlantUML diagrams whenever conceptually relevant:**
+
+✅ **ALWAYS create diagrams for:**
+- Architecture or system design explanations
+- Process flows or decision trees
+- Data structures or relationships
+- API interactions or request/response cycles
+- State machines or workflow diagrams
+- Sequence of events or timeline
+- Comparison between approaches or patterns
+- Component relationships or dependencies
+
+✅ **Diagram types best for InfoQ articles:**
+- Flowchart (process flows, decision trees)
+- Sequence diagram (API/interaction flows)
+- Architecture diagram (system design)
+- State diagram (workflow/FSM)
+- ER diagram (data models)
+- C4 diagram (system architecture)
+- Class diagram (OOP design)
+
+**Diagram Quality Standards:**
+- Beautiful, professional styling
+- Readable and not cluttered (max 15-20 nodes)
+- Clear labels for every element
+- **Legend provided for all color/style meanings**
+- Consistent color scheme matching article tone
+- Easy to understand without external explanation
+- Matches and reinforces article narrative
+
+**Markdown syntax for embedding Mermaid diagrams:**
+```markdown
+## Section Explaining Concept
+
+```mermaid
+graph TD
+    A[Component A]
+    B[Component B]
+    C[Component C]
+
+    A --> B
+    B --> C
+
+    classDef processNode fill:#a5d8ff,stroke:#1971c2
+    class A,B,C processNode
+```
+
+Legend:
+- Blue boxes = Process components
+- Solid arrows = Synchronous flow
+```
+
+### Creating Diagram Legends
+
+**For every Mermaid/PlantUML diagram, include a legend:**
+
+```markdown
+### Legend
+
+| Element | Meaning |
+|---------|---------|
+| Blue box | User interaction point |
+| Green box | Successful operation |
+| Red box | Error state |
+| Solid arrow | Synchronous call |
+| Dashed arrow | Asynchronous operation |
+```
+
+### Featured Image (Required)
+InfoQ articles benefit from a professional featured image:
+
+**Specifications:**
+- **Dimensions**: 1024x768px (4:3 landscape) or similar landscape ratio
+- **Format**: JPG recommended for web optimization
+- **File size**: 500KB-2MB (optimized)
+- **Content**: Professional, relevant to article topic
+- **Style**: Clean, professional, technical aesthetic
+
+**Image Generation Process:**
+1. Use `image-generator-blog` skill to create featured image
+2. Generate image related to main topic or key concept
+3. Save to `/images` folder in article directory
+4. Reference in markdown: `![Article title](./images/featured-image.jpg)`
+
+**Image Placement in Markdown:**
+```markdown
+# [Article Title]
+
+![Article Title](./images/featured-image.jpg)
+
+[Article introduction begins here...]
+```
+
+### In-Article Images
+Include 1-3 supporting diagrams or visualizations:
+
+**When to use diagrams:**
+- ✅ System architecture diagrams
+- ✅ Concept flowcharts
+- ✅ Comparison matrices or decision trees
+- ✅ Timeline or evolution diagrams
+
+**How to create:**
+- Use `diagram-mermaid` or `diagram-plantuml` for technical diagrams
+- Use `image-generator-blog` for custom graphics or comparisons
+- Save all images to `/images` folder
+- Use descriptive filenames: `diagram-architecture-pattern.png`
+
+**Markdown syntax for in-article images:**
+```markdown
+## Section Title
+
+![Diagram description](./images/diagram-name.png)
+
+*Figure 1: Description of what the diagram shows and its relevance.*
+```
+
+### Image Organization
+```
+article-directory/
+├── README.md or article.md
+└── images/
+    ├── featured-image.jpg
+    ├── diagram-architecture.png
+    ├── diagram-process-flow.png
+    └── comparison-matrix.png
+```
 
 ## Article Structure for InfoQ
 
@@ -318,24 +467,55 @@ LinkedIn: [your profile URL]
 ## Important Guidelines
 
 ### Required
-- ✅ **Original content** - Not published elsewhere for free
-- ✅ **Editorial fit** - Timely, educational, practical
-- ✅ **Five takeaways** - Must be complete sentences
-- ✅ **Author bio** - Professional background info
-- ✅ **No marketing** - Educational, not promotional
+- ✅ **Original content** - Not published elsewhere for free (InfoQ requires first-publication rights)
+- ✅ **Editorial fit** - Timely, educational, practical, marketing-free
+- ✅ **Five takeaways** - Must be complete sentences with specific, actionable insights
+- ✅ **Author bio** - Professional background info (100-150 words)
+- ✅ **No marketing** - Educational, not promotional or vendor-specific
 - ✅ **Image rights** - You own or have permission for all images
 - ✅ **AI disclosure** - Must disclose any generative AI usage
 
-### AI Disclosure Policy
-- ✅ **Allowed**: Brainstorming, feedback, grammar checking
-- ❌ **Not allowed**: Substantial content generation or technical explanations
-- **Requirement**: Must disclose usage in submission email
+### Content Originality Policy
+**CRITICAL**: InfoQ requires **original content not previously published** elsewhere for free access:
+- ❌ **Not accepted**: Articles already published on Medium, Dev.to, blogs, LinkedIn for free
+- ❌ **Not accepted**: Cross-posts from other free platforms
+- ✅ **Acceptable**: Unpublished articles, original synthesis, unique analysis
+- **Note**: After 4-week exclusivity period ends, you can republish with attribution
 
-### Publishing Rights
-- **Exclusive**: InfoQ gets 4-week exclusive rights from publication
-- **After 4 weeks**: You can republish on blog, Medium, Dev.to, LinkedIn
-- **Attribution**: Include proper attribution when republishing
-- **Extended reach**: Republishing after exclusivity extends audience
+### AI Disclosure & Usage Policy
+**Permitted AI uses** (must be disclosed):
+- ✅ Brainstorming and ideation
+- ✅ Feedback on drafts
+- ✅ Grammar and clarity improvements
+- ✅ Title/heading suggestions
+- ✅ Support tool for research and outlining
+
+**Disclosure requirement**:
+- Disclose all AI tools used and their specific purposes in submission email
+- Example: "I used Claude for grammar review and title suggestions on 3 drafts"
+- Substantial AI-assisted articles receive standardized reader disclosure notices on publication
+
+### Publishing Rights & Copyright
+- **Exclusive**: InfoQ gets 4-week exclusive publishing rights from publication date
+- **After 4 weeks**: You can republish on blog, Medium, Dev.to, LinkedIn, Substack
+- **Attribution required**: Include proper attribution: *"This article was originally published on InfoQ on [date]"*
+- **Copyright ownership**: You retain all copyright; InfoQ retains distribution rights
+- **Infringement claims**: InfoQ may pursue copyright infringement claims on your behalf
+- **Republishing limitations**: Summaries + links allowed; full reprinting of InfoQ articles elsewhere requires permission
+
+### Image Copyright & Legal Liability
+**CRITICAL RESPONSIBILITY**: You must own legal rights to all imagery:
+- ✅ Original images you created
+- ✅ Images with permissive licenses (CC0, Creative Commons, etc.)
+- ✅ Images with written permission from copyright holder
+- ❌ Screenshots of others' work without permission
+- ❌ Images from Google Images without license verification
+
+**Legal responsibility**:
+- **Author assumes full legal and financial responsibility** for copyright compliance
+- **Violations trigger**: Immediate article removal + potential scrutiny of future submissions
+- **Risk**: Copyright claims, takedown notices, legal action from copyright holders
+- **Best practice**: Document all image sources and permissions before submission
 
 ### Timeline Expectations
 - Concept review: ~5 business days
@@ -478,9 +658,57 @@ Key Takeaway 5: Teams should evolve toward microservices from
 
 ---
 
-This skill works best combined with:
-- **architecture-design** for architectural patterns
-- **diagram-mermaid** or **diagram-plantuml** for visuals
-- **code-examples-generator** for code samples (minimal on InfoQ)
-- **seo-optimizer** for keyword research before writing
-- **markdown-formatter** for export and archiving
+This skill works best combined with (in order of importance):
+- **diagram-mermaid** - Create Mermaid diagrams (REQUIRED - use whenever conceptually relevant)
+- **diagram-plantuml** - Create PlantUML diagrams (REQUIRED - for complex UML content)
+- **image-generator-blog** - Featured images and custom graphics (REQUIRED)
+- **architecture-diagram** - C4 and UML diagrams (recommended for architecture articles)
+- **architecture-design** - Architectural patterns and system design explanations
+- **code-examples-generator** - Code samples (minimal on InfoQ)
+- **seo-optimizer** - Keyword research before writing
+- **markdown-formatter** - Export and archiving
+
+---
+
+## Diagram & Image Generation Checklist for InfoQ
+
+Before finalizing your InfoQ article:
+
+**Mermaid/PlantUML Diagrams:**
+- [ ] Mermaid or PlantUML diagrams included where conceptually relevant
+- [ ] Each diagram has clear legend explaining colors/symbols
+- [ ] Diagrams are beautiful, professional, and well-styled
+- [ ] All labels are clear and descriptive (2-4 words max)
+- [ ] No diagram exceeds 20 nodes (complexity kept reasonable)
+- [ ] Diagrams match article narrative and reinforce key concepts
+- [ ] Diagrams use consistent color scheme
+- [ ] Diagram code is version-controlled in `/images/` as `.mmd` or `.puml` files
+- [ ] If exported as images, files are optimized (100-200KB)
+
+**Featured Image:**
+- [ ] Featured image created and saved to `/images/featured-image.jpg`
+- [ ] Featured image is 1024x768px (4:3 landscape ratio)
+- [ ] Featured image compressed to 500KB-2MB
+
+**Supporting Diagrams/Graphics:**
+- [ ] 1-3 supporting diagrams/graphics created and saved to `/images/`
+- [ ] All images referenced in markdown with relative paths: `./images/image-name.png`
+- [ ] All images have descriptive alt text and captions
+- [ ] All images compressed appropriately (100-200KB each)
+- [ ] Image file names are descriptive and lowercase with hyphens
+
+**Markdown Formatting:**
+- [ ] Mermaid/PlantUML code blocks properly formatted:
+  ````markdown
+  ```mermaid
+  [diagram code]
+  ```
+  ````
+- [ ] All diagrams have accompanying legend explaining colors/notation
+- [ ] Figure captions included:
+  ```markdown
+  ![Description](./images/diagram-name.png)
+
+  *Figure 1: What this diagram shows and its relevance.*
+  ```
+- [ ] All images use consistent professional style/branding

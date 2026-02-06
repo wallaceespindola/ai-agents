@@ -15,6 +15,51 @@ Use this skill when:
 - Adding relevant tags and metadata
 - Creating call-to-actions that drive comments
 
+### Multi-Platform Strategy
+
+When publishing same technical concept to multiple platforms (LinkedIn, Medium, Dev.to, DZone, InfoQ, etc.):
+- ✅ Use IDENTICAL code snippets linked to same GitHub repo (ensures consistency across platforms)
+- ✅ Create UNIQUE title optimized for LinkedIn (different from all other platforms)
+- ✅ Write UNIQUE content with professional, career-focused angle (different narrative)
+- ✅ Match LinkedIn's professional, thought-leadership tone
+- ✅ Shorter format than Medium/Dev.to (800-1500 words for LinkedIn)
+- ✅ Different hook emphasizing professional value and career/industry implications
+- ✅ Different CTA encouraging discussion and professional engagement
+
+**Example:**
+```
+GitHub Repo: design-patterns-advanced (single source of truth for code)
+
+LinkedIn version:
+  Title: "Why Senior Engineers Choose Factory Pattern (And Why You Should Too)"
+  Tone: Professional, thought-leadership, career-focused
+  Hook: "In code reviews, I see junior engineers struggle with design decisions..."
+  Focus: Career growth, professional practices, decision-making
+  Length: 1000-1500 words (shorter, professional)
+  Code: 1-2 key examples from same GitHub repo
+  CTA: "What design patterns do you see most in production? Let's discuss 💬"
+
+Medium version:
+  Title: "I Learned Design Patterns the Hard Way—Here's What I'd Tell My Younger Self"
+  Tone: Personal, conversational, detailed
+  Hook: "Three years ago, I was struggling with design patterns..."
+  Focus: Personal journey, comprehensive patterns, lessons learned
+  Length: 3000-4500 words (longer, narrative)
+  Code: Multiple examples from same GitHub repo
+  CTA: "What patterns have saved you? Hit clap 👏"
+
+Dev.to version:
+  Title: "Design Patterns: Which Ones Actually Matter (Practical Guide)"
+  Tone: Friendly, practical, beginner-focused
+  Hook: "Design patterns seem complex but here are the ones you actually need..."
+  Focus: Quick wins, practical application, beginner tips
+  Length: 1500-2500 words
+  Code: Multiple examples from same GitHub repo
+  CTA: "Share your pattern tips in comments!"
+
+Result: All versions link to IDENTICAL code in same repo
+```
+
 ## LinkedIn Pulse Article Specifications
 
 ### Length & Structure

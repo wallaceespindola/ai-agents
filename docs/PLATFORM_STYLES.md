@@ -491,7 +491,7 @@ Related posts, tools, docs
 - ❌ Plagiarized content
 - ❌ No genuine experience (pure tutorials elsewhere are fine)
 - ❌ Overly promotional
-- ❌ AI-generated content (community values authenticity)
+- ❌ Over-use of AI-generated content (community values authenticity)
 - ❌ No discussion starters
 
 ### Dev.to Success Tips
@@ -817,8 +817,7 @@ Key Takeaways:
 - Must disclose any generative AI tools used during creation
 - AI limitations:
   - ✅ AI may assist with: brainstorming, feedback, grammar checking
-  - ❌ AI cannot: generate substantial article content or core technical explanations
-  - ❌ Substantial AI-generated content will result in rejection
+  - ❌ Substantial over-use of AI-generated content will result in rejection
 
 #### Image & Copyright
 

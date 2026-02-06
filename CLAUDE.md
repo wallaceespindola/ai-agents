@@ -196,6 +196,101 @@ Default model for most agents: **claude-3-5-sonnet-20241022**
 - Use streaming for long-running agent tasks to improve perceived responsiveness
 - Consider cost implications of multi-step agentic loops with expensive models
 
+## Project Specifications by Language
+
+### Java Project Specifications
+
+When creating Java projects (especially Spring Boot), always follow the standard specifications in `agents/java-developer/AGENT.md`. Key requirements:
+
+### Core Stack
+- Java 21, Spring Boot (latest stable), Maven
+- Spring Boot Actuator (with custom health endpoint + Maven filtering)
+- Spring Data JPA + H2
+- Kafka (events configuration)
+
+### REST API Standards
+- All responses must include `timestamp` field
+- Swagger UI + OpenAPI documentation
+- Static test page (`/static/index.html`)
+- Path variables (not query params)
+- GET alternatives for POST endpoints
+
+### Required Artifacts
+- Comprehensive unit tests (>80% coverage)
+- Postman collection (with baseUrl variable)
+- Dockerfile + docker-compose.yml
+- Makefile (setup, dev, test, build, docker, clean)
+- GitHub Workflows (build, test, CodeQL)
+- Dependabot configured
+- Apache 2.0 LICENSE
+
+### Code Quality
+- Java Records for DTOs
+- Lombok for boilerplate (`@Slf4j`, `@RequiredArgsConstructor`, etc.)
+- Compact, well-documented code
+- Latest stable library versions
+
+### Author Information
+Include in all projects:
+- Name: Wallace Espindola
+- Email: wallace.espindola@gmail.com
+- LinkedIn: https://www.linkedin.com/in/wallaceespindola/
+- GitHub: https://github.com/wallaceespindola/
+
+**See `agents/java-developer/AGENT.md` for complete specifications and checklist.**
+
+### Python Project Specifications
+
+When creating Python projects (especially FastAPI), always follow the standard specifications in `agents/python-developer/AGENT.md`. Key requirements:
+
+#### Core Stack
+- Python 3.12+, FastAPI (latest stable), uv or Poetry
+- SQLAlchemy 2.x (async) + Alembic migrations
+- SQLite (dev) / PostgreSQL (prod)
+- aiokafka for Kafka (events configuration)
+
+#### REST API Standards
+- All responses include `timestamp` field
+- Swagger/OpenAPI documentation
+- Static test page (`/static/index.html`)
+- Path variables (not query params)
+- GET alternatives for POST endpoints
+
+#### Required Artifacts
+- >80% unit test coverage (pytest, pytest-asyncio)
+- Postman collection (with baseUrl variable)
+- Dockerfile (multi-stage build)
+- docker-compose.yml with full stack (app, db, Kafka)
+- Makefile (venv, dev, test, lint, format, typecheck, docker, clean)
+- GitHub Workflows (format, lint, type check, test, coverage)
+- Dependabot configured
+- CodeQL security scanning
+- Apache 2.0 LICENSE
+
+#### Observability
+- `/health` endpoint (with dependency checks)
+- `/metrics` endpoint (Prometheus instrumentation)
+- `/info` endpoint (with build metadata)
+
+#### Code Quality
+- Black formatting
+- isort import sorting
+- Ruff linting
+- mypy strict type checking
+- Pre-commit hooks
+- Pydantic v2 models for DTOs
+- Structured JSON logging
+- Request ID correlation middleware
+
+#### Author Information
+Include in all projects:
+- Name: Wallace Espindola
+- Email: wallace.espindola@gmail.com
+- LinkedIn: https://www.linkedin.com/in/wallaceespindola/
+- GitHub: https://github.com/wallaceespindola/
+
+**See `agents/python-developer/AGENT.md` for complete specifications and checklist.**
+
 ## Project Structure Example
 
 ```

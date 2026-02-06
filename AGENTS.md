@@ -27,13 +27,12 @@ Complete listing of all 10 specialized AI agents and their 95 associated skills 
 
 **Focus:** Content creation, documentation, multi-platform publishing
 
-**Skills (22 total):**
-- Java content, Python content, JavaScript content
-- Dev.to, LinkedIn, Medium, Substack, DZone, JavaPro, InfoQ, Blog
-- Java coder, Python coder, JavaScript coder
-- Slides creator, Image generator, Diagram creator
-- Markdown formatter, Code examples generator
-- Architecture & patterns, SEO optimizer
+**Skills (24 total):**
+- Content creation: Java content, Python content, JavaScript content
+- Platform-specific: Dev.to, LinkedIn, Medium, Substack, DZone, JavaPro, InfoQ
+- Code generation: Java coder, Python coder, JavaScript coder
+- Visual & design: Slides creator, Image generator, Diagram creator (Mermaid, PlantUML)
+- Publishing & optimization: Markdown formatter, Code examples generator, Architecture & patterns, SEO optimizer
 
 **When to Use:**
 - Writing technical articles and tutorials

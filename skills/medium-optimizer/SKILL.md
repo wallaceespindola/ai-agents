@@ -15,6 +15,42 @@ Use this skill when:
 - Creating story structure that keeps readers engaged
 - Choosing appropriate tags and categories
 
+### Multi-Platform Strategy
+
+When publishing same technical concept to multiple platforms (Medium, DZone, InfoQ, Dev.to, LinkedIn, etc.):
+- ✅ Use IDENTICAL code snippets linked to same GitHub repo (essential for consistency)
+- ✅ Create UNIQUE title optimized for Medium (different from other platforms)
+- ✅ Write UNIQUE introduction and narrative (tailored to Medium's storytelling preference)
+- ✅ Match Medium's personal, conversational style ("I learned", "I discovered")
+- ✅ Different article length from other platforms (Medium typically longer, more personal)
+- ✅ Different hook and call-to-action (Medium emphasizes follow/claps/responses)
+
+**Example:**
+```
+GitHub Repo: async-patterns-python (single source of truth for code)
+
+Medium version:
+  Title: "I Built Async Python Systems—Here's What I Learned About Concurrency"
+  Subtitle: "How I went from blocking I/O to 100x faster systems"
+  Tone: Personal, conversational, storytelling
+  Hook: "Three months ago, my Python API could barely handle 100 concurrent users..."
+  Focus: Personal journey, lessons learned, practical insights
+  Length: 3000-5000 words (Medium favors depth)
+  Code: Same examples from same GitHub repo
+  CTA: "What's your async experience? Hit the clap button 👏"
+
+DZone version:
+  Title: "Async Patterns in Python: Building Production Systems"
+  Tone: Technical, practical, professional
+  Hook: "When scaling Python systems, async becomes critical..."
+  Focus: Production patterns, best practices, trade-offs
+  Length: 2000-3500 words
+  Code: Same examples from same GitHub repo
+  CTA: "Share your async patterns in comments"
+
+Result: All versions link to IDENTICAL code in same repo
+```
+
 ## Medium Article Specifications
 
 ### Length & Structure

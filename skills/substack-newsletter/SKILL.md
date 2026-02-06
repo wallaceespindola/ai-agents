@@ -15,6 +15,54 @@ Use this skill when:
 - Building subscriber engagement and retention
 - Planning free vs. paid tier content strategy
 
+### Multi-Platform Strategy
+
+When repurposing articles from other platforms (Medium, DZone, Dev.to) into Substack newsletter content:
+- ✅ Use IDENTICAL code snippets linked to same GitHub repo (ensures consistency)
+- ✅ Create UNIQUE newsletter-specific introduction (different from article versions)
+- ✅ Adapt content for email reading (shorter sections, scannable format)
+- ✅ Match Substack's conversational, direct-to-subscriber tone
+- ✅ Add exclusive insights or extended analysis for paid subscribers
+- ✅ Include newsletter-specific CTA (subscribe, share, upgrade to paid)
+
+**Example:**
+```
+GitHub Repo: async-patterns-python (single source of truth for code)
+
+Substack Newsletter (free tier):
+  Subject: "Async Python: Why Your Code is Probably Slow"
+  Length: 2000-2500 words
+  Format: Newsletter-optimized, scannable sections
+  Code: Same examples from same GitHub repo
+  Hook: "Most Python developers write blocking code. Here's why that matters..."
+  CTA: "Upgrade to paid for the advanced patterns + code repo"
+
+Medium Article (same topic):
+  Title: "I Built Async Python Systems—Here's What I Learned"
+  Length: 3500-4500 words (more detailed)
+  Format: Long-form narrative
+  Code: Same examples from same GitHub repo
+
+DZone Article (same topic):
+  Title: "Async Patterns in Python: Building Production Systems"
+  Length: 2500-3500 words (practical focus)
+  Format: Technical, best-practices
+  Code: Same examples from same GitHub repo
+
+Strategy:
+- Newsletter is "teaser" with CTA to upgrade for more
+- Medium is "personal story" deep-dive
+- DZone is "production patterns" reference
+- ALL point to same GitHub repo
+```
+
+**Benefits:**
+- Newsletter drives conversions (upgrade CTA)
+- Platform articles drive awareness (free content)
+- All link to same code repo (single source of truth)
+- Repurpose core content across platforms
+- Different value propositions for different audiences
+
 ## Substack Newsletter Fundamentals
 
 ### Newsletter Purpose & Positioning

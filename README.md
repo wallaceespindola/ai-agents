@@ -1,6 +1,7 @@
 # AI Agents & Skills for Software Engineering
 
-A comprehensive system of specialized AI agents for software engineering, technical content creation, and project management.
+A comprehensive system of specialized AI agents for software engineering, technical content creation, and project
+management.
 
 **10 Agents + 95 Skills = Complete software engineering ecosystem**
 
@@ -29,72 +30,101 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 ### 10 Specialized Agents
 
 #### **Technical Writer Agent** (Original)
+
 - Expertise: Content creation, documentation, multi-platform publishing
 - Skills: 22 skills for writing, formatting, and code generation
 
 #### **Java Developer Agent**
+
 - Expertise: Java 17+, Spring Boot, microservices
-- Skills: Code review, testing strategy, performance tuning, security audit, project setup, Spring Cloud, advanced security, documentation (12 skills total)
+- Skills: Code review, testing strategy, performance tuning, security audit, project setup, Spring Cloud, advanced
+  security, documentation (12 skills total)
 
 #### **Python Developer Agent**
+
 - Expertise: Python 3.10+, FastAPI, async programming
 - Skills: Code review, testing strategy, performance tuning, type checking, project setup, documentation (6 skills)
 
 #### **JavaScript/Frontend Developer Agent**
+
 - Expertise: React 18+, Next.js 15+, TypeScript, modern web applications
-- Skills: Code review, component patterns, advanced hooks, state management, testing strategy, performance optimization, TypeScript migration, Storybook setup, project setup, documentation (10 skills total)
+- Skills: Code review, component patterns, advanced hooks, state management, testing strategy, performance optimization,
+  TypeScript migration, Storybook setup, project setup, documentation (10 skills total)
 
 #### **Software Architect Agent**
+
 - Expertise: System design, scalability, microservices architecture
-- Skills: Architecture review, system design documentation, scalability analysis, design patterns, API design, database design, architecture diagrams (7 skills)
+- Skills: Architecture review, system design documentation, scalability analysis, design patterns, API design, database
+  design, architecture diagrams (7 skills)
 
 #### **QA/Software Tester Agent**
+
 - Expertise: Test automation, quality assurance, continuous testing
-- Skills: Test strategy, test automation setup, test case generation, API testing, E2E testing, performance testing, bug reporting (7 skills)
+- Skills: Test strategy, test automation setup, test case generation, API testing, E2E testing, performance testing, bug
+  reporting (7 skills)
 
 #### **DevOps Engineer Agent**
+
 - Expertise: CI/CD, containerization, infrastructure-as-code, cloud operations
-- Skills: CI/CD pipeline setup, Docker configuration, Kubernetes setup, IaC templates, monitoring setup, security scanning, deployment strategies (7 skills)
+- Skills: CI/CD pipeline setup, Docker configuration, Kubernetes setup, IaC templates, monitoring setup, security
+  scanning, deployment strategies (7 skills)
 
 #### **Git/GitHub Automation Engineer Agent**
+
 - Expertise: GitHub Actions, Git workflows, build automation, YAML configuration
-- Skills: GitHub Actions workflows, Git workflow strategies, PR management, CLI automation, security scanning, commit strategies, YAML validation, Kubernetes manifests, Helm charts, Docker Compose, build optimization, SSH management, secrets management, pre-commit hooks (14 skills)
+- Skills: GitHub Actions workflows, Git workflow strategies, PR management, CLI automation, security scanning, commit
+  strategies, YAML validation, Kubernetes manifests, Helm charts, Docker Compose, build optimization, SSH management,
+  secrets management, pre-commit hooks (14 skills)
 
 #### **Spring/Quarkus & Build Systems Engineer Agent**
+
 - Expertise: Spring Cloud enterprise, Quarkus cloud-native, build optimization
-- Skills: Spring Cloud microservices, OAuth2/JWT security, distributed config, reactive patterns, Quarkus framework, GraalVM native compilation, Quarkus extensions, Maven/Gradle optimization, build caching (10 skills)
+- Skills: Spring Cloud microservices, OAuth2/JWT security, distributed config, reactive patterns, Quarkus framework,
+  GraalVM native compilation, Quarkus extensions, Maven/Gradle optimization, build caching (10 skills)
 
 #### **Project Manager Agent**
+
 - Expertise: Agile methodologies, planning, risk management, stakeholder communication
-- Skills: Project planning, sprint planning, risk assessment, status reporting, retrospectives, roadmap planning (6 skills)
+- Skills: Project planning, sprint planning, risk assessment, status reporting, retrospectives, roadmap planning (6
+  skills)
 
 ### 95 Specialized Skills
 
 **Technical Writing (22 skills)** - Content creation, platform optimization, code generation, diagrams, SEO
 
-**Java Development (12 skills)** - Code review, testing, performance, security, Spring Boot setup, Spring Cloud microservices, advanced security, documentation
+**Java Development (12 skills)** - Code review, testing, performance, security, Spring Boot setup, Spring Cloud
+microservices, advanced security, documentation
 
 **Python Development (6 skills)** - Code review, testing, performance, type checking, project setup, documentation
 
-**JavaScript/Frontend (10 skills)** - Code review, component patterns, advanced hooks, state management, testing, performance optimization, TypeScript migration, Storybook setup, project setup, documentation
+**JavaScript/Frontend (10 skills)** - Code review, component patterns, advanced hooks, state management, testing,
+performance optimization, TypeScript migration, Storybook setup, project setup, documentation
 
-**Software Architecture (7 skills)** - System review, design documentation, scalability, patterns, API design, database design, diagrams
+**Software Architecture (7 skills)** - System review, design documentation, scalability, patterns, API design, database
+design, diagrams
 
-**QA & Testing (7 skills)** - Test strategy, automation setup, test case generation, API testing, E2E testing, performance testing, bug reporting
+**QA & Testing (7 skills)** - Test strategy, automation setup, test case generation, API testing, E2E testing,
+performance testing, bug reporting
 
-**DevOps & Infrastructure (7 skills)** - CI/CD pipelines, Docker, Kubernetes, IaC, monitoring, security scanning, deployment strategies
+**DevOps & Infrastructure (7 skills)** - CI/CD pipelines, Docker, Kubernetes, IaC, monitoring, security scanning,
+deployment strategies
 
-**Project Management (6 skills)** - Project planning, sprint planning, risk assessment, status reports, retrospectives, roadmap planning
+**Project Management (6 skills)** - Project planning, sprint planning, risk assessment, status reports, retrospectives,
+roadmap planning
 
-**Git/GitHub & Automation (14 skills)** - GitHub Actions workflows, Git workflows, PR management, CLI automation, security scanning, YAML config, Kubernetes manifests, Helm charts, Docker Compose, build optimization, SSH management, secrets management, pre-commit hooks
+**Git/GitHub & Automation (14 skills)** - GitHub Actions workflows, Git workflows, PR management, CLI automation,
+security scanning, YAML config, Kubernetes manifests, Helm charts, Docker Compose, build optimization, SSH management,
+secrets management, pre-commit hooks
 
-**Spring/Quarkus & Build Systems (10 skills)** - Spring Cloud microservices, advanced security, cloud config, reactive programming, Quarkus framework, GraalVM native compilation, Quarkus extensions, Maven/Gradle optimization, build caching
+**Spring/Quarkus & Build Systems (10 skills)** - Spring Cloud microservices, advanced security, cloud config, reactive
+programming, Quarkus framework, GraalVM native compilation, Quarkus extensions, Maven/Gradle optimization, build caching
 
 ---
 
 ## 📊 System Capabilities
 
 ### Software Engineering Coverage
+
 - **Code Development**: Java, Python, JavaScript with specialized expertise
 - **Quality Assurance**: Comprehensive testing from unit tests to E2E automation
 - **Architecture**: System design, scalability analysis, design patterns
@@ -103,6 +133,7 @@ cp docs/ARTICLE_TEMPLATE.md my-article.md
 - **Technical Writing**: Multi-platform content creation, documentation, code generation
 
 ### Agent Collaboration Workflows
+
 ```
 Full-Stack Feature Development:
 Project Manager → Architect → Java/Python/JS Developers →
@@ -118,6 +149,7 @@ Technical Writer
 ```
 
 ### Multi-Language Project Generation
+
 - **Java**: Maven/Spring Boot with tests, documentation, Dockerfile
 - **Python**: Poetry/FastAPI with tests, type hints, Dockerfile
 - **JavaScript**: npm/React with TypeScript, Jest, Dockerfile
@@ -138,6 +170,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 ```
 
 **Your `.env` file**:
+
 - ✅ Never committed to git (.gitignore protection)
 - ✅ Contains all your personal URLs and emails
 - ✅ Automatically used by all skills
@@ -148,16 +181,19 @@ LINKEDIN_URL=https://linkedin.com/in/you
 ## 📚 Documentation
 
 **Start Here**:
+
 - **[Getting Started Guide](docs/GETTING_STARTED.md)** ← Begin here
 - **[Configuration Guide](docs/CONFIGURATION.md)** - Set up `.env`
 - **[Humanization Standards](docs/HUMANIZATION_GUIDE.md)** - Writing style
 
 **How-To Guides**:
+
 - **[Article Template](docs/ARTICLE_TEMPLATE.md)** - Copy for new articles
 - **[Article Sign-Offs](docs/ARTICLE_SIGNOFF.md)** - Sign-off variations
 - **[Platform Styles](docs/PLATFORM_STYLES.md)** - Platform-specific guides
 
 **Reference**:
+
 - **[AGENTS.md](AGENTS.md)** - Quick reference for all 10 agents and 95 skills
 - **[AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)** - Comprehensive agent guide with workflows
 - **[Complete System Overview](docs/guides/COMPLETE_SYSTEM.md)** - Full details
@@ -171,6 +207,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 ## 🚀 Common Workflows
 
 ### Workflow 1: Write & Publish Article
+
 ```
 1. Write article in docs/ARTICLE_TEMPLATE.md
 2. Use platform skill to optimize (medium-optimizer, devto-formatter, etc.)
@@ -182,6 +219,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 ```
 
 ### Workflow 2: Generate Code Project
+
 ```
 1. Write article explaining concept
 2. Request: "Generate Java code for my article [title]"
@@ -194,6 +232,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 ```
 
 ### Workflow 3: Multi-Platform Publishing
+
 ```
 1. Write master article with sr-tech-blog
 2. Export as Markdown
@@ -209,6 +248,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 ## ✨ Key Features
 
 **🎯 Humanization Standards**
+
 - Conversational tone (write like talking to a friend)
 - 8th-10th grade reading level
 - No AI-written phrases ("in today's digital landscape")
@@ -216,30 +256,35 @@ LINKEDIN_URL=https://linkedin.com/in/you
 - Natural contractions and first/second person
 
 **🔐 Secure & Private**
+
 - Personal data in `.env` (local, never committed)
 - `.env.example` safe to share (template only)
 - All URLs pre-filled from your discovered profiles
 - Team-friendly (each person has own `.env`)
 
 **📝 Professional Branding**
+
 - Consistent sign-off on all articles
 - Links to GitHub, LinkedIn, Speaker Deck automatically
 - Drives traffic to your profiles
 - One source of truth for links
 
 **💻 Code Generation**
+
 - Generate complete, runnable projects
 - Articles link to code, code links back to article
 - Full test coverage included
 - Production-ready structure
 
 **🎨 Visual Content**
+
 - Image specs: 1024x768px, max 3MB, abstract futuristic
 - Mermaid diagrams (simple, Git-friendly)
 - PlantUML diagrams (complex, professional)
 - All tools and workflows documented
 
 **🌍 Multi-Platform**
+
 - 8 publishing platforms supported
 - Write once, adapt for multiple platforms
 - Platform-specific optimizations
@@ -335,15 +380,25 @@ All automatically linked in your generated content:
 ## Key Points
 
 ✅ **10 Agents + 95 Skills** - Complete software engineering ecosystem
+
 ✅ **Full-Stack Development** - Java, Python, JavaScript (with React/Next.js focus)
+
 ✅ **Git/GitHub Automation** - GitHub Actions workflows, git strategies, YAML config, CI/CD automation
+
 ✅ **Spring Cloud & Quarkus** - Microservices, advanced security, reactive programming, native compilation
+
 ✅ **React & Next.js Focused** - Component patterns, hooks, state management, Storybook, testing
+
 ✅ **Quality & Testing** - Comprehensive QA and test automation
+
 ✅ **Infrastructure & DevOps** - CI/CD, containerization, Kubernetes, monitoring
+
 ✅ **System Architecture** - Design patterns, scalability, API design
+
 ✅ **Project Management** - Agile planning, sprint management, roadmaps
+
 ✅ **Technical Writing** - Multi-platform publishing, code generation, documentation
+
 ✅ **Agent Collaboration** - 10 specialized agents work together on complex workflows
 
 ---
@@ -365,8 +420,9 @@ All automatically linked in your generated content:
 
 ## About the Author
 
-**Wallace Espindola** - Senior Software Engineer
-- Expertise: Java, Python, JavaScript, Cloud Architecture
+**Wallace Espindola** - Senior Software Engineer / Solution Architect
+
+- Expertise: Java, Python, JavaScript, Cloud Architecture, Microservices, Databases
 - Focus: Building production-ready systems and sharing knowledge
 
 ### Connect & Follow
@@ -389,4 +445,6 @@ All automatically linked in your generated content:
 
 ---
 
-*This system provides specialized AI agents for comprehensive software engineering tasks. Whether you're developing code, managing quality assurance, designing architecture, setting up infrastructure, or managing projects - there's an agent ready to help. All agents work together seamlessly for complex, multi-team workflows.*
+*This system provides specialized AI agents for comprehensive software engineering tasks. Whether you're developing
+code, managing quality assurance, designing architecture, setting up infrastructure, or managing projects - there's an
+agent ready to help. All agents work together seamlessly for complex, multi-team workflows.*
