@@ -203,7 +203,7 @@ Default model for most agents: **claude-3-5-sonnet-20241022**
 When creating Java projects (especially Spring Boot), always follow the standard specifications in `agents/java-developer/AGENT.md`. Key requirements:
 
 ### Core Stack
-- Java 21, Spring Boot (latest stable), Maven
+- Java 21+, Spring Boot (latest stable), Maven
 - Spring Boot Actuator (with custom health endpoint + Maven filtering)
 - Spring Data JPA + H2
 - Kafka (events configuration)

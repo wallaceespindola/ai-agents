@@ -598,9 +598,11 @@ Reader can:
 - Maven 3.8+
 
 **Java versions:**
-- Java 21 (latest stable)
+- Java 25 (latest LTS)
+- Java 21 (stable LTS - largely used)
 - Java 17 (LTS, good for production)
 - Java 11 (older LTS, still supported)
+- Java 8 (old LTS, do not use)
 
 ## Success Checklist
 

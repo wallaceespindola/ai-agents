@@ -188,7 +188,7 @@ Wallace Espindola - Software Engineer Sr. / Solutions Architect / Java & Python 
 **Role**: Senior Java/Spring Boot Developer
 
 **Expertise**:
-- Java 17+ (latest language features, records, sealed classes, virtual threads)
+- Java 21+ (latest language features, records, sealed classes, virtual threads)
 - Spring Boot 3.x and Spring Cloud microservices
 - Advanced Spring Security (OAuth2, OpenID Connect, JWT, RBAC)
 - Spring Cloud Config, service discovery, API Gateway, circuit breakers

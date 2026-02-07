@@ -120,3 +120,7 @@ Thumbs.db
 .LSOverride
 .TemporaryItems
 ehthumbs.db
+
+# AI related files
+.ai/
+.copilot/
