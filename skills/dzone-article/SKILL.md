@@ -5,6 +5,24 @@ description: Write curated technical articles for DZone publication platform, op
 
 # DZone Article Publication Guide
 
+## CRITICAL: Statistics and Data Integrity Rule
+
+**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+
+✅ **DO:**
+- Cite credible sources with links (e.g., "According to the 2024 Stack Overflow Survey [link], 65% of developers...")
+- Use your own data if you have it (e.g., "In production systems I've built...")
+- Omit statistics entirely if you don't have verifiable data
+- Use qualitative statements instead (e.g., "Many development teams prefer..." instead of "80% of teams prefer...")
+
+❌ **DON'T:**
+- Make up percentages or statistics
+- Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
+- Estimate statistics without clearly stating they are estimates
+- Use phrases like "According to industry experts..." without naming specific experts
+
+**Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
+
 ## When to Use This Skill
 
 Use this skill when:

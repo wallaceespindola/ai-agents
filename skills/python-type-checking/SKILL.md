@@ -13,7 +13,7 @@ description: Add comprehensive type hints to Python code and configure mypy for 
 - Integrating type checking into CI/CD pipelines
 - Catching type errors before runtime
 - Improving IDE autocompletion and documentation
-- Migrating to Python 3.10+ type syntax
+- Migrating to Python 3.12+ type syntax
 - Handling complex typing scenarios (generics, protocols, unions)
 
 ## Quick Start
@@ -36,7 +36,7 @@ The skill provides comprehensive type hints and mypy configuration:
 - **Variables**: Type annotations for better clarity
 - **Collections**: List[T], Dict[K, V], Set[T], Tuple[T, ...]
 - **Optional Types**: Optional[T] for nullable values
-- **Union Types**: Union[T1, T2] or T1 | T2 (Python 3.10+)
+- **Union Types**: Union[T1, T2] or T1 | T2 (Python 3.12+)
 
 ### 2. Advanced Typing
 - **Generics**: TypeVar for generic functions and classes
@@ -79,7 +79,7 @@ The skill provides comprehensive type hints and mypy configuration:
 **pyproject.toml**:
 ```toml
 [tool.mypy]
-python_version = "3.11"
+python_version = "3.12"
 warn_return_any = true
 warn_unused_configs = true
 disallow_untyped_defs = true

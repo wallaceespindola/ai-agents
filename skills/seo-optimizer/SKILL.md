@@ -5,6 +5,24 @@ description: Optimize technical articles for search engine visibility and discov
 
 # Technical Content SEO Optimization
 
+## CRITICAL: Statistics and Data Integrity Rule
+
+**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims in SEO-optimized content.**
+
+✅ **DO:**
+- Cite credible sources with links (e.g., "According to Google's Core Web Vitals Report 2024 [link]...")
+- Use your own analytics data if you have it (e.g., "My article ranked #1 and received 10,000 visits...")
+- Omit statistics entirely if you don't have verifiable data
+- Use qualitative statements instead (e.g., "Many articles rank better with..." instead of "80% of articles rank better with...")
+
+❌ **DON'T:**
+- Make up percentages or statistics about SEO effectiveness
+- Use vague attributions like "SEO experts say..." without citing actual experts
+- Estimate statistics without clearly stating they are estimates
+- Fabricate ranking data or traffic numbers
+
+**Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
+
 ## When to Use This Skill
 
 Use this skill when:

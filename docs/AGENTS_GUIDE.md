@@ -149,7 +149,7 @@ The AI Agents system provides specialized agents for every major software engine
 **Description**: Senior Python developer specializing in backend systems, async programming, and data processing.
 
 ### Expertise
-- Python 3.10+ with type hints
+- Python 3.12+ with type hints
 - FastAPI and async/await patterns
 - SQLAlchemy and ORM optimization
 - Async database drivers (asyncpg, motor)

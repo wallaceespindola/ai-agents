@@ -5,6 +5,24 @@ description: Format technical articles for Dev.to platform, optimizing for commu
 
 # Dev.to Formatting Guide
 
+## CRITICAL: Statistics and Data Integrity Rule
+
+**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+
+✅ **DO:**
+- Cite credible sources with links (e.g., "According to the State of JS 2024 Survey [link], 65% of developers...")
+- Use your own data if you have it (e.g., "In my experience with 20+ projects...")
+- Omit statistics entirely if you don't have verifiable data
+- Use qualitative statements instead (e.g., "Many developers prefer..." instead of "80% of developers prefer...")
+
+❌ **DON'T:**
+- Make up percentages or statistics
+- Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
+- Estimate statistics without clearly stating they are estimates
+- Use phrases like "According to industry experts..." without naming specific experts
+
+**Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
+
 ## When to Use This Skill
 
 Use this skill when:

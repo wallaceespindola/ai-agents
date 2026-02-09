@@ -45,8 +45,6 @@ Use Docker Compose when you need to:
 ### 1. Create docker-compose.yml
 
 ```yaml
-version: '3.9'
-
 services:
   app:
     build: .
@@ -157,8 +155,6 @@ services:
 **Custom Network:**
 
 ```yaml
-version: '3.9'
-
 services:
   app:
     image: myapp:1.0.0
@@ -350,8 +346,6 @@ DATABASE_URL=postgresql://user:pass@db:5432/myapp
 **Secrets (Docker Swarm):**
 
 ```yaml
-version: '3.9'
-
 services:
   app:
     image: myapp:1.0.0
@@ -402,8 +396,6 @@ services:
 ### Complete Production Setup
 
 ```yaml
-version: '3.9'
-
 services:
   nginx:
     image: nginx:latest
@@ -526,8 +518,6 @@ networks:
 ### Example 1: Node.js + PostgreSQL + Redis
 
 ```yaml
-version: '3.9'
-
 services:
   app:
     build: .
@@ -568,8 +558,6 @@ networks:
 ### Example 2: Django + PostgreSQL + Celery
 
 ```yaml
-version: '3.9'
-
 services:
   web:
     build: .
@@ -629,8 +617,6 @@ volumes:
 ### Example 3: Microservices Architecture
 
 ```yaml
-version: '3.9'
-
 services:
   nginx:
     image: nginx:latest
@@ -707,7 +693,6 @@ networks:
 `docker-compose.yml`:
 
 ```yaml
-version: '3.9'
 services:
   app:
     image: myapp:1.0.0
@@ -731,8 +716,6 @@ services:
 ### Example 5: Production Deployment
 
 ```yaml
-version: '3.9'
-
 services:
   app:
     image: myregistry/app:1.0.0

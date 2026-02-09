@@ -38,7 +38,7 @@ Load using:
 2. Set up dependencies using **uv** (recommended):
    ```bash
    cd project-name
-   uv init --python 3.11
+   uv init --python 3.12
    uv add anthropic
    ```
 3. Create a `Makefile` with standard commands:
@@ -374,7 +374,7 @@ This repository contains a complete ecosystem of 10 specialized AI agents with 9
 
 **Languages & Backends**
 - Java 17+, Spring Boot 3.x, Spring Cloud, Quarkus, GraalVM native
-- Python 3.10+, FastAPI, async/await, type hints
+- Python 3.12+, FastAPI, async/await, type hints
 - JavaScript/TypeScript, React 18+, Next.js 15+
 
 **Frontend Frameworks**

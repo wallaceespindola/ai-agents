@@ -45,7 +45,7 @@ nano .env  # Add your Anthropic API key
 
 #### **Python Developer Agent**
 
-- Expertise: Python 3.10+, FastAPI, async programming
+- Expertise: Python 3.12+, FastAPI, async programming
 - Skills: Code review, testing strategy, performance tuning, type checking, project setup, documentation (6 skills)
 
 #### **JavaScript/Frontend Developer Agent**
@@ -449,21 +449,21 @@ LINKEDIN_URL=https://linkedin.com/in/you
 
 ### Connect & Follow
 
-- **GitHub**: https://github.com/wallaceespindola
-- **LinkedIn**: https://www.linkedin.com/in/wallaceespindola/
-- **Dev.to**: https://dev.to/wallaceespindola
-- **Medium**: https://medium.com/@wallaceespindola
-- **Speaker Deck**: https://speakerdeck.com/wallacese
-- **Substack**: https://wallaceespindola.substack.com
-- **DZone**: https://dzone.com/users/1254611/wallacese.html
-- **Sessionize**: https://sessionize.com/wallace-espindola/
-- **Twitter/X**: https://x.com/wsespindola
+- **GitHub**: [github.com/wallaceespindola](https://github.com/wallaceespindola)
+- **LinkedIn**: [linkedin.com/in/wallaceespindola](https://www.linkedin.com/in/wallaceespindola/)
+- **Dev.to**: [dev.to/wallaceespindola](https://dev.to/wallaceespindola)
+- **Medium**: [medium.com/@wallaceespindola](https://medium.com/@wallaceespindola)
+- **Speaker Deck**: [speakerdeck.com/wallacese](https://speakerdeck.com/wallacese)
+- **Substack**: [wallaceespindola.substack.com](https://wallaceespindola.substack.com)
+- **DZone**: [dzone.com/users/1254611/wallacese](https://dzone.com/users/1254611/wallacese.html)
+- **Sessionize**: [sessionize.com/wallace-espindola](https://sessionize.com/wallace-espindola/)
+- **Twitter/X**: [x.com/wsespindola](https://x.com/wsespindola)
 
 ### Quick Links
 
-- **Linktree**: https://linktr.ee/wallace.espindola
-- **Solo.to**: https://solo.to/wallace.espindola
-- **Gravatar**: https://gravatar.com/wallacese
+- **Linktree**: [linktr.ee/wallace.espindola](https://linktr.ee/wallace.espindola)
+- **Solo.to**: [solo.to/wallace.espindola](https://solo.to/wallace.espindola)
+- **Gravatar**: [gravatar.com/wallacese](https://gravatar.com/wallacese)
 
 ---
 

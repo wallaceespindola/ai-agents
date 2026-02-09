@@ -405,7 +405,7 @@ my-repo/
 - Use dataclasses or Pydantic for data structures
 - Implement proper logging
 - Handle exceptions explicitly
-- Use modern Python features (f-strings, walrus operator, pattern matching in 3.10+)
+- Use modern Python features (f-strings, walrus operator, pattern matching in 3.12+)
 - Keep functions focused and testable
 - Use context managers for resource management
 

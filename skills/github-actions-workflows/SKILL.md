@@ -558,7 +558,7 @@ jobs:
         include:
           - runner: ubuntu-latest
             lang: python
-            version: '3.11'
+            version: '3.12'
           - runner: ubuntu-latest
             lang: node
             version: '20'

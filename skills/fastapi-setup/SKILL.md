@@ -91,7 +91,7 @@ name = "api-service"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 fastapi = "^0.109.0"
 uvicorn = "^0.27.0"
 sqlalchemy = "^2.0.23"

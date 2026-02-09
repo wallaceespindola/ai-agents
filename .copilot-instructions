@@ -165,7 +165,7 @@ Common skill combinations:
 
 ### Backend
 - Java 17+, Spring Boot 3.x, Spring Cloud
-- Python 3.10+, FastAPI, async/await
+- Python 3.12+, FastAPI, async/await
 - Quarkus, GraalVM native
 - Microservices, distributed systems
 

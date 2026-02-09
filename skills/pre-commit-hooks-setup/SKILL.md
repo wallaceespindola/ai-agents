@@ -141,7 +141,7 @@ repos:
 # .pre-commit-config.yaml
 
 default_language_version:
-  python: python3.11
+  python: python3.12
   ruby: '3.2'
   node: '20'
 
@@ -163,7 +163,7 @@ repos:
     rev: 23.12.1
     hooks:
       - id: black
-        language_version: python3.11
+        language_version: python3.12
 
   # Node.js linting
   - repo: https://github.com/pre-commit/mirrors-eslint
@@ -369,7 +369,7 @@ SKIP=tests,long-running-check pre-commit run --all-files
 
 ```yaml
 default_language_version:
-  python: python3.11
+  python: python3.12
   node: '20'
 
 default_stages: [commit]
@@ -391,7 +391,7 @@ repos:
     rev: 23.12.1
     hooks:
       - id: black
-        language_version: python3.11
+        language_version: python3.12
 
   # Python linting
   - repo: https://github.com/astral-sh/ruff-pre-commit

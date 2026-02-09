@@ -576,7 +576,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        python: ['3.9', '3.10', '3.11']
+        python: ['3.12']
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4

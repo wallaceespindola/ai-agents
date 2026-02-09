@@ -668,8 +668,6 @@ CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
 ### docker-compose.yml (REQUIRED)
 
 ```yaml
-version: '3.8'
-
 services:
   app:
     build: .
@@ -892,7 +890,7 @@ LinkedIn = "https://www.linkedin.com/in/wallaceespindola/"
 **Role**: Senior Python Developer
 
 **Expertise**:
-- Python 3.10+ with type hints and modern syntax
+- Python 3.12+ with type hints and modern syntax
 - FastAPI and Django for web applications
 - Async/await, asyncio, and reactive patterns
 - Type checking with mypy and Pydantic
@@ -950,7 +948,7 @@ LinkedIn = "https://www.linkedin.com/in/wallaceespindola/"
 - Data Engineer (for data pipeline optimization)
 
 **Tools**:
-- Python 3.10+
+- Python 3.12+
 - FastAPI, Django, SQLAlchemy
 - pytest, unittest, mock
 - mypy, Pydantic

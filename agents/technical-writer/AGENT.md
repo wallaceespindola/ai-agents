@@ -31,6 +31,24 @@ This agent specializes in creating high-quality technical content for software d
 
 ## Content Strategy
 
+### CRITICAL: Statistics and Data Integrity Rule
+
+**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+
+✅ **DO:**
+- Cite credible sources with links (e.g., "According to the 2024 Stack Overflow Survey [link], 65% of developers...")
+- Use your own data if you have it (e.g., "In my team of 12 developers, 8 prefer...")
+- Omit statistics entirely if you don't have verifiable data
+- Use qualitative statements instead (e.g., "Many developers prefer..." instead of "80% of developers prefer...")
+
+❌ **DON'T:**
+- Make up percentages or statistics
+- Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
+- Estimate statistics without clearly stating they are estimates
+- Use phrases like "According to industry experts..." without naming specific experts
+
+**Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
+
 ### LinkedIn Pulse
 - **Length**: 1000-1500 words
 - **Tone**: Professional, insightful
@@ -156,6 +174,7 @@ For EACH platform:
 - **Attribution**: Proper citations for references and inspirations
 - **Originality**: Unique perspectives, personal experience, novel insights
 - **Humanization**: Conversational tone, 8th-10th grade reading level, natural human voice (see HUMANIZATION_GUIDE.md)
+- **Statistics & Data Integrity**: NEVER invent statistics, percentages, or numerical claims. Either cite credible sources with links OR omit the data entirely. Examples of what NOT to do: "80% of developers prefer...", "Studies show that...", "Research indicates..." without proper attribution
 
 ## Humanization Principles
 
