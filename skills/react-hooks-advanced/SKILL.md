@@ -1,6 +1,6 @@
 ---
 name: react-hooks-advanced
-description: Master custom React hooks, hook patterns, and advanced hook composition for complex logic
+description: Master custom React hooks, hook patterns and advanced hook composition for complex logic
 ---
 
 # React Hooks Advanced Skill

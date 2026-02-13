@@ -1,6 +1,6 @@
 ---
 name: status-report-generator
-description: Generate project status reports with progress, risks, and blockers
+description: Generate project status reports with progress, risks and blockers
 ---
 
 # Status Report Generator Skill

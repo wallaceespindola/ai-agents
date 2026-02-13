@@ -1,10 +1,10 @@
 # Helm Charts Creation Skill
 
-**Master Helm chart structure, templating, values management, dependencies, repositories, and production deployments.**
+**Master Helm chart structure, templating, values management, dependencies, repositories and production deployments.**
 
 ## Overview
 
-Helm is the package manager for Kubernetes. This skill covers creating, templating, and managing Helm charts for reproducible deployments.
+Helm is the package manager for Kubernetes. This skill covers creating, templating and managing Helm charts for reproducible deployments.
 
 **What it does:**
 - Structures Helm charts correctly

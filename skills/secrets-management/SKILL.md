@@ -1,6 +1,6 @@
 # Secrets Management Skill
 
-**Master environment variables, HashiCorp Vault, GitHub Secrets, AWS Secrets Manager, and key rotation strategies.**
+**Master environment variables, HashiCorp Vault, GitHub Secrets, AWS Secrets Manager and key rotation strategies.**
 
 ## Overview
 

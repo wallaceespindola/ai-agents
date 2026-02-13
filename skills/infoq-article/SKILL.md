@@ -1,13 +1,13 @@
 ---
 name: infoq-article
-description: Write research-informed, editorial articles for InfoQ publication targeting architects and senior engineers. Use when creating articles on software architecture, distributed systems, emerging trends, and industry analysis for InfoQ's curated audience of decision-makers.
+description: Write research-informed, editorial articles for InfoQ publication targeting architects and senior engineers. Use when creating articles on software architecture, distributed systems, emerging trends and industry analysis for InfoQ's curated audience of decision-makers.
 ---
 
 # InfoQ Article Writing Guide
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to the CNCF Survey 2024 [link], 65% of organizations...")
@@ -50,7 +50,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 - GitHub Repo: `microservices-patterns-java`
 - InfoQ version title: "Event-Driven Microservices: Trade-offs and Real-World Implementation"
 - DZone version title: "Building Event-Driven Systems: Practical Patterns for Production"
-- Medium version title: "I Implemented Event-Driven Microservices—Here's What I Learned"
+- Medium version title: "Implementing Event-Driven Microservices: Practical Lessons"
 - All versions: IDENTICAL code from same GitHub repo
 
 ## InfoQ Platform Overview
@@ -83,7 +83,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 - Professional, credible voice
 
 **Tone guidelines**:
-- ✅ "The industry is shifting toward X, and here's why..."
+- ✅ "The industry is shifting toward X and here's why..."
 - ✅ "Research shows that organizations using X see Y benefit..."
 - ✅ "This architectural choice has trade-offs: A, B, and C..."
 - ✅ "Based on case studies from Netflix, Airbnb, and Uber..."
@@ -298,7 +298,7 @@ InfoQ requires **five key takeaways** as complete, actionable sentences (not bul
 **Format**:
 ```
 Key Takeaway 1: [Complete sentence explaining concrete insight,
-   benefit, or learning that architects can act on]
+   benefit or learning that architects can act on]
 
 Key Takeaway 2: [Another complete sentence with specific,
    actionable information]
@@ -329,7 +329,7 @@ Key Takeaway 4: Distributed tracing and observability are non-negotiable
    complexity becomes unmanageable in production.
 
 Key Takeaway 5: Most teams underestimate operational complexity; plan
-   for debugging, monitoring, and incident response from day one,
+   for debugging, monitoring and incident response from day one,
    not as an afterthought after deployment.
 ```
 
@@ -549,10 +549,10 @@ LinkedIn: [your profile URL]
 "Distributed Event Processing at Scale: Learning From Netflix's 500M Daily Streams"
 
 ### Opening (Context)
-As video streaming platforms scale to hundreds of millions of concurrent users, traditional request-response architectures break down. Netflix, Disney+, and YouTube process billions of events daily, each requiring immediate processing, aggregation, and analysis. This analysis examines how Netflix built its event-driven architecture, why event sourcing became critical, and the operational lessons applicable to enterprise systems at scale.
+As video streaming platforms scale to hundreds of millions of concurrent users, traditional request-response architectures break down. Netflix, Disney+, and YouTube process billions of events daily, each requiring immediate processing, aggregation and analysis. This analysis examines how Netflix built its event-driven architecture, why event sourcing became critical and the operational lessons applicable to enterprise systems at scale.
 
 ### Section 1: Industry Context
-The shift toward event-driven architecture stems from specific business needs: real-time analytics, user experience personalization, and system resilience at global scale. Research from [cite study] shows organizations using event-driven approaches reduce time-to-insight by 60% and improve system resilience...
+The shift toward event-driven architecture stems from specific business needs: real-time analytics, user experience personalization and system resilience at global scale. Research from [cite study] shows organizations using event-driven approaches reduce time-to-insight by 60% and improve system resilience...
 
 ### Section 2: Architecture Patterns
 Event-driven systems use publish-subscribe messaging to decouple producers from consumers. Netflix's architecture uses Kafka topics for [specific reason], enabling [specific benefit]. The trade-off is operational complexity: monitoring 100+ topics with millions of events/second requires sophisticated observability...
@@ -602,7 +602,7 @@ Key Takeaway 5: Teams should evolve toward microservices from
 ### What Increases Your Chances
 - ✅ Write on trending, high-impact topics (AI, cloud, DevOps)
 - ✅ Include 2-3 real case studies with specific details
-- ✅ Provide data, metrics, or research backing claims
+- ✅ Provide data, metrics or research backing claims
 - ✅ Target architect/CTO audience explicitly
 - ✅ Explain business and technical implications
 - ✅ Polish writing and structure before submitting
@@ -696,7 +696,7 @@ Before finalizing your InfoQ article:
 **Mermaid/PlantUML Diagrams:**
 - [ ] Mermaid or PlantUML diagrams included where conceptually relevant
 - [ ] Each diagram has clear legend explaining colors/symbols
-- [ ] Diagrams are beautiful, professional, and well-styled
+- [ ] Diagrams are beautiful, professional and well-styled
 - [ ] All labels are clear and descriptive (2-4 words max)
 - [ ] No diagram exceeds 20 nodes (complexity kept reasonable)
 - [ ] Diagrams match article narrative and reinforce key concepts

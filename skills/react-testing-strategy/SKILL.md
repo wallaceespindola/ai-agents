@@ -1,6 +1,6 @@
 ---
 name: react-testing-strategy
-description: Design comprehensive test strategies for React applications using Jest, React Testing Library, and best practices
+description: Design comprehensive test strategies for React applications using Jest, React Testing Library and best practices
 ---
 
 # React Testing Strategy Skill
@@ -10,9 +10,9 @@ description: Design comprehensive test strategies for React applications using J
 - Designing test architecture for React applications
 - Creating unit, integration, and E2E test strategies
 - Setting up Jest and React Testing Library
-- Writing component, hook, and integration tests
+- Writing component, hook and integration tests
 - Implementing test coverage reporting
-- Testing React Context, Redux, and async operations
+- Testing React Context, Redux and async operations
 - Accessibility and visual regression testing
 - CI/CD test automation
 

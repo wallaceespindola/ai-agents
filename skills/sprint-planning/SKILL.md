@@ -1,6 +1,6 @@
 ---
 name: sprint-planning
-description: Plan sprints with user stories, estimation, and team capacity planning
+description: Plan sprints with user stories, estimation and team capacity planning
 ---
 
 # Sprint Planning Skill

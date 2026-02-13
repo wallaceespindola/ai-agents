@@ -1,6 +1,6 @@
 ---
 name: database-schema-design
-description: Design optimal database schemas for performance, consistency, and scalability
+description: Design optimal database schemas for performance, consistency and scalability
 ---
 
 # Database Schema Design Skill
@@ -23,7 +23,7 @@ description: Design optimal database schemas for performance, consistency, and s
 
 **Example**:
 ```
-/database-schema-design E-commerce platform with products, orders, and inventory
+/database-schema-design E-commerce platform with products, orders and inventory
 ```
 
 ## How It Works

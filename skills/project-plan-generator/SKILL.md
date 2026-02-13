@@ -1,6 +1,6 @@
 ---
 name: project-plan-generator
-description: Create comprehensive project plans with timelines, milestones, and resource allocation
+description: Create comprehensive project plans with timelines, milestones and resource allocation
 ---
 
 # Project Plan Generator Skill

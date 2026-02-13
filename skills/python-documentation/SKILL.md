@@ -7,7 +7,7 @@ description: Create comprehensive docstrings and technical documentation for Pyt
 
 ## When to Use This Skill
 
-- Adding docstrings to Python modules, functions, and classes
+- Adding docstrings to Python modules, functions and classes
 - Creating technical documentation for APIs and libraries
 - Generating documentation from docstrings with Sphinx
 - Writing README files and setup guides
@@ -590,9 +590,9 @@ def filter_users(
 ## Best Practices
 
 ### 1. Docstring Standards
-- Use consistent style (Google, NumPy, or reStructuredText)
+- Use consistent style (Google, NumPy or reStructuredText)
 - Document all public functions and classes
-- Include parameters, return values, and exceptions
+- Include parameters, return values and exceptions
 - Provide usage examples for complex functions
 
 ### 2. Type Hints + Documentation

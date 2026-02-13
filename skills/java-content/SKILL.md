@@ -1,6 +1,6 @@
 ---
 name: java-content
-description: Write engaging Java content including best practices, design patterns, Spring Boot, concurrent programming, and enterprise architecture. Use when creating technical articles about Java, JVM optimization, or Java ecosystem tools for developer audiences.
+description: Write engaging Java content including best practices, design patterns, Spring Boot, concurrent programming and enterprise architecture. Use when creating technical articles about Java, JVM optimization, or Java ecosystem tools for developer audiences.
 ---
 
 # Java Content Generation
@@ -10,14 +10,14 @@ description: Write engaging Java content including best practices, design patter
 Use this skill when:
 - Writing tutorials on Java features or frameworks
 - Explaining Java design patterns or best practices
-- Creating articles about Spring Boot, Quarkus, or other Java frameworks
-- Discussing Java concurrency, memory management, or performance
+- Creating articles about Spring Boot, Quarkus or other Java frameworks
+- Discussing Java concurrency, memory management or performance
 - Covering Java ecosystem tools (Maven, Gradle, TestNG, JUnit)
 - Explaining enterprise Java patterns (Microservices, CQRS, Event Sourcing)
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to the 2024 Stack Overflow Survey [link], 65% of Java developers...")
@@ -128,14 +128,14 @@ public class ExampleClass {
 ## Audience-Specific Tips
 
 ### For Enterprise Developers
-- Focus on reliability, scalability, and maintainability
+- Focus on reliability, scalability and maintainability
 - Discuss production concerns (monitoring, debugging, deployment)
 - Include architecture diagrams for complex patterns
 - Reference industry standards (12-factor app, etc.)
 
 ### For Startups/Fast-Moving Teams
 - Emphasize speed of development and productivity
-- Show how to leverage frameworks (Spring Boot, Quarkus)
+- Show how to use frameworks (Spring Boot, Quarkus)
 - Discuss deployment and CI/CD integration
 - Focus on developer experience
 
@@ -161,7 +161,7 @@ public class ExampleClass {
 ## Examples
 
 ### Example 1: Spring Boot Article Hook
-"Building a REST API with Spring Boot is straightforward, but adding authentication, validation, and error handling correctly requires understanding several layers. This article shows the complete, production-ready approach."
+"Building a REST API with Spring Boot is straightforward, but adding authentication, validation and error handling correctly requires understanding several layers. This article shows the complete, production-ready approach."
 
 ### Example 2: Concurrency Article
 "Virtual threads in Java 21 promise to revolutionize how we write high-concurrency applications. Instead of complex thread pools and callback chains, you can write sequential code that runs on thousands of virtual threads. Here's how."

@@ -1,10 +1,10 @@
 # GitHub CLI Automation Skill
 
-**Automate GitHub operations with command-line tools. Master scripting, batch operations, custom extensions, and workflow automation.**
+**Automate GitHub operations with command-line tools. Master scripting, batch operations, custom extensions and workflow automation.**
 
 ## Overview
 
-GitHub CLI (gh) provides powerful command-line interface for GitHub operations. This skill covers automation scripting, batch operations, and custom extensions.
+GitHub CLI (gh) provides a comprehensive command-line interface for GitHub operations. This skill covers automation scripting, batch operations and custom extensions.
 
 **What it does:**
 - Executes GitHub operations from command line

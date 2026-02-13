@@ -1,13 +1,13 @@
 ---
 name: substack-newsletter
-description: Create engaging technical newsletters for Substack with subscriber growth strategies, email optimization, and serialized content planning. Use when writing weekly/monthly Substack newsletters for developer audiences, building community and recurring revenue.
+description: Create engaging technical newsletters for Substack with subscriber growth strategies, email optimization and serialized content planning. Use when writing weekly/monthly Substack newsletters for developer audiences, building community and recurring revenue.
 ---
 
 # Substack Newsletter Guide
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to the 2024 Developer Survey [link], 65% of subscribers...")
@@ -56,7 +56,7 @@ Substack Newsletter (free tier):
   CTA: "Upgrade to paid for the advanced patterns + code repo"
 
 Medium Article (same topic):
-  Title: "I Built Async Python Systems—Here's What I Learned"
+  Title: "Building Async Python Systems: Practical Lessons"
   Length: 3500-4500 words (more detailed)
   Format: Long-form narrative
   Code: Same examples from same GitHub repo
@@ -88,7 +88,7 @@ Strategy:
 - **What**: Weekly/monthly email with original insights, curated news, tutorials
 - **Who**: Developers seeking knowledge deeper than social media provides
 - **Why they subscribe**: Regular learning, early access, exclusive insights
-- **Frequency**: Weekly (best for growth), or bi-weekly minimum
+- **Frequency**: Weekly (best for growth) or bi-weekly minimum
 - **Length**: 1,500-3,000 words typical, can be shorter initially
 
 ### Newsletter Structure
@@ -163,7 +163,7 @@ Footer
 
 #### Preview Text
 - **40-50 characters** that show in inbox preview
-- **Complete the subject**: "...Here's what I learned"
+- **Complete the subject**: "...Key takeaways"
 - **Add value statement**: "3 actionable insights inside"
 - **Intrigue without clickbait**: "You won't expect this turn"
 
@@ -176,7 +176,7 @@ Footer
 The first paragraph determines if they read further:
 
 ✅ **Good opens:**
-"I spent 3 hours debugging a production issue that turned out to be a single character—a tilde (~) I'd never seen in JavaScript before. Here's what I learned about JavaScript's lesser-known operators."
+"I spent 3 hours debugging a production issue that turned out to be a single character: a tilde (~) I'd never seen in JavaScript before. Key takeaways about JavaScript's lesser-known operators."
 
 ✅ **Good opens:**
 "Last week, a junior developer asked me why we refactor code if it's already working. It was such a good question that I realized I'd never really explained it well. So I spent time thinking about the real reasons."
@@ -308,7 +308,7 @@ how I approach optimization.
 
 - **Open rate**: Industry standard 25-35% for tech newsletters
 - **Click rate**: 2-5% typical, higher for strong content
-- **Unsubscribe rate**: Monitor to ensure quality perception
+- **Unsubscribe rate**: Monitor for quality perception
 - **Reply rate**: Engagement signal (encourage replies)
 - **Forward rate**: People sharing with others
 - **Paid conversion**: % of free subscribers upgrading
@@ -398,7 +398,7 @@ how I approach optimization.
 "We spent 4 months optimizing our Java application for memory. It was pointless. The problem was always going to be the database. Here's how to actually prioritize performance work."
 
 **Example 3: Question**
-"Why do senior developers often say 'we don't need that framework' while junior developers can't wait to adopt it? I think I finally understand the answer, and it has nothing to do with age."
+"Why do senior developers often say 'we don't need that framework' while junior developers can't wait to adopt it? I think I finally understand the answer and it has nothing to do with age."
 
 ### Substack Specific Features
 

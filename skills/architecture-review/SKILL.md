@@ -1,6 +1,6 @@
 ---
 name: architecture-review
-description: Review and critique system architecture for scalability, maintainability, and best practices
+description: Review and critique system architecture for scalability, maintainability and best practices
 ---
 
 # Architecture Review Skill

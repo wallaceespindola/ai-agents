@@ -1,6 +1,6 @@
 ---
 name: system-design-doc
-description: Create comprehensive system design documentation including architecture, data flow, and deployment
+description: Create comprehensive system design documentation including architecture, data flow and deployment
 ---
 
 # System Design Documentation Skill

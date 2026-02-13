@@ -1,6 +1,6 @@
 ---
 name: performance-testing
-description: Design and execute performance, load, and stress testing
+description: Design and execute performance, load and stress testing
 ---
 
 # Performance Testing Skill

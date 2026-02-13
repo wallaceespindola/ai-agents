@@ -1,10 +1,10 @@
 # Git Workflow Strategy Skill
 
-**Master Git Flow, GitHub Flow, trunk-based development, branch protection, merge strategies, and release management for team collaboration.**
+**Master Git Flow, GitHub Flow, trunk-based development, branch protection, merge strategies and release management for team collaboration.**
 
 ## Overview
 
-Git workflow strategy defines how your team collaborates on code. This skill covers industry-standard branching patterns, protection rules, merge strategies, and release management.
+Git workflow strategy defines how your team collaborates on code. This skill covers industry-standard branching patterns, protection rules, merge strategies and release management.
 
 **What it does:**
 - Implements Git Flow for large-scale projects

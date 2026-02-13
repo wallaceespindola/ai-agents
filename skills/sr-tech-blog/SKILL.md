@@ -1,6 +1,6 @@
 ---
 name: sr-tech-blog
-description: Write comprehensive technical articles for personal or company blogs with full creative control. Use when creating in-depth technical content for your own blog or company website, with flexibility in length, format, and monetization strategy.
+description: Write comprehensive technical articles for personal or company blogs with full creative control. Use when creating in-depth technical content for your own blog or company website, with flexibility in length, format and monetization strategy.
 ---
 
 # Senior Tech Blog Writing Guide
@@ -14,7 +14,7 @@ Use this skill when:
 - Creating evergreen content for future reference
 - Writing without platform constraints (length, tone, format)
 - Building SEO authority on your domain
-- Monetizing content through ads, sponsorships, or products
+- Monetizing content through ads, sponsorships or products
 
 ## Tech Blog Advantages
 
@@ -35,7 +35,7 @@ Use this skill when:
 - **Sweet spot**: 3,000-5,000 words for comprehensive tutorials
 - **Mega-posts**: 8,000+ for ultimate guides, series finales
 - **Mini-posts**: 800-1,500 for quick tips, announcements
-- **Series**: Multi-part deep dives for complex topics
+- **Series**: Multi-part detailed analyses for complex topics
 
 ### Blog Post Types
 
@@ -225,7 +225,7 @@ UPDATES SECTION (Optional)
 - **Engaging**: Write like you're talking to a colleague
 
 **Example voice:**
-"I spent 6 months getting this wrong before I finally understood why. Here's what the documentation doesn't explain clearly, and the approach that actually works in production."
+"I spent 6 months getting this wrong before I finally understood why. Here's what the documentation doesn't explain clearly and the approach that actually works in production."
 
 ### Code Examples for Blog Posts
 
@@ -233,7 +233,7 @@ UPDATES SECTION (Optional)
 - **Complete and runnable**: Readers can copy and run
 - **Well-commented**: Explain the important parts
 - **Production-concerned**: Include error handling, logging
-- **Varied**: Show simple, medium, and complex examples
+- **Varied**: Show simple, medium and complex examples
 - **Tested**: You've actually run this code
 - **Modern**: Use current language features and frameworks
 
@@ -487,7 +487,7 @@ public class ProductionExample {
 - **Sections:** 10+
 - **Code examples:** 8-10
 - **Images:** 4-5 diagrams
-- **Features:** Table of contents, deep dive, advanced patterns, real examples
+- **Features:** Table of contents, detailed analysis, advanced patterns, real examples
 - **Strategy:** Becomes the definitive reference
 
 **Example 2: Case Study Post**

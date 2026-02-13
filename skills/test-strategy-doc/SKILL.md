@@ -1,6 +1,6 @@
 ---
 name: test-strategy-doc
-description: Create comprehensive testing strategies covering unit, integration, E2E, and non-functional testing
+description: Create comprehensive testing strategies covering unit, integration, E2E and non-functional testing
 ---
 
 # Test Strategy Documentation Skill

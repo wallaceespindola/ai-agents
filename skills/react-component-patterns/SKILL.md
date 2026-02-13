@@ -1,6 +1,6 @@
 ---
 name: react-component-patterns
-description: Design React components using best patterns, composition, rendering strategies, and component architecture
+description: Design React components using best patterns, composition, rendering strategies and component architecture
 ---
 
 # React Component Patterns Skill
@@ -24,7 +24,7 @@ description: Design React components using best patterns, composition, rendering
 
 **Example**:
 ```
-/react-component-patterns Form component with validation, error handling, and auto-save
+/react-component-patterns Form component with validation, error handling and auto-save
 ```
 
 ## How It Works

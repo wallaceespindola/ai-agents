@@ -1,6 +1,6 @@
 ---
 name: nextjs-setup
-description: Generate Next.js project structures with modern best practices, routing, and optimization
+description: Generate Next.js project structures with modern best practices, routing and optimization
 ---
 
 # Next.js Setup Skill

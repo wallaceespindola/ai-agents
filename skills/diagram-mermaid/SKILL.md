@@ -1,6 +1,6 @@
 ---
 name: diagram-mermaid
-description: Generate software architecture, flow, and UML diagrams using Mermaid diagram-as-code syntax. Use when creating visual diagrams for articles, documentation, and technical content that can be version controlled.
+description: Generate software architecture, flow, and UML diagrams using Mermaid diagram-as-code syntax. Use when creating visual diagrams for articles, documentation and technical content that can be version controlled.
 ---
 
 # Mermaid Diagrams for Technical Content

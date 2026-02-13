@@ -1,10 +1,10 @@
 # Git Commit Strategy Skill
 
-**Master conventional commits, commit linting, signing, interactive rebasing, and commit message standards for clear project history.**
+**Master conventional commits, commit linting, signing, interactive rebasing and commit message standards for clear project history.**
 
 ## Overview
 
-Commit messages are permanent project documentation. This skill covers conventional commits, message standards, signing, and automated linting.
+Commit messages are permanent project documentation. This skill covers conventional commits, message standards, signing and automated linting.
 
 **What it does:**
 - Implements conventional commit format

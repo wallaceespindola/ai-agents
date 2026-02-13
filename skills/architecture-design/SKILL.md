@@ -1,6 +1,6 @@
 ---
 name: architecture-design
-description: Write comprehensive articles on software architecture, system design, architectural patterns, and design decisions. Use when creating technical content about architecture patterns, design principles, system design interviews, and enterprise architecture patterns.
+description: Write comprehensive articles on software architecture, system design, architectural patterns and design decisions. Use when creating technical content about architecture patterns, design principles, system design interviews and enterprise architecture patterns.
 ---
 
 # Architecture & Software Design Content

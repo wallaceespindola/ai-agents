@@ -1,13 +1,13 @@
 ---
 name: dzone-article
-description: Write curated technical articles for DZone publication platform, optimizing for enterprise developer audience and editorial review. Use when preparing articles for DZone publication with focus on practical patterns, tutorials, and industry insights.
+description: Write curated technical articles for DZone publication platform, optimizing for enterprise developer audience and editorial review. Use when preparing articles for DZone publication with focus on practical patterns, tutorials and industry insights.
 ---
 
 # DZone Article Publication Guide
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to the 2024 Stack Overflow Survey [link], 65% of developers...")
@@ -64,7 +64,7 @@ InfoQ version:
   CTA: "Link to original article for republishing"
 
 Medium version:
-  Title: "I Built a Circuit Breaker—Here's What I Learned"
+  Title: "Building a Circuit Breaker: Practical Lessons"
   Hook: "When my production service started failing..."
   Focus: Personal journey, practical lessons
   Length: 2000-4000 words
@@ -262,7 +262,7 @@ vs.
 
 #### Guidelines
 - **Production-ready**: Code should be realistic, not educational simplifications
-- **Complete**: Show full context, setup, and error handling
+- **Complete**: Show full context, setup and error handling
 - **Tested**: Code has been verified to work
 - **Current**: Use current framework versions and best practices
 - **Explained**: Comment architectural decisions, not obvious code
@@ -299,7 +299,7 @@ DZone readers strongly prefer well-designed diagrams that complement code exampl
 
 ✅ **ALWAYS create diagrams for:**
 - Architecture or system design explanations
-- Process flows, decision trees, or workflows
+- Process flows, decision trees or workflows
 - Database schema or data relationships
 - API interactions or request/response cycles
 - Microservices communication patterns
@@ -322,7 +322,7 @@ DZone readers strongly prefer well-designed diagrams that complement code exampl
 - ✅ Beautiful, professional styling and colors
 - ✅ Readable layout (max 15-20 nodes per diagram)
 - ✅ Clear, descriptive labels for all elements
-- ✅ **Legend provided** for all colors, symbols, or custom notation
+- ✅ **Legend provided** for all colors, symbols or custom notation
 - ✅ Consistent color scheme matching article theme
 - ✅ Proper spacing and grouping
 - ✅ Matches and reinforces article narrative precisely
@@ -394,7 +394,7 @@ graph TD
 **Image Generation:**
 - Create using `image-generator-blog` skill
 - Must be original/custom (not generic stock photos)
-- Abstract, futuristic, or technical aesthetic preferred
+- Abstract, futuristic or technical aesthetic preferred
 - Professional appearance reflects article quality
 
 **Markdown Image Syntax:**
@@ -478,12 +478,12 @@ article-project/
 - ✅ **Permitted**: Human-written articles with editorial support from DZone team
 
 **Why DZone avoids AI-generated content (Official Stance):**
-> "AI-generated content often lacks the depth, context, and personal touches that resonate with our audience."
-> "We understand that AI can be a helpful tool, but when used improperly or excessively, it can dilute originality, introduce inaccuracies, and produce content that often feels generic and repetitive."
-> "AI-generated articles tend to follow similar patterns and lack the unique voice or personal insights that resonate with readers — and yes, we can always tell!"
+> "AI-generated content often lacks the depth, context and personal touches that resonate with our audience."
+> "We understand that AI can be a helpful tool, but when used improperly or excessively, it can dilute originality, introduce inaccuracies and produce content that often feels generic and repetitive."
+> "AI-generated articles tend to follow similar patterns and lack the unique voice or personal insights that resonate with readers (and yes, we can always tell!)"
 
 **Why you don't need AI to edit your articles:**
-- DZone's editorial team edits and polishes your content for grammar, formatting, and clarity
+- DZone's editorial team edits and polishes your content for grammar, formatting and clarity
 - Editors are trained to maintain your perspective and voice
 - Editorial team enhances your work while preserving your unique perspective
 - Your authentic voice and personal insights are what readers value most
@@ -534,10 +534,10 @@ article-project/
 - ❌ **Advertising or promotional intent** - No disguised vendor marketing
 - ❌ **Marketing language or press releases**
 - ❌ **Excessive backlinks or UTM tracking links**
-- ❌ **Links to paid tools, products, or services**
+- ❌ **Links to paid tools, products or services**
 - ❌ **Product feature lists or summaries**
 - ❌ **Gated content or links to gated content**
-- ❌ **Content solely to promote a product, service, or company**
+- ❌ **Content solely to promote a product, service or company**
 - ❌ **Blurbs or incomplete articles that link off-site for full content**
 - ❌ **Company account profiles** - Must be individual author with real name
 - ❌ **Company logos in profile** - Personal brand only
@@ -723,7 +723,7 @@ These issues slow down the review process:
 - **Automated email**: Lists specific reasons for rejection with detailed explanation
 - **Editor notes**: May include specific feedback from the editor
 - **Review guidelines**: Refer back to these submission guidelines for clarification
-- **Resubmit**: You can revise and resubmit, or create new article
+- **Resubmit**: You can revise and resubmit or create new article
 - **Support**: Don't hesitate to reach out to **editors@dzone.com** for help
 
 ### Topics DZone Publishes Well
@@ -829,8 +829,8 @@ These issues slow down the review process:
 - ❌ **Poor code balance**: All text or all code; DZone wants even balance
 - ❌ **Misleading headline**: Title doesn't match actual content
 - ❌ **No production context**: Toy examples feel academic; missing error handling
-- ❌ **Unverified claims**: No benchmarks, metrics, or evidence provided
-- ❌ **Poor code examples**: Incomplete, untested, or outdated code
+- ❌ **Unverified claims**: No benchmarks, metrics or evidence provided
+- ❌ **Poor code examples**: Incomplete, untested or outdated code
 - ❌ **Grammar and spelling**: Reduces credibility (but editors will help refine)
 - ❌ **No unique perspective**: Just regurgitating documentation
 - ❌ **Overly trendy**: Hype-driven coverage without substance
@@ -838,7 +838,7 @@ These issues slow down the review process:
 - ❌ **No real examples**: Case studies and production lessons expected
 
 **Submission & process mistakes**
-- ❌ **Wrong profile info**: Company account, no real name, or no job title
+- ❌ **Wrong profile info**: Company account, no real name or no job title
 - ❌ **Missing zones/tags**: Under-categorized articles won't be discovered
 - ❌ **No author bio**: Credibility signaling important for DZone
 - ❌ **Inflammatory tone**: DZone removes content with inappropriate language
@@ -901,7 +901,7 @@ Result: Practical, builds credibility, generates discussion
 
 **CRITICAL: Before you start**
 - [ ] **Article is human-written** (no over-use AI generation)
-- [ ] **Original content** (not published on blog, Medium, Dev.to, or elsewhere)
+- [ ] **Original content** (not published on blog, Medium, Dev.to or elsewhere)
 - [ ] **No advertising intent** (pure educational/informational)
 - [ ] **All images owned or properly licensed**
 - [ ] **No company profile** (personal author account with real name)
@@ -913,7 +913,7 @@ Result: Practical, builds credibility, generates discussion
 - [ ] **2-4 production-grade code examples** (not toy examples)
 - [ ] Code examples tested and verified working
 - [ ] Code includes production concerns (error handling, logging, metrics)
-- [ ] All technical claims backed by benchmarks, metrics, or evidence
+- [ ] All technical claims backed by benchmarks, metrics or evidence
 - [ ] Real-world context and production lessons included
 - [ ] Trade-offs and limitations honestly discussed
 - [ ] Professional writing with clear structure
@@ -973,7 +973,7 @@ Before finalizing your DZone article:
 **Mermaid/PlantUML Diagrams (REQUIRED When Applicable):**
 - [ ] Mermaid or PlantUML diagrams included for all conceptual content
 - [ ] Each diagram has clear, detailed legend explaining colors/symbols/notation
-- [ ] Diagrams are beautiful, professional, and well-designed
+- [ ] Diagrams are beautiful, professional and well-designed
 - [ ] All node labels are clear and descriptive (2-4 words max)
 - [ ] No diagram exceeds 20 nodes (split complex diagrams)
 - [ ] Diagrams use consistent, professional color scheme
@@ -1014,4 +1014,4 @@ Before finalizing your DZone article:
 ---
 
 **Contact DZone Editorial Team:**
-📧 **editors@dzone.com** - For questions, feedback, or submission assistance
+📧 **editors@dzone.com** - For questions, feedback or submission assistance

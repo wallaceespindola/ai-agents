@@ -1,11 +1,11 @@
 ---
 name: python-coder
-description: Generate complete production-ready Python projects with full source code, tests, and documentation. Create linked repositories where articles in /docs reference code in src and tests in test folders. Perfect for tutorials, patterns, and real-world examples.
+description: Generate complete production-ready Python projects with full source code, tests and documentation. Create linked repositories where articles in /docs reference code in src and tests in test folders. Perfect for tutorials, patterns and real-world examples.
 ---
 
 # Python Coder Skill
 
-Generate production-ready Python projects that complement technical articles. This skill creates complete, runnable code with proper project structure, dependency management, tests, and documentation.
+Generate production-ready Python projects that complement technical articles. This skill creates complete, runnable code with proper project structure, dependency management, tests and documentation.
 
 ## When to Use This Skill
 
@@ -339,7 +339,7 @@ Files:
 
 ### Step 1: Write Article in /docs/ARTICLE.md
 
-Create your article explaining the concept, design, or pattern.
+Create your article explaining the concept, design or pattern.
 
 ### Step 2: Request Code Generation
 

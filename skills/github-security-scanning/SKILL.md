@@ -1,10 +1,10 @@
 # GitHub Security Scanning Skill
 
-**Implement comprehensive security scanning with Dependabot, secret scanning, CodeQL analysis, and vulnerability management.**
+**Implement comprehensive security scanning with Dependabot, secret scanning, CodeQL analysis and vulnerability management.**
 
 ## Overview
 
-GitHub provides integrated security tools for vulnerability detection, dependency management, and secret scanning. This skill covers implementation and best practices.
+GitHub provides integrated security tools for vulnerability detection, dependency management and secret scanning. This skill covers implementation and best practices.
 
 **What it does:**
 - Configures Dependabot for dependency updates

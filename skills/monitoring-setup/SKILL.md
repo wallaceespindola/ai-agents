@@ -1,6 +1,6 @@
 ---
 name: monitoring-setup
-description: Set up monitoring, logging, and alerting for applications and infrastructure
+description: Set up monitoring, logging and alerting for applications and infrastructure
 ---
 
 # Monitoring Setup Skill

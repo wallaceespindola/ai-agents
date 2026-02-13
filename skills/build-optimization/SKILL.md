@@ -1,6 +1,6 @@
 # Build Optimization Skill
 
-**Optimize Maven, Gradle, and npm builds. Master caching, dependency resolution, incremental builds, and custom build tasks.**
+**Optimize Maven, Gradle and npm builds. Master caching, dependency resolution, incremental builds and custom build tasks.**
 
 ## Overview
 

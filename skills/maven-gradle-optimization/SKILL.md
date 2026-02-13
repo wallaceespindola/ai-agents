@@ -1,6 +1,6 @@
 # Maven Gradle Optimization Skill
 
-**Master Maven profiles, Gradle optimization, dependency management, and custom build tasks.**
+**Master Maven profiles, Gradle optimization, dependency management and custom build tasks.**
 
 ## Overview
 

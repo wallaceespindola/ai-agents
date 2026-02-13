@@ -1,6 +1,6 @@
 ---
 name: cicd-pipeline-setup
-description: Create CI/CD pipelines for automated testing, building, and deployment
+description: Create CI/CD pipelines for automated testing, building and deployment
 ---
 
 # CI/CD Pipeline Setup Skill
@@ -8,7 +8,7 @@ description: Create CI/CD pipelines for automated testing, building, and deploym
 ## When to Use This Skill
 
 - Setting up GitHub Actions, GitLab CI, or Jenkins pipelines
-- Automating tests, builds, and deployments
+- Automating tests, builds and deployments
 - Implementing blue-green or canary deployments
 - Setting up Docker image builds
 - Configuring deployment environments

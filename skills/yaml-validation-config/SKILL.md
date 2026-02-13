@@ -1,10 +1,10 @@
 # YAML Validation & Config Skill
 
-**Master YAML syntax, schema validation, linting, and configuration management patterns for robust config files.**
+**Master YAML syntax, schema validation, linting and configuration management patterns for reliable config files.**
 
 ## Overview
 
-YAML is the standard configuration format for modern applications. This skill covers syntax, validation, schema enforcement, and best practices.
+YAML is the standard configuration format for modern applications. This skill covers syntax, validation, schema enforcement and best practices.
 
 **What it does:**
 - Validates YAML syntax and structure

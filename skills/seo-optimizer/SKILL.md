@@ -1,13 +1,13 @@
 ---
 name: seo-optimizer
-description: Optimize technical articles for search engine visibility and discoverability, including keyword research, meta optimization, internal linking, and content structure. Use when improving article SEO across platforms like Medium, Dev.to, and technical blogs.
+description: Optimize technical articles for search engine visibility and discoverability, including keyword research, meta optimization, internal linking and content structure. Use when improving article SEO across platforms like Medium, Dev.to and technical blogs.
 ---
 
 # Technical Content SEO Optimization
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims in SEO-optimized content.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims in SEO-optimized content.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to Google's Core Web Vitals Report 2024 [link]...")
@@ -153,9 +153,9 @@ Long-tail keywords:
 - **Call-to-action**: Optional, helpful
 
 **Examples:**
-- "Learn Python async/await with practical examples. Complete guide covering asyncio, coroutines, and how to handle concurrent operations. Includes working code samples."
+- "Learn Python async/await with practical examples. Complete guide covering asyncio, coroutines and how to handle concurrent operations. Includes working code samples."
 
-- "Discover 10 proven techniques to optimize Spring Boot applications for production. Reduce load times, improve database performance, and enhance scalability."
+- "Discover 10 proven techniques to optimize Spring Boot applications for production. Reduce load times, improve database performance and enhance scalability."
 
 #### Header Structure (H1, H2, H3)
 

@@ -1,10 +1,10 @@
 # Pre-Commit Hooks Setup Skill
 
-**Master pre-commit framework, hook chaining, custom hooks, linting integration, and automated code quality checks.**
+**Master pre-commit framework, hook chaining, custom hooks, linting integration and automated code quality checks.**
 
 ## Overview
 
-Pre-commit hooks automate code quality checks before committing. This skill covers framework setup, hook configuration, and integration.
+Pre-commit hooks automate code quality checks before committing. This skill covers framework setup, hook configuration and integration.
 
 **What it does:**
 - Configures pre-commit framework

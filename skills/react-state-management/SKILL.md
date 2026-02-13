@@ -1,6 +1,6 @@
 ---
 name: react-state-management
-description: Design and implement state management solutions for React applications using Context, Redux, Zustand, or other patterns
+description: Design and implement state management solutions for React applications using Context, Redux, Zustand or other patterns
 ---
 
 # React State Management Skill
@@ -24,7 +24,7 @@ description: Design and implement state management solutions for React applicati
 
 **Example**:
 ```
-/react-state-management E-commerce app with shopping cart, user auth, and wishlist
+/react-state-management E-commerce app with shopping cart, user auth and wishlist
 ```
 
 ## How It Works

@@ -1,6 +1,6 @@
 ---
 name: code-examples-generator
-description: Generate production-ready code examples for technical articles including setup, complete implementations, testing code, and runnable demonstrations. Use when creating code examples for tutorials, blog posts, and documentation that readers can immediately use and learn from.
+description: Generate production-ready code examples for technical articles including setup, complete implementations, testing code and runnable demonstrations. Use when creating code examples for tutorials, blog posts and documentation that readers can immediately use and learn from.
 ---
 
 # Code Examples Generation for Technical Content

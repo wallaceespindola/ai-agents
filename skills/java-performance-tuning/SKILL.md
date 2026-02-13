@@ -1,6 +1,6 @@
 ---
 name: java-performance-tuning
-description: Profile and optimize Java application performance, JVM tuning, and resource utilization
+description: Profile and optimize Java application performance, JVM tuning and resource utilization
 ---
 
 # Java Performance Tuning Skill

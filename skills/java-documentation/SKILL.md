@@ -32,7 +32,7 @@ description: Create comprehensive JavaDoc and technical documentation for Java a
 The skill creates comprehensive documentation:
 
 ### 1. JavaDoc Standards
-- **Public API**: Document all public classes, methods, and fields
+- **Public API**: Document all public classes, methods and fields
 - **Parameters**: @param for all method parameters
 - **Returns**: @return describing return value
 - **Exceptions**: @throws for checked exceptions
@@ -103,10 +103,10 @@ The skill creates comprehensive documentation:
 
 ```java
 /**
- * Manages user operations including creation, retrieval, and deletion.
+ * Manages user operations including creation, retrieval and deletion.
  *
  * <p>This service handles all business logic related to user management,
- * including validation, persistence, and event publishing.
+ * including validation, persistence and event publishing.
  *
  * <p>Example usage:
  * <pre>{@code
@@ -129,9 +129,9 @@ public class UserService {
     /**
      * Creates a new user with the provided information.
      *
-     * <p>Validates input, checks for duplicates, and publishes user creation event.
+     * <p>Validates input, checks for duplicates and publishes user creation event.
      *
-     * @param request contains user email, name, and initial password.
+     * @param request contains user email, name and initial password.
      *                Cannot be null.
      * @return the created user with assigned ID
      * @throws UserAlreadyExistsException if user with email already exists
@@ -276,7 +276,7 @@ public class UserController {
 ## Overview
 
 The Order Service is a microservice responsible for managing customer orders,
-including creation, fulfillment, and tracking.
+including creation, fulfillment and tracking.
 
 ## Components
 
@@ -413,7 +413,7 @@ public User createUser(CreateUserRequest request) { }
  * Creates a new user and sends welcome email.
  *
  * This method validates the email format to prevent duplicate entries,
- * generates a secure password hash, and publishes a UserCreated event
+ * generates a secure password hash and publishes a UserCreated event
  * that triggers the welcome email workflow.
  */
 public User createUser(CreateUserRequest request) { }

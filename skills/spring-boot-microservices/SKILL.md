@@ -1,6 +1,6 @@
 # Spring Boot Microservices Skill
 
-**Master Spring Cloud, service discovery, API Gateway, circuit breakers, distributed transactions, and microservices patterns.**
+**Master Spring Cloud, service discovery, API Gateway, circuit breakers, distributed transactions and microservices patterns.**
 
 ## Overview
 

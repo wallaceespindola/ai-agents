@@ -1,10 +1,10 @@
 # Kubernetes YAML Generation Skill
 
-**Master Kubernetes manifests: Deployments, Services, Ingress, ConfigMaps, Secrets, StatefulSets, Custom Resources, and best practices.**
+**Master Kubernetes manifests: Deployments, Services, Ingress, ConfigMaps, Secrets, StatefulSets, Custom Resources and best practices.**
 
 ## Overview
 
-Kubernetes manifests define containerized applications. This skill covers manifest generation, resource types, and configuration patterns.
+Kubernetes manifests define containerized applications. This skill covers manifest generation, resource types and configuration patterns.
 
 **What it does:**
 - Generates Kubernetes Deployments

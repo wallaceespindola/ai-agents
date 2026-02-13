@@ -1,13 +1,13 @@
 ---
 name: medium-optimizer
-description: Optimize technical articles for Medium platform, including SEO, story structure, readability, clapping engagement, and publication strategy. Use when preparing articles for Medium publication, maximizing reach and reader engagement in this curated platform.
+description: Optimize technical articles for Medium platform, including SEO, story structure, readability, clapping engagement and publication strategy. Use when preparing articles for Medium publication, maximizing reach and reader engagement in this curated platform.
 ---
 
 # Medium Optimization Guide
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to the 2024 Stack Overflow Survey [link], 65% of developers...")
@@ -48,7 +48,7 @@ When publishing same technical concept to multiple platforms (Medium, DZone, Inf
 GitHub Repo: async-patterns-python (single source of truth for code)
 
 Medium version:
-  Title: "I Built Async Python Systems—Here's What I Learned About Concurrency"
+  Title: "Building Async Python Systems: Practical Lessons About Concurrency"
   Subtitle: "How I went from blocking I/O to 100x faster systems"
   Tone: Personal, conversational, storytelling
   Hook: "Three months ago, my Python API could barely handle 100 concurrent users..."
@@ -214,7 +214,7 @@ public class Example {
 
 #### In-Article Images
 - **Types**: Diagrams, architecture, screenshots, flowcharts
-- **Placement**: After introducing concept, before deep dive
+- **Placement**: After introducing concept, before detailed analysis
 - **Captions**: Descriptive text under image
 - **Count**: 3-5 images in 3,000+ word article
 - **Format**: PNG for diagrams, JPG for photos
@@ -263,7 +263,7 @@ Select 1-2 most relevant topics:
 - Describe value to reader
 
 **Example:**
-"Learn how to build production-ready REST APIs with Spring Boot. This comprehensive guide covers security, validation, testing, and deployment with real-world examples."
+"Learn how to build production-ready REST APIs with Spring Boot. This comprehensive guide covers security, validation, testing and deployment with real-world examples."
 
 ### Engagement Strategies
 
@@ -391,14 +391,14 @@ Select 1-2 most relevant topics:
 
 **Headline:** "Building Resilient REST APIs with Spring Boot: A Production Guide"
 
-**Subtitle:** "Learn how Netflix, Amazon, and other scale-ups handle failures, retries, and timeouts without losing user trust"
+**Subtitle:** "Learn how Netflix, Amazon and other scale-ups handle failures, retries and timeouts without losing user trust"
 
 **Opening hook:**
-"Your API is running fine in development. Users are happy. Then it hits production, and your database gets slow. Your downstream service times out. Your cache goes down. And suddenly, you're getting 500 errors and angry customers.
+"Your API is running fine in development. Users are happy. Then it hits production and your database gets slow. Your downstream service times out. Your cache goes down. And suddenly, you're getting 500 errors and angry customers.
 
 This is the gap between 'it works' and 'it's production-ready.' And it's exactly where most developers make mistakes.
 
-In this guide, we'll build a real REST API that handles all the chaos production throws at it. You'll learn the patterns that Netflix, Amazon, and other scale-ups use to keep their services up when things go wrong."
+In this guide, we'll build a real REST API that handles all the chaos production throws at it. You'll learn the patterns that Netflix, Amazon and other scale-ups use to keep their services up when things go wrong."
 
 ---
 

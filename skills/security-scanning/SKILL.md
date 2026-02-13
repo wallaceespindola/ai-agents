@@ -1,6 +1,6 @@
 ---
 name: security-scanning
-description: Integrate security scanning tools for SAST, DAST, and dependency scanning
+description: Integrate security scanning tools for SAST, DAST and dependency scanning
 ---
 
 # Security Scanning Skill

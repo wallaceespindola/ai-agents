@@ -1,6 +1,6 @@
 ---
 name: deployment-strategy
-description: Design deployment strategies including blue-green, canary, and rolling deployments
+description: Design deployment strategies including blue-green, canary and rolling deployments
 ---
 
 # Deployment Strategy Skill

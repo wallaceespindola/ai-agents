@@ -1,6 +1,6 @@
 ---
 name: scalability-analysis
-description: Analyze system scalability, identify bottlenecks, and plan capacity growth
+description: Analyze system scalability, identify bottlenecks and plan capacity growth
 ---
 
 # Scalability Analysis Skill

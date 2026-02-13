@@ -1,6 +1,6 @@
 ---
 name: frontend-performance
-description: Optimize frontend applications for bundle size, rendering performance, and user experience
+description: Optimize frontend applications for bundle size, rendering performance and user experience
 ---
 
 # Frontend Performance Skill

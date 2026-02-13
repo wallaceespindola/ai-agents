@@ -1,6 +1,6 @@
 ---
 name: risk-assessment
-description: Identify project risks, assess probability and impact, and create mitigation plans
+description: Identify project risks, assess probability and impact and create mitigation plans
 ---
 
 # Risk Assessment Skill

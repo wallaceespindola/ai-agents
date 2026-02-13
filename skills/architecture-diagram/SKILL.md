@@ -1,6 +1,6 @@
 ---
 name: architecture-diagram
-description: Generate C4, UML, and sequence diagrams for system architecture documentation
+description: Generate C4, UML and sequence diagrams for system architecture documentation
 ---
 
 # Architecture Diagram Skill

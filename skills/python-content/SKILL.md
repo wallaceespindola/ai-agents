@@ -1,13 +1,13 @@
 ---
 name: python-content
-description: Write engaging Python content covering modern Python features, data science, web development, async programming, and best practices. Use when creating articles about Python, Django, FastAPI, data analysis, machine learning, or Python ecosystem tools for developer audiences.
+description: Write engaging Python content covering modern Python features, data science, web development, async programming and best practices. Use when creating articles about Python, Django, FastAPI, data analysis, machine learning, or Python ecosystem tools for developer audiences.
 ---
 
 # Python Content Generation
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to the 2024 Python Developers Survey [link], 65% of developers...")
@@ -28,10 +28,10 @@ description: Write engaging Python content covering modern Python features, data
 Use this skill when:
 - Writing tutorials on Python features or frameworks
 - Explaining Python design patterns or best practices
-- Creating articles about Django, FastAPI, Flask, or async Python
+- Creating articles about Django, FastAPI, Flask or async Python
 - Discussing Python data science (pandas, NumPy, scikit-learn)
 - Covering Python tooling (Poetry, uv, pytest, Black, Ruff)
-- Explaining Python async/await, type hints, or dataclasses
+- Explaining Python async/await, type hints or dataclasses
 - Writing about machine learning with PyTorch or TensorFlow
 
 ## Quick Start: Article Structure
@@ -201,10 +201,10 @@ if __name__ == "__main__":
 ## Examples
 
 ### Example 1: FastAPI Article Hook
-"FastAPI has become the go-to choice for building modern Python APIs, but many developers miss its most powerful feature: automatic OpenAPI documentation. Combine that with Pydantic validation, and you get a framework that catches bugs at the API boundary before they hit your business logic."
+"FastAPI has become the go-to choice for building modern Python APIs, but many developers miss its key feature: automatic OpenAPI documentation. Combine that with Pydantic validation and you get a framework that catches bugs at the API boundary before they hit your business logic."
 
 ### Example 2: Async Python Article
-"The async/await syntax makes concurrent Python elegant. But understanding the event loop, tasks, and when to use asyncio vs threading is crucial. Here's the mental model that makes it all click."
+"The async/await syntax makes concurrent Python elegant. But understanding the event loop, tasks and when to use asyncio vs threading is important. Here's the mental model that makes it all click."
 
 ### Example 3: Pattern Article
 **Before (❌ Not Pythonic):**

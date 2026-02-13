@@ -1,6 +1,6 @@
 ---
 name: image-generator-blog
-description: Generate professional featured images and in-article visuals for technical blogs using design tools, stock photos, and custom graphics. Use when creating visual assets for blog posts, social media sharing, and article engagement.
+description: Generate professional featured images and in-article visuals for technical blogs using design tools, stock photos and custom graphics. Use when creating visual assets for blog posts, social media sharing and article engagement.
 ---
 
 # Image Generation for Technical Blogs
@@ -251,7 +251,7 @@ Use this skill when:
 - User journey map
 
 #### Type 3: Screenshots
-**Purpose**: Show code, UI, or actual tool usage
+**Purpose**: Show code, UI or actual tool usage
 **Tools**: Screenshot tool (built-in), CleanShot X (Mac), Snagit
 **Size**: 800-1200px wide
 **Format**: PNG (lossless for code/text)
@@ -276,7 +276,7 @@ Use this skill when:
 - Features comparison table
 
 #### Type 5: Infographics
-**Purpose**: Visualize data, statistics, or key points
+**Purpose**: Visualize data, statistics or key points
 **Tools**: Figma, Canva, Infogram
 **Size**: 800-1200px wide
 **Format**: PNG or JPG
@@ -384,7 +384,7 @@ Use this skill when:
 1. Write detailed prompt for Midjourney/DALL-E 3 (3 min)
 2. Generate image (2-3 iterations) (3-5 min)
 3. Upscale and download (2 min)
-4. Optimize to ensure < 3MB (2 min)
+4. Optimize to keep < 3MB (2 min)
 5. Optional: add text overlay in Figma (2 min)
 
 ### Diagram Workflow (20 min per diagram)
@@ -427,7 +427,7 @@ Use this skill when:
 - **System/architecture**: Cyan, blue, white (clean, minimal)
 - **Data/analytics**: Orange, blue, white (high contrast)
 - **Security/infrastructure**: Dark gray, red, white (serious tone)
-- **AI/ML**: Purple, pink, electric blue (cutting-edge feel)
+- **AI/ML**: Purple, pink, electric blue (modern feel)
 
 ### Geometric Elements to Use
 - **Circles/Hexagons**: Nodes, connection points, organic tech

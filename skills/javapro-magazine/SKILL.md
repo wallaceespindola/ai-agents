@@ -1,13 +1,13 @@
 ---
 name: javapro-magazine
-description: Create enterprise-grade technical articles for JavaPro Magazine and similar publications, focusing on advanced Java patterns, architecture, and production-scale engineering. Use when writing for professional/print publications targeting senior Java developers and architects.
+description: Create enterprise-grade technical articles for JavaPro Magazine and similar publications, focusing on advanced Java patterns, architecture and production-scale engineering. Use when writing for professional/print publications targeting senior Java developers and architects.
 ---
 
 # JavaPro Magazine Publication Guide
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to JetBrains Developer Survey 2024 [link], 65% of Java developers...")
@@ -194,7 +194,7 @@ public class DistributedEventProcessor implements EventProcessor {
     private final MetricsRegistry metrics;
     private final DistributedTracer tracer;
 
-    // Constructor, fields, and implementation
+    // Constructor, fields and implementation
 }
 ```
 
@@ -302,7 +302,7 @@ public class DistributedEventProcessor implements EventProcessor {
 - **Educational**: Teach rather than preach
 
 **Example paragraph:**
-"When implementing distributed event processing, many teams default to message brokers like Kafka. While Kafka provides excellent guarantees for event delivery, the operational complexity it introduces—including cluster management, topic administration, and consumer group coordination—may be overkill for organizations with fewer than 50 engineers. This article explores when event sourcing with a database is the pragmatic choice, and how to implement it correctly."
+"When implementing distributed event processing, many teams default to message brokers like Kafka. While Kafka provides excellent guarantees for event delivery, the operational complexity it introduces (including cluster management, topic administration and consumer group coordination) may be overkill for organizations with fewer than 50 engineers. This article explores when event sourcing with a database is the pragmatic choice and how to implement it correctly."
 
 ### Research & Validation Checklist
 

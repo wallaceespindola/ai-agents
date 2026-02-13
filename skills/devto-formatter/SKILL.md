@@ -1,13 +1,13 @@
 ---
 name: devto-formatter
-description: Format technical articles for Dev.to platform, optimizing for community engagement, practical value, and discoverability. Use when preparing articles for Dev.to publication, maximizing reach within the developer community with quick wins and code tutorials.
+description: Format technical articles for Dev.to platform, optimizing for community engagement, practical value and discoverability. Use when preparing articles for Dev.to publication, maximizing reach within the developer community with quick wins and code tutorials.
 ---
 
 # Dev.to Formatting Guide
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to the State of JS 2024 Survey [link], 65% of developers...")
@@ -58,18 +58,18 @@ Dev.to version:
   CTA: "What error patterns do you use? Share in the comments!"
 
 Medium version:
-  Title: "I Spent a Month Perfecting TypeScript Error Handling—Here's What I Learned"
+  Title: "TypeScript Error Handling: Practical Lessons from Production"
   Tone: Personal, conversational, detailed
   Hook: "When I started writing TypeScript in production..."
   Focus: Journey, detailed insights, comprehensive patterns
   Length: 3000-4500 words (longer, narrative)
   Code: Same examples from same GitHub repo
-  CTA: "Help me improve this—what patterns do you use? Clap if this helped!"
+  CTA: "Help me improve this. What patterns do you use? Clap if this helped!"
 
 DZone version:
   Title: "Error Handling in TypeScript: Patterns for Production Systems"
   Tone: Technical, professional, best-practices focused
-  Hook: "Production TypeScript systems demand robust error handling..."
+  Hook: "Production TypeScript systems demand reliable error handling..."
   Focus: Production concerns, patterns, architecture
   Length: 2000-3500 words
   Code: Same examples from same GitHub repo
@@ -341,7 +341,7 @@ published: true
 **Title**: "3 JavaScript Tricks That Saved Me Hours"
 
 Introduction:
-"Last week I discovered three simple JavaScript techniques I wish I'd known earlier. None require frameworks or complex setups—just vanilla JS that makes code cleaner and faster."
+"Last week I discovered three simple JavaScript techniques I wish I'd known earlier. None require frameworks or complex setups, just vanilla JS that makes code cleaner and faster."
 
 Structure:
 1. **Trick 1**: Optional chaining `obj?.property`

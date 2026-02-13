@@ -1,13 +1,13 @@
 ---
 name: linkedin-pulse-formatter
-description: Format technical articles for LinkedIn Pulse following platform best practices, engagement strategies, and professional tone. Use when preparing articles for LinkedIn Pulse publication, optimizing for reach and engagement among professional audiences.
+description: Format technical articles for LinkedIn Pulse following platform best practices, engagement strategies and professional tone. Use when preparing articles for LinkedIn Pulse publication, optimizing for reach and engagement among professional audiences.
 ---
 
 # LinkedIn Pulse Formatting Guide
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to LinkedIn's Workplace Learning Report 2024 [link], 65% of professionals...")
@@ -58,7 +58,7 @@ LinkedIn version:
   CTA: "What design patterns do you see most in production? Let's discuss 💬"
 
 Medium version:
-  Title: "I Learned Design Patterns the Hard Way—Here's What I'd Tell My Younger Self"
+  Title: "I Learned Design Patterns the Hard Way: Here's What I'd Tell My Younger Self"
   Tone: Personal, conversational, detailed
   Hook: "Three years ago, I was struggling with design patterns..."
   Focus: Personal journey, comprehensive patterns, lessons learned
@@ -143,7 +143,7 @@ Section 5: Call-to-Action
 - **Conversational**: Write like you're talking to a colleague
 
 **Example voice:**
-"After debugging this issue in production three times, I finally understood why. Here's what I learned..."
+"After debugging this issue in production three times, I finally understood why. Key takeaways..."
 
 vs.
 

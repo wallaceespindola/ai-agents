@@ -1,6 +1,6 @@
 ---
 name: java-code-review
-description: Review Java code for best practices, design patterns, performance, and security issues
+description: Review Java code for best practices, design patterns, performance and security issues
 ---
 
 # Java Code Review Skill
@@ -231,7 +231,7 @@ public class OrderService {
 
 ### 1. Method Length
 - **Target**: Methods should be 20-30 lines maximum
-- **Benefit**: Easier to test, understand, and maintain
+- **Benefit**: Easier to test, understand and maintain
 - **Refactor**: Extract smaller methods with clear responsibility
 
 ### 2. Class Cohesion

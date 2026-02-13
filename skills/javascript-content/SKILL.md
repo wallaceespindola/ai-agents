@@ -1,13 +1,13 @@
 ---
 name: javascript-content
-description: Write engaging JavaScript and TypeScript content covering modern frameworks, async patterns, performance, tooling, and best practices. Use when creating articles about React, Node.js, TypeScript, Vue, web performance, or JavaScript ecosystem tools for developer audiences.
+description: Write engaging JavaScript and TypeScript content covering modern frameworks, async patterns, performance, tooling and best practices. Use when creating articles about React, Node.js, TypeScript, Vue, web performance, or JavaScript ecosystem tools for developer audiences.
 ---
 
 # JavaScript Content Generation
 
 ## CRITICAL: Statistics and Data Integrity Rule
 
-**NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
+**NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
 - Cite credible sources with links (e.g., "According to the State of JS 2024 Survey [link], 65% of developers...")
@@ -32,7 +32,7 @@ Use this skill when:
 - Covering Node.js patterns and backend JavaScript
 - Discussing web performance and optimization
 - Explaining JavaScript tooling (webpack, Vite, esbuild, turbopack)
-- Writing about async/promises, event loops, or concurrency
+- Writing about async/promises, event loops or concurrency
 
 ## Quick Start: Article Structure
 
@@ -168,7 +168,7 @@ main();
 ## Audience-Specific Tips
 
 ### For Frontend Developers
-- Focus on React, Vue, or framework of choice
+- Focus on React, Vue or framework of choice
 - Include CSS/styling considerations
 - Discuss browser APIs (fetch, storage, etc.)
 - Cover accessibility and semantic HTML

@@ -1,10 +1,10 @@
 # GitHub Actions YAML Skill
 
-**Master GitHub Actions YAML syntax, custom actions, reusable workflows, expressions, and advanced configuration.**
+**Master GitHub Actions YAML syntax, custom actions, reusable workflows, expressions and advanced configuration.**
 
 ## Overview
 
-GitHub Actions YAML syntax defines workflow automation. This skill covers syntax, expressions, custom actions, and advanced patterns.
+GitHub Actions YAML syntax defines workflow automation. This skill covers syntax, expressions, custom actions and advanced patterns.
 
 **What it does:**
 - Implements GitHub Actions YAML syntax

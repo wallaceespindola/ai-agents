@@ -1,6 +1,6 @@
 ---
 name: api-design
-description: Design RESTful and GraphQL APIs with consistency, scalability, and developer experience
+description: Design RESTful and GraphQL APIs with consistency, scalability and developer experience
 ---
 
 # API Design Skill

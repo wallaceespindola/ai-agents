@@ -1,10 +1,10 @@
 # SSH Key Management Skill
 
-**Master SSH key generation, authentication, GitHub setup, certificates, and security best practices.**
+**Master SSH key generation, authentication, GitHub setup, certificates and security best practices.**
 
 ## Overview
 
-SSH keys are essential for secure authentication. This skill covers key generation, management, and security.
+SSH keys are essential for secure authentication. This skill covers key generation, management and security.
 
 **What it does:**
 - Generates SSH key pairs

@@ -4,7 +4,7 @@
 
 ## Overview
 
-GitHub pull requests are the core of team collaboration. This skill covers advanced PR management, code review workflows, automation, and project integration.
+GitHub pull requests are the core of team collaboration. This skill covers advanced PR management, code review workflows, automation and project integration.
 
 **What it does:**
 - Designs PR templates for consistency

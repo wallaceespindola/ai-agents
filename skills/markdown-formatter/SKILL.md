@@ -1,6 +1,6 @@
 ---
 name: markdown-formatter
-description: Format all technical articles in standard Markdown with consistent structure, code blocks, images, and metadata. Use when converting written articles to Markdown format for publishing, archiving, or version control on blogs, GitHub, and documentation sites.
+description: Format all technical articles in standard Markdown with consistent structure, code blocks, images and metadata. Use when converting written articles to Markdown format for publishing, archiving or version control on blogs, GitHub and documentation sites.
 ---
 
 # Markdown Formatting Guide for Technical Articles
@@ -56,7 +56,7 @@ date: 2024-02-01
 updated: 2024-02-15
 author: "Your Name"
 author_url: "https://yoursite.com"
-description: "A comprehensive guide to Spring Boot covering setup, configuration, testing, and deployment in production."
+description: "A comprehensive guide to Spring Boot covering setup, configuration, testing and deployment in production."
 excerpt: "Learn Spring Boot from basics to advanced patterns. This guide covers everything you need to know."
 tags: ["java", "spring-boot", "tutorial", "web-development"]
 categories: ["Backend", "Java", "Tutorials"]
@@ -454,7 +454,7 @@ Good for:
 
 > **Info:** Additional information about the topic.
 
-> **Quote:** "A famous quote from someone relevant." — Attribution
+> **Quote:** "A famous quote from someone relevant." - Attribution
 ```
 
 ## Tables

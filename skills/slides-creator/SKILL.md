@@ -303,7 +303,7 @@ Every presentation automatically includes:
 - Reference in speaker notes: "Full details in article..."
 
 Viewers can:
-- Read full article for deep dive
+- Read full article for detailed analysis
 - View code on GitHub (article links)
 - Subscribe to newsletter (from article sign-off)
 
@@ -570,7 +570,7 @@ A: Yes! PPTX files open in PowerPoint, Google Slides, Keynote. Google Slides ver
 A: Typically 1 slide per 150-200 words of article content, plus code and visual slides. A 3000-word article → ~15-18 slides.
 
 **Q: Can I use presentations generated from articles for conferences?**
-A: Absolutely! That's the whole point. Generate slides from your technical article, customize for the conference, and present. You can also publish to Speaker Deck for your portfolio.
+A: Absolutely! That's the whole point. Generate slides from your technical article, customize for the conference and present. You can also publish to Speaker Deck for your portfolio.
 
 **Q: What if my article changes?**
 A: Run `slides-creator convert` again. The skill will regenerate slides from the updated article. You'll get a fresh presentation with new content.

@@ -1,10 +1,10 @@
 # Docker Compose Setup Skill
 
-**Master Docker Compose for multi-container applications. Configure services, networks, volumes, health checks, and production deployments.**
+**Master Docker Compose for multi-container applications. Configure services, networks, volumes, health checks and production deployments.**
 
 ## Overview
 
-Docker Compose enables defining and running multi-container applications. This skill covers configuration, service orchestration, and best practices.
+Docker Compose enables defining and running multi-container applications. This skill covers configuration, service orchestration and best practices.
 
 **What it does:**
 - Defines multi-container applications

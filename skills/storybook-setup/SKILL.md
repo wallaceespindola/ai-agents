@@ -24,7 +24,7 @@ description: Set up and configure Storybook for component library documentation 
 
 **Example**:
 ```
-/storybook-setup React component library with TypeScript, Tailwind CSS, and accessibility testing
+/storybook-setup React component library with TypeScript, Tailwind CSS and accessibility testing
 ```
 
 ## How It Works

@@ -1,6 +1,6 @@
 ---
 name: diagram-plantuml
-description: Generate professional UML and architecture diagrams using PlantUML syntax. Use when creating detailed class diagrams, sequence diagrams, deployment diagrams, and component diagrams that require precise UML notation.
+description: Generate professional UML and architecture diagrams using PlantUML syntax. Use when creating detailed class diagrams, sequence diagrams, deployment diagrams and component diagrams that require precise UML notation.
 ---
 
 # PlantUML Diagrams for Technical Content
@@ -707,7 +707,7 @@ plantuml -tsvg diagram.puml
 ### Legend Implementation (Required)
 
 **Always include a legend that documents:**
-- What each color represents (by layer, type, or responsibility)
+- What each color represents (by layer, type or responsibility)
 - What each visual style represents (line styles, stereotypes)
 - Any special notation not immediately obvious
 - Component type meanings (interface, abstract, concrete, etc.)

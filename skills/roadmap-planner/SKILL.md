@@ -1,6 +1,6 @@
 ---
 name: roadmap-planner
-description: Create product roadmaps with features, timelines, and strategic alignment
+description: Create product roadmaps with features, timelines and strategic alignment
 ---
 
 # Roadmap Planner Skill

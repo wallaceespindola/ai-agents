@@ -1,6 +1,6 @@
 # Spring Boot Cloud Config Skill
 
-**Master Spring Cloud Config server, distributed configuration management, feature flags, and config patterns.**
+**Master Spring Cloud Config server, distributed configuration management, feature flags and config patterns.**
 
 ## Overview
 

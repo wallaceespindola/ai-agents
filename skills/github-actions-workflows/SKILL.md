@@ -1,15 +1,15 @@
 # GitHub Actions Workflows Skill
 
-**Design, build, and deploy with GitHub Actions CI/CD pipelines. Master workflow triggers, secrets management, matrix builds, custom actions, and reusable workflows.**
+**Design, build and deploy with GitHub Actions CI/CD pipelines. Master workflow triggers, secrets management, matrix builds, custom actions and reusable workflows.**
 
 ## Overview
 
-GitHub Actions enables automated testing, building, and deployment directly from your GitHub repository. This skill covers professional-grade workflow design for production environments.
+GitHub Actions enables automated testing, building and deployment directly from your GitHub repository. This skill covers professional-grade workflow design for production environments.
 
 **What it does:**
 - Designs event-driven workflows (push, pull_request, schedule, manual)
 - Implements matrix strategies for multi-version testing
-- Manages secrets, environment variables, and configuration
+- Manages secrets, environment variables and configuration
 - Creates reusable workflows for code reuse
 - Develops custom composite and JavaScript actions
 - Integrates with external services (Docker, AWS, Slack)

@@ -1,6 +1,6 @@
 ---
 name: fastapi-setup
-description: Generate FastAPI project structures with best practices, authentication, and documentation
+description: Generate FastAPI project structures with best practices, authentication and documentation
 ---
 
 # FastAPI Setup Skill
@@ -14,7 +14,7 @@ description: Generate FastAPI project structures with best practices, authentica
 - Generating API documentation and OpenAPI schemas
 - Setting up dependency injection patterns
 - Implementing middleware and error handling
-- Configuring CORS, request validation, and logging
+- Configuring CORS, request validation and logging
 
 ## Quick Start
 
@@ -591,7 +591,7 @@ class UserService:
 ## Best Practices
 
 ### 1. Project Organization
-- Keep routes, models, services, and schemas separated
+- Keep routes, models, services and schemas separated
 - Use routers for logical grouping of endpoints
 - Implement consistent naming conventions
 - Keep dependencies at the top level (main.py)

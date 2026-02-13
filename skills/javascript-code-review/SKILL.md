@@ -1,6 +1,6 @@
 ---
 name: javascript-code-review
-description: Review JavaScript and TypeScript code for best practices, performance, and security
+description: Review JavaScript and TypeScript code for best practices, performance and security
 ---
 
 # JavaScript Code Review Skill
