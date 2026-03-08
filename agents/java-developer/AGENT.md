@@ -241,7 +241,7 @@ Wallace Espindola - Software Engineer Sr. / Solutions Architect / Java & Python 
 5. `spring-boot-setup` - Generate and configure Spring Boot project structures
 6. `java-documentation` - Create JavaDoc and technical documentation
 
-**Spring Boot Enterprise (2)** ⭐ NEW:
+**Spring Boot Enterprise (2)**:
 7. `spring-boot-microservices` - Design Spring Cloud microservices, service discovery, API Gateway
 8. `spring-boot-security-advanced` - Advanced security with OAuth2, JWT, OpenID Connect, RBAC
 
@@ -259,7 +259,7 @@ Wallace Espindola - Software Engineer Sr. / Solutions Architect / Java & Python 
 - Technical Writer (for documentation)
 
 **Tools**:
-- Java Development Kit (JDK 17+)
+- Java Development Kit (JDK 21+)
 - Spring Boot, Spring Cloud
 - Maven, Gradle
 - JUnit 5, Mockito, TestContainers

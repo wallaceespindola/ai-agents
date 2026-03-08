@@ -2,6 +2,21 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Quick Navigation
+
+```
+ai-agents/
+├── agents/          # 10 specialized agent definitions (AGENT.md per agent)
+├── skills/          # 95 skill definitions (SKILL.md per skill)
+├── docs/            # Guides: AGENTS_GUIDE.md, GETTING_STARTED.md, SKILLS_INDEX.md
+├── AGENTS.md        # Full agent reference with profiles and skill mappings
+└── CLAUDE.md        # This file
+```
+
+Key references: `AGENTS.md` · `docs/AGENTS_GUIDE.md` · `docs/guides/SKILLS_INDEX.md`
+
+---
+
 ## Repository Overview
 
 **ai-agents** is a repository for developing, testing, and experimenting with Claude AI agents using the Anthropic API. Projects here focus on building autonomous agents powered by Claude models with tool use, multi-step reasoning, and complex task orchestration.
@@ -64,7 +79,7 @@ client = Anthropic(api_key="sk-ant-...")
 
 # Simple message
 response = client.messages.create(
-    model="claude-3-5-sonnet-20241022",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     messages=[{"role": "user", "content": "Hello, Claude!"}]
 )
@@ -84,7 +99,7 @@ tools = [
 ]
 
 response = client.messages.create(
-    model="claude-3-5-sonnet-20241022",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     tools=tools,
     messages=[{"role": "user", "content": "What's the weather in Paris?"}]
@@ -99,7 +114,7 @@ import Anthropic from "@anthropic-ai/sdk";
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const response = await client.messages.create({
-  model: "claude-3-5-sonnet-20241022",
+  model: "claude-sonnet-4-6",
   max_tokens: 1024,
   messages: [{ role: "user", content: "Hello, Claude!" }],
 });
@@ -116,7 +131,7 @@ messages = [{"role": "user", "content": "Solve this complex task..."}]
 
 while True:
     response = client.messages.create(
-        model="claude-3-5-sonnet-20241022",
+        model="claude-sonnet-4-6",
         max_tokens=1024,
         tools=tools,
         messages=messages
@@ -140,7 +155,7 @@ Use system prompts to define agent behavior:
 
 ```python
 response = client.messages.create(
-    model="claude-3-5-sonnet-20241022",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     system="You are a helpful assistant that analyzes data and provides insights.",
     messages=[{"role": "user", "content": "Analyze this dataset..."}]
@@ -182,11 +197,13 @@ make test-coverage      # Run tests with coverage report
 
 ## Model Selection
 
-Default model for most agents: **claude-3-5-sonnet-20241022**
+Default model for most agents: **claude-sonnet-4-6**
 
-- **Sonnet**: Balanced speed/intelligence, best for agentic loops
-- **Opus**: More powerful reasoning, use for complex tasks
-- **Haiku**: Fast/cheap, use for simple tasks or high-volume calls
+| Model | ID | Use case |
+|-------|----|----------|
+| **Sonnet 4.6** | `claude-sonnet-4-6` | Balanced speed/intelligence — default for agentic loops |
+| **Opus 4.6** | `claude-opus-4-6` | Strongest reasoning — use for complex multi-step tasks |
+| **Haiku 4.5** | `claude-haiku-4-5-20251001` | Fast and cheap — high-volume calls, simple tasks |
 
 ## Important Notes
 
@@ -315,100 +332,23 @@ my-agent/
 
 ## AI Agents System Overview
 
-This repository contains a complete ecosystem of 10 specialized AI agents with 95 integrated skills for comprehensive software engineering tasks. Each agent is a Claude-powered specialist designed to handle specific domains of software development.
+10 specialized Claude-powered agents with 95 integrated skills covering the full software engineering lifecycle.
 
-### The 10 Agents
-
-| # | Agent | Focus | Skills |
-|---|-------|-------|--------|
-| 1️⃣ | **Technical Writer** | Content creation, documentation, multi-platform publishing | 22 |
-| 2️⃣ | **Java Developer** | Java/Spring Boot enterprise development, microservices | 12 |
-| 3️⃣ | **Python Developer** | Python/FastAPI backend, async programming, data processing | 6 |
-| 4️⃣ | **JavaScript Developer** | React/Next.js development, component architecture | 10 |
-| 5️⃣ | **Software Architect** | System design, architecture patterns, scalability | 7 |
-| 6️⃣ | **QA/Tester** | Test automation, quality assurance, testing strategies | 7 |
-| 7️⃣ | **DevOps Engineer** | CI/CD, containerization, infrastructure-as-code | 7 |
-| 8️⃣ | **Git/GitHub Automation** | GitHub Actions, Git workflows, build automation | 14 |
-| 9️⃣ | **Spring/Quarkus Engineer** | Spring Cloud microservices, Quarkus, native compilation | 10 |
-| 🔟 | **Project Manager** | Agile planning, sprint management, project coordination | 6 |
+| Agent | Focus | Skills |
+|-------|-------|--------|
+| Technical Writer | Content, docs, 8 publishing platforms | 22 |
+| Java Developer | Spring Boot, microservices, enterprise | 12 |
+| Python Developer | FastAPI, async, data processing | 6 |
+| JavaScript Developer | React, Next.js, TypeScript | 10 |
+| Software Architect | System design, patterns, scalability | 7 |
+| QA/Tester | Test automation, quality assurance | 7 |
+| DevOps Engineer | CI/CD, Docker, Kubernetes, IaC | 7 |
+| Git/GitHub Automation | Actions, workflows, build, secrets | 14 |
+| Spring/Quarkus Engineer | Spring Cloud, Quarkus, GraalVM native | 10 |
+| Project Manager | Agile, sprint, risk, roadmap | 6 |
 
 **Total: 10 Agents + 95 Skills**
 
-### Skills by Category
-
-**Technical Writing (22 skills)**
-- Content creation across 8 platforms (Dev.to, Medium, LinkedIn, Substack, DZone, JavaPro, InfoQ, Blog)
-- Code examples, slides, diagrams, image generation, SEO optimization
-
-**Backend Development (28 skills)**
-- **Java** (12): code review, testing, performance tuning, security audit, Spring Boot setup, Spring Cloud microservices, advanced security, distributed config, reactive programming
-- **Python** (6): code review, testing, performance tuning, type checking, FastAPI setup, documentation
-- **Spring/Quarkus** (10): Spring Cloud architecture, OAuth2/JWT security, distributed config, reactive patterns, Quarkus framework, GraalVM native compilation, build optimization
-
-**Frontend Development (10 skills)**
-- **JavaScript/React/Next.js**: code review, component patterns, advanced hooks, state management, testing, performance optimization, TypeScript migration, Storybook setup, project setup
-
-**Architecture & Design (7 skills)**
-- System design, scalability analysis, design patterns, API design (REST/GraphQL), database schema design, architecture diagrams (C4/UML)
-
-**Quality & Testing (7 skills)**
-- Test strategy, test automation setup, test case generation, API testing, E2E testing, performance testing, bug reporting
-
-**Infrastructure & DevOps (7 skills)**
-- CI/CD pipelines (GitHub Actions, GitLab CI, Jenkins)
-- Docker containerization, Kubernetes orchestration, Helm charts
-- Infrastructure-as-code (Terraform, CloudFormation)
-- Monitoring (Prometheus, Grafana, ELK, DataDog)
-- Security scanning and vulnerability management
-- Deployment strategies (blue-green, canary, rolling)
-
-**Git/GitHub Automation (14 skills)**
-- **Git & GitHub (6)**: GitHub Actions workflows, Git workflow strategies, PR management, CLI automation, security scanning, commit strategies
-- **Config Management (5)**: YAML validation, Kubernetes manifests, Docker Compose, Helm charts, GitHub Actions YAML
-- **Build & Secrets (3)**: build optimization, SSH key management, secrets management, pre-commit hooks
-
-**Project Management (6 skills)**
-- Project planning, sprint planning, risk assessment, status reporting, sprint retrospectives, roadmap planning
-
-### Technology Coverage
-
-**Languages & Backends**
-- Java 17+, Spring Boot 3.x, Spring Cloud, Quarkus, GraalVM native
-- Python 3.12+, FastAPI, async/await, type hints
-- JavaScript/TypeScript, React 18+, Next.js 15+
-
-**Frontend Frameworks**
-- React with hooks, state management (Context, Redux, Zustand, TanStack Query)
-- Next.js with App Router
-- Component libraries: shadcn/ui, Storybook
-- TypeScript strict mode
-
-**Infrastructure & DevOps**
-- **Containerization**: Docker, Docker Compose, Podman
-- **Orchestration**: Kubernetes, Helm, Kustomize
-- **CI/CD**: GitHub Actions, GitLab CI, Jenkins, CircleCI
-- **Infrastructure-as-Code**: Terraform, CloudFormation, Ansible
-- **Monitoring**: Prometheus, Grafana, ELK Stack, DataDog
-- **Cloud Platforms**: AWS, Azure, GCP
-
-**Testing & Quality**
-- Java: JUnit 5, Mockito, TestContainers
-- Python: pytest, unittest, hypothesis
-- JavaScript: Jest, React Testing Library, Cypress, Playwright
-- Performance: JMeter, Locust, Artillery
-
-**Architecture & Security**
-- Microservices patterns, distributed systems
-- OAuth2, OpenID Connect, JWT authentication, RBAC
-- Secrets management (Vault, AWS Secrets Manager)
-- Security scanning (SonarQube, Trivy, OWASP Dependency-Check)
-
-### Documentation & References
-
-- **AGENTS.md**: Complete reference of all 10 agents with profiles, skills, and workflows
-- **AGENTS_GUIDE.md**: Comprehensive guide including agent collaboration patterns and multi-agent workflows
-- **SKILLS_INDEX.md**: Detailed catalog of all 95 skills with usage guidance
-- **SYSTEM_MAP.md**: Architecture overview and relationships between agents
-- **GETTING_STARTED.md**: Setup and onboarding guide
+Full details: `AGENTS.md` · `docs/AGENTS_GUIDE.md` · `docs/guides/SKILLS_INDEX.md`
 
 See `/agents/{name}/AGENT.md` for individual agent details and `/skills/{name}/SKILL.md` for skill documentation.

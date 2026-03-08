@@ -952,6 +952,6 @@ LinkedIn = "https://www.linkedin.com/in/wallaceespindola/"
 - FastAPI, Django, SQLAlchemy
 - pytest, unittest, mock
 - mypy, Pydantic
-- black, isort, flake8
+- black, isort, ruff
 - cProfile, py-spy (profiling)
 - bandit (security scanning)

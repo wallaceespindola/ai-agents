@@ -102,7 +102,7 @@ project-name/
 name = "project-name"
 version = "1.0.0"
 description = "Description"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.100",
     "sqlalchemy>=2.0",
@@ -119,13 +119,13 @@ dev = [
 testpaths = ["tests"]
 
 [tool.mypy]
-python_version = "3.9"
+python_version = "3.12"
 strict = true
 ```
 
 **Alternative uv setup:**
 ```
-uv init --python 3.9 project-name
+uv init --python 3.12 project-name
 uv add fastapi sqlalchemy
 uv add --dev pytest pytest-cov mypy
 ```
