@@ -306,7 +306,7 @@ yarn install --offline
 **GitHub Actions npm Caching:**
 
 ```yaml
-- uses: actions/cache@v3
+- uses: actions/cache@v4
   with:
     path: ~/.npm
     key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
@@ -424,7 +424,7 @@ jobs:
       - uses: actions/checkout@v4
 
       # Maven cache
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: ~/.m2/repository
           key: maven-${{ hashFiles('**/pom.xml') }}
@@ -436,7 +436,7 @@ jobs:
           gradle-version: wrapper
 
       # npm cache
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: ~/.npm
           key: npm-${{ hashFiles('**/package-lock.json') }}
@@ -494,7 +494,7 @@ jobs:
       - uses: actions/checkout@v4
 
       # Maven cache
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         id: maven-cache
         with:
           path: ~/.m2/repository
@@ -502,7 +502,7 @@ jobs:
           restore-keys: ${{ runner.os }}-maven-
 
       # npm cache
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
@@ -608,7 +608,7 @@ npm cache clean --force
 
 ```yaml
 # Restore and save cache on CI
-- uses: actions/cache@v3
+- uses: actions/cache@v4
   with:
     path: ~/.m2/repository
     key: maven-${{ hashFiles('**/pom.xml') }}

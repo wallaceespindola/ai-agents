@@ -205,6 +205,12 @@ Default model for most agents: **claude-sonnet-4-6**
 | **Opus 4.6** | `claude-opus-4-6` | Strongest reasoning — use for complex multi-step tasks |
 | **Haiku 4.5** | `claude-haiku-4-5-20251001` | Fast and cheap — high-volume calls, simple tasks |
 
+## Git Commit Rules
+
+- **No co-author lines** in commit messages (do not add `Co-Authored-By:` or AI attribution)
+- Never commit API keys or tokens
+- Commit message format: imperative mood, concise, describe the *why* not just the *what*
+
 ## Important Notes
 
 - Never commit API keys or tokens (`.env` files are in `.gitignore`)

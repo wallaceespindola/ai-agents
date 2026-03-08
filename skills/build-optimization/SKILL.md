@@ -100,17 +100,17 @@ npm ci --prefer-offline --no-audit
 ### 4. GitHub Actions Caching
 
 ```yaml
-- uses: actions/cache@v3
+- uses: actions/cache@v4
   with:
     path: ~/.m2/repository
     key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
 
-- uses: actions/cache@v3
+- uses: actions/cache@v4
   with:
     path: ~/.gradle/caches
     key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle.lock') }}
 
-- uses: actions/cache@v3
+- uses: actions/cache@v4
   with:
     path: ~/.npm
     key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
@@ -304,7 +304,7 @@ services:
 **Maven Cache:**
 
 ```yaml
-- uses: actions/cache@v3
+- uses: actions/cache@v4
   with:
     path: ~/.m2/repository
     key: maven-${{ hashFiles('**/pom.xml') }}
@@ -314,7 +314,7 @@ services:
 **Gradle Cache:**
 
 ```yaml
-- uses: actions/cache@v3
+- uses: actions/cache@v4
   with:
     path: ~/.gradle/caches
     key: gradle-${{ hashFiles('**/*.gradle.lock') }}
@@ -524,7 +524,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
@@ -532,7 +532,7 @@ jobs:
 
       - run: mvn clean verify -T 4 -DskipTests
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.m2/repository
@@ -572,7 +572,7 @@ npm ci
 ### 2. Cache Aggressively
 
 ```yaml
-- uses: actions/cache@v3
+- uses: actions/cache@v4
   with:
     path: ~/.m2/repository
     key: maven-${{ hashFiles('**/pom.xml') }}

@@ -34,8 +34,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -55,7 +55,7 @@ jobs:
         run: npm run test:e2e
 
       - name: Upload coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         with:
           files: ./coverage/coverage-final.json
 
@@ -64,7 +64,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Build Docker image
         run: docker build -t myapp:${{ github.sha }} .
 

@@ -120,7 +120,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Install dependencies
         run: npm install
       - name: Unit tests

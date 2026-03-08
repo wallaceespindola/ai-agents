@@ -541,7 +541,7 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm test -- --coverage
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v5
 
   build:
     needs: [lint, test]
@@ -579,7 +579,7 @@ jobs:
         python: ['3.12']
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pytest
@@ -703,7 +703,7 @@ uses: actions/setup-node@v4.0  # Insecure
     cache: 'npm'
 
 # Or manual
-- uses: actions/cache@v3
+- uses: actions/cache@v4
   with:
     path: ~/.npm
     key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}

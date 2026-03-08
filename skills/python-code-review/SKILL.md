@@ -72,8 +72,8 @@ black --line-length 88 src/
 # isort: Import organizer
 isort src/
 
-# flake8: Code linter
-flake8 src/ --max-line-length=88
+# ruff: Code linter (replaces flake8)
+ruff check src/
 
 # mypy: Type checker
 mypy src/ --strict
@@ -376,7 +376,7 @@ even_squares = [n ** 2 for n in numbers if n % 2 == 0]
 
 ## Review Checklist
 
-- [ ] PEP 8 compliance (use black/flake8)
+- [ ] PEP 8 compliance (use black/ruff)
 - [ ] Complete type hints (mypy --strict)
 - [ ] Docstrings for all public functions
 - [ ] No hardcoded credentials or secrets
