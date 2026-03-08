@@ -1,3 +1,8 @@
+---
+name: spring-boot-reactive
+description: Master Project Reactor, WebFlux, reactive streams, backpressure and non-blocking database operations.
+---
+
 # Spring Boot Reactive Skill
 
 **Master Project Reactor, WebFlux, reactive streams, backpressure, non-blocking DB operations.**

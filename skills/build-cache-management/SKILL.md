@@ -1,3 +1,8 @@
+---
+name: build-cache-management
+description: Master Maven/Gradle caching, Docker layer caching, npm/yarn caching and cache invalidation strategies.
+---
+
 # Build Cache Management Skill
 
 **Master Maven/Gradle caching, Docker layer caching, npm/yarn caching and cache invalidation strategies.**

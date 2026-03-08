@@ -1,3 +1,8 @@
+---
+name: github-actions-yaml
+description: Master GitHub Actions YAML syntax, custom actions, reusable workflows, expressions and advanced configuration.
+---
+
 # GitHub Actions YAML Skill
 
 **Master GitHub Actions YAML syntax, custom actions, reusable workflows, expressions and advanced configuration.**

@@ -1,3 +1,8 @@
+---
+name: github-security-scanning
+description: Implement comprehensive security scanning with Dependabot, secret scanning, CodeQL analysis and vulnerability management.
+---
+
 # GitHub Security Scanning Skill
 
 **Implement comprehensive security scanning with Dependabot, secret scanning, CodeQL analysis and vulnerability management.**

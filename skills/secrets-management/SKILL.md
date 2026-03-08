@@ -1,3 +1,8 @@
+---
+name: secrets-management
+description: Master environment variables, HashiCorp Vault, GitHub Secrets, AWS Secrets Manager and key rotation strategies.
+---
+
 # Secrets Management Skill
 
 **Master environment variables, HashiCorp Vault, GitHub Secrets, AWS Secrets Manager and key rotation strategies.**

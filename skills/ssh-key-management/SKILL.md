@@ -1,3 +1,8 @@
+---
+name: ssh-key-management
+description: Master SSH key generation, authentication, GitHub setup, certificates and security best practices.
+---
+
 # SSH Key Management Skill
 
 **Master SSH key generation, authentication, GitHub setup, certificates and security best practices.**

@@ -1,3 +1,8 @@
+---
+name: kubernetes-yaml-generation
+description: Master Kubernetes manifests: Deployments, Services, Ingress, ConfigMaps, Secrets, StatefulSets and best practices.
+---
+
 # Kubernetes YAML Generation Skill
 
 **Master Kubernetes manifests: Deployments, Services, Ingress, ConfigMaps, Secrets, StatefulSets, Custom Resources and best practices.**

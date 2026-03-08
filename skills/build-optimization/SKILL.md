@@ -1,3 +1,8 @@
+---
+name: build-optimization
+description: Optimize Maven, Gradle and npm builds for speed with caching, dependency resolution, incremental builds and custom tasks.
+---
+
 # Build Optimization Skill
 
 **Optimize Maven, Gradle and npm builds. Master caching, dependency resolution, incremental builds and custom build tasks.**

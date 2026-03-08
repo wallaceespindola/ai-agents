@@ -1,3 +1,8 @@
+---
+name: docker-compose-setup
+description: Master Docker Compose for multi-container applications: services, networks, volumes, health checks and production deployments.
+---
+
 # Docker Compose Setup Skill
 
 **Master Docker Compose for multi-container applications. Configure services, networks, volumes, health checks and production deployments.**

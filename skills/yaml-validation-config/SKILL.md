@@ -1,3 +1,8 @@
+---
+name: yaml-validation-config
+description: Master YAML syntax, schema validation, linting and configuration management patterns for reliable config files.
+---
+
 # YAML Validation & Config Skill
 
 **Master YAML syntax, schema validation, linting and configuration management patterns for reliable config files.**

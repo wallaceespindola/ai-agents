@@ -1,3 +1,8 @@
+---
+name: spring-boot-security-advanced
+description: Master OAuth2, OpenID Connect, JWT, RBAC, API security, rate limiting, CORS/CSRF protection.
+---
+
 # Spring Boot Security Advanced Skill
 
 **Master OAuth2, OpenID Connect, JWT, RBAC, API security, rate limiting, CORS/CSRF protection.**

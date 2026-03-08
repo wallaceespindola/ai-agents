@@ -1,3 +1,8 @@
+---
+name: helm-charts-creation
+description: Master Helm chart structure, templating, values management, dependencies, repositories and production deployments.
+---
+
 # Helm Charts Creation Skill
 
 **Master Helm chart structure, templating, values management, dependencies, repositories and production deployments.**

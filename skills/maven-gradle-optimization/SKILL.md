@@ -1,3 +1,8 @@
+---
+name: maven-gradle-optimization
+description: Master Maven profiles, Gradle optimization, dependency management and custom build tasks.
+---
+
 # Maven Gradle Optimization Skill
 
 **Master Maven profiles, Gradle optimization, dependency management and custom build tasks.**

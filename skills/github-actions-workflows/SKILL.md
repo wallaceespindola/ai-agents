@@ -1,3 +1,8 @@
+---
+name: github-actions-workflows
+description: Design and build GitHub Actions CI/CD pipelines: triggers, secrets, matrix builds, custom actions and reusable workflows.
+---
+
 # GitHub Actions Workflows Skill
 
 **Design, build and deploy with GitHub Actions CI/CD pipelines. Master workflow triggers, secrets management, matrix builds, custom actions and reusable workflows.**

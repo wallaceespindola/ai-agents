@@ -1,3 +1,8 @@
+---
+name: github-cli-automation
+description: Automate GitHub operations with the CLI: scripting, batch operations, custom extensions and workflow automation.
+---
+
 # GitHub CLI Automation Skill
 
 **Automate GitHub operations with command-line tools. Master scripting, batch operations, custom extensions and workflow automation.**

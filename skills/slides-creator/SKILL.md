@@ -1,3 +1,8 @@
+---
+name: slides-creator
+description: Convert technical articles into professional presentation slides for PowerPoint, Google Slides and Speaker Deck.
+---
+
 # Slides Creator Skill
 
 **Convert your technical articles into professional presentation slides for PowerPoint, Google Slides, and Speaker Deck.**

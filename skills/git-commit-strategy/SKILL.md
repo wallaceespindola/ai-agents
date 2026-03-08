@@ -1,3 +1,8 @@
+---
+name: git-commit-strategy
+description: Master conventional commits, commit linting, signing, interactive rebasing and commit message standards for clear project history.
+---
+
 # Git Commit Strategy Skill
 
 **Master conventional commits, commit linting, signing, interactive rebasing and commit message standards for clear project history.**

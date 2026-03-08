@@ -1,3 +1,8 @@
+---
+name: spring-boot-cloud-config
+description: Master Spring Cloud Config server, distributed configuration management, feature flags and config patterns.
+---
+
 # Spring Boot Cloud Config Skill
 
 **Master Spring Cloud Config server, distributed configuration management, feature flags and config patterns.**

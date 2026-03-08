@@ -1,3 +1,8 @@
+---
+name: pre-commit-hooks-setup
+description: Master pre-commit framework, hook chaining, custom hooks, linting integration and automated code quality checks.
+---
+
 # Pre-Commit Hooks Setup Skill
 
 **Master pre-commit framework, hook chaining, custom hooks, linting integration and automated code quality checks.**

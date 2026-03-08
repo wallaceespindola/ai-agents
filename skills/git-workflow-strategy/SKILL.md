@@ -1,3 +1,8 @@
+---
+name: git-workflow-strategy
+description: Master Git Flow, GitHub Flow, trunk-based development, branch protection, merge strategies and release management.
+---
+
 # Git Workflow Strategy Skill
 
 **Master Git Flow, GitHub Flow, trunk-based development, branch protection, merge strategies and release management for team collaboration.**

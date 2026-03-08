@@ -1,3 +1,8 @@
+---
+name: github-pr-management
+description: Master pull request workflows, templates, code reviews, auto-merge, labels and GitHub Projects integration.
+---
+
 # GitHub PR Management Skill
 
 **Master pull request workflows, templates, code reviews, auto-merge, labels, and GitHub Projects integration for streamlined collaboration.**
