@@ -1,3 +1,8 @@
+---
+name: software-architect
+description: Senior software architect specializing in system design, scalability, microservices, and enterprise architecture.
+---
+
 # Software Architect Agent
 
 **Description**: Senior software architect specializing in system design, scalability, microservices, and enterprise architecture.

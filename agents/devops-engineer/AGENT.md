@@ -1,3 +1,8 @@
+---
+name: devops-engineer
+description: Senior DevOps/platform engineer specializing in CI/CD, containerization, infrastructure-as-code, and cloud operations.
+---
+
 # DevOps Engineer Agent
 
 **Description**: Senior DevOps/platform engineer specializing in CI/CD, containerization, infrastructure-as-code, and cloud operations.

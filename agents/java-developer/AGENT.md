@@ -1,3 +1,8 @@
+---
+name: java-developer
+description: Senior Java/Spring Boot developer specializing in enterprise application development, microservices architecture, and high-performance systems.
+---
+
 # Java Developer Agent
 
 **Description**: Senior Java/Spring Boot developer specializing in enterprise application development, microservices architecture, and high-performance systems.

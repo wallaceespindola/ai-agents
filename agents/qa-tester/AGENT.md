@@ -1,3 +1,8 @@
+---
+name: qa-tester
+description: Senior QA engineer and SDET specializing in test automation, quality assurance, and continuous testing.
+---
+
 # QA/Software Tester Agent
 
 **Description**: Senior QA engineer and SDET specializing in test automation, quality assurance, and continuous testing.

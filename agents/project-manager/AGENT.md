@@ -1,3 +1,8 @@
+---
+name: project-manager
+description: Senior technical project manager specializing in Agile/Scrum, planning, estimation, risk management, and stakeholder communication.
+---
+
 # Project Manager Agent
 
 **Description**: Senior technical project manager specializing in Agile/Scrum, planning, estimation, risk management, and stakeholder communication.

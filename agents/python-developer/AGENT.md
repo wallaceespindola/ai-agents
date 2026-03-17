@@ -1,3 +1,8 @@
+---
+name: python-developer
+description: Senior Python developer specializing in backend systems, data processing, async frameworks, and production-grade applications.
+---
+
 # Python Developer Agent
 
 **Description**: Senior Python developer specializing in backend systems, data processing, async frameworks, and production-grade applications.
