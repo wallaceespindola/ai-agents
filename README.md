@@ -39,7 +39,7 @@ nano .env  # Add your Anthropic API key
 
 #### **Java Developer Agent**
 
-- Expertise: Java 17+, Spring Boot, microservices
+- Expertise: Java 21+, Spring Boot, microservices
 - Skills: Code review, testing strategy, performance tuning, security audit, project setup, Spring Cloud, advanced
   security, documentation (12 skills total)
 
@@ -198,7 +198,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 **Reference**:
 
 - **[AGENTS.md](AGENTS.md)** - Quick reference for all 10 agents and 95 skills
-- **[Project Specifications](docs/guides/PROJECT_SPECIFICATIONS.md)** - Java and Python templates
+- **[Project Specifications](CLAUDE.md#project-specifications-by-language)** - Java and Python templates
 - **[Complete System Overview](docs/guides/COMPLETE_SYSTEM.md)** - Full system documentation
 - **[.copilot-instructions](.copilot-instructions)** - GitHub Copilot context for the system
 
@@ -381,7 +381,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
         ├── COMPLETE_SYSTEM.md             ← Full system documentation
         ├── SYSTEM_MAP.md                  ← Architecture & relationships
         ├── SKILLS_INDEX.md                ← All 95 skills reference
-        └── PROJECT_SPECIFICATIONS.md      ← Java & Python project templates
+        └── (Java & Python project templates live in CLAUDE.md)
 ```
 
 ---
@@ -394,7 +394,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 4. **Need agent details?** → [AGENTS.md](AGENTS.md) or [AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)
 5. **Looking for a specific skill?** → [Skills Index](docs/guides/SKILLS_INDEX.md)
 6. **Curious about system architecture?** → [System Architecture](docs/guides/SYSTEM_MAP.md)
-7. **Need project templates?** → [Project Specifications](docs/guides/PROJECT_SPECIFICATIONS.md)
+7. **Need project templates?** → [Project Specifications](CLAUDE.md#project-specifications-by-language)
 
 ---
 
@@ -434,7 +434,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 6. Choose an agent based on your software engineering task
 7. Use the appropriate skill with that agent (e.g., `spring-boot-setup` with Java Developer Agent)
 8. Explore agent collaboration workflows for complex multi-team projects
-9. Check **[Project Specifications](docs/guides/PROJECT_SPECIFICATIONS.md)** for Java and Python templates
+9. Check **[Project Specifications](CLAUDE.md#project-specifications-by-language)** for Java and Python templates
 
 **Welcome to your AI-powered software engineering system!** 🚀
 
