@@ -150,7 +150,7 @@ For EACH platform:
 5. **Use same code** - Reference GitHub repo, same code snippets
 6. **Match tone/style** - Follow platform-specific guidelines
 7. **Optimize length** - Adjust for platform word count norms
-8. **Create banner image** - Every article ships with a banner/featured image via `image-generator-blog`, sized per platform (Dev.to 1000x420, Medium/LinkedIn 1200x627, Substack 1200x600, blog 1200x630 OG, DZone 1200x628, InfoQ 1024x768 proposed)
+8. **Create banner image** - Every article ships with a banner/featured image via `image-generator-blog`, sized per platform (Dev.to 1000x420, Medium/LinkedIn 1200x627, Substack 1200x600, blog 1200x630 OG, DZone 1200x628, InfoQ 1024x768 proposed, JavaPro 1200x630 proposed)
 
 #### Phase 3: Publication (30 min per platform)
 1. Publish to first platform (A/B test if possible)
@@ -168,7 +168,7 @@ For EACH platform:
 6. **Draft per Platform**: Write unique articles for each platform (title, intro, narrative, tone)
 7. **Code Integration**: Use IDENTICAL code snippets across all platform articles
 8. **Optimization**: Refine for platform-specific requirements (SEO, word count, tone)
-9. **Banner Image**: Create the banner/featured image for each platform via `image-generator-blog` (Dev.to 1000x420, Medium/LinkedIn 1200x627, Substack 1200x600, blog 1200x630 OG, DZone 1200x628, InfoQ 1024x768 proposed)
+9. **Banner Image**: Create the banner/featured image for each platform via `image-generator-blog` (Dev.to 1000x420, Medium/LinkedIn 1200x627, Substack 1200x600, blog 1200x630 OG, DZone 1200x628, InfoQ 1024x768 proposed, JavaPro 1200x630 proposed)
 10. **Review**: Fact-check code, verify claims, ensure consistency across versions, then run `article-review` as the final pre-delivery gate (PASS/FIX/POLISH verdict)
 11. **Publish**: Stagger publication across platforms (1 week apart minimum)
 
