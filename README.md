@@ -2,7 +2,7 @@
 
 A comprehensive system of specialized AI agents for software engineering, system architecture, infrastructure automation, and project management.
 
-**10 Agents + 96 Skills = Complete software engineering ecosystem**
+**11 Agents + 97 Skills = Complete software engineering ecosystem**
 
 With comprehensive React/Next.js support, GitHub automation, Spring Cloud microservices, and Quarkus development.
 
@@ -195,11 +195,11 @@ LINKEDIN_URL=https://linkedin.com/in/you
 
 - **[AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)** - Complete agent guide with collaboration patterns
 - **[System Architecture](docs/guides/SYSTEM_MAP.md)** - Agent relationships and data flows
-- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 96 skills described with examples
+- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 97 skills described with examples
 
 **Reference**:
 
-- **[AGENTS.md](AGENTS.md)** - Quick reference for all 10 agents and 96 skills
+- **[AGENTS.md](AGENTS.md)** - Quick reference for all 11 agents and 97 skills
 - **[Project Specifications](CLAUDE.md#project-specifications-by-language)** - Java and Python templates
 - **[Complete System Overview](docs/guides/COMPLETE_SYSTEM.md)** - Full system documentation
 - **[.copilot-instructions](.copilot-instructions)** - GitHub Copilot context for the system
@@ -382,7 +382,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
     └── guides/
         ├── COMPLETE_SYSTEM.md             ← Full system documentation
         ├── SYSTEM_MAP.md                  ← Architecture & relationships
-        ├── SKILLS_INDEX.md                ← All 96 skills reference
+        ├── SKILLS_INDEX.md                ← All 97 skills reference
         └── (Java & Python project templates live in CLAUDE.md)
 ```
 
@@ -402,7 +402,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 
 ## Key Points
 
-✅ **10 Agents + 96 Skills** - Complete software engineering ecosystem
+✅ **11 Agents + 97 Skills** - Complete software engineering ecosystem
 
 ✅ **Full-Stack Development** - Java, Python, JavaScript (with React/Next.js focus)
 
@@ -422,7 +422,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 
 ✅ **Technical Writing** - Multi-platform publishing, code generation, documentation
 
-✅ **Agent Collaboration** - 10 specialized agents work together on complex workflows
+✅ **Agent Collaboration** - 11 specialized agents work together on complex workflows
 
 ---
 

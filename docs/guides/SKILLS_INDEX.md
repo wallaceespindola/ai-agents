@@ -624,6 +624,20 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Final gate before submitting to Medium, Dev.to, DZone, InfoQ, JavaPro, LinkedIn, Substack or a blog
 - Catching problems before editors or readers do
 
+### MarkItDown
+**Location**: `skills/markitdown/SKILL.md`
+**Purpose**: Convert documents and media to Markdown using Microsoft's MarkItDown CLI
+
+**Key Features**:
+- Converts PDF, DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, EPub and ZIP archives
+- OCR for images, transcript extraction for YouTube URLs
+- Batch conversion patterns and quality gotchas (scanned PDFs, wide sheets)
+- Pairs with the doc-converter agent for large ingestion jobs
+
+**Best For**:
+- Ingesting source material (specs, decks, reports) into Markdown before drafting articles
+- Preparing document content as LLM context
+
 ---
 
 ## How Skills Work Together
