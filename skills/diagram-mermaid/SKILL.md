@@ -274,13 +274,13 @@ gitGraph commit id: "Initial"
 ```
 timeline
     title Product Development Timeline
-    2024-01 : Design complete
-           : Prototype ready
-    2024-02 : Backend development
-           : Frontend development
-    2024-03 : Testing phase
-           : Bug fixes
-    2024-04 : Launch : Marketing
+    Q1 : Design complete
+       : Prototype ready
+    Q2 : Backend development
+       : Frontend development
+    Q3 : Testing phase
+       : Bug fixes
+    Q4 : Launch : Marketing
 ```
 
 **Best for:**
@@ -713,8 +713,10 @@ graph TD
 - **GitLab**: Works natively in markdown
 - **Notion**: Use as code block (mermaid)
 - **Medium**: Export as SVG/PNG
-- **Dev.to**: Export as image
+- **Dev.to**: Works natively in markdown
 - **Custom blogs**: Include mermaid.js library
+
+Note: GitHub and Dev.to render fenced ```mermaid code blocks natively — paste the code as-is, no image export needed.
 
 ## Tools & Resources
 
@@ -782,9 +784,10 @@ graph TD
 
 ---
 
-This skill works best combined with:
-- **diagram-plantuml** for UML diagrams
-- **architecture-design** for system architecture
-- **sr-tech-blog** or other platform skills
-- **markdown-formatter** for embedding in articles
-- **image-generator-blog** for export as PNG/SVG
+## Related Skills
+
+- **diagram-plantuml** — sibling skill for full UML notation when Mermaid falls short
+- **markdown-formatter** — embed diagram code blocks in article Markdown
+- **image-generator-blog** — export diagrams as PNG/SVG for platforms without native rendering
+- **article-review** — pre-publish editorial checklist (verifies diagrams match article text)
+- **technical-writer** agent — drafts the articles these diagrams illustrate

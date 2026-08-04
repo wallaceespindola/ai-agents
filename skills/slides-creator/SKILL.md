@@ -1,6 +1,6 @@
 ---
 name: slides-creator
-description: Convert technical articles into professional presentation slides for PowerPoint, Google Slides and Speaker Deck.
+description: Convert technical articles into professional presentation slides for PowerPoint, Google Slides and Speaker Deck. Use when turning a finished article into a conference talk or slide deck, or keeping slides in sync with an updated article.
 ---
 
 # Slides Creator Skill
@@ -157,7 +157,7 @@ The skill parses your article and creates slides:
 ### 5. Conclusion Slide
 - Section heading: "Key Takeaways"
 - 3-5 bullet points with main concepts
-- Call-to-action: Links to article, GitHub, GitHub, LinkedIn
+- Call-to-action: Links to article, GitHub, LinkedIn
 - Newsletter signup prompt (Substack)
 
 **Used for**: Last slide of presentation
@@ -440,7 +440,7 @@ PowerPoint has broken image links
 Error: Authentication failed - invalid credentials
 ```
 **Solution:**
-- Set up Google Cloud service account (see SLIDES_CREATOR_GUIDE.md)
+- Set up Google Cloud service account (see README.md in this skill folder)
 - Download JSON credentials file
 - Set path in .env: `GOOGLE_SLIDES_SERVICE_ACCOUNT_JSON=./path/to/credentials.json`
 - Verify .env is not committed (should be in .gitignore)
@@ -460,8 +460,9 @@ Error: Could not publish to Speaker Deck
 
 ### Custom Slide Templates
 
-Create custom slide layouts by editing:
-`skills/slides-creator/templates/default_template.py`
+Create custom slide layouts by adding a template class under
+`skills/slides-creator/templates/` (directory is currently empty; slide rendering
+logic lives in `utils/pptx_generator.py`):
 
 ```python
 class CustomTemplate(SlideTemplate):
@@ -498,16 +499,14 @@ This is important for the presenter
 
 ---
 
-## Integration with Other Skills
+## Related Skills
 
-The slides-creator skill works best with:
-
-- **image-generator-blog** - Generate title slide backgrounds
-- **diagram-mermaid** - Render diagrams as SVG in slides
-- **diagram-plantuml** - Complex UML diagrams
-- **architecture-design** - Architecture diagram slides
-- **code-examples-generator** - Extract perfect code samples
-- **All platform skills** - Content inspiration from platform-optimized versions
+- **diagram-mermaid** — render article diagrams as SVG for visual slides
+- **diagram-plantuml** — complex UML diagrams for architecture slides
+- **markdown-formatter** — normalize article structure before conversion
+- **image-generator-blog** — title slide backgrounds and visual assets
+- **article-review** — pre-publish editorial checklist; run before generating slides
+- **technical-writer** agent — drafts the source articles this skill converts
 
 ---
 
@@ -593,28 +592,23 @@ A: Yes! Edit themes in `config/slide_config.yaml` or create custom templates in 
 
 ## Support & Next Steps
 
-1. **First time?** See `docs/SLIDES_CREATOR_GUIDE.md` for detailed walkthrough
-2. **Need examples?** Check `skills/slides-creator/examples/` folder
-3. **API issues?** See "Troubleshooting" section above
-4. **Want custom designs?** See "Advanced Topics"
-5. **Have suggestions?** Update this skill with your improvements!
+1. **First time?** See `README.md` in this skill folder for a walkthrough
+2. **API issues?** See "Troubleshooting" section above
+3. **Want custom designs?** See "Advanced Topics"
+4. **Have suggestions?** Update this skill with your improvements!
 
 ---
 
 ## Implementation Status
 
-✅ **Coming Soon**:
-- Python utility scripts (article_parser.py, slide_generator.py, pptx_generator.py)
-- Google Slides integration module
-- Speaker Deck publishing module
-- Configuration and templates
-- Comprehensive guide and examples
-- Integration with your article writing workflow
+✅ **Implemented**: `utils/article_parser.py`, `utils/pptx_generator.py`,
+`config/slide_config.yaml`, skill documentation and workflow definition
 
-**Current**: Skill documentation, workflow definition, best practices
+⏳ **Pending**: Google Slides integration module, Speaker Deck publishing module
+(use manual upload fallback), custom templates and examples (directories exist
+but are empty)
 
 ---
 
-*Last Updated: 2025-02-02*
 *Author: Wallace Espindola*
 *Part of: AI Agents & Skills for Technical Writers*

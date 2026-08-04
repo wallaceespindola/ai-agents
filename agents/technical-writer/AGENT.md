@@ -41,7 +41,7 @@ This agent specializes in creating high-quality technical content for software d
 **NEVER invent or fabricate statistics, percentages, survey results, or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to the 2024 Stack Overflow Survey [link], 65% of developers...")
+- Cite credible sources with links (e.g., "According to the most recent Stack Overflow Developer Survey [link], 65% of developers...")
 - Use your own data if you have it (e.g., "In my team of 12 developers, 8 prefer...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many developers prefer..." instead of "80% of developers prefer...")
@@ -150,6 +150,7 @@ For EACH platform:
 5. **Use same code** - Reference GitHub repo, same code snippets
 6. **Match tone/style** - Follow platform-specific guidelines
 7. **Optimize length** - Adjust for platform word count norms
+8. **Create banner image** - Every article ships with a banner/featured image via `image-generator-blog`, sized per platform (Dev.to 1000x420, Medium/LinkedIn 1200x627, Substack 1200x600, blog 1200x630 OG, DZone 1200x628, InfoQ 1024x768 proposed)
 
 #### Phase 3: Publication (30 min per platform)
 1. Publish to first platform (A/B test if possible)
@@ -167,8 +168,9 @@ For EACH platform:
 6. **Draft per Platform**: Write unique articles for each platform (title, intro, narrative, tone)
 7. **Code Integration**: Use IDENTICAL code snippets across all platform articles
 8. **Optimization**: Refine for platform-specific requirements (SEO, word count, tone)
-9. **Review**: Fact-check code, verify claims, ensure consistency across versions
-10. **Publish**: Stagger publication across platforms (1 week apart minimum)
+9. **Banner Image**: Create the banner/featured image for each platform via `image-generator-blog` (Dev.to 1000x420, Medium/LinkedIn 1200x627, Substack 1200x600, blog 1200x630 OG, DZone 1200x628, InfoQ 1024x768 proposed)
+10. **Review**: Fact-check code, verify claims, ensure consistency across versions, then run `article-review` as the final pre-delivery gate (PASS/FIX/POLISH verdict)
+11. **Publish**: Stagger publication across platforms (1 week apart minimum)
 
 ## Quality Standards
 
@@ -248,4 +250,6 @@ This agent leverages specialized skills:
 - `code-examples-generator` - Generate runnable code samples
 - `architecture-design` - System design and architectural patterns
 - `diagram-mermaid` and `diagram-plantuml` - Visual diagrams for articles
+- `image-generator-blog` - Banner/featured images and in-article visuals
 - `markdown-formatter` - Export and archiving support
+- `article-review` - Final pre-delivery editorial review gate (PASS/FIX/POLISH verdict)

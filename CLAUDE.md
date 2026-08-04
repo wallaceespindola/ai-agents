@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```
 ai-agents/
 ├── agents/          # 10 specialized agent definitions (AGENT.md per agent)
-├── skills/          # 95 skill definitions (SKILL.md per skill)
+├── skills/          # 96 skill definitions (SKILL.md per skill)
 ├── docs/            # Guides: AGENTS_GUIDE.md, GETTING_STARTED.md, SKILLS_INDEX.md
 ├── AGENTS.md        # Full agent reference with profiles and skill mappings
 └── CLAUDE.md        # This file
@@ -338,11 +338,11 @@ my-agent/
 
 ## AI Agents System Overview
 
-10 specialized Claude-powered agents with 95 integrated skills covering the full software engineering lifecycle.
+10 specialized Claude-powered agents with 96 integrated skills covering the full software engineering lifecycle.
 
 | Agent | Focus | Skills |
 |-------|-------|--------|
-| Technical Writer | Content, docs, 8 publishing platforms | 22 |
+| Technical Writer | Content, docs, 8 publishing platforms | 23 |
 | Java Developer | Spring Boot, microservices, enterprise | 12 |
 | Python Developer | FastAPI, async, data processing | 6 |
 | JavaScript Developer | React, Next.js, TypeScript | 10 |
@@ -353,7 +353,12 @@ my-agent/
 | Spring/Quarkus Engineer | Spring Cloud, Quarkus, GraalVM native | 10 |
 | Project Manager | Agile, sprint, risk, roadmap | 6 |
 
-**Total: 10 Agents + 95 Skills**
+**Total: 10 Agents + 96 Skills**
+
+### Article Publishing Rules
+
+- Every article written for a publishing platform (Dev.to, Medium, LinkedIn, DZone, InfoQ, JavaPro, Substack, blog) ships with a **banner/featured image** — created via `skills/image-generator-blog` (per-platform dimensions table inside). Not optional.
+- Every finished draft passes through `skills/article-review` (pre-publication editorial gate: fabricated stats, AI-isms, code correctness, platform compliance, banner, links/metadata → PASS/FIX/POLISH) before delivery.
 
 Full details: `AGENTS.md` · `docs/AGENTS_GUIDE.md` · `docs/guides/SKILLS_INDEX.md`
 

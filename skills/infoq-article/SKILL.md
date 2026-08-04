@@ -10,7 +10,7 @@ description: Write research-informed, editorial articles for InfoQ publication t
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to the CNCF Survey 2024 [link], 65% of organizations...")
+- Cite credible sources with links (e.g., "According to the latest CNCF Annual Survey [link], X% of organizations..." — use the actual figure from the source)
 - Reference actual research studies and whitepapers
 - Use your own data if you have it with appropriate context
 - Omit statistics entirely if you don't have verifiable data
@@ -166,7 +166,7 @@ Legend:
 ```
 
 ### Featured Image (Required)
-InfoQ articles benefit from a professional featured image:
+Deliver a proposed banner/featured image with every submission — the article is not deliverable without one; InfoQ's editors control final art and may replace it. Design should reflect the article's actual content (diagram, comparison, architecture — not generic stock art).
 
 **Specifications:**
 - **Dimensions**: 1024x768px (4:3 landscape) or similar landscape ratio
@@ -660,6 +660,7 @@ Key Takeaway 5: Teams should evolve toward microservices from
 - [ ] All images have proper rights/permissions
 - [ ] AI disclosure included (if applicable)
 - [ ] Original content (not published elsewhere)
+- [ ] Banner image created and attached (proposed featured image; editors may replace it)
 - [ ] Title is specific and editorial
 
 ## Common Mistakes to Avoid
@@ -731,3 +732,15 @@ Before finalizing your InfoQ article:
   *Figure 1: What this diagram shows and its relevance.*
   ```
 - [ ] All images use consistent professional style/branding
+
+---
+
+## Related Skills
+
+- **seo-optimizer** - Keyword research and search visibility before writing
+- **markdown-formatter** - Format and export the final article
+- **code-examples-generator** - Code samples (kept minimal for InfoQ)
+- **image-generator-blog** - Featured images and custom graphics
+- **article-review** - Pre-publish editorial checklist before submission
+- **java-content** - Java-specific technical depth and ecosystem accuracy
+- **technical-writer** (agent) - Draft or revise the full article end to end

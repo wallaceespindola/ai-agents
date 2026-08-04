@@ -20,7 +20,7 @@ Use this skill when:
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to the 2024 Stack Overflow Survey [link], 65% of Java developers...")
+- Cite credible sources with links (e.g., "According to the latest Stack Overflow Developer Survey [link]...")
 - Use your own data if you have it (e.g., "In my team of 12 developers, 8 prefer...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many Java developers prefer..." instead of "80% of Java developers prefer...")
@@ -59,7 +59,7 @@ Use this skill when:
 
 ## Java Core Concepts to Cover
 
-### Modern Java Features (Java 17+)
+### Modern Java Features (Java 21+ / Java 25 LTS)
 - Records: `record Point(int x, int y) {}`
 - Sealed classes: `sealed class Shape permits Circle, Rectangle {}`
 - Pattern matching: `if (obj instanceof String s) { ... }`
@@ -67,14 +67,15 @@ Use this skill when:
 - Modules: Java Platform Module System (JPMS)
 
 ### Concurrency & Parallelism
-- Virtual threads (Project Loom): "Lightweight threads for high-concurrency"
-- Structured concurrency: `StructuredTaskScope`
+- Virtual threads: standard since Java 21, mature in Java 25 (current LTS)
+- Structured concurrency: `StructuredTaskScope`, finalized in Java 25
 - ForkJoinPool and parallel streams
 - CompletableFuture patterns
 - Reactive programming with Project Reactor
 - Monitoring: JFR (Java Flight Recorder) for production observability
 
 ### Spring Boot Best Practices
+- Spring Boot 4.x (Spring Framework 7) as current; 3.5.x still maintained — note migration angles
 - Dependency injection patterns
 - Configuration management (application.yml)
 - Testing strategies (@SpringBootTest, TestContainers)
@@ -148,8 +149,8 @@ public class ExampleClass {
 ## SEO Keywords for Java Content
 
 - Core Java, Advanced Java
-- Java 17, Java 21, Java features
-- Spring Boot, Spring Framework, Spring Data
+- Java 25, Java 21, Java LTS features
+- Spring Boot 4, Spring Framework, Spring Data
 - Microservices, Docker, Kubernetes
 - Reactive programming, async/await
 - Performance tuning, GC tuning
@@ -164,7 +165,7 @@ public class ExampleClass {
 "Building a REST API with Spring Boot is straightforward, but adding authentication, validation and error handling correctly requires understanding several layers. This article shows the complete, production-ready approach."
 
 ### Example 2: Concurrency Article
-"Virtual threads in Java 21 promise to revolutionize how we write high-concurrency applications. Instead of complex thread pools and callback chains, you can write sequential code that runs on thousands of virtual threads. Here's how."
+"Virtual threads changed how we write high-concurrency Java. Instead of complex thread pools and callback chains, you write sequential code that runs on thousands of virtual threads — and with structured concurrency now finalized, error handling across them finally feels natural. Here's how."
 
 ### Example 3: Pattern Article
 **Before (❌ Common Mistake):**
@@ -212,3 +213,12 @@ Before publishing:
 - **Dev.to**: Quick wins and practical shortcuts
 - **Substack**: Personal journey and lessons learned
 - **JavaPro**: Enterprise-scale concerns and architectural patterns
+
+## Related Skills
+
+- **javapro-magazine**, **dzone-article**, **infoq-article** — platform formatting for enterprise Java publications
+- **devto-formatter**, **medium-optimizer** — community platform formatting
+- **code-examples-generator** — production-ready, runnable code samples
+- **diagram-mermaid** — architecture and flow diagrams for articles
+- **article-review** — pre-publish editorial checklist
+- **technical-writer** agent — delegate full article drafting

@@ -10,7 +10,7 @@ description: Write engaging JavaScript and TypeScript content covering modern fr
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to the State of JS 2024 Survey [link], 65% of developers...")
+- Cite credible sources with links (e.g., "According to the latest State of JS survey [link]...")
 - Use your own data if you have it (e.g., "In my team of 12 developers, 8 prefer...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many JavaScript developers prefer..." instead of "80% of JavaScript developers prefer...")
@@ -60,7 +60,7 @@ Use this skill when:
 
 ## JavaScript Core Concepts to Cover
 
-### Modern JavaScript (ES2020+)
+### Modern JavaScript (current ECMAScript)
 - Optional chaining: `obj?.nested?.property`
 - Nullish coalescing: `value ?? defaultValue`
 - BigInt: Large integer support
@@ -68,7 +68,7 @@ Use this skill when:
 - Promise.all variants: Promise.allSettled, Promise.any
 - WeakMap/WeakSet for memory efficiency
 
-### TypeScript Mastery
+### TypeScript Mastery (5.x)
 - Advanced types: Discriminated unions, generics, conditional types
 - Utility types: Partial, Pick, Omit, Record
 - Type guards and assertion functions
@@ -76,17 +76,19 @@ Use this skill when:
 - Module declaration and augmentation
 - Strict mode best practices
 
-### React Patterns (17+)
+### React Patterns (19+)
 - Hooks: useState, useEffect, useContext, useReducer
 - Custom hooks and composition
+- Server Components (stable in React 19) and Actions
 - Suspense and error boundaries
 - Concurrent features and transitions
 - Performance: React.memo, useMemo, useCallback
 - State management patterns (zustand, Jotai)
 - Testing with React Testing Library
 
-### Node.js & Backend
+### Node.js & Backend (Node 24 LTS)
 - Express vs Fastify vs Hono: Architecture differences
+- Built-in platform features first: native fetch, test runner, watch mode
 - Middleware patterns and error handling
 - Stream processing for large data
 - Worker threads for CPU-intensive tasks
@@ -94,7 +96,7 @@ Use this skill when:
 - Testing Node.js (Jest, Vitest)
 
 ### Web Performance
-- Core Web Vitals: LCP, FID, CLS
+- Core Web Vitals: LCP, INP, CLS
 - Code splitting and lazy loading
 - Image optimization (WebP, AVIF)
 - Bundle analysis and tree-shaking
@@ -193,9 +195,9 @@ main();
 
 ## SEO Keywords for JavaScript Content
 
-- JavaScript ES2020, TypeScript
-- React, Next.js, Vue.js, Svelte
-- Node.js, Express, Fastify
+- Modern JavaScript, TypeScript 5
+- React 19, Next.js 15, Vue.js, Svelte
+- Node.js LTS, Express, Fastify
 - Async/await, Promises
 - Web performance, Core Web Vitals
 - Vite, webpack, esbuild
@@ -309,3 +311,13 @@ function handleResult<T>(result: Result<T>): void {
 - **Dev.to**: Quick wins, code snippets, practical tips
 - **Substack**: Learning journey, personal development insights
 - **JavaPro Equivalent**: Enterprise JavaScript patterns and architecture
+
+## Related Skills
+
+- **devto-formatter**, **medium-optimizer** — community platform formatting
+- **dzone-article** — enterprise developer publications
+- **sr-tech-blog** — long-form posts for personal/company blogs
+- **code-examples-generator** — production-ready, runnable code samples
+- **diagram-mermaid** — architecture and flow diagrams for articles
+- **article-review** — pre-publish editorial checklist
+- **technical-writer** agent — delegate full article drafting

@@ -10,7 +10,7 @@ description: Write engaging Python content covering modern Python features, data
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to the 2024 Python Developers Survey [link], 65% of developers...")
+- Cite credible sources with links (e.g., "According to the latest Python Developers Survey [link]...")
 - Use your own data if you have it (e.g., "In my team of 12 developers, 8 prefer...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many Python developers prefer..." instead of "80% of Python developers prefer...")
@@ -60,13 +60,14 @@ Use this skill when:
 
 ## Python Core Concepts to Cover
 
-### Modern Python Features (3.9+)
+### Modern Python Features (3.12+)
 - Type hints and TypedDict: `def process(data: dict[str, int]) -> bool:`
-- Pattern matching (3.10): `match obj:`
+- Pattern matching: `match obj:`
 - Dataclasses: Cleaner than namedtuples
 - Pydantic v2: Type validation and serialization
 - Async/await: Real concurrent programming
-- Walrus operator: `:=` in conditionals
+- Free-threaded (no-GIL) build: experimental in 3.13+, worth covering with caveats
+- JIT compiler: introduced in 3.13, evolving in 3.14 — avoid performance claims without benchmarks
 
 ### Web Development
 - **FastAPI**: Modern, fast framework with auto-docs
@@ -94,7 +95,7 @@ Use this skill when:
 
 ### Performance & Optimization
 - Profiling with cProfile and flame graphs
-- Understanding GIL and when it matters
+- Understanding the GIL, when it matters, and the free-threaded build trade-offs
 - Numba and Cython for performance
 - Memory profiling with memory_profiler
 - Vectorization with NumPy
@@ -149,7 +150,7 @@ if __name__ == "__main__":
 ```
 
 **Guidelines for code examples:**
-- Always include type hints (Python 3.9+)
+- Always include type hints (modern built-in generics, no `typing.List`)
 - Write docstrings for functions and classes
 - Use modern Python idioms
 - Keep examples concise (50-100 lines max)
@@ -186,7 +187,7 @@ if __name__ == "__main__":
 
 ## SEO Keywords for Python Content
 
-- Python 3.12
+- Python 3.13, Python 3.14, free-threaded Python
 - FastAPI, Django, Flask
 - async/await, asyncio
 - Type hints, Pydantic
@@ -237,7 +238,7 @@ return [x * 2 for x in data if x > 10]
 
 Before publishing:
 - Test all examples in Python REPL or IDE
-- Check compatibility with Python 3.9+
+- Check compatibility with Python 3.12+ (note when a feature needs 3.13/3.14)
 - Verify framework versions are current
 - Run examples with modern tooling (uv, Ruff, pytest)
 - Check for security issues (OWASP)
@@ -274,3 +275,13 @@ async def main():
 - **Dev.to**: Quick tips, code snippets, practical solutions
 - **Substack**: Learning journey, personal insights
 - **JavaPro Equivalent**: Enterprise Python patterns
+
+## Related Skills
+
+- **devto-formatter**, **medium-optimizer** — community platform formatting
+- **dzone-article**, **infoq-article** — enterprise/architect-audience publications
+- **substack-newsletter** — serialized Python content for subscribers
+- **code-examples-generator** — production-ready, runnable code samples
+- **diagram-mermaid** — architecture and flow diagrams for articles
+- **article-review** — pre-publish editorial checklist
+- **technical-writer** agent — delegate full article drafting

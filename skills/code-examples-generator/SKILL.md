@@ -41,6 +41,7 @@ long totalValue = items.stream()
 - **Whitespace**: Blank lines between logical sections
 - **Naming**: Clear, descriptive variable/method names
 - **Comments**: Explain "why," not "what"
+- **Versions**: State the language/runtime version each example targets explicitly (e.g. "Java 25", "Python 3.13", "Node 24"); prefer the current LTS release unless the article is about a newer feature
 
 #### Error Handling
 ```python
@@ -182,6 +183,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 - Always show proper package declaration
 - Include necessary imports
 - Use modern Java features (records, var, pattern matching)
+- State the Java version the example targets; prefer the current LTS
 - Include JavaDoc for public methods
 - Show exception handling
 
@@ -226,7 +228,7 @@ logger = logging.getLogger(__name__)
 ```
 
 #### Best Practices
-- Use type hints (Python 3.9+)
+- Use modern type hints; state the Python version targeted (prefer a current release)
 - Include docstrings
 - Use dataclasses for simple data structures
 - Show async/await when relevant
@@ -413,8 +415,8 @@ example-project/
 This example demonstrates [concept].
 
 ## Prerequisites
-- Java 17+ (or specify version)
-- Maven 3.8+ (or gradle 7.0+)
+- Java 21+ (state the exact version tested; prefer the current LTS)
+- Maven 3.9+ (or a recent Gradle)
 
 ## Running the Example
 
@@ -512,6 +514,7 @@ async function loadData() {
 Before including code in article:
 
 - [ ] Code compiles/runs without errors
+- [ ] Language/runtime version stated explicitly (prefer current LTS)
 - [ ] All dependencies shown or explained
 - [ ] Example demonstrates stated concept clearly
 - [ ] Includes proper error handling
@@ -578,3 +581,13 @@ Before including code in article:
 - Production-ready implementations
 - Include supporting files (tests, config)
 - Detailed explanation of implementation choices
+
+## Related Skills
+
+- **markdown-formatter** — consistent code-block formatting in the article's Markdown master copy
+- **devto-formatter**, **medium-optimizer**, **linkedin-pulse-formatter** — platform-specific code presentation
+- **seo-optimizer** — discoverability of tutorial and example content
+- **diagram-mermaid** — flow/architecture diagrams accompanying code examples
+- **diagram-plantuml** — precise UML diagrams for pattern and design articles
+- **article-review** — pre-publish editorial checklist, including code verification
+- **technical-writer** agent — drafts the surrounding article narrative

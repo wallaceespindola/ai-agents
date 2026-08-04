@@ -6,7 +6,7 @@ description: Complete system map showing all agents, skills, and their relations
 
 ## System Overview
 
-**Total**: 1 Agent + 18 Skills = 19 total components
+**Total**: 1 Agent + 22 Skills = 23 total components
 
 All skills follow **humanization standards** (see HUMANIZATION_GUIDE.md) and **image specifications** (1024x768px, max 3MB, abstract futuristic style).
 
@@ -17,9 +17,9 @@ All skills follow **humanization standards** (see HUMANIZATION_GUIDE.md) and **i
 ### Senior Technical Software Writer Agent
 **Location**: `agents/technical-writer/AGENT.md`
 
-**Role**: Orchestrates all 18 skills to create professional technical content
+**Role**: Orchestrates all 22 skills to create professional technical content
 
-**Directly Uses**: All 18 skills below (selects based on content needs)
+**Directly Uses**: All 22 skills below (selects based on content needs)
 
 **Produces**:
 - LinkedIn Pulse articles (800-1500 words)
@@ -295,7 +295,7 @@ These create visual content for articles.
 
 ---
 
-### 6. SUPPORTING SKILLS (3 skills)
+### 6. SUPPORTING SKILLS (4 skills)
 
 These enhance and optimize content across all platforms.
 
@@ -329,6 +329,14 @@ These enhance and optimize content across all platforms.
   - All platform skills (code formatting per platform)
   - `markdown-formatter` → Universal code formatting
 
+#### Article Review
+**Location**: `skills/article-review/SKILL.md`
+- **Purpose**: Pre-publication editorial review gate (PASS/FIX/POLISH verdict)
+- **Checks**: Fabricated statistics, AI-sounding prose, code correctness, platform compliance, banner image, links/metadata
+- **Works With**: Every article before submission
+  - All platform skills (final gate before publishing)
+  - HUMANIZATION_GUIDE.md → AI-pattern checklist
+
 ---
 
 ## Workflow Relationships
@@ -344,6 +352,8 @@ Code Examples Generator (add code)
 SEO Optimizer (optimize keywords)
     ↓
 Image Generator (add featured image)
+    ↓
+Article Review (final editorial gate)
     ↓
 Markdown Formatter (archive)
 ```
@@ -553,13 +563,13 @@ markdown-formatter (archive issues)
 | Category | Count |
 |----------|-------|
 | **Agents** | 1 |
-| **Total Skills** | 21 |
+| **Total Skills** | 22 |
 | **Language Skills** | 3 |
 | **Platform Skills** | 8 (7 publications + blog) |
 | **Coder Skills** | 3 |
 | **Architecture/Design** | 1 |
 | **Visual Skills** | 3 |
-| **Supporting Skills** | 3 |
+| **Supporting Skills** | 4 |
 | **Platforms Supported** | 8 (LinkedIn, Medium, Dev.to, Substack, DZone, JavaPro, InfoQ, Blog) |
 | **Languages Supported** | 3 |
 | **Coder Project Types** | 3 (Maven/Spring, Poetry/FastAPI, npm/React) |

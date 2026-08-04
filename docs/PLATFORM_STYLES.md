@@ -943,6 +943,9 @@ After 4 weeks exclusivity:
 | **Research** | Light | Moderate | Light | Medium | Moderate | Heavy | Moderate |
 | **Case studies** | Optional | Yes | Yes | Sometimes | Yes | Critical | Yes |
 | **Engagement** | Comments | Claps | Reactions | Replies | Views | Authority | Authority |
+| **Banner (required)** | 1200x627 | 1200x627 | 1000x420 | 1200x600 | 1200x628 | 1024x768 (proposed) | — |
+
+Every article ships with a banner/featured image at the platform's dimensions (personal blog: 1200x630 OG), created via the image-generator-blog skill.
 
 ---
 

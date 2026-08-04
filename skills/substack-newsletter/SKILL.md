@@ -10,7 +10,7 @@ description: Create engaging technical newsletters for Substack with subscriber 
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to the 2024 Developer Survey [link], 65% of subscribers...")
+- Cite credible sources with links (e.g., "According to the latest Developer Survey [link], 65% of subscribers...")
 - Use your own data if you have it (e.g., "In my newsletter of 1,200 subscribers, 45% opened...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many subscribers prefer..." instead of "80% of subscribers prefer...")
@@ -425,3 +425,20 @@ how I approach optimization.
 - Build relationships in creator community
 - Drive traffic between newsletters
 - Helps all creators grow
+
+## Banner Image (Required)
+
+- Every issue ships with a banner/featured image — it is a required deliverable, not optional
+- Recommended dimensions: 1200x600px (Substack post header / social preview)
+- Design should reflect the issue's actual content (diagram, code diff, comparison — not generic stock art)
+- Create it with the `image-generator-blog` skill
+- Note: the "no images in email body" advice above still holds — the banner is the post header/social image, not inline email content
+
+## Related Skills
+
+- **devto-formatter** / **medium-optimizer** / **linkedin-pulse-formatter** — adapt the same topic for platform articles that funnel readers to the newsletter
+- **markdown-formatter** — consistent Markdown before pasting into Substack's editor
+- **article-review** — pre-publish editorial checklist (facts, tone, structure)
+- **seo-optimizer** — make the public archive discoverable via search and AI answer engines
+- **image-generator-blog** — header and social-share images for each issue
+- **technical-writer** (agent) — draft the main essay before newsletter-specific framing

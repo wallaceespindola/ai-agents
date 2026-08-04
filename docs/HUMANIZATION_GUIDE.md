@@ -61,6 +61,8 @@ Write like you're talking to a smart friend who doesn't know the technical detai
 - "One might consider the following..." ❌
 - "The aforementioned..." ❌
 
+For a full pre-publication sweep of these patterns, run the `article-review` skill — its AI-pattern checklist covers them as part of the editorial gate.
+
 **Overly Formal Constructions:**
 - "The implementation of said system" ❌ (Say "implementing the system" ✅)
 - "Pursuant to..." ❌ (Say "according to" ✅)

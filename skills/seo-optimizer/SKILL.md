@@ -1,6 +1,6 @@
 ---
 name: seo-optimizer
-description: Optimize technical articles for search engine visibility and discoverability, including keyword research, meta optimization, internal linking and content structure. Use when improving article SEO across platforms like Medium, Dev.to and technical blogs.
+description: Optimize technical articles for search visibility and discoverability, including search-intent matching, keyword research, meta optimization, internal linking, structured data and AI answer engine visibility. Use when improving article SEO across platforms like Medium, Dev.to and technical blogs.
 ---
 
 # Technical Content SEO Optimization
@@ -10,7 +10,7 @@ description: Optimize technical articles for search engine visibility and discov
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims in SEO-optimized content.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to Google's Core Web Vitals Report 2024 [link]...")
+- Cite credible sources with links (e.g., "According to Google's latest Core Web Vitals report [link]...")
 - Use your own analytics data if you have it (e.g., "My article ranked #1 and received 10,000 visits...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many articles rank better with..." instead of "80% of articles rank better with...")
@@ -192,13 +192,19 @@ H1: Python Async/Await Tutorial: Complete Guide
 - Title/headline: Yes (required)
 - First 100 words: Yes (signals relevance)
 - H2 headers: 1-2 times (in relevant section titles)
-- Throughout article: 1-2% keyword density
+- Throughout article: use naturally where it fits — modern search ranks on intent match and topical coverage, not keyword density
 - Last 100 words: Optional (conclusion mention)
 
 **Avoid:**
 - Keyword stuffing (unnaturally repeating keyword)
 - Forcing keyword in places it doesn't fit
 - Using keyword in H1 if it feels forced
+- Counting keyword occurrences — write for the reader; density metrics and the meta keywords tag are obsolete
+
+**E-E-A-T (Experience, Expertise, Authoritativeness, Trust):**
+- Show first-hand experience ("I ran this in production...") — it differentiates from generated content
+- Clear author byline and bio; cite sources for claims
+- Accurate, tested code is itself a trust signal
 
 #### Internal Linking Strategy
 
@@ -242,7 +248,7 @@ H1: Python Async/Await Tutorial: Complete Guide
 
 #### Core Web Vitals
 - **LCP** (Largest Contentful Paint): < 2.5 seconds
-- **FID** (First Input Delay): < 100 milliseconds
+- **INP** (Interaction to Next Paint, replaced FID): < 200 milliseconds
 - **CLS** (Cumulative Layout Shift): < 0.1
 - **Tool**: Google PageSpeed Insights
 - **Monitor**: Google Search Console
@@ -266,9 +272,22 @@ H1: Python Async/Await Tutorial: Complete Guide
     "@type": "Person",
     "name": "Your Name"
   },
-  "datePublished": "2024-01-15"
+  "datePublished": "<YYYY-MM-DD>"
 }
 ```
+
+### Optimizing for AI Answer Engines
+
+Being cited by LLM-based search (Perplexity, ChatGPT search, Google AI Overviews) is now a real
+discovery channel for technical articles. The same qualities that help traditional SEO help here:
+
+- **Direct answers near the top**: State the core answer in the first few paragraphs; don't bury it
+- **Clear, question-shaped headings**: H2s that match how developers actually ask ("How do I X in Y?")
+- **Self-contained sections**: Each section should make sense when quoted in isolation
+- **Canonical URLs**: Ensure syndicated copies point back to the original so citations credit your domain
+- **Structured data**: Article/Author schema helps engines attribute and surface your content
+- **Verifiable specifics**: Tested code, exact versions and cited sources are what answer engines prefer to quote
+- **Do not fabricate metrics**: there are no reliable "AI SEO" numbers to optimize against yet
 
 ### Building Authority & Topical Clusters
 
@@ -377,4 +396,14 @@ H1: Python Async/Await Tutorial: Complete Guide
 - [ ] Technical accuracy verified
 - [ ] No duplicate content elsewhere
 - [ ] Schema markup added (if applicable)
+- [ ] Direct answer appears near the top (AI answer engine visibility)
 - [ ] Call-to-action encourages engagement
+
+## Related Skills
+
+- **devto-formatter** / **medium-optimizer** / **linkedin-pulse-formatter** — platform-specific formatting after SEO work
+- **sr-tech-blog** — long-form blog content this skill optimizes
+- **markdown-formatter** — clean structure (headings, alt text, links) that SEO depends on
+- **article-review** — pre-publish editorial checklist alongside this SEO checklist
+- **image-generator-blog** — optimized featured images with descriptive alt text
+- **technical-writer** (agent) — drafts articles that this skill then optimizes

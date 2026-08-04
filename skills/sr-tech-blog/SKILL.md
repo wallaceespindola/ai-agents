@@ -235,7 +235,7 @@ UPDATES SECTION (Optional)
 - **Production-concerned**: Include error handling, logging
 - **Varied**: Show simple, medium and complex examples
 - **Tested**: You've actually run this code
-- **Modern**: Use current language features and frameworks
+- **Modern**: Target the latest LTS versions (e.g., Java 25 LTS / Spring Boot 4.0, Python 3.13+, Node 24 LTS) unless the article is version-specific
 
 #### Formatting
 ```java
@@ -262,8 +262,10 @@ public class ProductionExample {
 
 ### Images & Multimedia
 
-#### Featured Image
-- **Size**: 1200x628px (optimal for sharing)
+#### Featured Image (REQUIRED)
+- **The featured image is a required deliverable** — a blog post is not deliverable without one
+- Design should reflect the post's actual content (diagram, code diff, comparison — not generic stock art); create with the `image-generator-blog` skill
+- **Size**: 1200x628px (optimal for sharing; matches the 1200x630 OG standard)
 - **Aspect ratio**: 16:9
 - **Quality**: Professional, high-resolution
 - **Relevance**: Directly related to topic
@@ -366,7 +368,7 @@ public class ProductionExample {
 
 #### SEO Best Practices
 - **Keyword research**: Target 1 primary + 3-5 secondary keywords
-- **URL structure**: `/2024/topic-name/` (include year, use hyphens)
+- **URL structure**: `/topic-name/` (descriptive slug, hyphens; avoid dates in URLs so evergreen posts don't look stale)
 - **Headlines**: Use H1 once, H2 for sections, H3 for subsections
 - **Images**: Optimize file size, include alt text, use descriptive names
 - **Meta**: Write compelling meta descriptions (150-160 chars)
@@ -443,7 +445,7 @@ public class ProductionExample {
 - [ ] Table of contents for longer posts
 - [ ] Related post links for internal SEO
 - [ ] Meta description written (150-160 chars)
-- [ ] Featured image prepared (1200x628px)
+- [ ] Banner image created and attached (1200x628px — required)
 - [ ] All images have descriptive alt text
 - [ ] Readability optimized (short paragraphs, headers)
 - [ ] Call-to-action included (newsletter, related post)
@@ -510,8 +512,13 @@ public class ProductionExample {
 
 ---
 
-This skill works best combined with:
-- **Language-content skills** (java-content, python-content, javascript-content)
-- **code-examples-generator** for production-grade examples
-- **seo-optimizer** for long-term discoverability
-- **markdown-formatter** for consistent formatting
+## Related Skills
+
+- **Language-content skills** (java-content, python-content, javascript-content) — topic-specific depth
+- **code-examples-generator** — production-grade, runnable examples
+- **seo-optimizer** — long-term discoverability, including AI answer engines
+- **markdown-formatter** — consistent formatting for publishing and archiving
+- **article-review** — pre-publish editorial checklist before hitting publish
+- **devto-formatter** / **medium-optimizer** — republish blog posts to platforms (set canonical URL to your blog)
+- **image-generator-blog** — featured images and in-article diagrams
+- **technical-writer** (agent) — delegate full article drafts

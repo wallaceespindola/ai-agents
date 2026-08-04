@@ -10,7 +10,7 @@ description: Format technical articles for Dev.to platform, optimizing for commu
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to the State of JS 2024 Survey [link], 65% of developers...")
+- Cite credible sources with links (e.g., "According to the latest State of JS survey [link], most developers...")
 - Use your own data if you have it (e.g., "In my experience with 20+ projects...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many developers prefer..." instead of "80% of developers prefer...")
@@ -114,7 +114,7 @@ Result: All versions link to IDENTICAL code in same repo
 HEADLINE
 SUMMARY (preview text)
 
-[Cover image - 1000x500px]
+[Cover image - 1000x420px]
 
 Introduction (100-200 words)
 - Greeting to community
@@ -234,8 +234,11 @@ Example series:
 
 ### Media & Images
 
-#### Cover Image
-- **Size**: 1000x500px (1:2 aspect ratio)
+#### Cover Image (REQUIRED)
+- **The cover image is a required deliverable** — a Dev.to article is not deliverable without one
+- Design should reflect the article's actual content (diagram, code diff, comparison — not generic stock art)
+- Create it with the `image-generator-blog` skill
+- **Size**: 1000x420px (Dev.to recommended cover size)
 - **Quality**: Clear, professional
 - **Content**: Related to topic
 - **Source**: Unsplash, Pexels, own images
@@ -401,7 +404,7 @@ Structure:
 ### Publishing Checklist
 
 - [ ] Title is action-oriented and specific
-- [ ] Cover image is high quality (1000x500px)
+- [ ] Banner image created and attached (1000x420px, reflects article content — required)
 - [ ] Introduction hooks reader immediately
 - [ ] Article is 1,000-3,000 words
 - [ ] Code examples are complete and runnable
@@ -412,3 +415,12 @@ Structure:
 - [ ] Technical accuracy verified
 - [ ] No plagiarism or copied content
 - [ ] Ready to engage with comments
+
+## Related Skills
+
+- seo-optimizer — keyword and discoverability pass before publishing
+- markdown-formatter — clean, portable Markdown for the final draft
+- code-examples-generator — runnable code snippets the article links to
+- image-generator-blog — cover image (1000x420px) and in-article visuals
+- article-review — pre-publish editorial checklist
+- technical-writer agent — drafts the article this skill then formats for Dev.to

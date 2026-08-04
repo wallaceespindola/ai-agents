@@ -10,7 +10,7 @@ description: Write curated technical articles for DZone publication platform, op
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to the 2024 Stack Overflow Survey [link], 65% of developers...")
+- Cite credible sources with links (e.g., "According to the latest Stack Overflow Developer Survey [link], X% of developers..." — use the actual figure from the source)
 - Use your own data if you have it (e.g., "In production systems I've built...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many development teams prefer..." instead of "80% of teams prefer...")
@@ -382,7 +382,9 @@ graph TD
 
 ### Images & Media
 
-#### Featured Image
+#### Featured Image (REQUIRED)
+
+**The featured image is a required deliverable** — a DZone article is not deliverable without one. Design should reflect the article's actual content (diagram, code diff, comparison — not generic stock art).
 
 **Technical Specifications:**
 - **Size**: 1200x628px (DZone standard) or 1024x768px (4:3 landscape)
@@ -945,6 +947,7 @@ Result: Practical, builds credibility, generates discussion
 - [ ] Professional, credible writing quality
 
 **Pre-submission verification**
+- [ ] Banner image created and attached
 - [ ] Unique, never-before-published content
 - [ ] Verified all code examples work as described
 - [ ] Verified all metrics and benchmarks are accurate
@@ -1015,3 +1018,15 @@ Before finalizing your DZone article:
 
 **Contact DZone Editorial Team:**
 📧 **editors@dzone.com** - For questions, feedback or submission assistance
+
+---
+
+## Related Skills
+
+- **seo-optimizer** - Keyword research and search visibility before writing
+- **markdown-formatter** - Format and export the final article
+- **code-examples-generator** - Production-ready code samples
+- **image-generator-blog** - Featured images and custom in-article graphics
+- **article-review** - Pre-publish editorial checklist before submission
+- **java-content** - Java-specific technical depth and ecosystem accuracy
+- **technical-writer** (agent) - Draft or revise the full article end to end

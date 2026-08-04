@@ -5,6 +5,8 @@ description: Generate professional featured images and in-article visuals for te
 
 # Image Generation for Technical Blogs
 
+**This skill is a REQUIRED step of every article deliverable** (Wallace's standing rule): every article written for a publishing platform ships with a banner/featured image — it is not optional garnish.
+
 ## When to Use This Skill
 
 Use this skill when:
@@ -26,6 +28,19 @@ Use this skill when:
 - **Format**: Landscape orientation for maximum visual impact
 - **Alternative**: Can be adapted for social sharing but primary use is 1024x768
 
+#### Per-Platform Dimensions Quick Reference
+
+| Platform | Banner size |
+|----------|-------------|
+| Dev.to (cover) | 1000x420px |
+| Medium | 1200x627px |
+| LinkedIn Pulse | 1200x627px |
+| Substack | 1200x600px |
+| Personal blog | 1200x630px (OG standard) |
+| DZone | 1200x628px (DZone standard) |
+| InfoQ | 1024x768px (4:3) proposed — editors control final art |
+| JavaPro | 1200x630px proposed — editors control final art |
+
 #### File Format
 - **JPG**: Recommended for abstract/futuristic images (optimized compression)
 - **PNG**: For images with transparency (less common for abstract styles)
@@ -46,7 +61,7 @@ Use this skill when:
 #### Approach 1: Abstract Futuristic Design (Figma) - RECOMMENDED
 **Tools**: Figma, Adobe XD, Sketch
 **Time**: 20-30 minutes per image
-**Cost**: Free (Figma) to $20/month
+**Cost**: Free tier (Figma) covers this; paid plans optional
 **Best for**: Professional, consistent abstract aesthetic
 
 **Abstract design elements:**
@@ -84,7 +99,7 @@ Use this skill when:
 #### Approach 2: Stock Photos + Abstract Overlay (Canva)
 **Tools**: Canva Pro, Adobe Express
 **Time**: 12-18 minutes per image
-**Cost**: $13/month (Canva Pro)
+**Cost**: Paid subscription (free tiers exist with limited assets)
 **Best for**: Blended futuristic + photographic aesthetic
 
 **Steps:**
@@ -103,10 +118,10 @@ Use this skill when:
 - "tech gradient"
 - "cyber network"
 
-#### Approach 3: Generative AI Art (Midjourney, DALL-E 3)
-**Tools**: Midjourney, DALL-E 3, Stable Diffusion
+#### Approach 3: Generative AI Art
+**Tools**: Any current AI image generator (e.g. Midjourney, DALL-E, Stable Diffusion)
 **Time**: 5-10 minutes per image
-**Cost**: Midjourney ($10-96/month), DALL-E 3 (via ChatGPT+), Stable Diffusion (free)
+**Cost**: Free to paid subscription depending on tool; check current plans
 **Best for**: Unique, completely custom abstract visuals
 
 **Prompting tips for futuristic abstract:**
@@ -171,14 +186,14 @@ Use this skill when:
 - **Pixlr**: Free online editor with abstract filters
 
 #### Paid Options (Recommended)
-- **Figma Pro** ($12/month): Best for consistent abstract design templates
-- **Canva Pro** ($13/month): Stock images + abstract overlays
-- **Midjourney** ($10-96/month): Premium AI-generated abstract art
-- **DALL-E 3** (via ChatGPT+ $20/month): AI generation with fine control
-- **Adobe Creative Cloud** ($54.99/month): Full suite with abstract tools
+- **Figma Pro** (subscription): Best for consistent abstract design templates
+- **Canva Pro** (subscription): Stock images + abstract overlays
+- **Midjourney** (subscription): Premium AI-generated abstract art
+- **DALL-E** (via ChatGPT subscription): AI generation with fine control
+- **Adobe Creative Cloud** (subscription): Full suite with abstract tools
 
 #### Recommended for Abstract Futuristic Style
-**Best value**: Figma ($12/month)
+**Best value**: Figma (free tier covers most needs)
 - Create abstract design master templates
 - Reuse layers and components across articles
 - Precise control over abstract elements
@@ -186,13 +201,13 @@ Use this skill when:
 - 20-30 min per image with templates (10 min after setup)
 - Zero external dependencies
 
-**Best for uniqueness**: Midjourney ($10-96/month)
+**Best for uniqueness**: AI image generators (Midjourney or similar)
 - Fully custom abstract visuals per article
 - Fast generation (5-10 min per image)
 - Highly unique results
 - Requires iterative prompting
 
-**Best for speed**: Canva Pro ($13/month)
+**Best for speed**: Canva Pro (subscription)
 - Stock images with abstract overlays
 - 12-18 min per image
 - Good balance of quality and speed
@@ -353,14 +368,14 @@ Use this skill when:
 
 | Tool | Cost | Best For | Learning Curve | Abstract Suitability |
 |------|------|----------|-----------------|----------------------|
-| Figma Pro | Free/$12 | Custom abstract design + templates | Moderate | Excellent |
-| Canva Pro | Free/$13 | Stock + abstract overlay | Very easy | Very good |
-| Midjourney | $10-96 | AI-generated abstract art | Easy | Excellent |
-| DALL-E 3 | $20/month (ChatGPT+) | Premium AI abstract | Easy | Excellent |
-| Stable Diffusion | Free | Open-source AI generation | Hard | Excellent |
+| Figma | Free tier / paid | Custom abstract design + templates | Moderate | Excellent |
+| Canva | Free tier / paid | Stock + abstract overlay | Very easy | Very good |
+| Midjourney | Paid | AI-generated abstract art | Easy | Excellent |
+| DALL-E | Paid (via ChatGPT) | Premium AI abstract | Easy | Excellent |
+| Stable Diffusion | Free (self-hosted) | Open-source AI generation | Hard | Excellent |
 | Unsplash/Pexels | Free | Stock photo base | N/A | Good (for overlays) |
 | Draw.io | Free | Technical diagrams | Easy | Fair |
-| CleanShot X | $29 | Mac screenshots | Very easy | Fair |
+| CleanShot X | Paid (one-time) | Mac screenshots | Very easy | Fair |
 
 ## Image Generation Workflow
 
@@ -381,7 +396,7 @@ Use this skill when:
 5. Export as JPG (1024x768) and verify < 3MB (2 min)
 
 ### Premium Workflow with AI (8-12 min per image)
-1. Write detailed prompt for Midjourney/DALL-E 3 (3 min)
+1. Write detailed prompt for your AI image generator (3 min)
 2. Generate image (2-3 iterations) (3-5 min)
 3. Upscale and download (2 min)
 4. Optimize to keep < 3MB (2 min)
@@ -466,8 +481,12 @@ Use this skill when:
 
 ---
 
-This skill works best combined with:
-- **markdown-formatter** for consistent image formatting
-- **diagram-mermaid** and **diagram-plantuml** for technical diagrams
-- **sr-tech-blog** for blog article strategy
-- Any **language-content** skill for technical accuracy
+## Related Skills
+
+- **markdown-formatter** — consistent image embedding, alt text and captions in the article's Markdown
+- **devto-formatter**, **medium-optimizer**, **linkedin-pulse-formatter** — platform-specific image sizing and placement
+- **seo-optimizer** — image alt text, file naming and social preview optimization
+- **diagram-mermaid** — version-controlled technical diagrams as code
+- **diagram-plantuml** — precise UML/architecture diagrams
+- **article-review** — pre-publish editorial checklist, including visual asset review
+- **technical-writer** agent — drafts the article the visuals support

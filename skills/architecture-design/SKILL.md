@@ -341,7 +341,7 @@ RELATED TOPICS (300-400 words)
 - Service layer patterns
 - Controller/DTO patterns
 - Testing architecture (TestContainers)
-- Distributed tracing (Spring Cloud Sleuth)
+- Distributed tracing (Micrometer Tracing, OpenTelemetry)
 - Messaging patterns (RabbitMQ, Kafka)
 - Security architecture (OAuth2, JWT)
 
@@ -524,12 +524,12 @@ RELATED TOPICS (300-400 words)
 ❌ **Premature optimization**: Profile first, optimize second
 ❌ **No monitoring**: Can't operate what you can't measure
 
----
+## Related Skills
 
-This skill works best combined with:
-- **diagram-mermaid** and **diagram-plantuml** for architecture diagrams
-- **code-examples-generator** for implementation examples
-- **java-content**, **python-content**, **javascript-content** for language-specific examples
-- **sr-tech-blog** for long-form blog articles
-- **medium-optimizer** or **dzone-article** for publication
-- **seo-optimizer** for discovery of architecture content
+- **infoq-article**, **dzone-article** — architect-audience publication formatting
+- **sr-tech-blog**, **medium-optimizer** — long-form blog and Medium publication
+- **diagram-mermaid** — architecture diagrams as code
+- **code-examples-generator** — implementation examples
+- **java-content**, **python-content**, **javascript-content** — language-specific examples
+- **article-review** — pre-publish editorial checklist
+- **technical-writer** agent — delegate full article drafting

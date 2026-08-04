@@ -37,7 +37,7 @@ Use this skill when:
 ```markdown
 ---
 title: "Article Title"
-date: 2024-02-01
+date: YYYY-MM-DD
 author: "Your Name"
 description: "Brief description for preview/SEO"
 tags: ["tag1", "tag2", "tag3"]
@@ -52,8 +52,8 @@ Your article content starts here.
 ```yaml
 ---
 title: "The Complete Guide to Spring Boot"
-date: 2024-02-01
-updated: 2024-02-15
+date: YYYY-MM-DD
+updated: YYYY-MM-DD
 author: "Your Name"
 author_url: "https://yoursite.com"
 description: "A comprehensive guide to Spring Boot covering setup, configuration, testing and deployment in production."
@@ -234,8 +234,8 @@ WHERE users.status = 'active'
 name: Example
 version: 1.0
 dependencies:
-  - java: 17+
-  - maven: 3.8+
+  - java: 21+ (prefer latest LTS)
+  - maven: 3.9+
 ```
 ````
 
@@ -544,7 +544,7 @@ Use for:
 ```markdown
 ---
 title: "Complete Title of Article"
-date: 2024-02-01
+date: YYYY-MM-DD
 author: "Your Name"
 description: "SEO description, 150-160 characters"
 tags: ["tag1", "tag2", "tag3"]
@@ -598,7 +598,7 @@ Content here.
 
 ---
 
-Last updated: 2024-02-15
+Last updated: YYYY-MM-DD
 
 <!-- Comments for future edits -->
 ```
@@ -798,3 +798,12 @@ All articles should be exported or saved as:
 - **Metadata**: YAML front matter at top
 
 This ensures maximum compatibility and portability across all platforms and tools.
+
+## Related Skills
+
+- **devto-formatter**, **medium-optimizer**, **linkedin-pulse-formatter** — platform-specific formatting after the Markdown master copy is done
+- **seo-optimizer** — keyword, metadata and structure optimization before publishing
+- **diagram-mermaid** — version-controlled diagrams embedded directly in Markdown
+- **diagram-plantuml** — precise UML/architecture diagrams for technical articles
+- **article-review** — pre-publish editorial checklist on the formatted article
+- **technical-writer** agent — drafts the article content this skill formats

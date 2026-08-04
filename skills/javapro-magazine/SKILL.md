@@ -10,7 +10,7 @@ description: Create enterprise-grade technical articles for JavaPro Magazine and
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to JetBrains Developer Survey 2024 [link], 65% of Java developers...")
+- Cite credible sources with links (e.g., "According to the latest JetBrains Developer Ecosystem Survey [link], X% of Java developers..." — use the actual figure from the source)
 - Use your own data if you have it (e.g., "In enterprise projects I've consulted on...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many enterprise teams prefer..." instead of "80% of enterprise teams prefer...")
@@ -174,7 +174,7 @@ AUTHOR BIO (100-150 words)
 - **Well-commented**: Explain architectural decisions
 - **Error handling**: Include exception handling
 - **Testing**: Show unit/integration tests
-- **Frameworks**: Use current versions (Spring Boot 3+, etc.)
+- **Frameworks**: Use current stable versions (latest Spring Boot, etc.)
 - **Real dependencies**: Show actual libraries
 
 #### Code Structure
@@ -262,6 +262,7 @@ public class DistributedEventProcessor implements EventProcessor {
 - [ ] Professional writing (no errors)
 - [ ] Original content (not published elsewhere)
 - [ ] Author bio and headshot ready
+- [ ] Banner image created and attached (proposed featured image; editors may replace it)
 
 #### Submission Requirements
 - **Format**: Markdown or Word document
@@ -306,7 +307,7 @@ public class DistributedEventProcessor implements EventProcessor {
 
 ### Research & Validation Checklist
 
-- [ ] All Java code compiles on Java 17+
+- [ ] All Java code compiles on the current LTS Java (verify on supported LTS releases)
 - [ ] All frameworks on current versions
 - [ ] Performance claims include benchmarks
 - [ ] Security practices follow OWASP guidance
@@ -404,3 +405,21 @@ Unlike LinkedIn (short), Medium (long but community), or Dev.to (practical):
 - Poor writing quality
 - Unsupported claims
 - Missing code examples
+
+## Banner Image (Required)
+
+- Deliver a proposed banner/featured image (1200x630px) with every submission — the article is not deliverable without one; the magazine's editors control final art and may replace it
+- Design should reflect the article's actual content (architecture diagram, pattern comparison, code visual — not generic stock art)
+- Create it with the `image-generator-blog` skill
+
+---
+
+## Related Skills
+
+- **seo-optimizer** - Keyword research and search visibility before writing
+- **markdown-formatter** - Format and export the final article
+- **code-examples-generator** - Production-ready code samples
+- **image-generator-blog** - Featured images and high-resolution diagrams
+- **article-review** - Pre-publish editorial checklist before submission
+- **java-content** - Java-specific technical depth and ecosystem accuracy
+- **technical-writer** (agent) - Draft or revise the full article end to end

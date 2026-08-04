@@ -617,7 +617,7 @@ plantuml -tsvg diagram.puml
 
 ### Integration Options
 - **GitHub**: Requires conversion to SVG/PNG
-- **GitLab**: Native support coming
+- **GitLab**: Renders `plantuml` blocks natively (gitlab.com; self-managed needs a PlantUML server configured)
 - **Markdown tools**: Use with mermaid-style blocks
 - **Static site generators**: Hugo, Jekyll plugins available
 
@@ -859,10 +859,10 @@ Before publishing any PlantUML diagram:
 
 ---
 
-This skill works best combined with:
-- **diagram-mermaid** for simple diagrams
-- **architecture-design** for architectural content
-- **java-content**, **python-content**, **javascript-content** for language-specific examples
-- **sr-tech-blog** or **medium-optimizer** for publication
-- **markdown-formatter** for embedding in articles
-- **image-generator-blog** for export as PNG/SVG
+## Related Skills
+
+- **diagram-mermaid** — sibling skill for simpler diagrams with native GitHub/Dev.to rendering
+- **markdown-formatter** — embed exported diagrams in article Markdown
+- **image-generator-blog** — export diagrams as PNG/SVG for publication
+- **article-review** — pre-publish editorial checklist (verifies diagrams match article text)
+- **technical-writer** agent — drafts the articles these diagrams illustrate

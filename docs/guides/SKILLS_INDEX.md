@@ -608,6 +608,24 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 
 ---
 
+### Article Review
+**Location**: `skills/article-review/SKILL.md`
+**Purpose**: Pre-publication editorial review gate for finished article drafts
+
+**Key Features**:
+- PASS / FIX / POLISH verdict before any platform submission
+- Catches fabricated statistics and unsourced numerical claims
+- Flags AI-sounding prose (per HUMANIZATION_GUIDE.md patterns)
+- Verifies code correctness and platform compliance
+- Checks banner image presence and platform dimensions
+- Validates links and metadata
+
+**Best For**:
+- Final gate before submitting to Medium, Dev.to, DZone, InfoQ, JavaPro, LinkedIn, Substack or a blog
+- Catching problems before editors or readers do
+
+---
+
 ## How Skills Work Together
 
 ### Example 1: Java Article for Dev.to
@@ -640,7 +658,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - **DZone**: dzone-article
 - **JavaPro**: javapro-magazine
 - **Personal/Company Blog**: sr-tech-blog
-- **All platforms**: markdown-formatter, seo-optimizer, code-examples-generator
+- **All platforms**: markdown-formatter, seo-optimizer, code-examples-generator, article-review
 
 ### By Language
 - **Java**: java-content, javapro-magazine or dzone-article (best combination)

@@ -1,6 +1,6 @@
-# Complete Technical Writer System - All 18 Skills
+# Complete Technical Writer System - All 19 Skills
 
-This document provides a comprehensive overview of the complete technical writer agent system with all 18 specialized skills.
+This document provides a comprehensive overview of the complete technical writer agent system with all 19 specialized skills.
 
 ## System Architecture
 
@@ -17,7 +17,7 @@ LANGUAGE SKILLS   PLATFORM   ARCHITECTURE   VISUAL CONTENT SUPPORTING
                   (7 skills) (1 skill)      (4 skills)     (2 skills)
 ```
 
-## All 18 Skills
+## All 19 Skills
 
 ### 1. Language-Specific Content Skills (3)
 
@@ -247,6 +247,17 @@ LANGUAGE SKILLS   PLATFORM   ARCHITECTURE   VISUAL CONTENT SUPPORTING
 
 ---
 
+### 7. Editorial Review Skill (1)
+
+#### Skill 19: Article Review
+- **File**: `skills/article-review/SKILL.md`
+- **Purpose**: Pre-publication editorial review gate (PASS/FIX/POLISH verdict)
+- **Checks**: Fabricated statistics, AI-sounding prose, code correctness, platform compliance, banner image, links and metadata
+- **Works with**: All platform formatters as the final gate before submission
+- **Best for**: Catching problems before editors or readers do
+
+---
+
 ## Quick Skill Matrix
 
 ### By Content Type
@@ -296,7 +307,8 @@ LANGUAGE SKILLS   PLATFORM   ARCHITECTURE   VISUAL CONTENT SUPPORTING
 4. Add code examples (code-examples-generator)
 5. Optimize for SEO (seo-optimizer)
 6. Export to Markdown (markdown-formatter)
-7. Publish
+7. Run final editorial gate (article-review)
+8. Publish
 
 ### Workflow 2: Deep Technical Article (3-4 hours)
 1. Plan article (medium-optimizer or dzone-article)
@@ -306,7 +318,8 @@ LANGUAGE SKILLS   PLATFORM   ARCHITECTURE   VISUAL CONTENT SUPPORTING
 5. Write article with diagrams and code
 6. Optimize for SEO (seo-optimizer)
 7. Export to Markdown (markdown-formatter)
-8. Publish
+8. Run final editorial gate (article-review)
+9. Publish
 
 ### Workflow 3: Architecture Deep-Dive (4-5 hours)
 1. Choose architecture topic (architecture-design)
@@ -317,7 +330,8 @@ LANGUAGE SKILLS   PLATFORM   ARCHITECTURE   VISUAL CONTENT SUPPORTING
 6. Write for platform (medium-optimizer or sr-tech-blog)
 7. Optimize for SEO (seo-optimizer)
 8. Export to Markdown (markdown-formatter)
-9. Publish
+9. Run final editorial gate (article-review)
+10. Publish
 
 ### Workflow 4: Blog Archive Strategy (Ongoing)
 1. Write blog posts (sr-tech-blog)
@@ -360,6 +374,7 @@ LANGUAGE SKILLS   PLATFORM   ARCHITECTURE   VISUAL CONTENT SUPPORTING
 | markdown-formatter | 30 min | 5-10 min | Universal | Archiving |
 | seo-optimizer | 1 hour | 10-20 min | Long-term | Discovery |
 | code-examples-generator | 1 hour | 20-30 min | Quality | All articles |
+| article-review | 30 min | 20-30 min | Quality gate | All articles before publishing |
 
 ---
 
@@ -458,7 +473,7 @@ LANGUAGE SKILLS   PLATFORM   ARCHITECTURE   VISUAL CONTENT SUPPORTING
 
 ## Complete System Summary
 
-**Total**: 18 Skills
+**Total**: 19 Skills
 - 1 Main Agent (orchestrator)
 - 3 Language-specific skills
 - 7 Platform-specific skills
@@ -467,6 +482,7 @@ LANGUAGE SKILLS   PLATFORM   ARCHITECTURE   VISUAL CONTENT SUPPORTING
 - 1 Image generation skill
 - 2 Supporting skills
 - 1 Universal format skill
+- 1 Editorial review skill (article-review)
 
 **Platforms**: 7 external + personal blog
 **Languages**: Java, Python, JavaScript

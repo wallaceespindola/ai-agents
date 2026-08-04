@@ -9,7 +9,7 @@ author_linkedin: ${LINKEDIN_URL}
 author_twitter: ${TWITTER_URL}
 publication_date: [DATE]
 last_updated: [DATE]
-featured_image: ./featured-image.png
+featured_image: ./featured-image.png # required banner, platform-sized: Dev.to 1000x420, Medium/LinkedIn 1200x627, Substack 1200x600, blog 1200x630 OG, DZone 1200x628, InfoQ 1024x768 proposed (image-generator-blog)
 language: ${DEFAULT_LANGUAGE}
 tags: [tag1, tag2, tag3]
 categories: [category1, category2]

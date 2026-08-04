@@ -10,7 +10,7 @@ description: Optimize technical articles for Medium platform, including SEO, sto
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
-- Cite credible sources with links (e.g., "According to the 2024 Stack Overflow Survey [link], 65% of developers...")
+- Cite credible sources with links (e.g., "According to the latest Stack Overflow Developer Survey [link], most developers...")
 - Use your own data if you have it (e.g., "In my 5 years of development, I've seen...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many developers prefer..." instead of "80% of developers prefer...")
@@ -206,7 +206,10 @@ public class Example {
 
 ### Images & Media Guidelines
 
-#### Featured Image
+#### Featured Image (REQUIRED)
+- **The featured image is a required deliverable** — a Medium article is not deliverable without one
+- Design should reflect the article's actual content (diagram, code diff, comparison — not generic stock art)
+- Create it with the `image-generator-blog` skill
 - **Size**: 1200x627px (Medium standard)
 - **Quality**: High-resolution, professional
 - **Content**: Related to article topic
@@ -312,7 +315,7 @@ Select 1-2 most relevant topics:
 
 - [ ] Headline is compelling and contains keywords
 - [ ] Subtitle adds context and value promise
-- [ ] Featured image is high quality (1200x627px)
+- [ ] Banner image created and attached (1200x627px, reflects article content — required)
 - [ ] Introduction hooks reader in first paragraph
 - [ ] Article is 2,000+ words with substance
 - [ ] Section headers use H2 for scannability
@@ -408,3 +411,12 @@ This opening:
 - ✅ Names credible companies
 - ✅ Promises concrete learning
 - ✅ Creates curiosity for next section
+
+## Related Skills
+
+- seo-optimizer — keyword research and meta optimization before publishing
+- markdown-formatter — clean, portable Markdown for the final draft
+- code-examples-generator — runnable code snippets the article links to
+- image-generator-blog — featured image (1200x627px) and supporting diagrams
+- article-review — pre-publish editorial checklist
+- technical-writer agent — drafts the article this skill then optimizes for Medium

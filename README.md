@@ -2,7 +2,7 @@
 
 A comprehensive system of specialized AI agents for software engineering, system architecture, infrastructure automation, and project management.
 
-**10 Agents + 95 Skills = Complete software engineering ecosystem**
+**10 Agents + 96 Skills = Complete software engineering ecosystem**
 
 With comprehensive React/Next.js support, GitHub automation, Spring Cloud microservices, and Quarkus development.
 
@@ -35,17 +35,18 @@ nano .env  # Add your Anthropic API key
 #### **Technical Writer Agent**
 
 - Expertise: Technical documentation, code documentation, multi-platform content publishing
-- Skills: 22 skills for documentation generation, code examples, platform-specific formatting
+- Skills: 23 skills for documentation generation, code examples, platform-specific formatting, mandatory banner
+  images and the article-review editorial gate before publication
 
 #### **Java Developer Agent**
 
-- Expertise: Java 21+, Spring Boot, microservices
+- Expertise: Java 25+, Spring Boot, microservices
 - Skills: Code review, testing strategy, performance tuning, security audit, project setup, Spring Cloud, advanced
   security, documentation (12 skills total)
 
 #### **Python Developer Agent**
 
-- Expertise: Python 3.12+, FastAPI, async programming
+- Expertise: Python 3.13+, FastAPI, async programming
 - Skills: Code review, testing strategy, performance tuning, type checking, project setup, documentation (6 skills)
 
 #### **JavaScript/Frontend Developer Agent**
@@ -91,9 +92,10 @@ nano .env  # Add your Anthropic API key
 - Skills: Project planning, sprint planning, risk assessment, status reporting, retrospectives, roadmap planning (6
   skills)
 
-### 95 Specialized Skills
+### 96 Specialized Skills
 
-**Technical Writing (22 skills)** - Content creation, platform optimization, code generation, diagrams, SEO
+**Technical Writing (23 skills)** - Content creation, platform optimization, code generation, diagrams, SEO,
+pre-publication editorial review
 
 **Java Development (12 skills)** - Code review, testing, performance, security, Spring Boot setup, Spring Cloud
 microservices, advanced security, documentation
@@ -193,11 +195,11 @@ LINKEDIN_URL=https://linkedin.com/in/you
 
 - **[AGENTS_GUIDE.md](docs/AGENTS_GUIDE.md)** - Complete agent guide with collaboration patterns
 - **[System Architecture](docs/guides/SYSTEM_MAP.md)** - Agent relationships and data flows
-- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 95 skills described with examples
+- **[Skills Index](docs/guides/SKILLS_INDEX.md)** - All 96 skills described with examples
 
 **Reference**:
 
-- **[AGENTS.md](AGENTS.md)** - Quick reference for all 10 agents and 95 skills
+- **[AGENTS.md](AGENTS.md)** - Quick reference for all 10 agents and 96 skills
 - **[Project Specifications](CLAUDE.md#project-specifications-by-language)** - Java and Python templates
 - **[Complete System Overview](docs/guides/COMPLETE_SYSTEM.md)** - Full system documentation
 - **[.copilot-instructions](.copilot-instructions)** - GitHub Copilot context for the system
@@ -212,7 +214,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 1. Use Java Developer Agent with spring-boot-setup skill
 2. Request: "Generate Spring Boot microservice with [requirements]"
 3. Get complete Maven project with:
-   - Spring Boot 3.x with Actuator (health, metrics, info endpoints)
+   - Spring Boot 4.x with Actuator (health, metrics, info endpoints)
    - Spring Data JPA + H2 (dev) / PostgreSQL (prod)
    - Kafka integration for async events
    - Swagger UI + OpenAPI documentation
@@ -301,7 +303,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 - All configuration environment-based
 - Team-friendly (each person has own `.env`)
 
-**📦 95 Integrated Skills**
+**📦 96 Integrated Skills**
 
 - Each skill is a focused, reusable capability
 - Skills work independently or in combination
@@ -326,8 +328,8 @@ LINKEDIN_URL=https://linkedin.com/in/you
 
 **🚀 Multi-Language Support**
 
-- Java 21+ with Spring Boot & Spring Cloud
-- Python 3.12+ with FastAPI & async patterns
+- Java 25+ with Spring Boot & Spring Cloud
+- Python 3.13+ with FastAPI & async patterns
 - JavaScript/TypeScript with React & Next.js
 - Unified project structure across languages
 
@@ -369,8 +371,8 @@ LINKEDIN_URL=https://linkedin.com/in/you
 │   ├── github-*, git-*, yaml-*, build-*   ← 14 Git/GitHub automation skills
 │   ├── spring-*, quarkus-*, maven-*       ← 10 Spring/Quarkus & build skills
 │   ├── project-*/                         ← 6 Project management skills
-│   ├── ...                                ← 22 Technical writing skills
-│   └── */SKILL.md                         ← 95 total skills
+│   ├── ...                                ← 23 Technical writing skills
+│   └── */SKILL.md                         ← 96 total skills
 │
 └── docs/
     ├── GETTING_STARTED.md                 ← START HERE
@@ -380,7 +382,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
     └── guides/
         ├── COMPLETE_SYSTEM.md             ← Full system documentation
         ├── SYSTEM_MAP.md                  ← Architecture & relationships
-        ├── SKILLS_INDEX.md                ← All 95 skills reference
+        ├── SKILLS_INDEX.md                ← All 96 skills reference
         └── (Java & Python project templates live in CLAUDE.md)
 ```
 
@@ -400,7 +402,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 
 ## Key Points
 
-✅ **10 Agents + 95 Skills** - Complete software engineering ecosystem
+✅ **10 Agents + 96 Skills** - Complete software engineering ecosystem
 
 ✅ **Full-Stack Development** - Java, Python, JavaScript (with React/Next.js focus)
 
