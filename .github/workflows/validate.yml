@@ -1,0 +1,30 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  frontmatter:
+    name: Agent & Skill Frontmatter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      # Claude Code silently skips skills/agents whose frontmatter lacks name/description.
+      - name: Check name and description are present
+        run: |
+          bad=0
+          for f in skills/*/SKILL.md agents/*/*.md; do
+            if ! head -1 "$f" | grep -q '^---$' || ! grep -q '^name:' "$f" || ! grep -q '^description:' "$f"; then
+              echo "::error file=$f::missing frontmatter name/description"
+              bad=1
+            fi
+          done
+          exit $bad
