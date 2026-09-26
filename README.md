@@ -15,6 +15,22 @@ A comprehensive system of specialized AI agents for software engineering, system
 
 With comprehensive React/Next.js support, GitHub automation, Spring Cloud microservices, and Quarkus development.
 
+## Table of Contents
+
+- [⚡ Quick Start (2 Minutes)](#-quick-start-2-minutes)
+- [What's Included](#whats-included)
+- [📊 System Capabilities](#-system-capabilities)
+- [🔒 Secure Configuration](#-secure-configuration)
+- [📚 Documentation](#-documentation)
+- [🚀 Common Workflows](#-common-workflows)
+- [✨ Key Features](#-key-features)
+- [Project Structure](#project-structure)
+- [Getting Help](#getting-help)
+- [Key Points](#key-points)
+- [Next Steps](#next-steps)
+- [About the Author](#about-the-author)
+- [License](#license)
+
 ## ⚡ Quick Start (2 Minutes)
 
 ```bash
