@@ -1,4 +1,13 @@
+<p align="center">
+  <img src="docs/banner.svg" alt="AI Agents & Skills" width="100%"/>
+</p>
+
 # AI Agents & Skills for Software Engineering
+
+![MIT License](https://img.shields.io/badge/License-MIT-orange)
+![Claude Code](https://img.shields.io/badge/Built_for-Claude_Code-blue)
+![Agents](https://img.shields.io/badge/Agents-11-teal)
+![Skills](https://img.shields.io/badge/Skills-97-purple)
 
 A comprehensive system of specialized AI agents for software engineering, system architecture, infrastructure automation, and project management.
 
@@ -452,6 +461,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 ### Connect & Follow
 
 - **GitHub**: [github.com/wallaceespindola](https://github.com/wallaceespindola)
+- **E-mail**: [wallace.espindola@gmail.com](mailto:wallace.espindola@gmail.com)
 - **LinkedIn**: [linkedin.com/in/wallaceespindola](https://www.linkedin.com/in/wallaceespindola/)
 - **Dev.to**: [dev.to/wallaceespindola](https://dev.to/wallaceespindola)
 - **Medium**: [medium.com/@wallaceespindola](https://medium.com/@wallaceespindola)
@@ -466,6 +476,12 @@ LINKEDIN_URL=https://linkedin.com/in/you
 - **Linktree**: [linktr.ee/wallace.espindola](https://linktr.ee/wallace.espindola)
 - **Solo.to**: [solo.to/wallace.espindola](https://solo.to/wallace.espindola)
 - **Gravatar**: [gravatar.com/wallacese](https://gravatar.com/wallacese)
+
+## License
+
+- This project is released under the MIT License.
+- See the [LICENSE](LICENSE) file for details.
+- Copyright © 2026 [Wallace Espindola](https://github.com/wallaceespindola/).
 
 ---
 
