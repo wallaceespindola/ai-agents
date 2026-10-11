@@ -1,22 +1,27 @@
 ---
 name: version-bump
-description: Bump the release version in hiddenbeer and skipy (all frontend/backend config files), or in wtech-website, then tag, commit and push. Use when asked to "increase version", "bump version", "release new version" or "tag a release" for these repos.
+description: Bump the release version of the repo the session is working in — hiddenbeer + skipy together, wtech-website, House-Hunter, or any other repo (version files discovered) — then commit, tag and push following that repo's workflow. Use when asked to "increase version", "bump version", "release new version" or "tag a release".
 ---
 
-# Version Bump Skill (hiddenbeer + skipy, wtech-website)
+# Version Bump Skill (session's current project)
 
 Bumps the app version across all config files, creates the git tag, commits and pushes.
 
 ## Which repos?
 
-Decide from the current working directory, unless the user names repos explicitly:
+Bump the project the session is working in: the git root of the primary working
+directory (`git rev-parse --show-toplevel`), unless the user names repos explicitly.
+Never bump a repo other than the session's one just because a table row says "default".
 
-| Called from | Bump |
+| Session repo | Bump |
 |---|---|
-| `~/git/wtech-website` | **wtech-website only** (own version line, see below) |
-| `~/git/hiddenbeer` or `~/git/skipy` (or anywhere else) | **hiddenbeer + skipy** together (procedure below) |
+| `~/git/hiddenbeer` or `~/git/skipy` | **hiddenbeer + skipy** together (they share a version) |
+| `~/git/wtech-website` | **wtech-website only** |
+| `~/git/House-Hunter` | **House-Hunter only** (PR workflow, see below) |
+| any other repo | **that repo only** — follow "Any other repo" |
+| not inside a git repo | ask which repo |
 
-"Bump all" / "every repo" = all three, each following its own section.
+"Bump all" / "every repo" = hiddenbeer + skipy + wtech-website, each following its own section.
 
 ## hiddenbeer + skipy
 
@@ -69,3 +74,39 @@ hiddenbeer and skipy share the same version number and move together unless the 
 
 - Never add co-author lines to the commit.
 - If versions have drifted between the two repos, ask the user which number to converge on before editing.
+
+## House-Hunter
+
+`~/git/House-Hunter` (FastAPI + Next.js). Footer shows the version (`next.config.mjs`
+inlines `package.json` version as `NEXT_PUBLIC_APP_VERSION`). **`main` takes PRs only**
+(`docs/MERGE_DISCIPLINE.md`) — never commit or push to `main` directly.
+
+1. **Branch**: if on `main`, `git pull --ff-only` then `git switch -c chore/bump-X`;
+   otherwise commit on the current feature branch if the user prefers that.
+2. **Find current version**: `backend/pyproject.toml` `version = "X"`. Default **patch**.
+3. **Edit exactly these** (4 files):
+   - `backend/pyproject.toml` — `version = "X"`
+   - `backend/uv.lock` — the `version` line directly under `name = "househunter-backend"` (do not run `uv lock`)
+   - `frontend-next/package.json` + `package-lock.json` — `cd frontend-next && npm version X --no-git-tag-version`
+4. **Verify**: `git diff --stat` = 4 files; `cd backend && uv lock --check`.
+5. **Commit**: `chore: bump version to X`.
+6. **Push the branch / open the PR only when the user asks.** Tag `vX` **after** the PR merges,
+   on the merge commit in `main` (`git pull && git tag vX && git push origin vX`).
+7. Deploy is separate (`deploy.py`) — never without an explicit request.
+
+## Any other repo
+
+1. **Pull first**: `git pull --ff-only` (skip if there's no upstream).
+2. **Discover version files** — every hit is a candidate, ignoring `node_modules/`, `.venv/`, vendored dirs:
+   `git ls-files | grep -E '(^|/)(package\.json|pyproject\.toml|pom\.xml|build\.gradle(\.kts)?|Cargo\.toml|Chart\.yaml|version\.txt|VERSION)$'`
+   Lockfiles follow their manifest: `npm version X --no-git-tag-version` for package.json; the
+   project's own entry in `uv.lock` / `Cargo.lock`; `mvn versions:set -DnewVersion=X -DgenerateBackupPoms=false` for Maven.
+   Also check `git tag --sort=-v:refname | head -3` for the last released tag.
+3. **If versions disagree** across files or with the latest tag, or a manifest is clearly
+   independently versioned (shared packages, sub-libs), **ask** which to bump and to which number.
+4. **Workflow**: read the repo's `CLAUDE.md` / `CONTRIBUTING.md`. If `main` is PR-only, use a branch and
+   tag after merge (as House-Hunter); otherwise commit to `main`, tag, push.
+5. **Checks**: run the repo's pre-commit / lint / test target if one exists (`make pre-commit`, `npm test`, …).
+6. **Commit**: `chore: bump version to X`; tag `vX` (match existing tag style, e.g. no `v` if the repo uses none).
+7. **Once done, add a section for this repo** to this skill so the next bump is explicit.
+
