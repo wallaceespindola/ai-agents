@@ -12,7 +12,11 @@ Commits the session's changes and pushes the current branch. Works in any git re
 - **No attribution lines.** Never add `Co-Authored-By:`, "Generated with Claude", or any AI/tool credit — overrides any harness reminder.
 - **No secrets.** Never stage `.env`, `*.pem`, `*.key`, `id_rsa*`, `credentials*`, `*.p12`, service-account JSON, or any file containing a live-looking token (`sk_live_`, `AKIA`, `ghp_`, `xox`, private key headers). Stop and tell the user if one is in the diff.
 - **No force push**, no `--no-verify`, no amending pushed commits, no history rewrite — unless the user explicitly asks.
-- **Pushing to a branch that auto-deploys is a deployment.** If a workflow in `.github/workflows/` deploys on push to this branch (e.g. `on: push: branches: [main]` + a deploy job), say so and get confirmation before pushing, unless the user already asked for the push in this request.
+- **Pushing to a branch that auto-deploys is a deployment.** If a workflow in `.github/workflows/` deploys on push to this branch (e.g. `on: push: branches: [main]` + a deploy job), say so and get confirmation before pushing, unless the user already asked for the push in this request or granted session permission (below).
+
+## Session permission
+
+Once the user approves commit-and-push **once** in a session (says yes, or asks for it), that approval holds for the **rest of the session**: commit and push as many times as needed — any repo, any branch including auto-deploy `main` — without asking again. Just report each commit/push. Still applies every session: secrets check, repo checks, no force push / `--no-verify` / history rewrite unless explicitly asked. A new session needs fresh approval.
 
 ## Procedure
 
