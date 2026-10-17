@@ -36,6 +36,7 @@ hiddenbeer and skipy share the same version number and move together unless the 
    **hiddenbeer** (`~/git/hiddenbeer`):
    - `hiddenbeer_backend/pyproject.toml` — `version = "X"`
    - `hiddenbeer_frontend/package.json` — `"version": "X"`
+   - `hiddenbeer_backend/uv.lock` — the `version = "X"` line directly under `name = "hiddenbeer-api"` (only that line)
 
    **skipy** (`~/git/skipy`):
    - `package.json` (root) — `"version": "X"`
@@ -48,7 +49,12 @@ hiddenbeer and skipy share the same version number and move together unless the 
    Do **NOT** touch `packages/i18n-config/package.json` (skipy) — it is versioned independently.
    Backends read the version dynamically from pyproject via `get_app_version()` — no Python source edits needed.
 
-4. **Verify**: `git diff --stat` must show exactly 2 files (hiddenbeer) and 6 files (skipy).
+4. **Verify**: `git diff --stat` must show exactly 3 files (hiddenbeer) and 6 files (skipy). Then
+   `cd hiddenbeer_backend && uv lock --check`: if it fails, deps drifted from the lock; sync with `uv lock` in a
+   separate `chore(deps)` commit, never inside the bump commit.
+   If another session has uncommitted edits in a version file, stage only the version line
+   (`git show HEAD:f | sed … | git hash-object -w --stdin` + `git update-index --cacheinfo`), and if `git pull` is
+   blocked by such edits, bump in a temporary `git worktree` on `origin/main` instead of touching their files.
 5. **Pre-commit**: run `make pre-commit` in each repo before committing (twice in skipy if anything reformats).
 6. **Commit** (message style is fixed): `chore: bump version to X`
 7. **Tag**: `git tag vX` (e.g. `v1.0.20`).
