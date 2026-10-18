@@ -23,6 +23,15 @@ description: Format technical articles for Dev.to platform, optimizing for commu
 
 **Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
 
+## Verified platform rules (checked 2026-10-18)
+
+These override any conflicting numbers further down. Re-check the platform's help pages if they look stale.
+
+- Max 4 tags.
+- Cover image 1000x420; social previews can crop to about 800x418, so keep the focal point and any text centred-left.
+- AI-assisted posts must be disclosed: add the `#abotwrotethis` tag or a plain statement in the post (e.g. "I wrote this with AI assistance and reviewed it myself").
+- `canonical_url` front matter is supported for cross-posts.
+
 ## When to Use This Skill
 
 Use this skill when:

@@ -418,6 +418,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 
 ---
 
+### Article Image Generator
+**Location**: `skills/article-image-generator/SKILL.md`
+**Purpose**: Render article banners in the house style (modern, abstract, futuristic, 0-4 words) at each platform's verified size, via a bundled Pillow script (`scripts/generate_banner.py`)
+
+---
+
 ### Image Generator for Blog
 **Location**: `skills/image-generator-blog/SKILL.md`
 **Purpose**: Generate professional featured images and in-article visuals for technical blogs

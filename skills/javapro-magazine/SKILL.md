@@ -23,6 +23,14 @@ description: Create enterprise-grade technical articles for JavaPro Magazine and
 
 **Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
 
+## Verified platform rules (checked 2026-10-18)
+
+These override any conflicting numbers further down. Re-check the platform's help pages if they look stale.
+
+- Length is measured in characters: 15,000-25,000 characters recommended (code included).
+- Exclusivity is not required, but content must not be republished from elsewhere, and teaser articles that link out are not featured. No promotional content.
+- No published AI rule; adding a short AI-assistance note is advisable.
+
 ## When to Use This Skill
 
 Use this skill when:

@@ -5,6 +5,8 @@ description: Generate professional featured images and in-article visuals for te
 
 # Image Generation for Technical Blogs
 
+**To actually render a banner, use the `article-image-generator` skill** (bundled script, house style: modern, abstract, futuristic, 0-4 words). This skill covers the wider visual strategy.
+
 **This skill is a REQUIRED step of every article deliverable** (Wallace's standing rule): every article written for a publishing platform ships with a banner/featured image — it is not optional garnish.
 
 ## When to Use This Skill
@@ -34,8 +36,8 @@ Use this skill when:
 |----------|-------------|
 | Dev.to (cover) | 1000x420px |
 | Medium | 1200x627px |
-| LinkedIn Pulse | 1200x627px |
-| Substack | 1200x600px |
+| LinkedIn Pulse | 1920x1080px (16:9, verified 2026-10) |
+| Substack | 1200x630px minimum (verified 2026-10) |
 | Personal blog | 1200x630px (OG standard) |
 | DZone | 1200x628px (DZone standard) |
 | InfoQ | 1024x768px (4:3) proposed — editors control final art |

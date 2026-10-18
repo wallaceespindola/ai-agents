@@ -23,6 +23,14 @@ description: Format technical articles for LinkedIn Pulse following platform bes
 
 **Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
 
+## Verified platform rules (checked 2026-10-18)
+
+These override any conflicting numbers further down. Re-check the platform's help pages if they look stale.
+
+- Article cover image 1920x1080 (16:9), JPEG, PNG or WEBP (no GIF).
+- Articles have no tag field; hashtags belong in the share post (unverified).
+- The editor does not render Markdown tables: convert tables to lists or images before pasting.
+
 ## When to Use This Skill
 
 Use this skill when:

@@ -23,6 +23,15 @@ description: Write curated technical articles for DZone publication platform, op
 
 **Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
 
+## Verified platform rules (checked 2026-10-18)
+
+These override any conflicting numbers further down. Re-check the platform's help pages if they look stale.
+
+- DZone rejects articles written partly or fully with AI tools, and may suspend the account. A disclosure does not make AI-written text acceptable: the author must write (or fully rewrite) the article themselves.
+- Minimum 800 words.
+- Images about 100-200 KB each (JPEG recommended), at most 5 MB total per article.
+- Editorial review takes about 30 business days.
+
 ## When to Use This Skill
 
 Use this skill when:

@@ -150,7 +150,7 @@ For EACH platform:
 5. **Use same code** - Reference GitHub repo, same code snippets
 6. **Match tone/style** - Follow platform-specific guidelines
 7. **Optimize length** - Adjust for platform word count norms
-8. **Create banner image** - Every article ships with a banner/featured image via `image-generator-blog`, sized per platform (Dev.to 1000x420, Medium/LinkedIn 1200x627, Substack 1200x600, blog 1200x630 OG, DZone 1200x628, InfoQ 1024x768 proposed, JavaPro 1200x630 proposed)
+8. **Create banner image** - Every article ships with a banner/featured image via `article-image-generator` (house style: modern, abstract, futuristic, 0-4 words), sized per platform (Dev.to 1000x420, Medium 1200x627, LinkedIn 1920x1080, Substack 1200x630, blog 1200x630 OG, DZone 1200x628 JPEG, InfoQ 1024x768 JPEG, JavaPro 1200x630)
 
 #### Phase 3: Publication (30 min per platform)
 1. Publish to first platform (A/B test if possible)
@@ -168,9 +168,23 @@ For EACH platform:
 6. **Draft per Platform**: Write unique articles for each platform (title, intro, narrative, tone)
 7. **Code Integration**: Use IDENTICAL code snippets across all platform articles
 8. **Optimization**: Refine for platform-specific requirements (SEO, word count, tone)
-9. **Banner Image**: Create the banner/featured image for each platform via `image-generator-blog` (Dev.to 1000x420, Medium/LinkedIn 1200x627, Substack 1200x600, blog 1200x630 OG, DZone 1200x628, InfoQ 1024x768 proposed, JavaPro 1200x630 proposed)
+9. **Banner Image**: Create the banner/featured image for each platform via `article-image-generator` (Dev.to 1000x420, Medium 1200x627, LinkedIn 1920x1080, Substack 1200x630, blog 1200x630 OG, DZone 1200x628 JPEG, InfoQ 1024x768 JPEG, JavaPro 1200x630)
 10. **Review**: Fact-check code, verify claims, ensure consistency across versions, then run `article-review` as the final pre-delivery gate (PASS/FIX/POLISH verdict)
 11. **Publish**: Stagger publication across platforms (1 week apart minimum)
+
+## Series checklist (one theme, many platforms)
+
+Learned from a full 7-platform series; apply every time:
+
+- **Different angle and title per platform.** Dev.to hands-on setup, DZone governance/process, Medium opinion essay, LinkedIn leadership, Substack personal "Code & Coffee" note, JavaPro code walkthrough, InfoQ trend analysis. No shared paragraphs.
+- **Style base.** Before writing, read Wallace's latest article for that platform (newest `docs/articles/<platform>/article.md` across his repos) and match its front matter, banner line and sign-off.
+- **Layout.** `docs/articles/<platform>/article.md`, `banner.png`, `diagrams/` with `.puml`/`.mmd` sources plus rendered PNGs.
+- **Author.** "Wallace Espindola, Solution Architect" with GitHub and LinkedIn links on every article.
+- **Images.** Banner via `article-image-generator` (modern, abstract, futuristic, 0-4 words, verified size per platform; JPEG for InfoQ). At least one diagram per article, rendered to an image because most platforms don't render Mermaid.
+- **Platform rules.** Read the "Verified platform rules" block at the top of each platform skill: DZone rejects AI-written text (the author must write it); Dev.to and Medium require an AI-assistance disclosure; InfoQ needs disclosure, JPEG images and at most 4,000 words; JavaPro counts 15,000-25,000 characters.
+- **Facts that drift.** Vendor billing, quotas, product names and CLI command spellings change; verify them on the vendor's current docs and give the same corrected facts to every article in the series.
+- **Parallel writers.** When several agents write in parallel, give each its own scratch subfolder (shared names like `banner.py` get overwritten) and its own output folder.
+- **Gates.** `humanizer` on the draft, then `article-review` until PASS, for every article, including after late edits.
 
 ## Quality Standards
 
@@ -250,6 +264,7 @@ This agent leverages specialized skills:
 - `code-examples-generator` - Generate runnable code samples
 - `architecture-design` - System design and architectural patterns
 - `diagram-mermaid` and `diagram-plantuml` - Visual diagrams for articles
-- `image-generator-blog` - Banner/featured images and in-article visuals
+- `article-image-generator` - Renders banners in the house style (bundled script)
+- `image-generator-blog` - Visual strategy for banners and in-article visuals
 - `markdown-formatter` - Export and archiving support
 - `article-review` - Final pre-delivery editorial review gate (PASS/FIX/POLISH verdict)

@@ -726,6 +726,23 @@ Note: GitHub and Dev.to render fenced ```mermaid code blocks natively — paste 
 - **VS Code Plugin**: "Markdown Preview Mermaid Support"
 - **Online Editors**: Multiple options for testing
 
+## Rendering to PNG for articles
+
+Most publishing platforms (Medium, LinkedIn, DZone, Substack, JavaPro, InfoQ, and Dev.to covers) don't render Mermaid code blocks, so ship a PNG and keep the `.mmd` source next to it.
+
+```bash
+mmdc -i flow.mmd -o flow.png -b white -s 2   # -s 2 doubles resolution for crisp text
+```
+
+If `mmdc` fails with "Could not find Chrome", point Puppeteer at the system browser instead of installing one:
+
+```bash
+echo '{"executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"}' > /tmp/puppeteer.json
+mmdc -i flow.mmd -o flow.png -b white -s 2 -p /tmp/puppeteer.json
+```
+
+Check the rendered size before embedding. A long top-down flowchart can render as a thin, very tall image (for example 544x2388) that is unreadable on LinkedIn or in a feed; switch to `flowchart LR`, split it, or use a PlantUML swimlane instead. For InfoQ, convert the PNG to JPEG.
+
 ## Diagram Generation Workflow
 
 ### For Article Diagrams (15-20 min)

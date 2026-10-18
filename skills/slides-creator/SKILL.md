@@ -405,6 +405,20 @@ Next steps:
 
 ---
 
+## Speaker Deck, PowerPoint and Google Slides delivery
+
+Learned from a full deck build; follow this layout for a talk that goes to all three:
+
+- `docs/presentations/slides.md` (Marp source, speaker notes as HTML comments), `<deck>.pptx`, `<deck>.pdf`, `GOOGLE_SLIDES.md` (import steps) and `diagrams/` with sources plus PNGs.
+- **Speaker Deck takes PDF only** (max 150 MB, 250 MB on PRO). Export with `npx @marp-team/marp-cli slides.md --pdf --allow-local-files -o <deck>.pdf`; `--allow-local-files` is required or local diagram images are dropped.
+- If Marp or `mmdc` can't find a browser, set `CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"` (Marp) or pass a Puppeteer config with `executablePath` (mmdc) instead of installing one.
+- **PPTX for Google Slides:** build with python-pptx (or the `pptx` skill), standard fonts only (Arial, Courier New) so the import keeps layout, and copy the Marp notes into real speaker notes.
+- **Checking the PPTX:** LibreOffice is often missing and Keynote automation is unreliable, so measure text boxes for overflow with the real fonts and run the pptx skill's validator; still ask the author to open it once in PowerPoint or Google Slides.
+- **Marp theme gotcha:** a background color set in front matter can override the dark title/closing slides; set colors per slide with `<!-- _backgroundColor: ... -->` on those slides.
+- **Charts without data:** for an illustrative chart (no real numbers), draw an SVG and label it "Illustrative, not measured data"; Mermaid bar charts force a numeric axis.
+- **Lint:** Marp has one H1 per slide, so disable MD025 for the presentations folder only.
+- Banner or title art: use `article-image-generator` with `--platform slide` (1920x1080).
+
 ## Troubleshooting
 
 ### Problem: Articles not found

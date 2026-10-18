@@ -84,20 +84,27 @@ catches the subtle ones.
 
 Check only the gates for the target platform(s):
 
-| Platform | Gate |
+| Platform | Gate (verified 2026-10-18; see each platform skill's "Verified platform rules") |
 | --- | --- |
-| DZone | 100% human-written flag stated; minimum 1200 words |
-| InfoQ | Exactly 5 key takeaways, each a complete actionable sentence; 4-week exclusivity noted |
-| LinkedIn Pulse | 1000-1500 words; short scannable paragraphs |
-| Medium | 2000-5000 words; clear H2/H3 hierarchy |
-| Dev.to | Frontmatter tags present; 1500-3000 words |
-| Substack | Conversational voice; flowing prose, light headers |
-| JavaPro | 3000-5000 words; full code listings with explanation |
+| DZone | Rejects text written partly or fully with AI tools, and may suspend the account; a disclosure does not fix it. AI-drafted text is a blocking FIX until the author rewrites it. Minimum 800 words; images about 100-200 KB each, 5 MB total |
+| InfoQ | 1,500-4,000 words; exactly 5 key takeaways, each one complete sentence; AI use disclosed; images as JPEG; 4-week exclusivity noted; title case title (60-80 characters is fine here) |
+| LinkedIn Pulse | 1000-1500 words; short scannable paragraphs; no Markdown tables (the editor drops them); cover 1920x1080 |
+| Medium | 2000-5000 words; clear H2/H3 hierarchy; max 5 topics; AI assistance disclosed in the first two paragraphs; subtitle about 140 characters or fewer |
+| Dev.to | Max 4 frontmatter tags; 1500-3000 words; AI assistance disclosed (statement or `#abotwrotethis`); cover 1000x420 |
+| Substack | Conversational voice; flowing prose, light headers; cover at least 1200x630 |
+| JavaPro | 15,000-25,000 characters including code (JavaPro counts characters, not words); full code listings with explanation; not republished from elsewhere |
 | Blog | Flexible 1500-4000 words; practitioner voice |
+
+Every platform:
+
+- [ ] Author line names Wallace Espindola, Solution Architect, with GitHub and LinkedIn links
+- [ ] A banner at the platform's size and at least one diagram, embedded as an image (PNG, or JPEG for InfoQ) with its `.puml`/`.mmd` source kept next to it
+- [ ] Vendor pricing, billing or quota claims checked against the vendor's current docs (these change often; cite the page)
 
 Cross-posting checks:
 
 - [ ] Prose is unique per platform — no copy-pasted paragraphs between versions
+- [ ] Titles and angles differ per platform in a multi-platform series (e.g. hands-on for Dev.to, governance for DZone, essay for Medium, leadership for LinkedIn)
 - [ ] Publication is staggered: minimum 1 week between platforms, 4 weeks after InfoQ
 
 ### 6. Links and Metadata
@@ -105,7 +112,7 @@ Cross-posting checks:
 - [ ] Every URL in the draft resolves (actually check them, don't assume)
 - [ ] Canonical URL set for cross-posted versions
 - [ ] Tags/keywords chosen for the platform
-- [ ] Title is 60 characters or fewer for SEO
+- [ ] Title is 60 characters or fewer for SEO (InfoQ: 60-80 is fine)
 - [ ] Meta description drafted (150-160 characters)
 - [ ] Banner/featured image exists, correct platform dimensions, reflects article content — missing banner = blocking FIX
 

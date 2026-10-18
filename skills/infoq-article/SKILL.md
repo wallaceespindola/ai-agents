@@ -24,6 +24,15 @@ description: Write research-informed, editorial articles for InfoQ publication t
 
 **Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
 
+## Verified platform rules (checked 2026-10-18)
+
+These override any conflicting numbers further down. Re-check the platform's help pages if they look stale.
+
+- 1,500-4,000 words; exactly 5 key takeaways, each a complete sentence.
+- Images must be JPEG; editors control the final art.
+- AI tool use must be disclosed; articles or substantial sections written entirely by AI are not accepted.
+- InfoQ takes 4 weeks of exclusive publishing rights.
+
 ## When to Use This Skill
 
 Use this skill when:

@@ -638,6 +638,10 @@ plantuml -tsvg diagram.puml
 - ✅ Detailed class hierarchies
 - ✅ Complex sequence diagrams
 
+## Rendering for articles
+
+Render with `plantuml -tpng diagram.puml` and keep the `.puml` source next to the PNG; embed the PNG by relative path. Swimlane activity diagrams (`|Owner|`, `|Reviewer|`, ...) read well at article width and are a good fallback when a Mermaid flowchart renders too tall. For InfoQ, convert the PNG to JPEG; for DZone, keep each image around 100-200 KB.
+
 ## Diagram Generation Workflow
 
 ### For PlantUML Diagram (20-30 min)

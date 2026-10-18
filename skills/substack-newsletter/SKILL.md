@@ -23,6 +23,12 @@ description: Create engaging technical newsletters for Substack with subscriber 
 
 **Violation of this rule undermines credibility and trust. When in doubt, leave it out.**
 
+## Verified platform rules (checked 2026-10-18)
+
+These override any conflicting numbers further down. Re-check the platform's help pages if they look stale.
+
+- Social preview / cover image at least 1200x630 (Substack also mentions 14:10; 1200x630 is the safe minimum).
+
 ## When to Use This Skill
 
 Use this skill when:
