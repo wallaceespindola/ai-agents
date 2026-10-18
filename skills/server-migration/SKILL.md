@@ -143,6 +143,21 @@ old server.
   Cloudflare A records → replace the old IP in GitHub workflows (skipy `deploy.yml`, `smoke.yml`,
   `status-be.yml`; hiddenbeer `deploy.yml`, `email-smoke.yml`) → update memory `project_servers`.
 
+## Partial cutover (per app) — learned 2026-10-18
+
+- Per app: final DB sync of that app only → drop its standby switches on the new server → disable its
+  duplicate scheduler on the old one (e.g. CabinetFlow `APP_WAITLIST_SCANCRON=-` there; LoveMail: confirm
+  `emailSent:false` count is 0) → switch DNS → prove routing with a unique query marker grepped in both
+  nginx access logs. Then **remove the app from `resync-from-*.sh` / `env_resync.py`** (a later resync would
+  overwrite its newer data) and repoint that app's deploy script (wtech `deploy.py`).
+- Cloudflare: the dashboard's internal API (`fetch('/api/v4/...', {headers:{'x-cross-site-security':'dash'}})`)
+  reads zones/records fine but **writes return 403**; edit A records in the UI (Edit → IPv4 → Save), keep proxied.
+  www CNAMEs to the apex follow automatically. Leave mail/DKIM/hosting records alone.
+- **HTTP 525 on Ubuntu 26.04 origins**: OpenSSL 3.5 prefers X25519MLKEM768; Cloudflare origin pulls get a
+  HelloRetryRequest and fail with `bad cipher` (seen with `error_log … info`). Fix: `ssl_ecdh_curve
+  X25519:prime256v1:secp384r1;` in `conf.d/tls-ciphers.conf` (already in setup script). Test every migrated
+  domain through Cloudflare, not only with `--resolve`.
+
 ## Known issues to surface
 
 - skipy-api / hiddenbeer-api log the full Mongo URI **with password** at startup (`app.main`, `app.db.mongodb`,
