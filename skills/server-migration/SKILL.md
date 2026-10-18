@@ -195,6 +195,10 @@ old server.
 
 ## Report
 
+For a full old-vs-new status email (paths, versions, configs), run `scripts/inventory.sh` on both servers,
+add app versions from the health endpoints (`curl --resolve`) and image digests, render an HTML table per section
+with clickable URLs, and mail it via the new server's postfix to one recipient.
+
 End with: what was copied, what was deliberately not, standby list, test URLs (hosts-file block + IP ports),
 verification table old vs new, open decisions (push, cutover date). Save state in memory
 `server_vps_migration_*`.
