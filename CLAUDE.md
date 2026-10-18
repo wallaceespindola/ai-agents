@@ -6,8 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```
 ai-agents/
-├── agents/          # 11 specialized agent definitions (AGENT.md per agent)
-├── skills/          # 97 skill definitions (SKILL.md per skill)
+├── agents/          # 12 specialized agent definitions (AGENT.md per agent)
+├── skills/          # 98 skill definitions (SKILL.md per skill)
 ├── docs/            # Guides: AGENTS_GUIDE.md, GETTING_STARTED.md, SKILLS_INDEX.md
 ├── AGENTS.md        # Full agent reference with profiles and skill mappings
 └── CLAUDE.md        # This file
@@ -338,7 +338,7 @@ my-agent/
 
 ## AI Agents System Overview
 
-11 specialized Claude-powered agents with 97 integrated skills covering the full software engineering lifecycle.
+12 specialized Claude-powered agents with 98 integrated skills covering the full software engineering lifecycle.
 
 | Agent | Focus | Skills |
 |-------|-------|--------|
@@ -353,8 +353,9 @@ my-agent/
 | Spring/Quarkus Engineer | Spring Cloud, Quarkus, GraalVM native | 10 |
 | Project Manager | Agile, sprint, risk, roadmap | 6 |
 | Doc Converter | Document→Markdown conversion (MarkItDown) | 1 |
+| Server Migrator | VPS→VPS app migration: provision, harden, clone in standby, verify, cutover | 1 |
 
-**Total: 11 Agents + 97 Skills**
+**Total: 12 Agents + 98 Skills**
 
 ### Article Publishing Rules
 
