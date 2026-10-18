@@ -6,8 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```
 ai-agents/
-├── agents/          # 12 specialized agent definitions (AGENT.md per agent)
-├── skills/          # 98 skill definitions (SKILL.md per skill)
+├── agents/          # 13 specialized agent definitions (AGENT.md per agent)
+├── skills/          # 110 skill definitions (SKILL.md per skill)
 ├── docs/            # Guides: AGENTS_GUIDE.md, GETTING_STARTED.md, SKILLS_INDEX.md
 ├── AGENTS.md        # Full agent reference with profiles and skill mappings
 └── CLAUDE.md        # This file
@@ -338,7 +338,7 @@ my-agent/
 
 ## AI Agents System Overview
 
-12 specialized Claude-powered agents with 98 integrated skills covering the full software engineering lifecycle.
+13 specialized Claude-powered agents with 110 integrated skills covering the full software engineering lifecycle.
 
 | Agent | Focus | Skills |
 |-------|-------|--------|
@@ -354,8 +354,9 @@ my-agent/
 | Project Manager | Agile, sprint, risk, roadmap | 6 |
 | Doc Converter | Document→Markdown conversion (MarkItDown) | 1 |
 | Server Migrator | VPS→VPS app migration: provision, harden, clone in standby, verify, cutover | 1 |
+| Humanizer | De-AI prose: ai-check → humanizer → humanize → avoid-ai-writing → verify | 4 |
 
-**Total: 12 Agents + 98 Skills**
+**Total: 13 Agents + 110 Skills**
 
 ### Article Publishing Rules
 
