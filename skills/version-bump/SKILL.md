@@ -43,13 +43,14 @@ hiddenbeer and skipy share the same version number and move together unless the 
    - `apps/skipy-client/package.json`
    - `apps/skipy-admin/package.json`
    - `apps/skipy-manager/package.json`
+   - `apps/skipy-manager/package-lock.json` — only the first two `"version": "X"` lines (top level and `packages[""]`); edit the text, never re-serialise the JSON (the Docker image runs `npm ci` from this lock)
    - `apps/skipy-api/pyproject.toml` — `version = "X"`
    - `apps/skipy-api/uv.lock` — the `version = "X"` line directly under `name = "skipy-api"` (only that one line; do not run `uv lock`)
 
    Do **NOT** touch `packages/i18n-config/package.json` (skipy) — it is versioned independently.
    Backends read the version dynamically from pyproject via `get_app_version()` — no Python source edits needed.
 
-4. **Verify**: `git diff --stat` must show exactly 3 files (hiddenbeer) and 6 files (skipy). Then
+4. **Verify**: `git diff --stat` must show exactly 3 files (hiddenbeer) and 7 files (skipy). Then
    `cd hiddenbeer_backend && uv lock --check`: if it fails, deps drifted from the lock; sync with `uv lock` in a
    separate `chore(deps)` commit, never inside the bump commit.
    If another session has uncommitted edits in a version file, stage only the version line
