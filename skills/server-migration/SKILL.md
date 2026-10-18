@@ -124,6 +124,8 @@ whatever DNS points to — fine.
    `--host-resolver-rules=MAP <domain> <ip>,…` + `ignore_https_errors`, read-only (no login/forms), diffing
    console errors, failed requests, first-party API statuses. Run it in the background while doing 2–3.
 5. Don't compare skipy/hb while the user is deploying to the old server — resync first.
+6. Expected diffs while in standby: hiddenbeer Beer Pass / promoter / voucher / social routes return 404
+   `feature_disabled` on the new server (the payout flag also hides the feature). Everything else must match.
 
 **Letting the user test before DNS:** `/etc/hosts` line mapping all domains to the new IP (only faithful method:
 login, OAuth, cookies, client-side API calls). Optional temp IP ports (`listen 8441..8447 ssl` per vhost +
