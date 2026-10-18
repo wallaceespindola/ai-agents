@@ -63,6 +63,13 @@ cabinetflow, **wtech** (the W-Tech site needs its own user; it used unauthentica
 `requirepass` (`redis-cli -u redis://:pw@` fails on the empty user, redis-py/kombu are fine). Backup scripts read
 `MONGO_AUTH=(...)` from `server.env`. movie-helper runs as system user `moviehelper`, not root.
 
+**Before auth goes on, make sure no app logs its DB URI**: `grep -rn "MONGO_URI}\|MONGODB_URI}"` in each app.
+skipy/hiddenbeer used to log it verbatim. Both now mask it with `mask_uri()` (skipy `app/core/logging_config.py`,
+hb `app/logger.py`, 2026-10-19). Then grep the new server's logs for `mongodb://user:<not ***>@` and scrub hits
+**in place** (Python `open(f, "r+")` → `re.subn` → `truncate()`). `sed -i` swaps the inode, the app keeps writing
+to the deleted file, and new lines vanish. `docker logs` hits go away when the container is recreated.
+If anything leaked, rotate that app's DB password.
+
 ## Phase 3 — Clone apps
 
 Transfer old → new directly with agent forwarding (`ssh-add ~/.ssh/id_ed25519`, then `ssh -A OLD 'rsync ... root@NEW:...'`).
@@ -157,11 +164,33 @@ old server.
   HelloRetryRequest and fail with `bad cipher` (seen with `error_log … info`). Fix: `ssl_ecdh_curve
   X25519:prime256v1:secp384r1;` in `conf.d/tls-ciphers.conf` (already in setup script). Test every migrated
   domain through Cloudflare, not only with `--resolve`.
+- **Let's Encrypt** (W-Tech is the only LE domain besides skipy/hb): once its DNS points to the new server,
+  `certbot renew --cert-name <domain> --dry-run` there (HTTP-01 passes through the Cloudflare proxy). Then drop
+  the `#CUTOVER#` prefix from the `certbot-renew.sh` cron line only. `certbot renew` skips certs that aren't due,
+  so it's safe while the other apps' DNS still points to the old server. Until the old server goes away, both send
+  the weekly SSL report.
+- **Old-IP sweep per migrated app** (grep the old IP, `server-be`, `/var/www/<app>`, `/opt/<app>`):
+  - On the new server:
+    - app `.env` CORS/origin lists (LoveMail `FRONTEND_URL` had `http://<old-ip>:1415`), back up then restart;
+    - `.env` comments;
+    - crontab header label (`SERVER-BE · <old-ip>` → new name/IP) and "BE only" notes;
+    - stale server-side copies of deploy files (`/srv/wtech-website/deploy.py`, README).
+  - In the repos: README/CLAUDE.md, deploy scripts, compose comments, the other-apps backup scripts
+    (they must check `/srv/<app>` before `/var/www/<app>`; House-Hunter `deploy/ops-scripts` keeps copies).
+  - **CabinetFlow, LoveMail and movie-helper have no source repo** (not on GitHub, not on the Mac, and `/srv`
+    has no `.git`), so they're edited on the server only. Ask the user before saying a repo is missing.
+  - Skip old-server `*.bak*` / `_archive` files and the skipy/hb/HH refs until their own cutover.
+- **Nothing to migrate**:
+  - skipy.com.br / hiddenbeer.com.br: proxied A records to the dead server-br plus Cloudflare 301 redirect rules
+    to .online/.com. They work as-is (check with `curl -I`).
+  - immo-search: a Mac launchd job (`com.immo-search`, disabled 2026-10-18).
+  - clipz4u: no deployment and no zone.
 
 ## Known issues to surface
 
-- skipy-api / hiddenbeer-api log the full Mongo URI **with password** at startup (`app.main`, `app.db.mongodb`,
-  `app.database`). Harmless while Mongo had no auth; a leak once auth is on → mask in code, rotate passwords.
+- skipy-api / hiddenbeer-api logged the full Mongo URI with its password at startup. Fixed in code on 2026-10-19
+  (skipy 72d97db, hb 9b59c64) and live after their next deploy. If a new server ran an older image with auth on,
+  check its logs (Phase 2) and rotate the passwords.
 - `cabinet-flow.com/api/waitlist/count` 500s on both servers (pre-existing).
 
 ## Report

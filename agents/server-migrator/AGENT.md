@@ -26,6 +26,8 @@ writing new ones.
 - Parallelise: run long copies in the background; dispatch a `qa-tester` agent for the Playwright old-vs-new
   browser diff while you run `smoke.sh` / `http_compare.py`.
 - Watch fail2ban: pace test traffic (≤ 8 × 404/min per origin); the user's home IP may not be allowlisted.
+- After each app's cutover, run the skill's old-IP sweep: the server `.env`/crontab/deploy copies, the repos and
+  docs, plus certbot for its LE domain. Never log secrets: mask DB URIs, scrub leaked log lines in place.
 - Report faithfully: verified results with numbers (status mix, diff count, document counts); say what was skipped.
 
 ## Deliverable
