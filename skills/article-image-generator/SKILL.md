@@ -33,6 +33,20 @@ uv run --with pillow python ~/git/ai-agents/skills/article-image-generator/scrip
 
 Pick a style that echoes the topic: `network` for collaboration, integration and architecture; `flow` for data and pipelines; `grid` for platforms and infrastructure; `orbit` for core concepts and ecosystems; `tiles` for capacity, quotas and allocation.
 
+## Ledger Light (illustrative series style)
+
+`scripts/ledger_light.py` renders a richer, more illustrative style, made with the `canvas-design` skill: a dark instrument plate with two fields of small cells, one drained (outlines) and one full (glowing), a hairline route between them carrying a small document glyph, a dotted return path, crop marks and tiny mono markers. Thin Jura Light words on the left. Use it for topics about capacity, quotas, delegation, handoffs or moving work between parties; use `generate_banner.py` for everything else.
+
+```bash
+uv run --with pillow python ~/git/ai-agents/skills/article-image-generator/scripts/ledger_light.py \
+  --platform infoq --palette ice --seed 3 --text "Spec-driven delegation" --label TASK-042 \
+  --out docs/articles/infoq/banner.jpg
+```
+
+Options: `--platform` (same sizes as above plus `readme` 1280x400), `--size`, `--palette` (`cyan`, `violet`, `amber`, `ice`, `lime`, `magenta`, `azure`), `--text` (0-4 words), `--label` (marker under the document glyph), `--left`/`--right` (markers under the fields; default is each field's fill ratio), `--seed`. Fonts come from the canvas-design plugin's `canvas-fonts` folder (Jura Light, Geist Mono), so that plugin (`example-skills`) must be installed.
+
+For a series, give each platform its own palette and words, and record the design philosophy in `docs/articles/BANNER_DESIGN.md` so later banners stay in the family. Render a contact sheet of all banners and review them together before committing.
+
 ## Workflow
 
 1. Check the platform's current cover size before generating. Sizes change; if the project has a `PLATFORM_GUIDELINES.md` or the platform skill gives a verified size, use `--size` to match it.
@@ -46,4 +60,6 @@ Pick a style that echoes the topic: `network` for collaboration, integration and
 - Fonts: Avenir Next, Helvetica Neue or SF on macOS, DejaVu on Linux. The script picks an upright bold weight automatically.
 - Output format follows the `--out` extension: PNG by default, JPEG (quality 90) for `.jpg`. InfoQ wants JPEG, and DZone suggests 100-200 KB images, so use `.jpg` there.
 - Sizes were checked against platform help pages on 2026-10-18 (LinkedIn articles 1920x1080, Substack at least 1200x630). Dev.to previews can crop to about 800x418, which the left-centre text placement survives.
+- PNG banners land around 300 KB to 1 MB. DZone suggests 100-200 KB per image, so prefer `.jpg` there.
+- A project README banner is about the project's idea, not about the articles: render it separately (for example `docs/images/banner.png` at 1280x400) instead of reusing an article banner.
 - Diagrams are a separate job: use `diagram-mermaid` or `diagram-plantuml` for the article's diagrams. This skill only makes the banner.

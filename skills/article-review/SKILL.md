@@ -99,6 +99,7 @@ Every platform:
 
 - [ ] Author line names Wallace Espindola, Solution Architect, with GitHub and LinkedIn links
 - [ ] A banner at the platform's size and at least one diagram, embedded as an image (PNG, or JPEG for InfoQ) with its `.puml`/`.mmd` source kept next to it
+- [ ] For a series with a companion repo: the article ends with the shared "Examples repository" line linking that repo, just before the sign-off
 - [ ] Vendor pricing, billing or quota claims checked against the vendor's current docs (these change often; cite the page)
 
 Cross-posting checks:

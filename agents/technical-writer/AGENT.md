@@ -184,6 +184,8 @@ Learned from a full 7-platform series; apply every time:
 - **Platform rules.** Read the "Verified platform rules" block at the top of each platform skill: DZone rejects AI-written text (the author must write it); Dev.to and Medium require an AI-assistance disclosure; InfoQ needs disclosure, JPEG images and at most 4,000 words; JavaPro counts 15,000-25,000 characters.
 - **Facts that drift.** Vendor billing, quotas, product names and CLI command spellings change; verify them on the vendor's current docs and give the same corrected facts to every article in the series.
 - **Parallel writers.** When several agents write in parallel, give each its own scratch subfolder (shared names like `banner.py` get overwritten) and its own output folder.
+- **Companion repo.** Every article in the series ends with the same line, just before the sign-off: `**Examples repository:** every example in this article (...) is in <repo URL>.` Keep per-platform repo mentions in the body too.
+- **Banner family.** One design philosophy per series, recorded in `docs/articles/BANNER_DESIGN.md`; for capacity, delegation or handoff topics use the `ledger_light.py` style in `article-image-generator`. Review all banners on one contact sheet.
 - **Gates.** `humanizer` on the draft, then `article-review` until PASS, for every article, including after late edits.
 
 ## Quality Standards
