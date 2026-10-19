@@ -185,6 +185,22 @@ old server.
   plus a status index in `vps/README.md`.
 - **Resync over a flaky link**: an `ssh -A` to the old server can stall forever. The script sets
   `ServerAliveInterval=30`, `ServerAliveCountMax=6` and `ConnectTimeout=20`. It's idempotent, so just rerun it.
+- **certbot**: install it from snap like the old server (`snap install --classic certbot`, remove the apt
+  `certbot python3-certbot*`, `ln -sf /snap/bin/certbot /usr/bin/certbot`, `systemctl disable --now
+  snap.certbot.renew.timer` because the cron script is the only renewal path). Ubuntu 26.04 apt ships 4.0, the snap 5.8.
+  Back up `/etc/letsencrypt` first; renewal confs carry over. Without a TTY, `certbot renew` waits a random 0-8 min:
+  pass `--no-random-sleep-on-renew` for manual dry-runs.
+- **Cloudflare origin certs → Let's Encrypt** for live apps (LoveMail, CabinetFlow, 2026-10-19), so every cert renews
+  automatically: `certbot certonly --nginx --dry-run -d X -d www.X` → real run → point the vhost `ssl_certificate*`
+  at `/etc/letsencrypt/live/X/` → `nginx -t && reload` → check the origin issuer with `openssl s_client` and the site
+  through Cloudflare. Do House Hunter after its DNS moves.
+- **Static sites** (skipy.io): compare file hashes between the servers, switch the A record (www is a CNAME), prove it
+  with a log marker, dry-run its cert, drop it from the resync script and repoint its repo's deploy script
+  (`skipy-io-site` → `server-vps:/srv/skipy-io`).
+- **Apps without a repo** get a README in `/srv/<app>/README.md`, mirrored in `skipy/infra/scripts/server/vps/apps/`,
+  plus a status index in `vps/README.md`.
+- **Resync over a flaky link**: an `ssh -A` to the old server can stall forever. The script sets
+  `ServerAliveInterval=30`, `ServerAliveCountMax=6` and `ConnectTimeout=20`. It's idempotent, so just rerun it.
 - **Old-IP sweep per migrated app** (grep the old IP, `server-be`, `/var/www/<app>`, `/opt/<app>`):
   - On the new server:
     - app `.env` CORS/origin lists (LoveMail `FRONTEND_URL` had `http://<old-ip>:1415`), back up then restart;
