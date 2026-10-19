@@ -177,7 +177,13 @@ old server.
 - **Cloudflare origin certs → Let's Encrypt** for live apps (LoveMail, CabinetFlow, 2026-10-19), so every cert renews
   automatically: `certbot certonly --nginx --dry-run -d X -d www.X` → real run → point the vhost `ssl_certificate*`
   at `/etc/letsencrypt/live/X/` → `nginx -t && reload` → check the origin issuer with `openssl s_client` and the site
-  through Cloudflare. Do House Hunter after its DNS moves.
+  through Cloudflare. Those "origin certs" were often self-signed (House Hunter `deploy.py --ssl`), which is what
+  SSL panels flag. **Before its DNS moves** an app can still get its LE cert on the new server: on the old server's
+  vhost add `location ^~ /.well-known/acme-challenge/ { proxy_pass http://NEW_IP; proxy_set_header Host $host; }`
+  to both the :80 and :443 blocks (a server-level `return 301` on :80 must move into `location /`), and put the same
+  block in any repo template a deploy copies over that vhost (House-Hunter `deploy/househunter.conf`). Drop it at cutover.
+- **Renewal report**: `certbot-renew.sh` must check expiry on `127.0.0.1:443` with SNI. The public name returns
+  Cloudflare's edge cert and hides an expiring origin cert. List every LE domain the server renews in `server.env`.
 - **Static sites** (skipy.io): compare file hashes between the servers, switch the A record (www is a CNAME), prove it
   with a log marker, dry-run its cert, drop it from the resync script and repoint its repo's deploy script
   (`skipy-io-site` → `server-vps:/srv/skipy-io`).
