@@ -32,6 +32,18 @@ These override any conflicting numbers further down. Re-check the platform's hel
 - Images about 100-200 KB each (JPEG recommended), at most 5 MB total per article.
 - Editorial review takes about 30 business days.
 
+## Posting via the browser editor (verified 2026-10-20)
+
+Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
+
+- Policy: stop at draft; the author submits. The series carried no AI disclosure here: flag DZone's AI rule to the author before he submits.
+- Froala 3 editor: `E = FroalaEditor.INSTANCES[0]`. After any DOM change call `E.undo.saveStep(); E.events.trigger('contentChanged')`.
+- Pasted images can stay stuck as `blob:`/`data:` URLs: re-upload each with `E.image.edit(E.$(img)); E.image.upload([file])`.
+- Pasted code blocks can lose line breaks: rewrite each `pre > code` `textContent` from the source.
+- Title, meta description and TL;DR don't persist from typing or form_input. Set them on the AngularJS scope inside `$apply` (`angular.element(textarea).scope().article.title|metaDescription|tldr`), click Save (`ng-click="s.defaultAction()"`), confirm the POST to `/services/internal/ctype/article/<id>` returns 200, then reload to verify.
+- Save is silently blocked by validation: `s.checkValidation()` shows the errors, e.g. "Please add an author in the contributors field" (add yourself as Author via contributor search). Set Type (e.g. Analysis).
+- The featured-image file input doesn't register. Paste the banner as the first body image instead and pick it in the featured-image carousel.
+
 ## When to Use This Skill
 
 Use this skill when:

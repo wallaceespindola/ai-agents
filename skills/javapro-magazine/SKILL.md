@@ -31,6 +31,13 @@ These override any conflicting numbers further down. Re-check the platform's hel
 - Exclusivity is not required, but content must not be republished from elsewhere, and teaser articles that link out are not featured. No promotional content.
 - No published AI rule; adding a short AI-assistance note is advisable.
 
+## Posting via the browser editor (verified 2026-10-20)
+
+Shared workflow: see `article-cross-posting`.
+
+- Policy: stop at draft. Posting needs the author's WordPress login; Claude doesn't log in.
+- JavaPro articles keep their own original diagrams; don't add the series' shared diagram.
+
 ## When to Use This Skill
 
 Use this skill when:

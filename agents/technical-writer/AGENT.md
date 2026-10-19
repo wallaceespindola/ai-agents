@@ -187,6 +187,7 @@ Learned from a full 7-platform series; apply every time:
 - **Companion repo.** Every article in the series ends with the same line, just before the sign-off: `**Examples repository:** every example in this article (...) is in <repo URL>.` Keep per-platform repo mentions in the body too.
 - **Banner family.** One design philosophy per series, recorded in `docs/articles/BANNER_DESIGN.md`; for capacity, delegation or handoff topics use the `ledger_light.py` style in `article-image-generator`. Review all banners on one contact sheet.
 - **Gates.** `humanizer` on the draft, then `article-review` until PASS, for every article, including after late edits.
+- **Posting (verified 2026-10-20).** Use `article-cross-posting`: publish directly only on Medium and Dev.to; DZone, Substack, LinkedIn, InfoQ and JavaPro stop at draft for Wallace. One browser/clipboard: never paste from parallel agents. Every post carries banner + all diagrams with the local alt text, and the local `article.md` is changed to match whatever the platform forced (e.g. LinkedIn tables to lists).
 
 ## Quality Standards
 
@@ -235,7 +236,11 @@ Need more tech insights?
 Check out my GitHub, LinkedIn, and Speaker Deck.
 
 Happy coding!
+
+Wallace Espindola, Solution Architect
 ```
+
+Then GitHub, LinkedIn and Speaker Deck links (Speaker Deck is https://speakerdeck.com/wallacese; `wallaceespindola` 404s).
 
 Plus personalized links from your environment configuration:
 - GitHub profile

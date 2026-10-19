@@ -29,6 +29,13 @@ These override any conflicting numbers further down. Re-check the platform's hel
 
 - Social preview / cover image at least 1200x630 (Substack also mentions 14:10; 1200x630 is the safe minimum).
 
+## Posting via the browser editor (verified 2026-10-20)
+
+Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
+
+- Policy: stop at draft (autosaves); the author publishes.
+- ProseMirror body. Title and subtitle are textareas (placeholders "Title" and "Add a subtitle…"): target them by ref; clicking by position can drop the text into the body after the page scrolls.
+
 ## When to Use This Skill
 
 Use this skill when:

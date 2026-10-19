@@ -28,8 +28,19 @@ description: Format technical articles for LinkedIn Pulse following platform bes
 These override any conflicting numbers further down. Re-check the platform's help pages if they look stale.
 
 - Article cover image 1920x1080 (16:9), JPEG, PNG or WEBP (no GIF).
-- Articles have no tag field; hashtags belong in the share post (unverified).
-- The editor does not render Markdown tables: convert tables to lists or images before pasting.
+- Articles have no tag field; hashtags belong in the share post.
+- The editor does not render tables: convert them to bullet lists in the local article too, so local and posted stay aligned.
+
+## Posting via the browser editor (verified 2026-10-20)
+
+Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
+
+- Policy: stop at draft (`/article/new/` autosaves, shows "Draft - saved"); the author publishes.
+- Pasted `<br>` soft breaks collapse into spaces: emit each footer line as its own `<p>`.
+- Shift+Enter and JS-set selections are unreliable. To fix a region, select it with click + shift-click and paste replacement HTML.
+- Inline images: put a placeholder paragraph (e.g. `IMGMARK-name`) in the pasted HTML, then triple-click it, Delete, toolbar image button, file input, ALT, Add, Next.
+- Cover: "Upload from computer", file input, Next. 1920x1080 accepted.
+- Inline code and fenced code blocks survive the paste.
 
 ## When to Use This Skill
 

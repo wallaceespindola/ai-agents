@@ -32,6 +32,17 @@ These override any conflicting numbers further down. Re-check the platform's hel
 - AI-generated images must be captioned as AI-generated.
 - Featured image: wide horizontal rectangle; images up to 25 MB. Keep subtitles short (about 140 characters) so previews don't cut them.
 
+## Posting via the browser editor (verified 2026-10-20)
+
+Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
+
+- Policy: publish directly. A cookie notice covers "Save and publish": close it first. Republish URLs end with `?postPublishedType=repub`.
+- Images paste only from the HTML clipboard (`<figure><img src=...>`); embed-by-URL doesn't work.
+- Inserting an image can demote the following heading to a paragraph: re-check headings after every image insert and fix with the big-T toolbar button.
+- Alt text: click the image, "Alt text" in the image toolbar, type, Save. The dialog's Save button moves as text wraps: locate it by role/name, not coordinates.
+- Only two heading sizes: `###` subheads render at the same level as `##` sections (accepted).
+- Blank lines inside code blocks split the block: replace them with a single-space line before copying.
+
 ## When to Use This Skill
 
 Use this skill when:

@@ -418,6 +418,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 
 ---
 
+### Article Cross-Posting
+**Location**: `skills/article-cross-posting/SKILL.md`
+**Purpose**: Post a finished article series to Dev.to, Medium, DZone, Substack, LinkedIn, InfoQ and JavaPro via browser automation (HTML clipboard pipeline, image placeholders, publish-vs-draft policy) and keep local and posted versions aligned
+
+---
+
 ### Article Image Generator
 **Location**: `skills/article-image-generator/SKILL.md`
 **Purpose**: Render article banners in the house style (modern, abstract, futuristic, 0-4 words) at each platform's verified size, via a bundled Pillow script (`scripts/generate_banner.py`)

@@ -32,6 +32,15 @@ These override any conflicting numbers further down. Re-check the platform's hel
 - AI-assisted posts must be disclosed: add the `#abotwrotethis` tag or a plain statement in the post (e.g. "I wrote this with AI assistance and reviewed it myself").
 - `canonical_url` front matter is supported for cross-posts.
 
+## Posting via the browser editor (verified 2026-10-20)
+
+Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
+
+- Policy: publish directly; set front matter `published: true` once live.
+- The body textarea `#article_body_markdown` is React-controlled: set it with the native value setter (`Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype,'value').set.call(el, md)`) and dispatch an `input` event, or the change is lost.
+- Body image upload input: `#image-upload-field`; cover image input: `#cover-image-input`.
+- Verify the live body via `https://dev.to/api/articles/<user>/<slug>` (`body_markdown`) and compare with the local file.
+
 ## When to Use This Skill
 
 Use this skill when:

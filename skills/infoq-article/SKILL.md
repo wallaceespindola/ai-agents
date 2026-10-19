@@ -33,6 +33,13 @@ These override any conflicting numbers further down. Re-check the platform's hel
 - AI tool use must be disclosed; articles or substantial sections written entirely by AI are not accepted.
 - InfoQ takes 4 weeks of exclusive publishing rights.
 
+## Posting via the browser editor (verified 2026-10-20)
+
+Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
+
+- Policy: Claude doesn't submit. InfoQ needs the author's own attestations, the draft shared as a Google Doc and a form the author submits himself.
+- InfoQ articles keep their own original diagrams; don't add the series' shared diagram.
+
 ## When to Use This Skill
 
 Use this skill when:
