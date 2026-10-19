@@ -149,6 +149,17 @@ old server.
   (removes standby blocks, recreates APIs, enables HH workers, uncomments `#CUTOVER#`, closes test ports) →
   Cloudflare A records → replace the old IP in GitHub workflows (skipy `deploy.yml`, `smoke.yml`,
   `status-be.yml`; hiddenbeer `deploy.yml`, `email-smoke.yml`) → update memory `project_servers`.
+- Done 2026-10-20 (~15 min downtime per app, apps down from writer stop to DNS save; switch DNS right after
+  `cutover-enable.sh`). Post-cutover checks that caught real bugs:
+  - Run every enabled cron script once by hand (`MAIL_DRY_RUN=1`); `app_monitor.py` crashed on a missing
+    `python3-dotenv` and its cron line sends output to `/dev/null`, so it would have failed silently forever.
+  - Playwright browsers must be installed **as the service user** (`sudo -u www-data .venv/bin/playwright install
+    chromium`); a root install lands in `/root/.cache` where the www-data scraper never looks.
+  - Marker test: `curl https://<domain>/?m=<unique>` for each domain, then grep both servers' nginx logs; the old one
+    must show 0 hits. Redirect-only zones (skipy.be, freehiddenbeer.com) are answered at the Cloudflare edge and never hit an origin.
+  - Cloudflare API read lists every A record in the account: catch strays still on the old IP (`ftp.wtechitsolutions.com`).
+- Retire the old server reversibly: crontab backup, then prefix `#RETIRED#`; `systemctl disable --now` app units;
+  `docker update --restart=no` + `docker stop` for all containers; keep nginx/mongod and all data until expiry.
 
 ## Partial cutover (per app) — learned 2026-10-18
 
