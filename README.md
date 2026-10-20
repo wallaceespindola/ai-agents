@@ -117,10 +117,10 @@ nano .env  # Add your Anthropic API key
 - Skills: Project planning, sprint planning, risk assessment, status reporting, retrospectives, roadmap planning (6
   skills)
 
-### 96 Specialized Skills
+### 97 Specialized Skills
 
-**Technical Writing (23 skills)** - Content creation, platform optimization, code generation, diagrams, SEO,
-pre-publication editorial review
+**Technical Writing (24 skills)** - Content creation, platform optimization, code generation, diagrams, SEO,
+pre-publication editorial review, GitHub profile article sync
 
 **Java Development (12 skills)** - Code review, testing, performance, security, Spring Boot setup, Spring Cloud
 microservices, advanced security, documentation
