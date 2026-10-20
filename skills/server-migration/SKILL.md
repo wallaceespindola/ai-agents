@@ -147,8 +147,10 @@ old server.
 - Cutover (user-approved, before the old server expires): freeze deploys → stop old schedulers
   (`househunter-worker/-scraper`, `lovemail-backend`) → `resync … --final` → `cutover-enable.sh` on the new server
   (removes standby blocks, recreates APIs, enables HH workers, uncomments `#CUTOVER#`, closes test ports) →
-  Cloudflare A records → replace the old IP in GitHub workflows (skipy `deploy.yml`, `smoke.yml`,
-  `status-be.yml`; hiddenbeer `deploy.yml`, `email-smoke.yml`) → update memory `project_servers`.
+  Cloudflare A records → point GitHub workflows at the new server through the repo variables `vars.PROD_HOST` /
+  `vars.BR_HOST` (`gh variable set PROD_HOST -R Vinci-Trends/<repo>`; skipy `deploy.yml`, `smoke.yml`,
+  `status-*.yml`, hiddenbeer `deploy.yml`, `email-smoke.yml` read them, so a later move is one variable change)
+  → docs and scripts use the ssh alias (`server-vps`), never the IP → update memory `project_servers`.
 - Done 2026-10-20 (~15 min downtime per app, apps down from writer stop to DNS save; switch DNS right after
   `cutover-enable.sh`). Post-cutover checks that caught real bugs:
   - Run every enabled cron script once by hand (`MAIL_DRY_RUN=1`); `app_monitor.py` crashed on a missing
@@ -158,6 +160,18 @@ old server.
   - Marker test: `curl https://<domain>/?m=<unique>` for each domain, then grep both servers' nginx logs; the old one
     must show 0 hits. Redirect-only zones (skipy.be, freehiddenbeer.com) are answered at the Cloudflare edge and never hit an origin.
   - Cloudflare API read lists every A record in the account: catch strays still on the old IP (`ftp.wtechitsolutions.com`).
+  - **Alerts must cover every app now on the box.** The cloned monitors only paged for skipy/hb; HH, LoveMail,
+    CabinetFlow, movie-helper and W-Tech had no down-alert. `docker-monitor-alert.sh` reads `OPS_UNITS` (systemd
+    units that must be active) and `OPS_URLS` (checked with `curl --resolve host:443:127.0.0.1`, so Cloudflare
+    stalls can't false-alarm) from `server.env` and mails `$MAIL_OPS`. Set `SSH_HOST=server-vps` there too: alert
+    "Next step" lines used `server-${SERVER_TAG}` and told you to ssh into the retired box. Test with a fake unit
+    and a 404 URL under `MAIL_DRY_RUN=1`, then restore `server.env`. Rewrite the crontab header (no `#CUTOVER#` notes).
+  - **Ubuntu 26.04 `/tmp` is tmpfs (RAM).** App caches defaulting to `tempfile.gettempdir()` eat memory and push
+    the box into swap: House Hunter's 2 GB image proxy cache caused a "low memory" mail the morning after cutover.
+    Point caches at disk in the unit (`Environment=IMG_CACHE_DIR=/srv/househunter/img-cache`), move the files,
+    `swapoff -a && swapon -a`. `monitor_resources.sh` alerts when a tmpfs `/tmp` passes 50%.
+  - **Deploying Next.js while it runs**: syncing over `.next` while next-server writes `.next/cache` made `rm -rf`
+    fail and wiped `frontend-next`. House-Hunter `deploy.py` now stops the Next unit before syncing.
 - Retire the old server reversibly: crontab backup, then prefix `#RETIRED#`; `systemctl disable --now` app units;
   `docker update --restart=no` + `docker stop` for all containers; keep nginx/mongod and all data until expiry.
 
@@ -195,22 +209,6 @@ old server.
   block in any repo template a deploy copies over that vhost (House-Hunter `deploy/househunter.conf`). Drop it at cutover.
 - **Renewal report**: `certbot-renew.sh` must check expiry on `127.0.0.1:443` with SNI. The public name returns
   Cloudflare's edge cert and hides an expiring origin cert. List every LE domain the server renews in `server.env`.
-- **Static sites** (skipy.io): compare file hashes between the servers, switch the A record (www is a CNAME), prove it
-  with a log marker, dry-run its cert, drop it from the resync script and repoint its repo's deploy script
-  (`skipy-io-site` → `server-vps:/srv/skipy-io`).
-- **Apps without a repo** get a README in `/srv/<app>/README.md`, mirrored in `skipy/infra/scripts/server/vps/apps/`,
-  plus a status index in `vps/README.md`.
-- **Resync over a flaky link**: an `ssh -A` to the old server can stall forever. The script sets
-  `ServerAliveInterval=30`, `ServerAliveCountMax=6` and `ConnectTimeout=20`. It's idempotent, so just rerun it.
-- **certbot**: install it from snap like the old server (`snap install --classic certbot`, remove the apt
-  `certbot python3-certbot*`, `ln -sf /snap/bin/certbot /usr/bin/certbot`, `systemctl disable --now
-  snap.certbot.renew.timer` because the cron script is the only renewal path). Ubuntu 26.04 apt ships 4.0, the snap 5.8.
-  Back up `/etc/letsencrypt` first; renewal confs carry over. Without a TTY, `certbot renew` waits a random 0-8 min:
-  pass `--no-random-sleep-on-renew` for manual dry-runs.
-- **Cloudflare origin certs → Let's Encrypt** for live apps (LoveMail, CabinetFlow, 2026-10-19), so every cert renews
-  automatically: `certbot certonly --nginx --dry-run -d X -d www.X` → real run → point the vhost `ssl_certificate*`
-  at `/etc/letsencrypt/live/X/` → `nginx -t && reload` → check the origin issuer with `openssl s_client` and the site
-  through Cloudflare. Do House Hunter after its DNS moves.
 - **Static sites** (skipy.io): compare file hashes between the servers, switch the A record (www is a CNAME), prove it
   with a log marker, dry-run its cert, drop it from the resync script and repoint its repo's deploy script
   (`skipy-io-site` → `server-vps:/srv/skipy-io`).

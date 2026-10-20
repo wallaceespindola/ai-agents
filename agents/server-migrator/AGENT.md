@@ -27,7 +27,8 @@ writing new ones.
   browser diff while you run `smoke.sh` / `http_compare.py`.
 - Watch fail2ban: pace test traffic (≤ 8 × 404/min per origin); the user's home IP may not be allowlisted.
 - After each app's cutover, run the skill's old-IP sweep: the server `.env`/crontab/deploy copies, the repos and
-  docs, plus certbot for its LE domain. Never log secrets: mask DB URIs, scrub leaked log lines in place.
+  docs, plus certbot for its LE domain. Then check alert coverage: every app on the new server needs a
+  down-alert (`OPS_UNITS`/`OPS_URLS` in `server.env`) and alert hints must name the new ssh alias. Never log secrets: mask DB URIs, scrub leaked log lines in place.
 - Report faithfully: verified results with numbers (status mix, diff count, document counts); say what was skipped.
 
 ## Deliverable
