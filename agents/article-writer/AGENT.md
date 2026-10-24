@@ -199,6 +199,7 @@ Only on the user's explicit per-platform command, via `article-cross-posting` (p
 Learned from a full 7-platform series; apply every time:
 
 - **Different angle and title per platform.** Dev.to hands-on setup, DZone governance/process, Medium opinion essay, LinkedIn leadership, Substack personal "Code & Coffee" note, JavaPro code walkthrough, InfoQ trend analysis. No shared paragraphs.
+- **Voice.** Write in Wallace's voice as profiled in `~/git/ai-agents/skills/article-cross-writing/references/AUTHOR_STYLE.md` (openings, person, headings, sourcing, CTA, per-platform table). It overrides the generic HUMANIZATION_GUIDE.md below where they conflict.
 - **Style base.** Before writing, read Wallace's latest article for that platform (newest `docs/articles/<platform>/article.md` across his repos) and match its front matter, banner line and sign-off.
 - **Layout.** `docs/articles/<platform>/article.md`, `banner.png`, `diagrams/` with `.puml`/`.mmd` sources plus rendered PNGs.
 - **Author.** "Wallace Espindola, Solution Architect" with GitHub and LinkedIn links on every article.
@@ -208,7 +209,7 @@ Learned from a full 7-platform series; apply every time:
 - **Parallel writers.** When several agents write in parallel, give each its own scratch subfolder (shared names like `banner.py` get overwritten) and its own output folder.
 - **Companion repo.** Every article in the series ends with the same line, just before the sign-off: `**Examples repository:** every example in this article (...) is in <repo URL>.` Keep per-platform repo mentions in the body too.
 - **Banner family.** One design philosophy per series, recorded in `docs/articles/BANNER_DESIGN.md`; for capacity, delegation or handoff topics use the `ledger_light.py` style in `article-image-generator`. Review all banners on one contact sheet.
-- **Gates.** `humanizer` on the draft, then `article-review` until PASS, for every article, including after late edits.
+- **Gates.** The humanizer pass from `article-cross-writing` Phase 3 on every draft (`humanizer` agent, or the `humanizer`, `avoid-ai-writing` and `ai-check` skills; never touching facts, code, links, headings or the footer), a re-check against AUTHOR_STYLE.md, then `article-review` until PASS, including after late edits.
 - **Posting.** Only on the user's command, via `article-cross-posting` (every platform stops at a saved draft; the author signs in himself, reviews and clicks publish); alignment checks live in `article-cross-review`.
 
 ## Quality Standards
@@ -255,7 +256,7 @@ All content from this agent follows strict humanization guidelines to ensure art
 
 All generated articles end with a consistent sign-off that includes:
 
-```
+```text
 Need more tech insights?
 
 Check out my GitHub, LinkedIn, and Speaker Deck.

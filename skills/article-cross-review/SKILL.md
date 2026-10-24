@@ -30,6 +30,7 @@ Then, in the series repo: `make lint` and `make links` (CI runs both), and `make
 - DZone text was written or fully rewritten by the author (DZone rejects AI text). Flag it every time.
 - InfoQ (4-week exclusivity) and JavaPro (original, not republished) carry content that is not posted anywhere else.
 - Banners belong to one family (`docs/articles/BANNER_DESIGN.md`); view them on one contact sheet.
+- Voice matches `article-cross-writing/references/AUTHOR_STYLE.md`; the humanizer and `ai-check` pass is recorded for every draft (score per platform).
 - Deck: `make slides` runs, the PPTX opens in Keynote (`slides-creator` test), the closing slide links the repo.
 
 ## 3. Per-article editorial gate
@@ -64,7 +65,7 @@ Wrap console snippets in an IIFE to avoid `const` redeclaration errors on re-run
 
 - [ ] `check_series.py` exits 0; every WARN explained or fixed
 - [ ] `make lint`, `make links` clean; diagrams re-rendered if sources changed
-- [ ] Manual series checks done; DZone authorship flagged
+- [ ] Manual series checks done (voice vs AUTHOR_STYLE.md and humanizer/ai-check pass recorded); DZone authorship flagged
 - [ ] `article-review` PASS for every platform
 - [ ] Report table delivered; nothing fixed without the user asking
 - [ ] After posting: block-signature and tag-aware compare clean, local file updated for any forced change
