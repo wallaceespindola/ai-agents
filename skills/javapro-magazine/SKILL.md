@@ -459,4 +459,4 @@ Unlike LinkedIn (short), Medium (long but community), or Dev.to (practical):
 - **image-generator-blog** - Featured images and high-resolution diagrams
 - **article-review** - Pre-publish editorial checklist before submission
 - **java-content** - Java-specific technical depth and ecosystem accuracy
-- **technical-writer** (agent) - Draft or revise the full article end to end
+- **article-writer** (agent) - Draft or revise the full article end to end

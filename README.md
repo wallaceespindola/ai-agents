@@ -374,7 +374,7 @@ LINKEDIN_URL=https://linkedin.com/in/you
 ├── .gitignore
 │
 ├── agents/
-│   ├── technical-writer/AGENT.md          ← Writing expertise
+│   ├── article-writer/AGENT.md          ← Writing expertise
 │   ├── java-developer/AGENT.md            ← Java/Spring Boot development
 │   ├── python-developer/AGENT.md          ← Python/FastAPI development
 │   ├── javascript-developer/AGENT.md      ← React/Next.js development

@@ -221,4 +221,4 @@ Before publishing:
 - **code-examples-generator** — production-ready, runnable code samples
 - **diagram-mermaid** — architecture and flow diagrams for articles
 - **article-review** — pre-publish editorial checklist
-- **technical-writer** agent — delegate full article drafting
+- **article-writer** agent — delegate full article drafting

@@ -490,4 +490,4 @@ how I approach optimization.
 - **article-review** — pre-publish editorial checklist (facts, tone, structure)
 - **seo-optimizer** — make the public archive discoverable via search and AI answer engines
 - **image-generator-blog** — header and social-share images for each issue
-- **technical-writer** (agent) — draft the main essay before newsletter-specific framing
+- **article-writer** (agent) — draft the main essay before newsletter-specific framing

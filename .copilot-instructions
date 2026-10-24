@@ -35,7 +35,7 @@ The AI Agents system contains 10 specialized agents with 95 skills for comprehen
 ```
 ai-agents/
 ├── agents/                          # 10 agent profiles
-│   ├── technical-writer/AGENT.md
+│   ├── article-writer/AGENT.md
 │   ├── java-developer/AGENT.md
 │   ├── python-developer/AGENT.md
 │   ├── javascript-developer/AGENT.md

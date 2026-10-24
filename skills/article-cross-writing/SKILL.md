@@ -1,11 +1,11 @@
 ---
-name: tech-content-series
-description: Turn one idea or repo into a technical content series around ONE shared GitHub repo that is the single source of truth for examples, diagrams and docs - seven platform articles (Dev.to, DZone, Medium, LinkedIn Pulse, Substack, InfoQ, JavaPro), each with its own angle, title, length and tone, plus a Marp talk deck exported to PPTX/PDF for Google Slides and Speaker Deck. Use when asked to "write/create an article series", "write articles for dev.to/medium/dzone/linkedin/substack/infoq/javapro about X", "turn this repo/idea into articles plus a talk", or "create the slides for this series" (a single deck from one finished article is slides-creator). Writes local drafts only, never posts; hands off to content-series-review.
+name: article-cross-writing
+description: Turn one idea or repo into a technical content series around ONE GitHub repo that holds everything (code, examples, docs, diagrams, every platform article and the slides) - seven platform articles (Dev.to, DZone, Medium, LinkedIn Pulse, Substack, InfoQ, JavaPro), each with its own angle, title, length and tone, plus a Marp talk deck exported to PPTX/PDF for Google Slides and Speaker Deck. Use when asked to "write all cross articles", "write the cross-platform articles", "write/create an article series", "write articles for dev.to/medium/dzone/linkedin/substack/infoq/javapro about X", "turn this repo/idea into articles plus a talk", or "create the slides for this series" (a single deck from one finished article is slides-creator). Writes local drafts only, never posts; hands off to article-cross-review.
 ---
 
 # Tech content series (write phase)
 
-**Pipeline:** **write (this skill)** -> review and align (`content-series-review`) -> post (`article-cross-posting`, only on the user's command).
+**Pipeline:** **write (this skill)** -> review and align (`article-cross-review`) -> post (`article-cross-posting`, only on the user's command).
 
 ## The central rule: one repo per series
 
@@ -97,7 +97,7 @@ Owned by `slides-creator` (its "Speaker Deck, PowerPoint and Google Slides deliv
 
 ## Phase 6: hand off
 
-Commit the drafts to the series repo (ask before pushing if the repo is new), then run `content-series-review`. Posting waits for the user's explicit command per platform (`article-cross-posting`).
+Commit the drafts to the series repo (ask before pushing if the repo is new), then run `article-cross-review`. Posting waits for the user's explicit command per platform (`article-cross-posting`).
 
 ## Checklist
 
@@ -107,4 +107,4 @@ Commit the drafts to the series repo (ask before pushing if the repo is new), th
 - [ ] **Drafts:** matrix requirements met, identical snippets, "Examples repository" line and footer, humanizer pass
 - [ ] **Images:** banner per platform at verified size, at least one diagram each with alt text, sources next to PNGs
 - [ ] **Slides:** Marp source, PDF and PPTX exported, PPTX opens in Keynote, GOOGLE_SLIDES.md written
-- [ ] **Hand off:** drafts committed, `content-series-review` run, nothing posted
+- [ ] **Hand off:** drafts committed, `article-cross-review` run, nothing posted

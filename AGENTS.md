@@ -41,7 +41,7 @@ Complete listing of all 10 specialized AI agents and their 95 associated skills 
 - Publishing to multiple platforms
 - Creating presentations and slides
 
-**Profile:** `agents/technical-writer/AGENT.md`
+**Profile:** `agents/article-writer/AGENT.md`
 
 ---
 

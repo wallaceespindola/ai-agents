@@ -5,16 +5,16 @@ description: Post or cross-post finished, reviewed articles from a series repo t
 
 # Article Cross-Posting (browser editors)
 
-**Pipeline:** write (`tech-content-series`) -> review and align (`content-series-review`) -> **post (this skill)**.
+**Pipeline:** write (`article-cross-writing`) -> review and align (`article-cross-review`) -> **post (this skill)**.
 
-Every post comes from the series repo, the one repo that holds everything (code, examples, docs, diagrams, every platform article, slides): the local `docs/articles/<platform>/article.md` with its banner and diagrams, all linking that same repo. Push that repo before the first post so its links resolve, and run `content-series-review` first.
+Every post comes from the series repo, the one repo that holds everything (code, examples, docs, diagrams, every platform article, slides): the local `docs/articles/<platform>/article.md` with its banner and diagrams, all linking that same repo. Push that repo before the first post so its links resolve, and run `article-cross-review` first.
 
-Workflow verified 2026-10-20 posting one series to all seven platforms. Editor quirks per platform live in each platform skill under "Posting via the browser editor (verified 2026-10-20)": `tech-content-series`, `content-series-review`, `profile-articles-sync`, `site-articles-sync`, `devto-formatter`, `medium-optimizer`, `dzone-article`, `linkedin-pulse-formatter`, `substack-newsletter`, `infoq-article`, `javapro-magazine`.
+Workflow verified 2026-10-20 posting one series to all seven platforms. Editor quirks per platform live in each platform skill under "Posting via the browser editor (verified 2026-10-20)": `article-cross-writing`, `article-cross-review`, `profile-articles-sync`, `site-articles-sync`, `devto-formatter`, `medium-optimizer`, `dzone-article`, `linkedin-pulse-formatter`, `substack-newsletter`, `infoq-article`, `javapro-magazine`.
 
 ## Publish only on command
 
 - Act only on the user's explicit command, per platform ("publish on Medium", "draft on LinkedIn"). Finishing the review is not a command. "Post everywhere" still follows the policy below.
-- Before each platform, confirm the series repo is pushed and the article passed `content-series-review`.
+- Before each platform, confirm the series repo is pushed and the article passed `article-cross-review`.
 - Post one platform at a time and report each URL before the next.
 
 ## Publish vs draft policy
@@ -57,7 +57,7 @@ On command only. Sign in is the author's. Click New Deck, upload the deck PDF fr
 
 ## Keep local and posted aligned
 
-After each post, run the alignment step in `content-series-review` (block-signature and tag-aware compare). When a platform forces a change (LinkedIn tables to lists), change the local article too.
+After each post, run the alignment step in `article-cross-review` (block-signature and tag-aware compare). When a platform forces a change (LinkedIn tables to lists), change the local article too.
 
 ## After posting: sync live posts
 
@@ -98,4 +98,4 @@ Speaker Deck is `wallacese`; `speakerdeck.com/wallaceespindola` 404s.
 
 ## Related Skills
 
-`tech-content-series`, `content-series-review`, `profile-articles-sync`, `site-articles-sync`, `devto-formatter`, `medium-optimizer`, `dzone-article`, `linkedin-pulse-formatter`, `substack-newsletter`, `infoq-article`, `javapro-magazine`, `article-review`, `article-image-generator`, `diagram-mermaid`.
+`article-cross-writing`, `article-cross-review`, `profile-articles-sync`, `site-articles-sync`, `devto-formatter`, `medium-optimizer`, `dzone-article`, `linkedin-pulse-formatter`, `substack-newsletter`, `infoq-article`, `javapro-magazine`, `article-review`, `article-image-generator`, `diagram-mermaid`.

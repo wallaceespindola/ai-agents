@@ -370,4 +370,4 @@ Add 5-7 relevant industry tips:
 - code-examples-generator — the short (4-8 line) code snippets LinkedIn posts need
 - image-generator-blog — featured image (1920x1080px) and professional visuals
 - article-review — pre-publish editorial checklist
-- technical-writer agent — drafts the article this skill then formats for Pulse
+- article-writer agent — drafts the article this skill then formats for Pulse

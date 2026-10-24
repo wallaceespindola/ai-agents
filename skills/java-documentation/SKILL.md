@@ -442,7 +442,7 @@ public User createUser(String email) throws UserAlreadyExistsException {
 ## Integration with Other Skills
 
 - **`java-code-review`**: Verify code is properly documented
-- **`technical-writer`**: Publish generated documentation to user guides
+- **`article-writer`**: Publish generated documentation to user guides
 - **`spring-boot-setup`**: Document generated project structure
 
 ## Documentation Checklist

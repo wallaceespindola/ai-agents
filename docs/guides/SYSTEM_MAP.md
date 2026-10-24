@@ -15,7 +15,7 @@ All skills follow **humanization standards** (see HUMANIZATION_GUIDE.md) and **i
 ## Main Agent
 
 ### Senior Technical Software Writer Agent
-**Location**: `agents/technical-writer/AGENT.md`
+**Location**: `agents/article-writer/AGENT.md`
 
 **Role**: Orchestrates all 22 skills to create professional technical content
 
@@ -580,7 +580,7 @@ markdown-formatter (archive issues)
 ## Quick Navigation
 
 **Want to learn more?**
-- Agent details: Read `agents/technical-writer/AGENT.md`
+- Agent details: Read `agents/article-writer/AGENT.md`
 - Specific skill: Read `skills/[skill-name]/SKILL.md`
 - Writing standards: Read `HUMANIZATION_GUIDE.md`
 - Image specs: Read `skills/image-generator-blog/SKILL.md`

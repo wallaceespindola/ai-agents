@@ -406,4 +406,4 @@ discovery channel for technical articles. The same qualities that help tradition
 - **markdown-formatter** — clean structure (headings, alt text, links) that SEO depends on
 - **article-review** — pre-publish editorial checklist alongside this SEO checklist
 - **image-generator-blog** — optimized featured images with descriptive alt text
-- **technical-writer** (agent) — drafts articles that this skill then optimizes
+- **article-writer** (agent) — drafts articles that this skill then optimizes

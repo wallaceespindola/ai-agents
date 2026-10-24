@@ -1,22 +1,22 @@
 ---
-name: content-series-review
+name: article-cross-review
 description: Review a multi-platform article series built around one GitHub repo that holds everything (code, examples, docs, diagrams, all platform articles and slides) and keep local and posted versions aligned. Runs article-review on each platform draft plus series-level checks - same repo link everywhere, code snippets identical to the repo, banner and diagrams with sources and alt text, unique titles and angles, platform limits, disclosures, footer, no em dashes, no employer name, lint and links - and reports a per-platform pass/fail table. Use when asked to "review/check my articles or article series", "is the series ready", or "align local and posted articles". Fixes only on request.
 ---
 
 # Content series review and alignment
 
-**Pipeline:** write (`tech-content-series`) -> **review and align (this skill)** -> post (`article-cross-posting`, only on the user's command).
+**Pipeline:** write (`article-cross-writing`) -> **review and align (this skill)** -> post (`article-cross-posting`, only on the user's command).
 
 The series repo holds everything (code, examples, docs, diagrams, every platform article, slides) and is the single source of truth: snippets and diagrams live in the repo, articles embed them, posted versions mirror the local `article.md`. This skill checks that chain. It reports; it changes files only when the user asks for fixes.
 
 ## 1. Series-level checks (scripted)
 
 ```bash
-python3 ~/git/ai-agents/skills/content-series-review/scripts/check_series.py <series-repo> \
+python3 ~/git/ai-agents/skills/article-cross-review/scripts/check_series.py <series-repo> \
   --repo-url https://github.com/wallaceespindola/<repo> --forbid "<employer>" "<internal tool>"
 ```
 
-Per `docs/articles/<platform>/article.md` it checks: the repo URL and the "Examples repository" line, author line, footer (InfoQ and JavaPro need an author bio instead; footer is a warning there), no em dashes, forbidden words, banner present, at least one diagram, every image exists with alt text, a `.mmd`/`.puml`/`.svg` source next to each diagram, length against the `tech-content-series` matrix (words; characters for JavaPro), AI disclosure on Dev.to, Medium and InfoQ, no tables on LinkedIn, exactly 5 InfoQ key takeaways and JPEG images, duplicate titles, and code blocks not found verbatim in the repo. Exit 1 on any FAIL. Ask the user for the employer and internal-tool names to forbid; never write them into the repo.
+Per `docs/articles/<platform>/article.md` it checks: the repo URL and the "Examples repository" line, author line, footer (InfoQ and JavaPro need an author bio instead; footer is a warning there), no em dashes, forbidden words, banner present, at least one diagram, every image exists with alt text, a `.mmd`/`.puml`/`.svg` source next to each diagram, length against the `article-cross-writing` matrix (words; characters for JavaPro), AI disclosure on Dev.to, Medium and InfoQ, no tables on LinkedIn, exactly 5 InfoQ key takeaways and JPEG images, duplicate titles, and code blocks not found verbatim in the repo. Exit 1 on any FAIL. Ask the user for the employer and internal-tool names to forbid; never write them into the repo.
 
 WARN items need judgment: a code block not in the repo is either drift (fix the article or add the code to the repo) or a deliberate illustration (file tree, command line). Word counts include Markdown syntax, so a count a few words over is fine.
 

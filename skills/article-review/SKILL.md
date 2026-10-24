@@ -23,7 +23,7 @@ prose, and unwilling to ship code that doesn't run.
 Use this skill when:
 
 - A draft is complete and the next step would be publishing
-- The technical-writer agent reaches step 4 (self-review) of its workflow
+- The article-writer agent reaches step 4 (self-review) of its workflow
 - An article is being adapted for cross-posting and each version needs its own gate
 - An older published article is being refreshed and re-checked
 
@@ -103,7 +103,7 @@ Every platform:
 - [ ] For a series with a companion repo: the article ends with the shared "Examples repository" line linking that repo, just before the sign-off
 - [ ] Vendor pricing, billing or quota claims checked against the vendor's current docs (these change often; cite the page)
 
-Cross-posting checks (for a whole series, `content-series-review` runs these plus scripted repo-level checks):
+Cross-posting checks (for a whole series, `article-cross-review` runs these plus scripted repo-level checks):
 
 - [ ] Prose is unique per platform — no copy-pasted paragraphs between versions
 - [ ] Titles and angles differ per platform in a multi-platform series (e.g. hands-on for Dev.to, governance for DZone, essay for Medium, leadership for LinkedIn)
@@ -146,7 +146,7 @@ Rules for the verdict:
 
 - Reference issues by section heading, code block number or `file:line` when reviewing a file
 - FIX means do not publish until every listed item is resolved
-- Never silently rewrite the article — report; the author (or technical-writer agent) fixes
+- Never silently rewrite the article — report; the author (or article-writer agent) fixes
 - Re-run the review after fixes; a FIX verdict is not cleared by trust
 
 ## Common Mistakes
@@ -166,5 +166,5 @@ Rules for the verdict:
 - seo-optimizer — run before this review so metadata issues surface here, not after publishing
 - markdown-formatter — clean, portable Markdown for the final draft
 - Platform formatters: devto-formatter, medium-optimizer, dzone-article, infoq-article, javapro-magazine, substack-newsletter, linkedin-pulse-formatter, sr-tech-blog
-- technical-writer agent — drafts the article; its workflow calls this skill as step 4 self-review
-- content-series-review — runs this skill on every draft of a series, plus series-level checks and local vs posted alignment
+- article-writer agent — drafts the article; its workflow calls this skill as step 4 self-review
+- article-cross-review — runs this skill on every draft of a series, plus series-level checks and local vs posted alignment

@@ -806,4 +806,4 @@ This ensures maximum compatibility and portability across all platforms and tool
 - **diagram-mermaid** — version-controlled diagrams embedded directly in Markdown
 - **diagram-plantuml** — precise UML/architecture diagrams for technical articles
 - **article-review** — pre-publish editorial checklist on the formatted article
-- **technical-writer** agent — drafts the article content this skill formats
+- **article-writer** agent — drafts the article content this skill formats

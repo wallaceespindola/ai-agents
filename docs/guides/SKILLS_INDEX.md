@@ -6,7 +6,7 @@ Complete catalog of all agents and skills in this repository, organized by purpo
 
 ### Senior Technical Software Writer Agent
 
-**Location**: `agents/technical-writer/AGENT.md`
+**Location**: `agents/article-writer/AGENT.md`
 
 The primary agent for this system. Orchestrates multiple skills to create professional technical content across platforms.
 
@@ -475,14 +475,14 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 
 ### Tech Content Series (pipeline: write)
 
-**Location**: `skills/tech-content-series/SKILL.md`
+**Location**: `skills/article-cross-writing/SKILL.md`
 **Purpose**: Turn one idea or repo into a series around one shared GitHub repo (single source of truth for examples, diagrams and docs): seven platform articles with different angles, titles and lengths, banners, diagrams and a Marp deck exported to PPTX/PDF for Google Slides and Speaker Deck. Writes local drafts only
 
 ---
 
 ### Content Series Review (pipeline: review and align)
 
-**Location**: `skills/content-series-review/SKILL.md`
+**Location**: `skills/article-cross-review/SKILL.md`
 **Purpose**: `article-review` per platform draft plus scripted series-level checks (`scripts/check_series.py`: repo link, snippets vs repo, banner/diagrams/alt text/sources, limits, disclosures, footer, em dashes, forbidden words) with a per-platform pass/fail table; owns the local-vs-posted alignment check
 
 ---
@@ -810,7 +810,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - **Quick article** (1-2 hours): devto-formatter + code-examples-generator
 - **Medium depth** (2-3 hours): medium-optimizer or dzone-article + seo-optimizer
 - **Long-form** (4+ hours): sr-tech-blog + markdown-formatter + seo-optimizer
-- **Multi-platform series**: tech-content-series -> content-series-review -> article-cross-posting (on command)
+- **Multi-platform series**: article-cross-writing -> article-cross-review -> article-cross-posting (on command)
 - **Newsletter series**: substack-newsletter + language-content skill + markdown-formatter
 
 ---
@@ -830,7 +830,7 @@ All skills are:
 
 ## Getting Started
 
-1. **Start with the Agent**: Read `agents/technical-writer/AGENT.md` to understand the system
+1. **Start with the Agent**: Read `agents/article-writer/AGENT.md` to understand the system
 2. **Pick a Platform**: Choose where you want to publish first
 3. **Pick a Language**: Focus on Java, Python, or JavaScript
 4. **Read Relevant Skills**: Understand platform and language guidance
@@ -842,7 +842,7 @@ All skills are:
 ## Navigation
 
 - **Main README**: Start here for overview and quick start
-- **Agent Profile**: `agents/technical-writer/AGENT.md`
+- **Agent Profile**: `agents/article-writer/AGENT.md`
 - **All Skills**: Listed above with descriptions
 - **CLAUDE.md**: High-level repository guidance
 - **This File**: Complete skills index and reference

@@ -556,7 +556,7 @@ This is important for the presenter
 - **markdown-formatter** — normalize article structure before conversion
 - **image-generator-blog** — title slide backgrounds and visual assets
 - **article-review** — pre-publish editorial checklist; run before generating slides
-- **technical-writer** agent — drafts the source articles this skill converts
+- **article-writer** agent — drafts the source articles this skill converts
 
 ---
 

@@ -491,4 +491,4 @@ Use this skill when:
 - **diagram-mermaid** — version-controlled technical diagrams as code
 - **diagram-plantuml** — precise UML/architecture diagrams
 - **article-review** — pre-publish editorial checklist, including visual asset review
-- **technical-writer** agent — drafts the article the visuals support
+- **article-writer** agent — drafts the article the visuals support

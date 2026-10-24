@@ -829,4 +829,4 @@ Before finalizing your InfoQ article:
 - **image-generator-blog** - Featured images and custom graphics
 - **article-review** - Pre-publish editorial checklist before submission
 - **java-content** - Java-specific technical depth and ecosystem accuracy
-- **technical-writer** (agent) - Draft or revise the full article end to end
+- **article-writer** (agent) - Draft or revise the full article end to end

@@ -475,4 +475,4 @@ Structure:
 - code-examples-generator — runnable code snippets the article links to
 - image-generator-blog — cover image (1000x420px) and in-article visuals
 - article-review — pre-publish editorial checklist
-- technical-writer agent — drafts the article this skill then formats for Dev.to
+- article-writer agent — drafts the article this skill then formats for Dev.to

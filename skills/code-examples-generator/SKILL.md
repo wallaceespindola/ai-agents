@@ -590,4 +590,4 @@ Before including code in article:
 - **diagram-mermaid** — flow/architecture diagrams accompanying code examples
 - **diagram-plantuml** — precise UML diagrams for pattern and design articles
 - **article-review** — pre-publish editorial checklist, including code verification
-- **technical-writer** agent — drafts the surrounding article narrative
+- **article-writer** agent — drafts the surrounding article narrative

@@ -73,7 +73,7 @@ Choose your platform and use the relevant formatter skill to optimize for that p
 ├── .env.example                       ← Template for .env
 │
 ├── agents/
-│   └── technical-writer/
+│   └── article-writer/
 │       └── AGENT.md                   ← Main agent profile
 │
 ├── skills/
@@ -272,7 +272,7 @@ See `docs/HUMANIZATION_GUIDE.md` for details.
 - `docs/PLATFORM_STYLES.md` - Platform-specific style guides
 
 **In Your Project**:
-- `agents/technical-writer/AGENT.md` - Agent profile
+- `agents/article-writer/AGENT.md` - Agent profile
 - `skills/[skill-name]/SKILL.md` - Detailed skill documentation
 
 ---

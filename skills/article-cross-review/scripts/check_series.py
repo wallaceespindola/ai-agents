@@ -11,7 +11,7 @@ import re
 import sys
 from pathlib import Path
 
-# (unit, min, max) from the tech-content-series matrix
+# (unit, min, max) from the article-cross-writing matrix
 LIMITS = {
     "devto": ("words", 1500, 3200),
     "dzone": ("words", 800, 4800),

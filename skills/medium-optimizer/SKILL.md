@@ -479,4 +479,4 @@ This opening:
 - code-examples-generator — runnable code snippets the article links to
 - image-generator-blog — featured image (1200x627px) and supporting diagrams
 - article-review — pre-publish editorial checklist
-- technical-writer agent — drafts the article this skill then optimizes for Medium
+- article-writer agent — drafts the article this skill then optimizes for Medium

@@ -532,4 +532,4 @@ RELATED TOPICS (300-400 words)
 - **code-examples-generator** — implementation examples
 - **java-content**, **python-content**, **javascript-content** — language-specific examples
 - **article-review** — pre-publish editorial checklist
-- **technical-writer** agent — delegate full article drafting
+- **article-writer** agent — delegate full article drafting

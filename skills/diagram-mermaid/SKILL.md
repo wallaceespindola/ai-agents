@@ -807,4 +807,4 @@ Check the rendered size before embedding. A long top-down flowchart can render a
 - **markdown-formatter** — embed diagram code blocks in article Markdown
 - **image-generator-blog** — export diagrams as PNG/SVG for platforms without native rendering
 - **article-review** — pre-publish editorial checklist (verifies diagrams match article text)
-- **technical-writer** agent — drafts the articles these diagrams illustrate
+- **article-writer** agent — drafts the articles these diagrams illustrate

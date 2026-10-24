@@ -561,4 +561,4 @@ public class ProductionExample {
 - **article-review** — pre-publish editorial checklist before hitting publish
 - **devto-formatter** / **medium-optimizer** — republish blog posts to platforms (set canonical URL to your blog)
 - **image-generator-blog** — featured images and in-article diagrams
-- **technical-writer** (agent) — delegate full article drafts
+- **article-writer** (agent) — delegate full article drafts

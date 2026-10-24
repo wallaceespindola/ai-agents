@@ -869,4 +869,4 @@ Before publishing any PlantUML diagram:
 - **markdown-formatter** — embed exported diagrams in article Markdown
 - **image-generator-blog** — export diagrams as PNG/SVG for publication
 - **article-review** — pre-publish editorial checklist (verifies diagrams match article text)
-- **technical-writer** agent — drafts the articles these diagrams illustrate
+- **article-writer** agent — drafts the articles these diagrams illustrate

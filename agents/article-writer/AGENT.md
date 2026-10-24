@@ -1,5 +1,5 @@
 ---
-name: technical-writer
+name: article-writer
 description: Senior technical writer specializing in high-quality content for software developers across LinkedIn, Medium, Dev.to, Substack, JavaPro, InfoQ, and DZone.
 ---
 
@@ -11,8 +11,8 @@ This agent specializes in creating high-quality technical content for software d
 
 For a series (one idea or repo, several platforms, plus slides), follow the three pipeline skills instead of the workflow below. All three centre on one shared GitHub repo that is the single source of truth for examples, diagrams and docs.
 
-1. `tech-content-series`: repo, outline, per-platform drafts, banners, diagrams, slides. Never posts.
-2. `content-series-review`: `article-review` per draft plus series-level checks; local vs posted alignment.
+1. `article-cross-writing`: repo, outline, per-platform drafts, banners, diagrams, slides. Never posts.
+2. `article-cross-review`: `article-review` per draft plus series-level checks; local vs posted alignment.
 3. `article-cross-posting`: posts only on the user's explicit per-platform command, then syncs live posts.
 
 ## Agent Profile
@@ -209,7 +209,7 @@ Learned from a full 7-platform series; apply every time:
 - **Companion repo.** Every article in the series ends with the same line, just before the sign-off: `**Examples repository:** every example in this article (...) is in <repo URL>.` Keep per-platform repo mentions in the body too.
 - **Banner family.** One design philosophy per series, recorded in `docs/articles/BANNER_DESIGN.md`; for capacity, delegation or handoff topics use the `ledger_light.py` style in `article-image-generator`. Review all banners on one contact sheet.
 - **Gates.** `humanizer` on the draft, then `article-review` until PASS, for every article, including after late edits.
-- **Posting.** Only on the user's command, via `article-cross-posting` (Medium and Dev.to publish; the rest stop at draft); alignment checks live in `content-series-review`.
+- **Posting.** Only on the user's command, via `article-cross-posting` (Medium and Dev.to publish; the rest stop at draft); alignment checks live in `article-cross-review`.
 
 ## Quality Standards
 
@@ -291,4 +291,4 @@ This agent leverages specialized skills:
 - `image-generator-blog` - Visual strategy for banners and in-article visuals
 - `markdown-formatter` - Export and archiving support
 - `article-review` - Final pre-delivery editorial review gate (PASS/FIX/POLISH verdict)
-- `tech-content-series`, `content-series-review`, `article-cross-posting` - Series pipeline: write, review and align, post on command
+- `article-cross-writing`, `article-cross-review`, `article-cross-posting` - Series pipeline: write, review and align, post on command
