@@ -394,7 +394,7 @@ graph TD
 ### Image Generation Workflow
 
 **Always generate images for your articles:**
-1. Use `image-generator-blog` skill to create featured image
+1. Use `article-image-generator` skill to render the featured image
 2. Create **Mermaid or PlantUML diagrams** for all conceptual content (REQUIRED when applicable)
 3. Use `image-generator-blog` for custom graphics/comparisons if needed
 4. Save ALL images to `/images` folder in article directory
@@ -415,7 +415,7 @@ graph TD
 - **Content**: Directly relevant to article topic
 
 **Image Generation:**
-- Create using `image-generator-blog` skill
+- Create using `article-image-generator` skill
 - Must be original/custom (not generic stock photos)
 - Abstract, futuristic or technical aesthetic preferred
 - Professional appearance reflects article quality
@@ -1011,7 +1011,7 @@ Before finalizing your DZone article:
 - [ ] Featured image created and saved to `/images/featured-image.jpg`
 - [ ] Featured image is 1200x628px (DZone standard)
 - [ ] Featured image compressed to 500KB-2MB
-- [ ] Generated using `image-generator-blog` skill (original, not stock)
+- [ ] Generated using `article-image-generator` skill (original, not stock)
 
 **Supporting Diagrams/Graphics:**
 - [ ] 2-4 supporting diagrams created and saved to `/images/` folder

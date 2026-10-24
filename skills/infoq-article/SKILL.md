@@ -100,7 +100,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 
 **Tone guidelines**:
 - ✅ "The industry is shifting toward X and here's why..."
-- ✅ "Research shows that organizations using X see Y benefit..."
+- ✅ "[Named, linked study] found that organizations using X see Y benefit..."
 - ✅ "This architectural choice has trade-offs: A, B, and C..."
 - ✅ "Based on case studies from Netflix, Airbnb, and Uber..."
 - ✅ "The evidence suggests this approach works when..."
@@ -192,7 +192,7 @@ Deliver a proposed banner/featured image with every submission — the article i
 - **Style**: Clean, professional, technical aesthetic
 
 **Image Generation Process:**
-1. Use `image-generator-blog` skill to create featured image
+1. Use `article-image-generator` skill to render the featured image (JPEG)
 2. Generate image related to main topic or key concept
 3. Save to `/images` folder in article directory
 4. Reference in markdown: `![Article title](./images/featured-image.jpg)`

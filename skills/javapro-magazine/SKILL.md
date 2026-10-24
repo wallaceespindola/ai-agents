@@ -425,7 +425,7 @@ Unlike LinkedIn (short), Medium (long but community), or Dev.to (practical):
 
 - Deliver a proposed banner/featured image (1200x630px) with every submission — the article is not deliverable without one; the magazine's editors control final art and may replace it
 - Design should reflect the article's actual content (architecture diagram, pattern comparison, code visual — not generic stock art)
-- Create it with the `image-generator-blog` skill
+- Render it with the `article-image-generator` skill (house style, verified sizes)
 
 ---
 

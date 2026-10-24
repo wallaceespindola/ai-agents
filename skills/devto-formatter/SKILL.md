@@ -255,7 +255,7 @@ Example series:
 #### Cover Image (REQUIRED)
 - **The cover image is a required deliverable** — a Dev.to article is not deliverable without one
 - Design should reflect the article's actual content (diagram, code diff, comparison — not generic stock art)
-- Create it with the `image-generator-blog` skill
+- Render it with the `article-image-generator` skill (house style, verified sizes)
 - **Size**: 1000x420px (Dev.to recommended cover size)
 - **Quality**: Clear, professional
 - **Content**: Related to topic

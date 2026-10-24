@@ -442,9 +442,9 @@ how I approach optimization.
 ## Banner Image (Required)
 
 - Every issue ships with a banner/featured image — it is a required deliverable, not optional
-- Recommended dimensions: 1200x600px (Substack post header / social preview)
+- Recommended dimensions: at least 1200x630px (Substack post header / social preview)
 - Design should reflect the issue's actual content (diagram, code diff, comparison — not generic stock art)
-- Create it with the `image-generator-blog` skill
+- Render it with the `article-image-generator` skill (house style, verified sizes)
 - Note: the "no images in email body" advice above still holds — the banner is the post header/social image, not inline email content
 
 ## Related Skills

@@ -229,7 +229,7 @@ public class Example {
 #### Featured Image (REQUIRED)
 - **The featured image is a required deliverable** — a Medium article is not deliverable without one
 - Design should reflect the article's actual content (diagram, code diff, comparison — not generic stock art)
-- Create it with the `image-generator-blog` skill
+- Render it with the `article-image-generator` skill (house style, verified sizes)
 - **Size**: 1200x627px (Medium standard)
 - **Quality**: High-resolution, professional
 - **Content**: Related to article topic

@@ -1,6 +1,6 @@
 ---
 name: tech-content-series
-description: Turn one idea or repo into a technical content series around ONE shared GitHub repo that is the single source of truth for examples, diagrams and docs - seven platform articles (Dev.to, DZone, Medium, LinkedIn Pulse, Substack, InfoQ, JavaPro), each with its own angle, title, length and tone, plus a Marp talk deck exported to PPTX/PDF for Google Slides and Speaker Deck. Use when asked to "write/create an article series", "write articles for dev.to/medium/dzone/linkedin/substack/infoq/javapro about X", "turn this repo/idea into articles", or "create slides/a talk from this". Writes local drafts only, never posts; hands off to content-series-review.
+description: Turn one idea or repo into a technical content series around ONE shared GitHub repo that is the single source of truth for examples, diagrams and docs - seven platform articles (Dev.to, DZone, Medium, LinkedIn Pulse, Substack, InfoQ, JavaPro), each with its own angle, title, length and tone, plus a Marp talk deck exported to PPTX/PDF for Google Slides and Speaker Deck. Use when asked to "write/create an article series", "write articles for dev.to/medium/dzone/linkedin/substack/infoq/javapro about X", "turn this repo/idea into articles plus a talk", or "create the slides for this series" (a single deck from one finished article is slides-creator). Writes local drafts only, never posts; hands off to content-series-review.
 ---
 
 # Tech content series (write phase)

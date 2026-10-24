@@ -187,8 +187,8 @@ vs.
 
 ### Image & Media Guidelines
 
-- **Featured image (REQUIRED)**: 1200x627px, professional — a required deliverable; the article is not deliverable without one
-- **Design**: reflect the article's actual content (diagram, code diff, comparison — not generic stock art); create with the `image-generator-blog` skill
+- **Featured image (REQUIRED)**: 1920x1080px, professional — a required deliverable; the article is not deliverable without one
+- **Design**: reflect the article's actual content (diagram, code diff, comparison — not generic stock art); render with the `article-image-generator` skill
 - **In-text images**: Code screenshots with syntax highlighting
 - **Content**: Architecture diagrams, flowcharts, side-by-side comparisons
 - **Alt text**: Descriptive for accessibility
@@ -236,7 +236,7 @@ Add 5-7 relevant industry tips:
 - [ ] First 2-3 sentences are a strong hook
 - [ ] Article is 800-1,500 words
 - [ ] Has 3-5 main sections with headers
-- [ ] Banner image created and attached (1200x627px — required)
+- [ ] Banner image created and attached (1920x1080px — required)
 - [ ] Contains 1-2 relevant images
 - [ ] Code examples are 4-8 lines max
 - [ ] Tone is conversational and authentic
@@ -339,6 +339,6 @@ Add 5-7 relevant industry tips:
 - seo-optimizer — keyword and discoverability pass before publishing
 - markdown-formatter — clean draft formatting before adapting to LinkedIn's editor
 - code-examples-generator — the short (4-8 line) code snippets LinkedIn posts need
-- image-generator-blog — featured image (1200x627px) and professional visuals
+- image-generator-blog — featured image (1920x1080px) and professional visuals
 - article-review — pre-publish editorial checklist
 - technical-writer agent — drafts the article this skill then formats for Pulse

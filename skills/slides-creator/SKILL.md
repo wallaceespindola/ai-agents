@@ -467,8 +467,7 @@ Error: Authentication failed - invalid credentials
 Error: Could not publish to Speaker Deck
 ```
 **Solution:**
-- If using fallback manual workflow: upload PPTX to speakerdeck.com manually
-- File will be available at: `presentations/[article-name]/[article-name].pptx`
+- Speaker Deck takes PDF only: export with `make slides` (or Marp `--pdf --allow-local-files`) and upload the PDF via `article-cross-posting`, on the user's command
 - Then obtain public URL and add to article
 
 ---
@@ -552,7 +551,7 @@ slides-creator convert ARTICLE.md [OPTIONS]
 --verbose                 # Detailed logging
 
 # Publishing
---auto-publish           # Auto-publish to Speaker Deck
+--auto-publish           # Auto-publish to Speaker Deck (only on the user's explicit command)
 --share-mode view|edit   # Google Slides sharing
 --open                   # Auto-open generated file
 ```

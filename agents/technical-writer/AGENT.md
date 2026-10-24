@@ -91,7 +91,7 @@ For a series (one idea or repo, several platforms, plus slides), follow the thre
 - **Call-to-action**: Reply with thoughts, share widely
 
 ### JavaPro Magazine
-- **Length**: 3000-5000 words
+- **Length**: 15,000-25,000 characters including code (JavaPro counts characters, not words)
 - **Tone**: Technical, authoritative, enterprise-focused
 - **Focus**: Advanced Java patterns, performance, architecture
 - **Frequency**: 1-2 per month
@@ -160,11 +160,8 @@ For EACH platform:
 7. **Optimize length** - Adjust for platform word count norms
 8. **Create banner image** - Every article ships with a banner/featured image via `article-image-generator` (house style: modern, abstract, futuristic, 0-4 words), sized per platform (Dev.to 1000x420, Medium 1200x627, LinkedIn 1920x1080, Substack 1200x630, blog 1200x630 OG, DZone 1200x628 JPEG, InfoQ 1024x768 JPEG, JavaPro 1200x630)
 
-#### Phase 3: Publication (30 min per platform)
-1. Publish to first platform (A/B test if possible)
-2. Wait 1 week before publishing to second platform
-3. Publish to remaining platforms with appropriate spacing
-4. Update GitHub repo cross-links between articles after publication
+#### Phase 3: Publication
+Only on the user's explicit per-platform command, via `article-cross-posting` (publish vs draft policy, post-publish sync). Timing is the user's call.
 
 ### Workflow
 
@@ -178,7 +175,7 @@ For EACH platform:
 8. **Optimization**: Refine for platform-specific requirements (SEO, word count, tone)
 9. **Banner Image**: Create the banner/featured image for each platform via `article-image-generator` (Dev.to 1000x420, Medium 1200x627, LinkedIn 1920x1080, Substack 1200x630, blog 1200x630 OG, DZone 1200x628 JPEG, InfoQ 1024x768 JPEG, JavaPro 1200x630)
 10. **Review**: Fact-check code, verify claims, ensure consistency across versions, then run `article-review` as the final pre-delivery gate (PASS/FIX/POLISH verdict)
-11. **Publish**: Stagger publication across platforms (1 week apart minimum)
+11. **Post**: only on the user's explicit command, via `article-cross-posting`
 
 ## Series checklist (one theme, many platforms)
 
@@ -195,7 +192,7 @@ Learned from a full 7-platform series; apply every time:
 - **Companion repo.** Every article in the series ends with the same line, just before the sign-off: `**Examples repository:** every example in this article (...) is in <repo URL>.` Keep per-platform repo mentions in the body too.
 - **Banner family.** One design philosophy per series, recorded in `docs/articles/BANNER_DESIGN.md`; for capacity, delegation or handoff topics use the `ledger_light.py` style in `article-image-generator`. Review all banners on one contact sheet.
 - **Gates.** `humanizer` on the draft, then `article-review` until PASS, for every article, including after late edits.
-- **Posting (verified 2026-10-20).** Use `article-cross-posting`: publish directly only on Medium and Dev.to; DZone, Substack, LinkedIn, InfoQ and JavaPro stop at draft for Wallace. One browser/clipboard: never paste from parallel agents. Every post carries banner + all diagrams with the local alt text, and the local `article.md` is changed to match whatever the platform forced (e.g. LinkedIn tables to lists).
+- **Posting.** Only on the user's command, via `article-cross-posting` (Medium and Dev.to publish; the rest stop at draft); alignment checks live in `content-series-review`.
 
 ## Quality Standards
 
@@ -250,17 +247,7 @@ Wallace Espindola, Solution Architect
 
 Then GitHub, LinkedIn and Speaker Deck links (Speaker Deck is https://speakerdeck.com/wallacese; `wallaceespindola` 404s).
 
-Plus personalized links from your environment configuration:
-- GitHub profile
-- LinkedIn profile
-- Speaker Deck presentations
-- Dev.to blog
-- Medium articles
-- DZone profile
-- Substack newsletter
-- Twitter/X profile
-
-**See ARTICLE_SIGNOFF.md** for platform-specific variations and alternative sign-offs.
+The exact footer block is in `article-cross-posting` ("Footer convention"). InfoQ and JavaPro use an author bio section instead of, or before, the footer.
 
 ## Tools & Skills Integration
 

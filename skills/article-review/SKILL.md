@@ -102,11 +102,11 @@ Every platform:
 - [ ] For a series with a companion repo: the article ends with the shared "Examples repository" line linking that repo, just before the sign-off
 - [ ] Vendor pricing, billing or quota claims checked against the vendor's current docs (these change often; cite the page)
 
-Cross-posting checks:
+Cross-posting checks (for a whole series, `content-series-review` runs these plus scripted repo-level checks):
 
 - [ ] Prose is unique per platform — no copy-pasted paragraphs between versions
 - [ ] Titles and angles differ per platform in a multi-platform series (e.g. hands-on for Dev.to, governance for DZone, essay for Medium, leadership for LinkedIn)
-- [ ] Publication is staggered: minimum 1 week between platforms, 4 weeks after InfoQ
+- [ ] Exclusivity respected: the InfoQ version is not posted elsewhere for 4 weeks after InfoQ publishes it, and the JavaPro version is never republished (timing of the other posts is the author's call)
 
 ### 6. Links and Metadata
 
@@ -158,7 +158,7 @@ Rules for the verdict:
 | Skipping platform gates on cross-posts | The first version already passed | Each platform version gets its own compliance check — gates differ |
 | Verifying links by eye | URLs look right | Resolve each one; repos get renamed and docs pages move |
 | Letting a stale version claim through | It was true when the author learned it | Check current LTS/stable versions at review time, not from memory |
-| Publishing without a banner image | Prose and code get all the attention | Every platform surfaces a cover; create one via image-generator-blog before submitting |
+| Publishing without a banner image | Prose and code get all the attention | Every platform surfaces a cover; render one via article-image-generator before submitting |
 
 ## Related Skills
 
@@ -166,3 +166,4 @@ Rules for the verdict:
 - markdown-formatter — clean, portable Markdown for the final draft
 - Platform formatters: devto-formatter, medium-optimizer, dzone-article, infoq-article, javapro-magazine, substack-newsletter, linkedin-pulse-formatter, sr-tech-blog
 - technical-writer agent — drafts the article; its workflow calls this skill as step 4 self-review
+- content-series-review — runs this skill on every draft of a series, plus series-level checks and local vs posted alignment

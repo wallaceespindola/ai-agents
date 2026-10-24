@@ -264,7 +264,7 @@ public class ProductionExample {
 
 #### Featured Image (REQUIRED)
 - **The featured image is a required deliverable** — a blog post is not deliverable without one
-- Design should reflect the post's actual content (diagram, code diff, comparison — not generic stock art); create with the `image-generator-blog` skill
+- Design should reflect the post's actual content (diagram, code diff, comparison — not generic stock art); render with the `article-image-generator` skill
 - **Size**: 1200x628px (optimal for sharing; matches the 1200x630 OG standard)
 - **Aspect ratio**: 16:9
 - **Quality**: Professional, high-resolution
