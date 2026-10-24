@@ -7,7 +7,7 @@ description: Post or cross-post finished, reviewed articles from a series repo t
 
 **Pipeline:** write (`tech-content-series`) -> review and align (`content-series-review`) -> **post (this skill)**.
 
-Every post comes from the series repo: the local `docs/articles/<platform>/article.md` with its banner and diagrams, all linking the one shared repo. Push that repo before the first post so its links resolve, and run `content-series-review` first.
+Every post comes from the series repo, the one repo that holds everything (code, examples, docs, diagrams, every platform article, slides): the local `docs/articles/<platform>/article.md` with its banner and diagrams, all linking that same repo. Push that repo before the first post so its links resolve, and run `content-series-review` first.
 
 Workflow verified 2026-10-20 posting one series to all seven platforms. Editor quirks per platform live in each platform skill under "Posting via the browser editor (verified 2026-10-20)": `tech-content-series`, `content-series-review`, `profile-articles-sync`, `site-articles-sync`, `devto-formatter`, `medium-optimizer`, `dzone-article`, `linkedin-pulse-formatter`, `substack-newsletter`, `infoq-article`, `javapro-magazine`.
 

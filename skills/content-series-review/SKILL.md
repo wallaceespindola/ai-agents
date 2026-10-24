@@ -1,13 +1,13 @@
 ---
 name: content-series-review
-description: Review a multi-platform article series built around one shared GitHub repo (the single source of truth for examples, diagrams and docs) and keep local and posted versions aligned. Runs article-review on each platform draft plus series-level checks - same repo link everywhere, code snippets identical to the repo, banner and diagrams with sources and alt text, unique titles and angles, platform limits, disclosures, footer, no em dashes, no employer name, lint and links - and reports a per-platform pass/fail table. Use when asked to "review/check my articles or article series", "is the series ready", or "align local and posted articles". Fixes only on request.
+description: Review a multi-platform article series built around one GitHub repo that holds everything (code, examples, docs, diagrams, all platform articles and slides) and keep local and posted versions aligned. Runs article-review on each platform draft plus series-level checks - same repo link everywhere, code snippets identical to the repo, banner and diagrams with sources and alt text, unique titles and angles, platform limits, disclosures, footer, no em dashes, no employer name, lint and links - and reports a per-platform pass/fail table. Use when asked to "review/check my articles or article series", "is the series ready", or "align local and posted articles". Fixes only on request.
 ---
 
 # Content series review and alignment
 
 **Pipeline:** write (`tech-content-series`) -> **review and align (this skill)** -> post (`article-cross-posting`, only on the user's command).
 
-The series repo is the single source of truth: snippets and diagrams live in the repo, articles embed them, posted versions mirror the local `article.md`. This skill checks that chain. It reports; it changes files only when the user asks for fixes.
+The series repo holds everything (code, examples, docs, diagrams, every platform article, slides) and is the single source of truth: snippets and diagrams live in the repo, articles embed them, posted versions mirror the local `article.md`. This skill checks that chain. It reports; it changes files only when the user asks for fixes.
 
 ## 1. Series-level checks (scripted)
 
