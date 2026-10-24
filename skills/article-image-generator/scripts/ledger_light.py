@@ -1,4 +1,4 @@
-"""Ledger Light banners: a drained capacity field, a full one, and a document travelling between them.
+"""Legacy Ledger Light banners (the default house style is now generate_banner.py --style aurora): a drained capacity field, a full one, and a document travelling between them.
 
 Made with the canvas-design skill for a series on sharing AI coding capacity; fits topics about capacity,
 quotas, delegation, handoffs and moving work between parties. See ../SKILL.md.
@@ -167,11 +167,11 @@ def render(size, palette, words, seed, out, label=None, left=None, right=None):
     crop_marks(d, (rx0 - pad, ry0 - pad, rx1 + pad, ry1 + pad), s * 0.7, rgb("#FFFFFF", 90), hair)
     mono = ImageFont.truetype(MONO, max(int(h * 0.026), 11 * SS))
     lab_y = ry1 + pad + s * 0.25
-    if lab_y + mono.size < h * 0.97:
-        la = left or f"A {sum(c[2] for c in drained) / len(drained):.2f}"
-        lb = right or f"B {sum(c[2] for c in full) / len(full):.2f}"
-        d.text((ax, lab_y), la, font=mono, fill=rgb("#FFFFFF", 120))
-        d.text((bx, lab_y), lb, font=mono, fill=rgb("#FFFFFF", 120))
+    if lab_y + mono.size < h * 0.97:  # markers are opt-in: the house style avoids micro-text
+        if left:
+            d.text((ax, lab_y), left, font=mono, fill=rgb("#FFFFFF", 120))
+        if right:
+            d.text((bx, lab_y), right, font=mono, fill=rgb("#FFFFFF", 120))
         if label:
             tw = d.textlength(label, font=mono)
             d.text((gx - tw / 2, lab_y), label, font=mono, fill=rgb(acc, 200))
@@ -222,8 +222,8 @@ if __name__ == "__main__":
     ap.add_argument("--palette", choices=PALETTES, default="cyan")
     ap.add_argument("--text", default="", help="0-4 words, thin face on the left")
     ap.add_argument("--label", help="tiny mono marker under the travelling document, e.g. TASK-042")
-    ap.add_argument("--left", help="marker under the drained field (default: its fill ratio)")
-    ap.add_argument("--right", help="marker under the full field (default: its fill ratio)")
+    ap.add_argument("--left", help="optional marker under the drained field")
+    ap.add_argument("--right", help="optional marker under the full field")
     ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("--out", required=True, help=".png, or .jpg for JPEG (InfoQ)")
     a = ap.parse_args()
