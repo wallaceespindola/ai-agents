@@ -209,7 +209,7 @@ Learned from a full 7-platform series; apply every time:
 - **Companion repo.** Every article in the series ends with the same line, just before the sign-off: `**Examples repository:** every example in this article (...) is in <repo URL>.` Keep per-platform repo mentions in the body too.
 - **Banner family.** One design philosophy per series, recorded in `docs/articles/BANNER_DESIGN.md`; for capacity, delegation or handoff topics use the `ledger_light.py` style in `article-image-generator`. Review all banners on one contact sheet.
 - **Gates.** `humanizer` on the draft, then `article-review` until PASS, for every article, including after late edits.
-- **Posting.** Only on the user's command, via `article-cross-posting` (Medium and Dev.to publish; the rest stop at draft); alignment checks live in `article-cross-review`.
+- **Posting.** Only on the user's command, via `article-cross-posting` (every platform stops at a saved draft; the author signs in himself, reviews and clicks publish); alignment checks live in `article-cross-review`.
 
 ## Quality Standards
 

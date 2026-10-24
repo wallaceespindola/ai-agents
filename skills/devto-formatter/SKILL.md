@@ -38,7 +38,7 @@ These override any conflicting numbers further down. Re-check the platform's hel
 
 Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
 
-- Policy: publish directly; set front matter `published: true` once live.
+- Policy: stop at draft (`published: false`, "Save draft"); the author reviews and publishes. Set local front matter `published: true` only after he confirms it is live. On a live post, "Save changes" publishes the edit: prepare it and let him click.
 - The body textarea `#article_body_markdown` is React-controlled: set it with the native value setter (`Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype,'value').set.call(el, md)`) and dispatch an `input` event, or the change is lost.
 - Body image upload input: `#image-upload-field`; cover image input: `#cover-image-input`.
 - Verify the live body via `https://dev.to/api/articles/<user>/<slug>` (`body_markdown`) and compare with the local file.

@@ -38,7 +38,7 @@ These override any conflicting numbers further down. Re-check the platform's hel
 
 Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
 
-- Policy: publish directly. A cookie notice covers "Save and publish": close it first. Republish URLs end with `?postPublishedType=repub`.
+- Policy: stop at draft; the author reviews and clicks publish. Never click "Publish" or "Save and publish" (on a live story that republishes it). A cookie notice can cover the header buttons: close it first. Republish URLs end with `?postPublishedType=repub`.
 - Images paste only from the HTML clipboard (`<figure><img src=...>`); embed-by-URL doesn't work.
 - Inserting an image can demote the following heading to a paragraph: re-check headings after every image insert and fix with the big-T toolbar button.
 - Alt text: click the image, "Alt text" in the image toolbar, type, Save. The dialog's Save button moves as text wraps: locate it by role/name, not coordinates.
