@@ -10,12 +10,14 @@ description: Format technical articles for LinkedIn Pulse following platform bes
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
+
 - Cite credible sources with links (e.g., "According to LinkedIn's latest Workplace Learning Report [link], most professionals...")
 - Use your own data if you have it (e.g., "In my team of 12 developers, 8 prefer...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many professionals prefer..." instead of "80% of professionals prefer...")
 
 ❌ **DON'T:**
+
 - Make up percentages or statistics
 - Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
 - Estimate statistics without clearly stating they are estimates
@@ -45,6 +47,7 @@ Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment c
 ## When to Use This Skill
 
 Use this skill when:
+
 - Formatting technical articles for LinkedIn Pulse publication
 - Optimizing professional content for maximum engagement
 - Crafting headlines that generate discussion
@@ -55,6 +58,7 @@ Use this skill when:
 ### Multi-Platform Strategy
 
 When publishing same technical concept to multiple platforms (LinkedIn, Medium, Dev.to, DZone, InfoQ, etc.):
+
 - ✅ Use IDENTICAL code snippets linked to same GitHub repo (ensures consistency across platforms)
 - ✅ Create UNIQUE title optimized for LinkedIn (different from all other platforms)
 - ✅ Write UNIQUE content with professional, career-focused angle (different narrative)
@@ -64,6 +68,7 @@ When publishing same technical concept to multiple platforms (LinkedIn, Medium, 
 - ✅ Different CTA encouraging discussion and professional engagement
 
 **Example:**
+
 ```
 GitHub Repo: design-patterns-advanced (single source of truth for code)
 
@@ -100,6 +105,7 @@ Result: All versions link to IDENTICAL code in same repo
 ## LinkedIn Pulse Article Specifications
 
 ### Length & Structure
+
 - **Optimal length**: 800-1,500 words (avoid very long posts)
 - **Headline**: 60-70 characters max, attention-grabbing
 - **Hook**: First 2-3 sentences decide if readers continue
@@ -110,17 +116,21 @@ Result: All versions link to IDENTICAL code in same repo
 ### Formatting Best Practices
 
 #### Headlines
+
 ✅ **Good headlines:**
+
 - "Why Java's Virtual Threads Are Game-Changing (And Why You Should Care)"
 - "5 Spring Boot Mistakes That Cost Me 10 Hours of Debugging"
 - "The Hidden Performance Cost of Python Type Hints (Spoiler: It's Minimal)"
 
 ❌ **Avoid:**
+
 - Generic: "Understanding Java"
 - Clickbait: "One Weird Trick..."
 - Unclear: "Data Things"
 
 #### Structure Pattern
+
 ```
 HEADLINE
 [Professional image or code screenshot]
@@ -171,6 +181,7 @@ vs.
 ### Content Strategy for Engagement
 
 #### Topics That Perform Well
+
 1. **Career advice**: "How I Transitioned From [Role] to [Role]"
 2. **Hot takes**: "Why [Popular Framework] Isn't Right for Most Projects"
 3. **Lessons learned**: "5 Things I Wish I Knew Before Using React"
@@ -179,6 +190,7 @@ vs.
 6. **Personal stories**: "The Day I Lost Production Database (And What I Learned)"
 
 #### Engagement Multipliers
+
 - **Questions in text**: Pose questions readers can relate to
 - **Relatable scenarios**: "Have you ever...?"
 - **Numbers**: "3 Ways," "5 Mistakes," "10% Improvement"
@@ -197,7 +209,9 @@ vs.
 ### Tags & Metadata
 
 #### Tags (5-7 relevant tags)
+
 Professional tags for discoverability:
+
 - `#java`, `#python`, `#javascript`
 - `#softwaredevelopment`, `#programming`
 - `#careeradvice`, `#learning`
@@ -207,25 +221,30 @@ Professional tags for discoverability:
 Avoid generic tags; use specific ones readers follow.
 
 #### LinkedIn Tips (Optional)
+
 Add 5-7 relevant industry tips:
+
 - "Spring Boot", "Microservices", "Java Performance"
 - "Career Growth", "Software Engineering Best Practices"
 
 ### Call-to-Action Strategies
 
 #### Comment-Driving CTAs
+
 - "What's your approach to [problem]? Share in the comments."
 - "Have you faced this issue? How did you solve it?"
 - "Agree or disagree? Let's discuss in the comments."
 - "What's your experience with [technology]?"
 
 #### Engagement CTAs
+
 - "Tag a colleague who needs to read this"
 - "Share this with your team if you agree"
 - "Subscribe to my newsletter for more insights"
 - "Check out the full article on my blog [link]"
 
 #### Value CTAs
+
 - "Want the code examples? Link in my bio"
 - "Full tutorial available in comments"
 - "Download the comparison spreadsheet [link]"
@@ -257,11 +276,13 @@ Add 5-7 relevant industry tips:
 ## Content Calendar Tips
 
 ### Optimal Posting Times (Western Audiences)
+
 - Tuesday-Thursday: 7:30-9:00 AM or 12:00-1:00 PM
 - Avoid: Weekends, late evenings
 - Avoid: Monday mornings (saturated)
 
 ### Posting Frequency
+
 - LinkedIn Pulse: 1-2 articles per week
 - Consistency matters more than frequency
 - Space out posts 3-4 days apart
@@ -269,21 +290,25 @@ Add 5-7 relevant industry tips:
 ## Examples of Winning LinkedIn Articles
 
 ### Example 1: Career Advice with Data
+
 **Headline**: "Why Senior Developers Keep Learning (And Why You Should Too)"
 
 [Hook about own experience]
 
 **Section 1: The Problem**
+
 - Many developers plateau after 5-10 years
 - Stop learning new technologies
 - Miss opportunities for growth
 
 **Section 2: The Mindset Shift**
+
 - Learning is not about keeping up with hype
 - It's about understanding fundamentals in new contexts
 - Compounding knowledge across 20 years creates experts
 
 **Section 3: Practical Habits**
+
 - Read one technical article per week
 - Implement one new pattern per month
 - Teach others what you learn
@@ -291,20 +316,24 @@ Add 5-7 relevant industry tips:
 **CTA**: "What's one technology you learned last year that surprised you? Share below."
 
 ### Example 2: Contrarian Take
+
 **Headline**: "Microservices Aren't the Answer (But You Should Still Consider Them)"
 
 [Hook: Common misconception]
 
 **Section 1: The Hype**
+
 - Every startup talks about microservices
 - Not always necessary
 
 **Section 2: The Reality**
+
 - Adds complexity
 - Solves specific problems
 - Not recommended for < 50 engineers
 
 **Section 3: When They Make Sense**
+
 - Independent scaling
 - Team autonomy
 - Different tech stacks per service

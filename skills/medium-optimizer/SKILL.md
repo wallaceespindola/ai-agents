@@ -10,12 +10,14 @@ description: Optimize technical articles for Medium platform, including SEO, sto
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
+
 - Cite credible sources with links (e.g., "According to the latest Stack Overflow Developer Survey [link], most developers...")
 - Use your own data if you have it (e.g., "In my 5 years of development, I've seen...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many developers prefer..." instead of "80% of developers prefer...")
 
 ❌ **DON'T:**
+
 - Make up percentages or statistics
 - Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
 - Estimate statistics without clearly stating they are estimates
@@ -46,6 +48,7 @@ Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment c
 ## When to Use This Skill
 
 Use this skill when:
+
 - Formatting long-form technical articles for Medium
 - Optimizing for Medium's curation algorithm and recommendations
 - Improving readability and engagement metrics
@@ -56,6 +59,7 @@ Use this skill when:
 ### Multi-Platform Strategy
 
 When publishing same technical concept to multiple platforms (Medium, DZone, InfoQ, Dev.to, LinkedIn, etc.):
+
 - ✅ Use IDENTICAL code snippets linked to same GitHub repo (essential for consistency)
 - ✅ Create UNIQUE title optimized for Medium (different from other platforms)
 - ✅ Write UNIQUE introduction and narrative (tailored to Medium's storytelling preference)
@@ -64,6 +68,7 @@ When publishing same technical concept to multiple platforms (Medium, DZone, Inf
 - ✅ Different hook and call-to-action (Medium emphasizes follow/claps/responses)
 
 **Example:**
+
 ```
 GitHub Repo: async-patterns-python (single source of truth for code)
 
@@ -92,6 +97,7 @@ Result: All versions link to IDENTICAL code in same repo
 ## Medium Article Specifications
 
 ### Length & Structure
+
 - **Optimal length**: 2,000-7,000 words (Medium favors depth)
 - **Reading time**: 6-20 minutes (displayed by Medium)
 - **Headline**: 60-80 characters, interesting and specific
@@ -102,23 +108,28 @@ Result: All versions link to IDENTICAL code in same repo
 ### Headline & Subtitle Strategy
 
 #### Headlines
+
 ✅ **Good headlines:**
+
 - "Building a Production-Ready REST API with Spring Boot: Complete Guide"
 - "Understanding JavaScript Closures Through Real-World Examples"
 - "Why Your Python Data Pipeline Is Probably Slow (And How to Fix It)"
 
 ❌ **Avoid:**
+
 - Generic: "Introduction to React"
 - Unclear: "Advanced Development Stuff"
 - Too long: "The Comprehensive Ultimate Guide..."
 
 **Headline rules:**
+
 - Must contain searchable keywords
 - 60-80 characters for optimal display
 - Promise value or transformation
 - Avoid clickbait (Medium demonetizes it)
 
 #### Subtitles
+
 - Add context and search terms: "A step-by-step guide to building secure, scalable APIs"
 - Show who it's for: "What senior developers know that juniors don't"
 - Include benefit: "How to reduce load times by 60%"
@@ -189,6 +200,7 @@ Call-to-Action
 ### Formatting for Readability
 
 #### Visual Hierarchy
+
 - **Heading 1 (H1)**: Only for major sections (3-5 per article)
 - **Heading 2 (H2)**: Subsections for scanability
 - **Heading 3 (H3)**: Sub-subsections, use sparingly
@@ -196,6 +208,7 @@ Call-to-Action
 - **Emphasis**: Bold for important terms, italic for asides
 
 #### Code Formatting
+
 - **Inline code**: `` `function_name()` ``
 - **Code blocks**: Full multi-line examples with syntax highlighting
 - **Code length**: Keep examples 15-30 lines max
@@ -203,6 +216,7 @@ Call-to-Action
 - **Language tags**: Specify language for syntax highlighting
 
 **Good code block formatting:**
+
 ```java
 // Brief explanation of what this does
 public class Example {
@@ -220,6 +234,7 @@ public class Example {
 ```
 
 #### Lists & Bullets
+
 - **Bullet points**: For non-sequential items
 - **Numbered lists**: For step-by-step instructions
 - **Keep short**: Each bullet 1-2 sentences max
@@ -227,6 +242,7 @@ public class Example {
 ### Images & Media Guidelines
 
 #### Featured Image (REQUIRED)
+
 - **The featured image is a required deliverable** — a Medium article is not deliverable without one
 - Design should reflect the article's actual content (diagram, code diff, comparison — not generic stock art)
 - Render it with the `article-image-generator` skill (house style, verified sizes)
@@ -236,6 +252,7 @@ public class Example {
 - **Copyright**: Use own images or Unsplash/Pexels
 
 #### In-Article Images
+
 - **Types**: Diagrams, architecture, screenshots, flowcharts
 - **Placement**: After introducing concept, before detailed analysis
 - **Captions**: Descriptive text under image
@@ -243,6 +260,7 @@ public class Example {
 - **Format**: PNG for diagrams, JPG for photos
 
 **Diagram examples:**
+
 - Architecture diagrams
 - Flow charts
 - Comparison tables
@@ -252,19 +270,24 @@ public class Example {
 ### Tags & Metadata
 
 #### Tags (5 max, 1-2 words each)
+
 Primary tags for discoverability:
+
 - Language-focused: `java`, `python`, `javascript`, `typescript`
 - Framework-focused: `react`, `springboot`, `nodejs`, `fastapi`
 - Topic-focused: `webdevelopment`, `architecture`, `performance`
 - Practice-focused: `bestpractices`, `testing`, `security`
 
 **Tag strategy:**
+
 - 1-2 popular tags (high volume)
 - 2-3 specific tags (lower volume, targeted)
 - Avoid too many technical tags
 
 #### Topics/Categories
+
 Select 1-2 most relevant topics:
+
 - `Programming`
 - `Technology`
 - `Software Engineering`
@@ -275,12 +298,14 @@ Select 1-2 most relevant topics:
 ### SEO Optimization for Medium
 
 #### Keywords
+
 - **Primary keyword**: Should appear in headline
 - **Secondary keywords**: 3-5 variations in body
 - **Long-tail keywords**: "how to," "best practices," "tutorial"
 - **Placement**: First 100 words, section headers, conclusion
 
 #### Meta Description
+
 - Write concise summary (150-160 characters)
 - Include primary keyword naturally
 - Describe value to reader
@@ -291,18 +316,21 @@ Select 1-2 most relevant topics:
 ### Engagement Strategies
 
 #### Clapping Optimization
+
 - **Valuable insights** prompt claps: Share surprising data or advice
 - **Clear takeaways**: Make it obvious why readers should clap
 - **Strong conclusion**: End on high note with key insight
 - **Actionable content**: Readers clap for practical value
 
 #### Comments & Discussion
+
 - **End with question**: "What's your approach to...?"
 - **Acknowledge different views**: "Some prefer... but I've found..."
 - **Invite controversy thoughtfully**: "Hot take: you probably don't need..."
 - **Include discussion prompt**: "Tell me about your experience with..."
 
 #### Sharing Potential
+
 - **Add to publication**: Get distribution to publication followers
 - **Timing**: Publish when audience is active
 - **Social signals**: Share on Twitter/LinkedIn to seed engagement
@@ -311,22 +339,26 @@ Select 1-2 most relevant topics:
 ### Medium-Specific Features
 
 #### Adding to Publications
+
 - Submit to relevant publications: **Better Programming**, **Frontend Digest**, **Node.js Design Patterns**
 - Publications have editors who review and curate
 - Publication distribution can 10x reach
 - Response time: 1-5 days typically
 
 #### Using Lists
+
 - Create reading lists for related topics
 - Add articles to existing lists
 - Lists help with discovery and recommendations
 
 #### Subscribing to Member-Only
+
 - Consider Member-only status for highly valuable content
 - Gets automatic revenue from Medium's subscription pool
 - Good option for unique, in-depth content
 
 #### Crosslinking
+
 - Link to 2-3 other Medium articles naturally
 - Internal links boost engagement metrics
 - Link to your other articles in conclusion
@@ -355,6 +387,7 @@ Select 1-2 most relevant topics:
 ### Publishing Timeline
 
 **Recommended Medium article timeline:**
+
 - **Research & outline**: 3-5 hours
 - **Writing first draft**: 4-6 hours
 - **Revision & formatting**: 2-3 hours
@@ -378,6 +411,7 @@ Select 1-2 most relevant topics:
 ## Medium-Specific Trends
 
 ### Topics That Perform Well
+
 1. **Deep technical dives**: Production lessons learned
 2. **Contrarian takes**: "Why [popular thing] isn't as great as you think"
 3. **Step-by-step tutorials**: Detailed walkthroughs with code
@@ -389,24 +423,29 @@ Select 1-2 most relevant topics:
 ### Publications to Target (By Topic)
 
 **Backend/Architecture:**
+
 - Better Programming (90k followers)
 - Node.js Design Patterns
 - Towards Data Science (data-focused)
 
 **Frontend/React:**
+
 - Frontend Digest (60k followers)
 - Level Up Coding (all languages)
 
 **Python:**
+
 - Towards Data Science
 - Python in Plain English
 
 **JavaScript:**
+
 - JavaScript in Plain English
 - Bits and Pieces
 - Frontend Digest
 
 **Java:**
+
 - Better Programming
 - Java Design Patterns
 
@@ -426,6 +465,7 @@ In this guide, we'll build a real REST API that handles all the chaos production
 ---
 
 This opening:
+
 - ✅ Shows a relatable problem
 - ✅ Hints at solution
 - ✅ Names credible companies

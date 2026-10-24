@@ -12,6 +12,7 @@ description: Convert technical articles into professional presentation slides fo
 The slides-creator skill transforms your technical articles into polished presentation slide decks. Write once as an article, generate slides automatically for multiple platforms.
 
 **What it does:**
+
 - Extracts content from markdown articles in `/docs` folder
 - Intelligently maps article sections to slide layouts
 - Generates PowerPoint (.pptx) files for offline use
@@ -21,6 +22,7 @@ The slides-creator skill transforms your technical articles into polished presen
 - Respects humanization standards throughout
 
 **Perfect for:**
+
 - Turning articles into conference talk slides
 - Creating presentation decks without manual slide design
 - Maintaining sync between articles and presentations
@@ -62,7 +64,7 @@ Result: Live Google Slides link in your console
 slides-creator convert docs/articles/my-first-presentation.md --output speaker-deck
 ```
 
-Result: https://speakerdeck.com/wallacese/my-first-presentation
+Result: <https://speakerdeck.com/wallacese/my-first-presentation>
 
 ---
 
@@ -112,6 +114,7 @@ The skill parses your article and creates slides:
 5. **Conclusion Slide** ← Key takeaways + call-to-action
 
 **Article Section** → **Slides Generated**
+
 - 1 H2 section (500 words) → 2-3 content slides
 - 1 code block → 1 code slide
 - 1 diagram/image → 1 visual slide
@@ -122,6 +125,7 @@ The skill parses your article and creates slides:
 ## Slide Types
 
 ### 1. Title Slide
+
 - Article title (large, prominent)
 - Author name + social links (from .env)
 - Publication date
@@ -131,6 +135,7 @@ The skill parses your article and creates slides:
 **Used for**: First slide of every presentation
 
 ### 2. Content Slides
+
 - Section heading (H2 from article)
 - Body text (condensed to 100 words max)
 - Optional bullet points (5 max)
@@ -139,6 +144,7 @@ The skill parses your article and creates slides:
 **Used for**: Main content sections
 
 ### 3. Code Slides
+
 - Language-syntax-highlighted code (15-20 lines max)
 - File path/context label
 - Explanation above or below code
@@ -147,6 +153,7 @@ The skill parses your article and creates slides:
 **Used for**: Code examples and implementations
 
 ### 4. Visual Slides
+
 - Full-width image or diagram
 - Caption and description
 - Source/attribution (from article)
@@ -155,6 +162,7 @@ The skill parses your article and creates slides:
 **Used for**: Architecture diagrams, illustrations, screenshots
 
 ### 5. Conclusion Slide
+
 - Section heading: "Key Takeaways"
 - 3-5 bullet points with main concepts
 - Call-to-action: Links to article, GitHub, LinkedIn
@@ -200,16 +208,19 @@ SPEAKER_DECK_AUTO_PUBLISH=false
 ### Theme Options
 
 **Light Theme** - Professional, corporate
+
 - White background, dark text
 - Blue primary color (#2E5090)
 - Great for: Business/corporate presentations
 
 **Dark Theme** - Modern, engaging
+
 - Dark background, light text
 - Teal accent color (#4ECDC4)
 - Great for: Tech conferences
 
 **Technical Theme** - Code-focused (default)
+
 - Dark blue-black background (#0D1117)
 - Light blue text (#58A6FF)
 - Syntax-highlighted code blocks
@@ -230,6 +241,7 @@ slides-creator convert docs/articles/spring-boot-patterns.md \
 ```
 
 **Output:**
+
 - `presentations/spring-boot-patterns/spring-boot-patterns.pptx`
 - `presentations/spring-boot-patterns/speaker_notes.txt`
 - `presentations/spring-boot-patterns/metadata.json`
@@ -246,6 +258,7 @@ slides-creator convert docs/articles/rest-api-design.md --output all
 ```
 
 **Output:**
+
 - `presentations/rest-api-design/rest-api-design.pptx` (PowerPoint)
 - `presentations/rest-api-design/rest-api-design-gslides.txt` (Google Slides URL)
 - `presentations/rest-api-design/rest-api-design-speaker-deck.txt` (Speaker Deck URL)
@@ -303,11 +316,13 @@ slides-creator convert docs/articles/my-talk.md \
 ### Linking Presentations Back to Articles
 
 Every presentation automatically includes:
+
 - Link to original article in conclusion slide
 - Article URL in Speaker Deck metadata
 - Reference in speaker notes: "Full details in article..."
 
 Viewers can:
+
 - Read full article for detailed analysis
 - View code on GitHub (article links)
 - Subscribe to newsletter (from article sign-off)
@@ -319,6 +334,7 @@ Viewers can:
 ### 1. Structure Your Article for Slides
 
 **Good article structure for slides:**
+
 ```markdown
 ## Section Title (becomes slide group)
 [2-3 sentences intro]
@@ -338,6 +354,7 @@ Details about implementation...
 ### 2. Keep Code Blocks Focused
 
 **Instead of:** 50-line production code
+
 ```java
 public class UserService {
   private UserRepository repo;
@@ -346,6 +363,7 @@ public class UserService {
 ```
 
 **Do this:** Show the essence (10-15 lines)
+
 ```java
 public User findByEmail(String email) {
   return repo.findByEmail(email)
@@ -379,6 +397,7 @@ The system consists of three layers:
 ```
 
 → Generates:
+
 - Title slide: "Architecture Overview"
 - Visual slide: Rendered diagram
 - Content slide: Explanation
@@ -425,48 +444,63 @@ Learned from a full deck build; follow this layout for a talk that goes to all t
 ## Troubleshooting
 
 ### Problem: Articles not found
+
 ```
 Error: Could not find article: docs/articles/my-file.md
 ```
+
 **Solution:**
+
 - Check file path: articles should be in `docs/articles/` folder
 - Use full path: `docs/articles/my-file.md` (not just `my-file.md`)
 - File must be `.md` (markdown format)
 
 ### Problem: Code blocks not rendering
+
 ```
 Generated slides have code blocks as plain text
 ```
+
 **Solution:**
+
 - Code blocks must have language specifier: \`\`\`java (not just \`\`\`)
 - Supported languages: java, python, javascript, go, rust, sql, etc.
 - Check that code block is properly closed with \`\`\`
 
 ### Problem: Images not showing in PPTX
+
 ```
 PowerPoint has broken image links
 ```
+
 **Solution:**
+
 - Use relative image paths in article: `![alt](./images/diagram.png)`
 - Store images in `docs/images/` folder
 - Ensure images exist before generating slides
 - Supported formats: PNG, JPG, GIF, SVG
 
 ### Problem: Google Slides auth failing
+
 ```
 Error: Authentication failed - invalid credentials
 ```
+
 **Solution:**
+
 - Set up Google Cloud service account (see README.md in this skill folder)
 - Download JSON credentials file
 - Set path in .env: `GOOGLE_SLIDES_SERVICE_ACCOUNT_JSON=./path/to/credentials.json`
 - Verify .env is not committed (should be in .gitignore)
 
 ### Problem: Speaker Deck upload not working
+
 ```
 Error: Could not publish to Speaker Deck
 ```
+
 **Solution:**
+
 - Speaker Deck takes PDF only: export with `make slides` (or Marp `--pdf --allow-local-files`) and upload the PDF via `article-cross-posting`, on the user's command
 - Then obtain public URL and add to article
 

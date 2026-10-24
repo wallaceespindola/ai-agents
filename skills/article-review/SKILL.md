@@ -21,6 +21,7 @@ prose, and unwilling to ship code that doesn't run.
 ## When to Use This Skill
 
 Use this skill when:
+
 - A draft is complete and the next step would be publishing
 - The technical-writer agent reaches step 4 (self-review) of its workflow
 - An article is being adapted for cross-posting and each version needs its own gate
@@ -75,8 +76,8 @@ catches the subtle ones.
 - [ ] Headings are scannable; a reader skimming H2s gets the article's shape
 - [ ] Summary or takeaways section present near the end
 - [ ] Sign-off block present with GitHub and LinkedIn links for Wallace Espindola:
-  - GitHub: https://github.com/wallaceespindola/
-  - LinkedIn: https://www.linkedin.com/in/wallaceespindola/
+  - GitHub: <https://github.com/wallaceespindola/>
+  - LinkedIn: <https://www.linkedin.com/in/wallaceespindola/>
 - [ ] Trade-offs or limitations acknowledged — no solution presented as flawless
 - [ ] No walls of text; paragraphs broken where a reader would need a breath
 

@@ -10,12 +10,14 @@ description: Write curated technical articles for DZone publication platform, op
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
+
 - Cite credible sources with links (e.g., "According to the latest Stack Overflow Developer Survey [link], X% of developers..." — use the actual figure from the source)
 - Use your own data if you have it (e.g., "In production systems I've built...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many development teams prefer..." instead of "80% of teams prefer...")
 
 ❌ **DON'T:**
+
 - Make up percentages or statistics
 - Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
 - Estimate statistics without clearly stating they are estimates
@@ -47,6 +49,7 @@ Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment c
 ## When to Use This Skill
 
 Use this skill when:
+
 - Writing articles for DZone publication
 - Creating content for enterprise developer audience
 - Publishing practical code tutorials and patterns
@@ -57,6 +60,7 @@ Use this skill when:
 ### Multi-Platform Strategy
 
 When publishing same technical concept to multiple platforms (DZone, InfoQ, Medium, etc.):
+
 - ✅ Use IDENTICAL code snippets linked to same GitHub repo (for consistency)
 - ✅ Create UNIQUE title optimized for DZone audience (different from other platforms)
 - ✅ Write UNIQUE content/narrative tailored to DZone's technical depth preference
@@ -65,6 +69,7 @@ When publishing same technical concept to multiple platforms (DZone, InfoQ, Medi
 - ✅ Different hook and community engagement call-to-action
 
 **Example Multi-Platform Article:**
+
 ```
 GitHub Repo: microservices-patterns-java (single source of truth for code)
 
@@ -96,6 +101,7 @@ Result: All versions link to IDENTICAL code in same repo
 ```
 
 **Benefits:**
+
 - Readers from all platforms reference same, well-maintained code
 - Single GitHub repo becomes canonical source
 - Increases code repository stars/visibility
@@ -117,6 +123,7 @@ Result: All versions link to IDENTICAL code in same repo
 ## DZone Article Specifications
 
 ### Length & Structure
+
 - **MINIMUM**: **1000 words** (baseline requirement; DZone reserves right to reject if inadequate depth/value)
 - **Preferred range**: 1,500-4,000 words (technical in-the-weeds content)
 - **Target reading time**: 5-12 minutes
@@ -133,6 +140,7 @@ Result: All versions link to IDENTICAL code in same repo
 - **Key tip**: If covering multiple ideas, consider splitting into a series instead of one long article
 
 **Multimedia submissions require accompanying text:**
+
 - **Podcasts**: Include 800+ word text summary
 - **YouTube videos**: Include 800+ word text summary
 - **Presentations**: Include 800+ word text summary
@@ -140,6 +148,7 @@ Result: All versions link to IDENTICAL code in same repo
 ### DZone Article Types
 
 #### Tutorials/How-To
+
 - Step-by-step implementation
 - Production-ready code
 - Real-world context
@@ -147,6 +156,7 @@ Result: All versions link to IDENTICAL code in same repo
 - **Best for**: New frameworks, libraries, architectural patterns
 
 #### Refactoring Guides
+
 - Show problematic code
 - Explain why it's problematic
 - Present improved solution
@@ -154,6 +164,7 @@ Result: All versions link to IDENTICAL code in same repo
 - **Best for**: Best practices, modernization, technical debt
 
 #### Research & Analysis
+
 - Data-driven insights
 - Survey results or study findings
 - Industry trends
@@ -161,6 +172,7 @@ Result: All versions link to IDENTICAL code in same repo
 - **Best for**: Thought leadership, industry perspectives
 
 #### Interview/Expert Insights
+
 - Q&A format
 - Expert perspective
 - Lessons from practitioners
@@ -168,6 +180,7 @@ Result: All versions link to IDENTICAL code in same repo
 - **Best for**: Knowledge sharing, community building
 
 #### Pattern Explanation
+
 - Detailed pattern description
 - When to use / when not to use
 - Implementation example
@@ -177,6 +190,7 @@ Result: All versions link to IDENTICAL code in same repo
 ### Headline Strategy for DZone
 
 ✅ **Good DZone headlines:**
+
 - "Microservices Patterns: When to Use Circuit Breakers vs. Bulkheads"
 - "Modern Java Concurrency: Virtual Threads and Structured Concurrency Explained"
 - "Building Resilient Systems: Lessons From Netflix's Chaos Engineering"
@@ -184,6 +198,7 @@ Result: All versions link to IDENTICAL code in same repo
 - "Python Async/Await: Understanding the Event Loop With Real Examples"
 
 ❌ **Avoid:**
+
 - Vague: "Understanding Patterns"
 - Clickbait: "One Weird Trick Developers Don't Know"
 - Too trendy: "AI and Machine Learning: The Future is Now"
@@ -282,6 +297,7 @@ vs.
 ### Code Examples for DZone
 
 #### Guidelines
+
 - **Production-ready**: Code should be realistic, not educational simplifications
 - **Complete**: Show full context, setup and error handling
 - **Tested**: Code has been verified to work
@@ -290,6 +306,7 @@ vs.
 - **Size**: Keep examples 30-50 lines max, link to full repos for more
 
 #### Code Structure
+
 ```java
 /**
  * Production example of the pattern discussed above.
@@ -319,6 +336,7 @@ public class ResilientServiceExample {
 DZone readers strongly prefer well-designed diagrams that complement code examples. **Whenever possible, create diagrams.**
 
 ✅ **ALWAYS create diagrams for:**
+
 - Architecture or system design explanations
 - Process flows, decision trees or workflows
 - Database schema or data relationships
@@ -331,6 +349,7 @@ DZone readers strongly prefer well-designed diagrams that complement code exampl
 - Performance or scaling concepts
 
 ✅ **Best diagram types for DZone technical articles:**
+
 - **Flowchart** - Process flows, decision trees, algorithms
 - **Sequence diagram** - API/microservice interactions, request-response
 - **Architecture diagram** - System design, microservices patterns
@@ -340,6 +359,7 @@ DZone readers strongly prefer well-designed diagrams that complement code exampl
 - **Class diagram** - OOP design, domain models
 
 **Diagram Quality Standards (Non-Negotiable):**
+
 - ✅ Beautiful, professional styling and colors
 - ✅ Readable layout (max 15-20 nodes per diagram)
 - ✅ Clear, descriptive labels for all elements
@@ -352,6 +372,7 @@ DZone readers strongly prefer well-designed diagrams that complement code exampl
 - ✅ Easy to understand at a glance
 
 **When NOT to use diagrams:**
+
 - ❌ When content is purely introductory (no concepts to diagram)
 - ❌ When code example is self-explanatory (code IS the diagram)
 - ❌ If making diagram would oversimplify complex concept
@@ -362,6 +383,7 @@ DZone readers strongly prefer well-designed diagrams that complement code exampl
 **For every diagram, include a legend explaining styling:**
 
 **Markdown legend template:**
+
 ```markdown
 ## Architecture Diagram Legend
 
@@ -376,6 +398,7 @@ DZone readers strongly prefer well-designed diagrams that complement code exampl
 ```
 
 **In-diagram legend (Mermaid example):**
+
 ```mermaid
 graph TD
     Service["Service Component"]
@@ -394,6 +417,7 @@ graph TD
 ### Image Generation Workflow
 
 **Always generate images for your articles:**
+
 1. Use `article-image-generator` skill to render the featured image
 2. Create **Mermaid or PlantUML diagrams** for all conceptual content (REQUIRED when applicable)
 3. Use `image-generator-blog` for custom graphics/comparisons if needed
@@ -408,6 +432,7 @@ graph TD
 **The featured image is a required deliverable** — a DZone article is not deliverable without one. Design should reflect the article's actual content (diagram, code diff, comparison — not generic stock art).
 
 **Technical Specifications:**
+
 - **Size**: 1200x628px (DZone standard) or 1024x768px (4:3 landscape)
 - **Format**: JPG recommended for optimization
 - **File size**: 500KB-2MB (compressed)
@@ -415,12 +440,14 @@ graph TD
 - **Content**: Directly relevant to article topic
 
 **Image Generation:**
+
 - Create using `article-image-generator` skill
 - Must be original/custom (not generic stock photos)
 - Abstract, futuristic or technical aesthetic preferred
 - Professional appearance reflects article quality
 
 **Markdown Image Syntax:**
+
 ```markdown
 # Article Title
 
@@ -431,6 +458,7 @@ Article content begins here...
 ```
 
 **Save location:**
+
 ```
 article-directory/
 ├── article.md
@@ -439,6 +467,7 @@ article-directory/
 ```
 
 #### In-Article Images
+
 - **Frequency**: 2-4 images minimum (helps engagement and comprehension)
 - **Types**:
   - Architecture diagrams (use `diagram-mermaid` or `diagram-plantuml`)
@@ -452,6 +481,7 @@ article-directory/
 - **Size**: Compressed to 100-200KB each; cumulative max 5MB per article
 
 **Markdown syntax for in-article images:**
+
 ```markdown
 ## Core Concept Section
 
@@ -465,12 +495,14 @@ Here's the implementation approach...
 ```
 
 **Image generation tools to use:**
+
 - `diagram-mermaid` - For flowcharts, sequence diagrams, architecture
 - `diagram-plantuml` - For UML diagrams, component diagrams
 - `image-generator-blog` - For custom graphics, comparisons, infographics
 - `architecture-diagram` - For C4 architecture models
 
 #### Image Organization Best Practice
+
 ```
 article-project/
 ├── article.md
@@ -484,9 +516,11 @@ article-project/
 ```
 
 **Alt text requirement:**
+
 ```markdown
 ![Clear description of what diagram shows](./images/diagram-name.png)
 ```
+
 - Every image must have descriptive alt text
 - Alt text improves accessibility and SEO
 - Be specific: "Microservices architecture with service mesh" not just "diagram"
@@ -494,6 +528,7 @@ article-project/
 ## Critical DZone Policies
 
 ### AI Content Policy
+
 **No over-use of AI-generated content allowed**
 
 - ❌ **Prohibited**: Articles with over-use of AI tools (ChatGPT, Claude, etc.)
@@ -506,26 +541,31 @@ article-project/
 > "AI-generated articles tend to follow similar patterns and lack the unique voice or personal insights that resonate with readers (and yes, we can always tell!)"
 
 **Why you don't need AI to edit your articles:**
+
 - DZone's editorial team edits and polishes your content for grammar, formatting and clarity
 - Editors are trained to maintain your perspective and voice
 - Editorial team enhances your work while preserving your unique perspective
 - Your authentic voice and personal insights are what readers value most
 
 **What this means:**
+
 - All article content must be written by you, a human
 - DZone's editors will polish and refine your writing, but you must author the original content
 - Trust DZone's editorial team to enhance your work without AI assistance
 
 ### Originality & Plagiarism Policy
+
 - ✅ **Required**: Original, human-authored content
 - ❌ **Not accepted**: Articles previously published elsewhere (syndicated articles deprioritized)
 - ❌ **Plagiarism**: Copying others' words or ideas without proper attribution
 
 **Plagiarism consequences:**
+
 - **First violation**: Rejection + one warning + account flagged
 - **Further violations**: Account suspension
 
 **Check for plagiarism before submitting:**
+
 - Use free tools like SmallSEOTools to verify originality
 - Check DZone to ensure topic hasn't already been covered extensively
 - Ensure all references to external materials are properly cited
@@ -533,18 +573,23 @@ article-project/
 **Note**: DZone prefers exclusive first-publication; original articles prioritized over syndicated
 
 ### Collaborative Articles
+
 - ✅ **Allowed**: Multiple authors collaborating on one article
 - **Requirement**: Every person who worked on the article must:
   - Have their own DZone account
   - Be listed as an author in the submission
 
 ### Republishing on Other Platforms
+
 **After publication on DZone, you can republish elsewhere:**
+
 - ⏰ **Wait at least one week** before republishing elsewhere
 - 🔗 **Include canonical tag** pointing to DZone as original source:
+
   ```html
   <link rel="canonical" href="https://dzone.com/articles/[article-url]" />
   ```
+
 - **Benefits of canonical tag:**
   - Proper credit attribution
   - Boosts your visibility
@@ -554,6 +599,7 @@ article-project/
   - You're not competing with your own content
 
 ### Content Must NOT Include
+
 - ❌ **Advertising or promotional intent** - No disguised vendor marketing
 - ❌ **Marketing language or press releases**
 - ❌ **Excessive backlinks or UTM tracking links**
@@ -567,11 +613,14 @@ article-project/
 - ✅ **Professional affiliation** - May mention employer, but article must be from your perspective
 
 ### Account Suspension: What Causes It
+
 **When your account is suspended**, you can still view and read articles on DZone, but **you will NO LONGER be able to:**
+
 - Submit articles
 - Download premium publications
 
 **Behaviors that cause suspension:**
+
 - ❌ **Plagiarism** - Copying others' words/ideas without attribution (one warning, then suspension)
 - ❌ **AI-generated content** - Fully or partially AI-written articles
 - ❌ **Spam submissions** - Multiple spam submissions
@@ -583,7 +632,9 @@ article-project/
 **Note:** All comments go through moderation on DZone.
 
 ### Profile Requirements
+
 Your DZone profile MUST include:
+
 - ✅ **Real name** - Not pseudonym or company name
 - ✅ **Valid email address**
 - ✅ **Current job title**
@@ -592,7 +643,9 @@ Your DZone profile MUST include:
 - ❌ **NO company logo** - Personal branding only
 
 ### Image & Media Rights
+
 You must own or have permission for all images:
+
 - ✅ **Original images** - Created by you or your company
 - ✅ **Licensed images** - With proper licensing rights
 - ✅ **Permitted images** - Written permission from copyright holder
@@ -600,12 +653,15 @@ You must own or have permission for all images:
 - ❌ **Screenshots without attribution** - Credit original source
 
 **Multimedia submissions require accompanying text:**
+
 - **Podcasts**: Include 800+ word text summary
 - **YouTube videos**: Include 800+ word text summary
 - **Presentations**: Include 800+ word text summary
 
 ### Content Targeting
+
 DZone looks for:
+
 - ✅ **900+ words of technical, in-the-weeds content**
 - ✅ **Even balance of written text and code/diagrams**
 - ✅ **Content targeting developers directly**
@@ -613,6 +669,7 @@ DZone looks for:
 - ✅ **Real-world lessons and experience**
 
 ### Review Timeline
+
 - **Current timeline**: **30 business days**
 - **Rejection email**: Automated + potential editor notes
 - **Publication**: Typically 1-2 weeks after approval
@@ -620,9 +677,11 @@ DZone looks for:
 ### DZone Zones & Tagging
 
 #### Zone Selection (Required: 1-10 zones)
+
 Select relevant zones for your article:
 
 **Primary zones:**
+
 - Architecture
 - Big Data
 - Cloud
@@ -636,6 +695,7 @@ Select relevant zones for your article:
 - Web Development
 
 **Additional tags:**
+
 - AI/ML
 - Security
 - Testing
@@ -643,6 +703,7 @@ Select relevant zones for your article:
 - Best Practices
 
 **Good zone selection strategy:**
+
 1. Start with most relevant primary zone
 2. Add language/framework zones
 3. Add tools and techniques discussed
@@ -650,7 +711,9 @@ Select relevant zones for your article:
 5. Tag up to 10 total for good discoverability
 
 #### Article Tags (3-6)
+
 Choose tags that match DZone's curated interests:
+
 - Language/Framework: `java`, `python`, `javascript`, `spring-boot`, `react`
 - Architecture: `microservices`, `distributed-systems`, `cloud-native`
 - Practice: `devops`, `performance`, `testing`, `security`
@@ -659,7 +722,9 @@ Choose tags that match DZone's curated interests:
 **Avoid**: Too many tags, irrelevant tags, spammy tags
 
 #### Article Zone (1 selection)
+
 Select primary zone:
+
 - Cloud
 - Database
 - DevOps
@@ -676,13 +741,16 @@ Select primary zone:
 ## DZone Core Program & Contributors
 
 ### DZone Core Program
+
 **Priority consideration for established, expert contributors:**
+
 - **Recognition**: Title for most engaged and authoritative experts
 - **Priority**: Core articles reviewed and published faster
 - **Support**: Direct access to editorial team
 - **Benefits**: Higher visibility, featured placement potential
 
 **Characteristics of Core members:**
+
 - Demonstrate ability to translate complex technical topics into accessible content
 - Consistent quality, original perspective, deep technical knowledge
 - Active community engagement and responsiveness to feedback
@@ -691,6 +759,7 @@ Select primary zone:
 ### DZone Editorial Review Process
 
 #### Before Submission
+
 - [ ] Article is minimum 1200 words (preferably 1,500-4,000)
 - [ ] Contains even balance of text and code/diagrams
 - [ ] 2-4 production-grade code examples (tested and working)
@@ -706,6 +775,7 @@ Select primary zone:
 - [ ] All images owned or properly licensed
 
 #### Submission Process
+
 1. **Create DZone account** (must include real name, job title, valid email)
 2. **Use Contribute section** to start submission
 3. **Upload article**: Copy/paste or upload markdown/document
@@ -718,6 +788,7 @@ Select primary zone:
 #### Editorial Review Process
 
 **Current Status:**
+
 - **Overall queue timeline**: **30 business days** (extremely high volume, 400+ articles often in queue at once)
 - **General timeframe**: 7-12 business days typically
 - **Prioritization order**:
@@ -726,16 +797,20 @@ Select primary zone:
   3. **Oldest articles in queue** - First-in, first-out for non-Core original content
 
 **Processing stages:**
+
 - All articles go through moderation process and editorial editing
 - Timeline varies based on: article quality, article length, submission volume
 - Editorial team polishes grammar, formatting, clarity while maintaining author voice
 
 **Publication after approval:**
+
 - Typically 1-2 weeks after final approval
 - Automated email notification when published or rejected
 
 #### What Causes Review Delays
+
 These issues slow down the review process:
+
 - ❌ **Syndicated articles** (original articles prioritized over syndicated)
 - ❌ **Missing images or alt text** (images required, alt text for accessibility)
 - ❌ **Grammar and spelling mistakes** (throughout the article)
@@ -743,21 +818,24 @@ These issues slow down the review process:
 - ❌ **Articles too long for publication** (split multi-topic articles into series)
 
 #### If Rejected
+
 - **Automated email**: Lists specific reasons for rejection with detailed explanation
 - **Editor notes**: May include specific feedback from the editor
 - **Review guidelines**: Refer back to these submission guidelines for clarification
 - **Resubmit**: You can revise and resubmit or create new article
-- **Support**: Don't hesitate to reach out to **editors@dzone.com** for help
+- **Support**: Don't hesitate to reach out to **<editors@dzone.com>** for help
 
 ### Topics DZone Publishes Well
 
 **Content types that do well on DZone:**
+
 - ✅ **Tutorials** - Step-by-step with production-grade code
 - ✅ **Cheat sheets and resources** - Quick reference guides
 - ✅ **Career and lifestyle advice** - For technical professionals
 - ✅ **Best practices** - Drawn from real experience
 
 **High-value technical topics:**
+
 1. **Production patterns**: Things that work in real systems at scale
 2. **Modernization**: Updating legacy systems thoughtfully (with lessons)
 3. **Architecture decisions**: Why companies chose certain paths + trade-offs
@@ -772,6 +850,7 @@ These issues slow down the review process:
 12. **Distributed systems**: Event-driven, microservices, eventual consistency
 
 **Topics DZone DOES NOT ACCEPT (explicit off-topic list):**
+
 - ❌ **SEO and search marketing**
 - ❌ **UI/UX design principles** (design aesthetics, not UX development)
 - ❌ **General business strategies or topics**
@@ -782,6 +861,7 @@ These issues slow down the review process:
 - ❌ **Unoriginal or duplicate articles** (check DZone first; check other platforms)
 
 **Other topics to avoid:**
+
 - ❌ **Generic "getting started"** tutorials (unless unique angle or depth)
 - ❌ **Pure hype coverage** (AI, blockchain, web3 without substance)
 - ❌ **Vendor marketing** (disguised promotions or single-tool focus)
@@ -791,6 +871,7 @@ These issues slow down the review process:
 - ❌ **Unverified claims** (DZone expects evidence and metrics)
 
 **What DZone editors look for:**
+
 - ✅ **Technical depth** - In-the-weeds content, not surface level
 - ✅ **Production experience** - Real lessons from real systems
 - ✅ **Practical actionability** - Developers can apply immediately
@@ -812,6 +893,7 @@ These issues slow down the review process:
 ### Writing Tips for DZone
 
 #### Hook Readers Immediately
+
 - **First sentence**: Must grab attention and promise value
 - **Problem/solution framing**: Show the challenge upfront
 - **Expertise signal**: Establish credibility early
@@ -820,18 +902,21 @@ These issues slow down the review process:
 "After scaling a system from 100 to 10,000 concurrent users, we discovered that our database optimization strategy was solving the wrong problem. Here's what we learned about identifying actual bottlenecks."
 
 #### Back Up Claims
+
 - **Metrics**: Include actual numbers, benchmarks
 - **Data**: Reference studies or surveys
 - **Experience**: Ground advice in real-world context
 - **Links**: Reference authoritative sources
 
 #### Balance Theory and Practice
+
 - **Why it matters** (theory/reasoning)
 - **How to do it** (practical implementation)
 - **When to use it** (business/technical context)
 - **What we learned** (real experience)
 
 #### Use Examples Strategically
+
 - **First example**: Simplest case, easiest to understand
 - **Second example**: More complex, realistic scenario
 - **Real-world example**: From production system
@@ -840,6 +925,7 @@ These issues slow down the review process:
 ### Common DZone Mistakes to Avoid
 
 **CRITICAL: Don't violate DZone's core policies**
+
 - ❌ **AI-written content**: Any over use of AI generation = rejection + possible account suspension
 - ❌ **Previously published**: Posted on blog, Medium, Dev.to, LinkedIn first
 - ❌ **Non-human author**: Submitted by company account or non-author
@@ -847,6 +933,7 @@ These issues slow down the review process:
 - ❌ **Image rights violation**: Using images without proper permissions
 
 **Content & quality mistakes**
+
 - ❌ **Insufficient depth**: DZone readers expect substance and technical rigor
 - ❌ **Too short**: Under 1000 words unless truly exceptional
 - ❌ **Poor code balance**: All text or all code; DZone wants even balance
@@ -861,6 +948,7 @@ These issues slow down the review process:
 - ❌ **No real examples**: Case studies and production lessons expected
 
 **Submission & process mistakes**
+
 - ❌ **Wrong profile info**: Company account, no real name or no job title
 - ❌ **Missing zones/tags**: Under-categorized articles won't be discovered
 - ❌ **No author bio**: Credibility signaling important for DZone
@@ -875,6 +963,7 @@ These issues slow down the review process:
 Opening: "Circuit breakers have saved us from cascading failures three times in production. Here's how they work and the exact scenarios where they matter."
 
 Structure:
+
 1. Background (why Netflix open-sourced Hystrix)
 2. Problem (cascading failures, what they cost)
 3. Pattern explanation (states and transitions)
@@ -891,6 +980,7 @@ Result: Likely to rank well, get bookmarks, generate discussion
 Opening: "We spent a year breaking apart a 10-year-old monolith. This is what actually worked (and what didn't)."
 
 Structure:
+
 1. Context (company size, technology, constraints)
 2. Why we needed to change (business and technical reasons)
 3. Phase 1 (decomposition strategy)
@@ -904,17 +994,20 @@ Result: Practical, builds credibility, generates discussion
 ### Publication Tips
 
 #### Timing
+
 - **Avoid Mondays**: More competition
 - **Tuesday-Thursday**: Better distribution
 - **Avoid Fridays**: Less engagement over weekends
 
 #### Promotion
+
 - **Share on Twitter**: Tag DZone and relevant communities
 - **LinkedIn**: Professional perspective and network
 - **Dev communities**: Reddit, HackerNews (only if genuinely valuable)
 - **Your network**: Email, Slack, Discord communities
 
 #### Engagement
+
 - **Monitor comments**: Respond to questions and feedback
 - **Answer criticism**: Engaging debate increases reach
 - **Thank for shares**: Build community relationship
@@ -923,6 +1016,7 @@ Result: Practical, builds credibility, generates discussion
 ### DZone Publishing Checklist
 
 **CRITICAL: Before you start**
+
 - [ ] **Article is human-written** (no over-use AI generation)
 - [ ] **Original content** (not published on blog, Medium, Dev.to or elsewhere)
 - [ ] **No advertising intent** (pure educational/informational)
@@ -930,6 +1024,7 @@ Result: Practical, builds credibility, generates discussion
 - [ ] **No company profile** (personal author account with real name)
 
 **Content quality**
+
 - [ ] Article is 1000+ words (rarely accepted below 1000)
 - [ ] Optimal length 1,500-4,000 words
 - [ ] Contains **even balance of text and code** (not 20-30% code)
@@ -942,6 +1037,7 @@ Result: Practical, builds credibility, generates discussion
 - [ ] Professional writing with clear structure
 
 **Article structure & SEO**
+
 - [ ] Headline is specific and compelling (60-80 chars)
 - [ ] Article has 4-7 well-defined sections with H2/H3 headers
 - [ ] Strong opening hook (grabs attention, promises value)
@@ -952,6 +1048,7 @@ Result: Practical, builds credibility, generates discussion
 - [ ] Links to authoritative sources and references
 
 **Metadata & discoverability**
+
 - [ ] 1-10 zones selected (primary zone + related zones)
 - [ ] 3-6 relevant tags selected (language, framework, topic, type)
 - [ ] Author bio (100-150 words) including expertise areas
@@ -960,6 +1057,7 @@ Result: Practical, builds credibility, generates discussion
 - [ ] Any conflicts of interest or affiliations disclosed
 
 **Professional standards**
+
 - [ ] No grammatical errors or typos
 - [ ] Consistent voice and tone throughout
 - [ ] No marketing language or vendor promotion
@@ -968,6 +1066,7 @@ Result: Practical, builds credibility, generates discussion
 - [ ] Professional, credible writing quality
 
 **Pre-submission verification**
+
 - [ ] Banner image created and attached
 - [ ] Unique, never-before-published content
 - [ ] Verified all code examples work as described
@@ -979,6 +1078,7 @@ Result: Practical, builds credibility, generates discussion
 ---
 
 This skill should be combined with (in order of importance):
+
 - **diagram-mermaid** - Create Mermaid diagrams (REQUIRED - use whenever conceptually relevant)
 - **diagram-plantuml** - Create PlantUML diagrams (REQUIRED - for complex UML/architecture)
 - **image-generator-blog** - Featured images and custom graphics (REQUIRED)
@@ -995,6 +1095,7 @@ This skill should be combined with (in order of importance):
 Before finalizing your DZone article:
 
 **Mermaid/PlantUML Diagrams (REQUIRED When Applicable):**
+
 - [ ] Mermaid or PlantUML diagrams included for all conceptual content
 - [ ] Each diagram has clear, detailed legend explaining colors/symbols/notation
 - [ ] Diagrams are beautiful, professional and well-designed
@@ -1008,12 +1109,14 @@ Before finalizing your DZone article:
 - [ ] Diagram source code saved in `/images/` (`.mmd` or `.puml` files)
 
 **Featured Image:**
+
 - [ ] Featured image created and saved to `/images/featured-image.jpg`
 - [ ] Featured image is 1200x628px (DZone standard)
 - [ ] Featured image compressed to 500KB-2MB
 - [ ] Generated using `article-image-generator` skill (original, not stock)
 
 **Supporting Diagrams/Graphics:**
+
 - [ ] 2-4 supporting diagrams created and saved to `/images/` folder
 - [ ] All diagrams/images referenced with relative paths: `./images/image-name.png`
 - [ ] All diagrams/images have descriptive alt text
@@ -1022,23 +1125,27 @@ Before finalizing your DZone article:
 - [ ] Image file names are descriptive, lowercase, with hyphens: `diagram-architecture-flow.png`
 
 **Markdown Formatting:**
-- [ ] Mermaid/PlantUML code blocks properly formatted with ```mermaid or ```plantuml
+
+- [ ] Mermaid/PlantUML code blocks properly formatted with `` ```mermaid `` or `` ```plantuml ``
 - [ ] Legend provided below every diagram
 - [ ] All diagrams have figure captions:
+
   ```markdown
   ```mermaid
   [diagram code]
   ```
 
   *Figure 1: Microservices architecture showing service communication.*
+
   ```
 - [ ] Markdown image syntax correct: `![description](./images/filename.png)`
+
 - [ ] All diagrams use consistent professional style/branding
 
 ---
 
 **Contact DZone Editorial Team:**
-📧 **editors@dzone.com** - For questions, feedback or submission assistance
+📧 **<editors@dzone.com>** - For questions, feedback or submission assistance
 
 ---
 

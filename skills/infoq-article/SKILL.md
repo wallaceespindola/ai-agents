@@ -10,6 +10,7 @@ description: Write research-informed, editorial articles for InfoQ publication t
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
+
 - Cite credible sources with links (e.g., "According to the latest CNCF Annual Survey [link], X% of organizations..." — use the actual figure from the source)
 - Reference actual research studies and whitepapers
 - Use your own data if you have it with appropriate context
@@ -17,6 +18,7 @@ description: Write research-informed, editorial articles for InfoQ publication t
 - Use qualitative statements instead (e.g., "Many organizations adopt..." instead of "80% of organizations adopt...")
 
 ❌ **DON'T:**
+
 - Make up percentages or statistics
 - Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
 - Estimate statistics without clearly stating they are estimates
@@ -43,6 +45,7 @@ Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment c
 ## When to Use This Skill
 
 Use this skill when:
+
 - Writing research-driven architecture analysis
 - Creating articles on industry trends and their implications
 - Developing case studies from real organizations
@@ -55,6 +58,7 @@ Use this skill when:
 ### Multi-Platform Strategy
 
 When publishing same technical concept to multiple platforms (InfoQ, DZone, Medium, etc.):
+
 - ✅ Use IDENTICAL code snippets linked to same GitHub repo
 - ✅ Create UNIQUE title optimized for InfoQ (different from other platforms)
 - ✅ Write UNIQUE content/narrative tailored to InfoQ's audience
@@ -63,6 +67,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 - ✅ Different hook and call-to-action from other versions
 
 **Example:**
+
 - GitHub Repo: `microservices-patterns-java`
 - InfoQ version title: "Event-Driven Microservices: Trade-offs and Real-World Implementation"
 - DZone version title: "Building Event-Driven Systems: Practical Patterns for Production"
@@ -72,6 +77,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 ## InfoQ Platform Overview
 
 **InfoQ** is a curated publication platform for software architects and senior engineers. Unlike Medium or Dev.to, InfoQ has:
+
 - Editorial review and curation (accepts ~30-40% of submissions)
 - Audience of 100k+ senior engineers and architects
 - High-visibility newsletter feature
@@ -82,6 +88,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 ## Article Specifications for InfoQ
 
 ### Length & Structure
+
 - **Optimal length**: 2,000-3,000 words
 - **Range**: 1,500-4,000 words max
 - **Reading time**: 8-15 minutes
@@ -92,6 +99,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 ### Tone & Voice
 
 **Editorial, analytical, research-informed**
+
 - Neutral, objective tone (almost journalistic)
 - Strong focus on why something matters to industry
 - Evidence and data-driven reasoning
@@ -99,6 +107,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 - Professional, credible voice
 
 **Tone guidelines**:
+
 - ✅ "The industry is shifting toward X and here's why..."
 - ✅ "[Named, linked study] found that organizations using X see Y benefit..."
 - ✅ "This architectural choice has trade-offs: A, B, and C..."
@@ -116,6 +125,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 **RULE: Include Mermaid or PlantUML diagrams whenever conceptually relevant:**
 
 ✅ **ALWAYS create diagrams for:**
+
 - Architecture or system design explanations
 - Process flows or decision trees
 - Data structures or relationships
@@ -126,6 +136,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 - Component relationships or dependencies
 
 ✅ **Diagram types best for InfoQ articles:**
+
 - Flowchart (process flows, decision trees)
 - Sequence diagram (API/interaction flows)
 - Architecture diagram (system design)
@@ -135,6 +146,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 - Class diagram (OOP design)
 
 **Diagram Quality Standards:**
+
 - Beautiful, professional styling
 - Readable and not cluttered (max 15-20 nodes)
 - Clear labels for every element
@@ -144,6 +156,7 @@ When publishing same technical concept to multiple platforms (InfoQ, DZone, Medi
 - Matches and reinforces article narrative
 
 **Markdown syntax for embedding Mermaid diagrams:**
+
 ```markdown
 ## Section Explaining Concept
 
@@ -161,8 +174,10 @@ graph TD
 ```
 
 Legend:
+
 - Blue boxes = Process components
 - Solid arrows = Synchronous flow
+
 ```
 
 ### Creating Diagram Legends
@@ -182,9 +197,11 @@ Legend:
 ```
 
 ### Featured Image (Required)
+
 Deliver a proposed banner/featured image with every submission — the article is not deliverable without one; InfoQ's editors control final art and may replace it. Design should reflect the article's actual content (diagram, comparison, architecture — not generic stock art).
 
 **Specifications:**
+
 - **Dimensions**: 1024x768px (4:3 landscape) or similar landscape ratio
 - **Format**: JPG recommended for web optimization
 - **File size**: 500KB-2MB (optimized)
@@ -192,12 +209,14 @@ Deliver a proposed banner/featured image with every submission — the article i
 - **Style**: Clean, professional, technical aesthetic
 
 **Image Generation Process:**
+
 1. Use `article-image-generator` skill to render the featured image (JPEG)
 2. Generate image related to main topic or key concept
 3. Save to `/images` folder in article directory
 4. Reference in markdown: `![Article title](./images/featured-image.jpg)`
 
 **Image Placement in Markdown:**
+
 ```markdown
 # [Article Title]
 
@@ -207,21 +226,25 @@ Deliver a proposed banner/featured image with every submission — the article i
 ```
 
 ### In-Article Images
+
 Include 1-3 supporting diagrams or visualizations:
 
 **When to use diagrams:**
+
 - ✅ System architecture diagrams
 - ✅ Concept flowcharts
 - ✅ Comparison matrices or decision trees
 - ✅ Timeline or evolution diagrams
 
 **How to create:**
+
 - Use `diagram-mermaid` or `diagram-plantuml` for technical diagrams
 - Use `image-generator-blog` for custom graphics or comparisons
 - Save all images to `/images` folder
 - Use descriptive filenames: `diagram-architecture-pattern.png`
 
 **Markdown syntax for in-article images:**
+
 ```markdown
 ## Section Title
 
@@ -231,6 +254,7 @@ Include 1-3 supporting diagrams or visualizations:
 ```
 
 ### Image Organization
+
 ```
 article-directory/
 ├── README.md or article.md
@@ -312,6 +336,7 @@ AUTHOR BIO (100-150 words)
 InfoQ requires **five key takeaways** as complete, actionable sentences (not bullet points):
 
 **Format**:
+
 ```
 Key Takeaway 1: [Complete sentence explaining concrete insight,
    benefit or learning that architects can act on]
@@ -327,6 +352,7 @@ Key Takeaway 5: [Guidance on when to apply or consider]
 ```
 
 **Example**:
+
 ```
 Key Takeaway 1: Event-driven architecture reduces coupling between
    microservices, enabling independent scaling and faster feature
@@ -352,6 +378,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 ## Topics That Work Well on InfoQ
 
 ### Software Architecture
+
 - Microservices patterns and trade-offs
 - Event-driven vs. request-driven architecture
 - Distributed systems architecture
@@ -360,6 +387,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 - Cloud-native patterns
 
 ### Industry Analysis
+
 - Emerging technology trends (AI, cloud, DevOps)
 - Developer productivity research
 - Security in distributed systems
@@ -367,6 +395,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 - Database scaling approaches
 
 ### Case Studies
+
 - How Netflix scaled to millions of concurrent streams
 - Airbnb's journey to microservices
 - Amazon's architectural evolution
@@ -375,6 +404,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 - Any large-scale system evolution
 
 ### Distributed Systems
+
 - Consensus algorithms explained
 - CAP theorem in practice
 - Consistency patterns
@@ -383,6 +413,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 - Byzantine fault tolerance
 
 ### Practical Patterns
+
 - Circuit breaker patterns
 - Event sourcing implementations
 - CQRS (Command Query Responsibility Segregation)
@@ -391,6 +422,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 - API gateway patterns
 
 ### Performance & Reliability
+
 - Database scaling strategies
 - Caching patterns and trade-offs
 - Load balancing approaches
@@ -401,6 +433,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 ## Research & Evidence Requirements
 
 ### What InfoQ Expects
+
 - **Data-backed claims**: Benchmarks, metrics, research findings
 - **Real examples**: Named organizations and specific implementations
 - **Industry context**: Why this matters now
@@ -433,6 +466,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 ## Content Quality Standards
 
 ### Technical Accuracy
+
 - ✅ Verify all claims with data or references
 - ✅ Test concepts where applicable
 - ✅ Cite authoritative sources
@@ -440,6 +474,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 - ✅ Acknowledge when things are evolving/uncertain
 
 ### Clarity for Decision-Makers
+
 - ✅ Explain "why" before "how"
 - ✅ Provide context for business impact
 - ✅ Be clear on when this applies
@@ -447,6 +482,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 - ✅ Address team/process implications
 
 ### Originality & Perspective
+
 - ✅ Bring unique angle or synthesis
 - ✅ Add novel analysis or perspective
 - ✅ Combine multiple sources into coherent view
@@ -457,7 +493,7 @@ Key Takeaway 5: Most teams underestimate operational complexity; plan
 
 ### What to Include in Email
 
-**Send to**: editors@infoq.com
+**Send to**: <editors@infoq.com>
 
 **Subject**: [Article Title] - InfoQ Submission
 
@@ -502,6 +538,7 @@ LinkedIn: [your profile URL]
 ## Important Guidelines
 
 ### Required
+
 - ✅ **Original content** - Not published elsewhere for free (InfoQ requires first-publication rights)
 - ✅ **Editorial fit** - Timely, educational, practical, marketing-free
 - ✅ **Five takeaways** - Must be complete sentences with specific, actionable insights
@@ -511,14 +548,18 @@ LinkedIn: [your profile URL]
 - ✅ **AI disclosure** - Must disclose any generative AI usage
 
 ### Content Originality Policy
+
 **CRITICAL**: InfoQ requires **original content not previously published** elsewhere for free access:
+
 - ❌ **Not accepted**: Articles already published on Medium, Dev.to, blogs, LinkedIn for free
 - ❌ **Not accepted**: Cross-posts from other free platforms
 - ✅ **Acceptable**: Unpublished articles, original synthesis, unique analysis
 - **Note**: After 4-week exclusivity period ends, you can republish with attribution
 
 ### AI Disclosure & Usage Policy
+
 **Permitted AI uses** (must be disclosed):
+
 - ✅ Brainstorming and ideation
 - ✅ Feedback on drafts
 - ✅ Grammar and clarity improvements
@@ -526,11 +567,13 @@ LinkedIn: [your profile URL]
 - ✅ Support tool for research and outlining
 
 **Disclosure requirement**:
+
 - Disclose all AI tools used and their specific purposes in submission email
 - Example: "I used Claude for grammar review and title suggestions on 3 drafts"
 - Substantial AI-assisted articles receive standardized reader disclosure notices on publication
 
 ### Publishing Rights & Copyright
+
 - **Exclusive**: InfoQ gets 4-week exclusive publishing rights from publication date
 - **After 4 weeks**: You can republish on blog, Medium, Dev.to, LinkedIn, Substack
 - **Attribution required**: Include proper attribution: *"This article was originally published on InfoQ on [date]"*
@@ -539,7 +582,9 @@ LinkedIn: [your profile URL]
 - **Republishing limitations**: Summaries + links allowed; full reprinting of InfoQ articles elsewhere requires permission
 
 ### Image Copyright & Legal Liability
+
 **CRITICAL RESPONSIBILITY**: You must own legal rights to all imagery:
+
 - ✅ Original images you created
 - ✅ Images with permissive licenses (CC0, Creative Commons, etc.)
 - ✅ Images with written permission from copyright holder
@@ -547,12 +592,14 @@ LinkedIn: [your profile URL]
 - ❌ Images from Google Images without license verification
 
 **Legal responsibility**:
+
 - **Author assumes full legal and financial responsibility** for copyright compliance
 - **Violations trigger**: Immediate article removal + potential scrutiny of future submissions
 - **Risk**: Copyright claims, takedown notices, legal action from copyright holders
 - **Best practice**: Document all image sources and permissions before submission
 
 ### Timeline Expectations
+
 - Concept review: ~5 business days
 - Technical review with feedback: 5-10 business days
 - Revisions and approval: 5-10 business days
@@ -562,30 +609,39 @@ LinkedIn: [your profile URL]
 ## Example: InfoQ Article Structure
 
 ### Article Title
+
 "Distributed Event Processing at Scale: Learning From Netflix's 500M Daily Streams"
 
 ### Opening (Context)
+
 As video streaming platforms scale to hundreds of millions of concurrent users, traditional request-response architectures break down. Netflix, Disney+, and YouTube process billions of events daily, each requiring immediate processing, aggregation and analysis. This analysis examines how Netflix built its event-driven architecture, why event sourcing became critical and the operational lessons applicable to enterprise systems at scale.
 
 ### Section 1: Industry Context
+
 The shift toward event-driven architecture stems from specific business needs: real-time analytics, user experience personalization and system resilience at global scale. Research from [cite study] shows organizations using event-driven approaches reduce time-to-insight by 60% and improve system resilience...
 
 ### Section 2: Architecture Patterns
+
 Event-driven systems use publish-subscribe messaging to decouple producers from consumers. Netflix's architecture uses Kafka topics for [specific reason], enabling [specific benefit]. The trade-off is operational complexity: monitoring 100+ topics with millions of events/second requires sophisticated observability...
 
 ### Section 3: Netflix Case Study (Real Details)
+
 At Netflix with 500M daily active users and 10k+ events/second per user, event processing became critical. They implemented [specific pattern] to handle [specific challenge]. Results: [metrics]. Key lesson: [insight]...
 
 ### Section 4: Additional Cases
+
 Airbnb's approach [comparison and contrast]. Disney+ with different scale [different tradeoffs]...
 
 ### Section 5: Critical Evaluation
+
 Event-driven architecture works when [criteria]. It doesn't work for [scenarios]. Common mistakes teams make: [specific pitfalls]...
 
 ### Section 6: Strategic Implications
+
 For architects considering this approach: [guidance]. For CTOs planning infrastructure: [guidance]. For teams evaluating trade-offs: [guidance]...
 
 ## Example Headline
+
 "Microservices at Scale: Trade-offs, Case Studies, and When They Actually Make Sense"
 
 ## Example Key Takeaways
@@ -616,6 +672,7 @@ Key Takeaway 5: Teams should evolve toward microservices from
 ## Acceptance Tips
 
 ### What Increases Your Chances
+
 - ✅ Write on trending, high-impact topics (AI, cloud, DevOps)
 - ✅ Include 2-3 real case studies with specific details
 - ✅ Provide data, metrics or research backing claims
@@ -626,6 +683,7 @@ Key Takeaway 5: Teams should evolve toward microservices from
 - ✅ Honest trade-off analysis
 
 ### What Decreases Your Chances
+
 - ❌ Vague or generic topics
 - ❌ No real examples or case studies
 - ❌ Unverified claims without data
@@ -638,6 +696,7 @@ Key Takeaway 5: Teams should evolve toward microservices from
 ## Post-Publication Strategy
 
 ### Leverage InfoQ Publication
+
 - Featured in InfoQ newsletter (~100k+ subscribers)
 - Promoted on InfoQ social media
 - May be featured on homepage or topic pages
@@ -645,6 +704,7 @@ Key Takeaway 5: Teams should evolve toward microservices from
 - Builds your credibility and authority
 
 ### Republish After 4 Weeks
+
 - Share on your blog with "Originally published on InfoQ" attribution
 - Post on LinkedIn with link to original
 - Share on Medium with full attribution and link
@@ -652,6 +712,7 @@ Key Takeaway 5: Teams should evolve toward microservices from
 - Mention in your newsletter or social channels
 
 ### Long-Term Benefits
+
 - Ranking for technical topics improves (InfoQ has strong domain authority)
 - Your personal brand as architect/expert strengthens
 - Attracts speaking invitations and consulting opportunities
@@ -695,6 +756,7 @@ Key Takeaway 5: Teams should evolve toward microservices from
 ---
 
 This skill works best combined with (in order of importance):
+
 - **diagram-mermaid** - Create Mermaid diagrams (REQUIRED - use whenever conceptually relevant)
 - **diagram-plantuml** - Create PlantUML diagrams (REQUIRED - for complex UML content)
 - **image-generator-blog** - Featured images and custom graphics (REQUIRED)
@@ -711,6 +773,7 @@ This skill works best combined with (in order of importance):
 Before finalizing your InfoQ article:
 
 **Mermaid/PlantUML Diagrams:**
+
 - [ ] Mermaid or PlantUML diagrams included where conceptually relevant
 - [ ] Each diagram has clear legend explaining colors/symbols
 - [ ] Diagrams are beautiful, professional and well-styled
@@ -722,11 +785,13 @@ Before finalizing your InfoQ article:
 - [ ] If exported as images, files are optimized (100-200KB)
 
 **Featured Image:**
+
 - [ ] Featured image created and saved to `/images/featured-image.jpg`
 - [ ] Featured image is 1024x768px (4:3 landscape ratio)
 - [ ] Featured image compressed to 500KB-2MB
 
 **Supporting Diagrams/Graphics:**
+
 - [ ] 1-3 supporting diagrams/graphics created and saved to `/images/`
 - [ ] All images referenced in markdown with relative paths: `./images/image-name.png`
 - [ ] All images have descriptive alt text and captions
@@ -734,19 +799,24 @@ Before finalizing your InfoQ article:
 - [ ] Image file names are descriptive and lowercase with hyphens
 
 **Markdown Formatting:**
+
 - [ ] Mermaid/PlantUML code blocks properly formatted:
+
   ````markdown
   ```mermaid
   [diagram code]
   ```
   ````
+
 - [ ] All diagrams have accompanying legend explaining colors/notation
 - [ ] Figure captions included:
+
   ```markdown
   ![Description](./images/diagram-name.png)
 
   *Figure 1: What this diagram shows and its relevance.*
   ```
+
 - [ ] All images use consistent professional style/branding
 
 ---

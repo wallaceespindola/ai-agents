@@ -10,12 +10,14 @@ description: Format technical articles for Dev.to platform, optimizing for commu
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
+
 - Cite credible sources with links (e.g., "According to the latest State of JS survey [link], most developers...")
 - Use your own data if you have it (e.g., "In my experience with 20+ projects...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many developers prefer..." instead of "80% of developers prefer...")
 
 ❌ **DON'T:**
+
 - Make up percentages or statistics
 - Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
 - Estimate statistics without clearly stating they are estimates
@@ -44,6 +46,7 @@ Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment c
 ## When to Use This Skill
 
 Use this skill when:
+
 - Formatting technical articles for Dev.to publication
 - Creating quick-win tutorials and code snippets
 - Optimizing for Dev.to's community algorithm
@@ -54,6 +57,7 @@ Use this skill when:
 ### Multi-Platform Strategy
 
 When publishing same technical concept to multiple platforms (Dev.to, Medium, DZone, InfoQ, LinkedIn, etc.):
+
 - ✅ Use IDENTICAL code snippets linked to same GitHub repo (critical for consistency)
 - ✅ Create UNIQUE title optimized for Dev.to (different from other platforms)
 - ✅ Write UNIQUE content focusing on practical quick wins (different from other versions)
@@ -63,6 +67,7 @@ When publishing same technical concept to multiple platforms (Dev.to, Medium, DZ
 - ✅ Different call-to-action (Dev.to community-focused engagement)
 
 **Example:**
+
 ```
 GitHub Repo: error-handling-typescript (single source of truth)
 
@@ -99,6 +104,7 @@ Result: All versions link to IDENTICAL code in same repo
 ## Dev.to Article Specifications
 
 ### Length & Structure
+
 - **Optimal length**: 1,000-3,000 words (shorter than Medium)
 - **Best time to read**: 3-10 minutes
 - **Headline**: 50-70 characters, action-oriented
@@ -109,6 +115,7 @@ Result: All versions link to IDENTICAL code in same repo
 ### Headline Strategy
 
 ✅ **Good Dev.to headlines:**
+
 - "How to Use Java Records to Reduce Boilerplate by 50%"
 - "5 JavaScript Mistakes That Slow Down Your App"
 - "Python Async/Await: The Complete Beginner's Guide"
@@ -116,11 +123,13 @@ Result: All versions link to IDENTICAL code in same repo
 - "My Top 10 CSS Tips I Learned This Year"
 
 ❌ **Avoid:**
+
 - Generic: "Learning JavaScript"
 - Vague: "Cool Development Things"
 - Clickbait: "You Won't Believe This Trick..."
 
 **Headline formula:**
+
 - **[Action verb] + [Technology] + [Benefit]**
 - "Build," "Learn," "Master," "Fix," "Optimize," "Debug"
 - Technology: Language, framework, library, tool
@@ -186,6 +195,7 @@ Call-to-Action
 - **No gatekeeping**: Welcome all skill levels
 
 **Voice examples:**
+
 - ✅ "I struggled with this for months until I discovered..."
 - ✅ "Here's a trick that saved me hours of debugging"
 - ✅ "This confused me at first, but now I understand..."
@@ -195,6 +205,7 @@ Call-to-Action
 ### Code Examples on Dev.to
 
 #### Code Block Formatting
+
 - Use markdown code fences with language tags
 - 80 character line width for readability
 - Real, runnable code (not pseudo-code)
@@ -213,6 +224,7 @@ print(user['name'])
 ```
 
 #### Code Guidelines
+
 - **Keep it short**: 20-40 lines per block max
 - **Real code**: Code readers can copy and use
 - **Comment key parts**: Explain non-obvious logic
@@ -222,17 +234,20 @@ print(user['name'])
 ### Dev.to Tags (Essential!)
 
 #### Required Tags (4 max)
+
 - **Language/Framework**: `javascript`, `react`, `java`, `python`, `springboot`
 - **Topic**: `tutorial`, `webdev`, `coding`, `bestpractices`
 - **Level**: `beginners`, `intermediate`, `advanced`
 - **Additional**: `productivity`, `devops`, `security`
 
 **Tag strategy:**
+
 - First tag should be most searchable (language)
 - Use "beginners" if accessible to new developers
 - Max 4 tags, be specific
 
 #### Avoiding "Off-Topic" Filter
+
 - Tags must be relevant to content
 - Avoid spammy tags unrelated to article
 - Dev.to will filter out low-quality tag combos
@@ -246,6 +261,7 @@ print(user['name'])
 - **Increase engagement**: Reader follows entire series
 
 Example series:
+
 1. "Python Web Development: Part 1 - Hello Flask"
 2. "Python Web Development: Part 2 - Database Integration"
 3. "Python Web Development: Part 3 - Authentication"
@@ -253,6 +269,7 @@ Example series:
 ### Media & Images
 
 #### Cover Image (REQUIRED)
+
 - **The cover image is a required deliverable** — a Dev.to article is not deliverable without one
 - Design should reflect the article's actual content (diagram, code diff, comparison — not generic stock art)
 - Render it with the `article-image-generator` skill (house style, verified sizes)
@@ -263,6 +280,7 @@ Example series:
 - **Text**: Optional overlay text (avoid if possible)
 
 #### In-Article Images
+
 - **Frequency**: 1-2 images per 1000 words
 - **Types**: Diagrams, screenshots, flowcharts
 - **Quality**: Sharp and legible
@@ -271,18 +289,21 @@ Example series:
 ### Engagement Features
 
 #### DEV Points & Reactions
+
 - **Dev.to has points system**: Likes/hearts earn points
 - **Bookmarks**: Save for later (good signal)
 - **Unicorns**: Special reaction for top-quality content
 - **Comments**: Active comment section shows quality
 
 #### Discussion Questions
+
 - **End with a question**: "What's your favorite debugging tool?"
 - **Make it open-ended**: Not just yes/no
 - **Invite experiences**: "Have you encountered this?"
 - **Encourage replies**: "Let me know in the comments"
 
 #### Community Engagement
+
 - **Respond to comments**: Thank people, answer questions
 - **Cross-promote**: Share in Dev.to discussion channels
 - **Link appropriately**: Connect to related articles
@@ -305,6 +326,7 @@ published: true
 ### Content Guidelines
 
 #### Do's ✅
+
 - ✅ Share what you learned
 - ✅ Include working code examples
 - ✅ Be specific and actionable
@@ -314,6 +336,7 @@ published: true
 - ✅ Use clear formatting
 
 #### Don'ts ❌
+
 - ❌ Plagiarize or copy content
 - ❌ Spam or self-promotion only
 - ❌ Discuss politics/religion
@@ -325,11 +348,13 @@ published: true
 ### Publishing Strategy
 
 #### Optimal Publishing Times
+
 - **Best days**: Tuesday-Thursday
 - **Best times**: 9:00-11:00 AM or 2:00-3:00 PM (US ET)
 - **Frequency**: 1-2 articles per week (consistency important)
 
 #### Algorithm Signals (What Dev.to promotes)
+
 1. **Engagement**: Comments and reactions
 2. **Quality**: Clear writing, good examples
 3. **Freshness**: New content promoted
@@ -339,18 +364,21 @@ published: true
 ### Dev.to-Specific Features
 
 #### Discussion Threads
+
 - Start discussions in the discussion section
 - Link to your articles
 - Get feedback before publishing
 - Community helps refine ideas
 
 #### Podcasts & Videos
+
 - Embed YouTube videos in articles
 - Link to podcasts
 - Supports multimedia content
 - Increases engagement
 
 #### Canonical URLs
+
 - Use if syndicating content
 - Specify original source
 - Dev.to allows republication with proper attribution
@@ -359,12 +387,14 @@ published: true
 ### Examples of High-Performing Dev.to Articles
 
 #### Example 1: Quick Win
+
 **Title**: "3 JavaScript Tricks That Saved Me Hours"
 
 Introduction:
 "Last week I discovered three simple JavaScript techniques I wish I'd known earlier. None require frameworks or complex setups, just vanilla JS that makes code cleaner and faster."
 
 Structure:
+
 1. **Trick 1**: Optional chaining `obj?.property`
    - Before/after code
    - Real example of where this helps
@@ -383,11 +413,13 @@ Structure:
 Conclusion: "These three patterns have already made my code cleaner. What techniques have helped you?"
 
 #### Example 2: Step-by-Step Tutorial
+
 **Title**: "Building Your First REST API with Python Flask: Complete Guide"
 
 Introduction: "If you've wanted to build a web API but weren't sure where to start, this guide is for you. We'll build a complete, working API in under 100 lines of code."
 
 Sections:
+
 1. What you'll build
 2. Setup (virtual environment, dependencies)
 3. Create your first route
@@ -398,11 +430,13 @@ Sections:
 Each section: Code → Explanation → Next step
 
 #### Example 3: Beginner-Friendly Pattern
+
 **Title**: "Understanding Python Type Hints: A Beginner's Guide"
 
 Introduction: "Type hints confused me when I first saw them. But once I understood they're optional annotations that help catch bugs early, everything clicked."
 
 Structure:
+
 - **What are type hints?** (definitions with simple examples)
 - **Why use them?** (concrete benefits)
 - **Basic syntax** (function examples)

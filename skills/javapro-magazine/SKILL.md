@@ -10,12 +10,14 @@ description: Create enterprise-grade technical articles for JavaPro Magazine and
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
+
 - Cite credible sources with links (e.g., "According to the latest JetBrains Developer Ecosystem Survey [link], X% of Java developers..." — use the actual figure from the source)
 - Use your own data if you have it (e.g., "In enterprise projects I've consulted on...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many enterprise teams prefer..." instead of "80% of enterprise teams prefer...")
 
 ❌ **DON'T:**
+
 - Make up percentages or statistics
 - Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
 - Estimate statistics without clearly stating they are estimates
@@ -41,6 +43,7 @@ Shared workflow: see `article-cross-posting`.
 ## When to Use This Skill
 
 Use this skill when:
+
 - Writing articles for JavaPro Magazine or similar print/digital publications
 - Creating articles targeting enterprise Java developers and architects
 - Developing content on advanced Java topics and architectural patterns
@@ -53,6 +56,7 @@ Use this skill when:
 ### Article Requirements
 
 #### Length
+
 - **Optimal range**: 3,000-6,000 words
 - **Minimum**: 2,500 words (substantial)
 - **Maximum**: 8,000 words (for two-part series)
@@ -60,6 +64,7 @@ Use this skill when:
 - **Code ratio**: 20-30% code, 70-80% explanation
 
 #### Audience Profile
+
 - **Experience level**: 8+ years professional Java development
 - **Role**: Architects, tech leads, senior developers
 - **Context**: Enterprise environments, scalability concerns
@@ -67,6 +72,7 @@ Use this skill when:
 - **Reading style**: Detailed, technical, willing to invest time
 
 #### Editorial Standards
+
 - **Accuracy**: Must be technically impeccable
 - **Originality**: Unique insights or novel perspectives
 - **References**: Cite sources, standards, frameworks
@@ -166,6 +172,7 @@ AUTHOR BIO (100-150 words)
 ### Headline Strategy for JavaPro
 
 ✅ **Good JavaPro titles:**
+
 - "Building Distributed Systems with Spring Cloud: Architecture Patterns for Enterprise Java"
 - "Beyond Microservices: Using Domain-Driven Design to Structure Large Java Systems"
 - "Observability in Production: Implementing Distributed Tracing with OpenTelemetry in Java"
@@ -173,6 +180,7 @@ AUTHOR BIO (100-150 words)
 - "Data Consistency in Microservices: Event Sourcing and CQRS Patterns"
 
 ❌ **Avoid:**
+
 - Too casual: "Cool Java Tricks"
 - Too vague: "Advanced Java Topics"
 - Misleading: "Guaranteed 10x Performance"
@@ -184,6 +192,7 @@ AUTHOR BIO (100-150 words)
 ### Code Examples for JavaPro
 
 #### Guidelines
+
 - **Production-grade**: Code should be realistic, not simplified
 - **Complete**: Full classes, not fragments
 - **Well-commented**: Explain architectural decisions
@@ -193,6 +202,7 @@ AUTHOR BIO (100-150 words)
 - **Real dependencies**: Show actual libraries
 
 #### Code Structure
+
 ```java
 /**
  * ProductionExample - Real-world implementation
@@ -214,6 +224,7 @@ public class DistributedEventProcessor implements EventProcessor {
 ```
 
 **Code example sections:**
+
 1. **Imports and setup** (show dependencies)
 2. **Class/interface definition** (architectural shape)
 3. **Key methods** (central logic)
@@ -224,6 +235,7 @@ public class DistributedEventProcessor implements EventProcessor {
 ### Sections Depth Expectations
 
 #### Implementation Section
+
 - **Flow diagram**: Sequence of operations
 - **Code snippet 1**: Core algorithm or pattern
 - **Code snippet 2**: Error handling example
@@ -232,6 +244,7 @@ public class DistributedEventProcessor implements EventProcessor {
 - **Dependencies**: Required frameworks/libraries
 
 #### Production Considerations Section
+
 - **Monitoring**: What metrics matter?
 - **Alerting**: What failures should trigger alerts?
 - **Observability**: Logging and tracing strategy
@@ -240,6 +253,7 @@ public class DistributedEventProcessor implements EventProcessor {
 - **Deployment**: Container/Kubernetes considerations
 
 #### Case Study Section
+
 - **Context**: Company size, scale, constraints
 - **Challenge**: What problem were they solving?
 - **Solution**: How they implemented the approach
@@ -250,6 +264,7 @@ public class DistributedEventProcessor implements EventProcessor {
 ### Technical Rigor
 
 #### Accuracy Requirements
+
 - ✅ Verify all code compiles and runs
 - ✅ Test on multiple Java versions (LTS releases)
 - ✅ Check framework versions are current
@@ -258,6 +273,7 @@ public class DistributedEventProcessor implements EventProcessor {
 - ✅ Acknowledge limitations and trade-offs
 
 #### Research & Citations
+
 - **Academic papers**: Cite original research
 - **Industry standards**: Reference OWASP, NIST, etc.
 - **Framework documentation**: Link to official docs
@@ -267,6 +283,7 @@ public class DistributedEventProcessor implements EventProcessor {
 ### JavaPro Submission Process
 
 #### Before Submission
+
 - [ ] Article is 3,000-6,000 words
 - [ ] Contains 4-8 code examples
 - [ ] Includes architecture diagrams
@@ -280,6 +297,7 @@ public class DistributedEventProcessor implements EventProcessor {
 - [ ] Banner image created and attached (proposed featured image; editors may replace it)
 
 #### Submission Requirements
+
 - **Format**: Markdown or Word document
 - **Code**: Separate syntax-highlighted files
 - **Images**: High-resolution diagrams (300+ DPI)
@@ -288,6 +306,7 @@ public class DistributedEventProcessor implements EventProcessor {
 - **License**: Clear copyright/permission statement
 
 #### Editorial Review
+
 - **Timeline**: 4-8 weeks typically
 - **Feedback**: Editors may request revisions
 - **Collaboration**: Work with editors on improvements
@@ -296,6 +315,7 @@ public class DistributedEventProcessor implements EventProcessor {
 ### Topics JavaPro Publishes
 
 **High-value topics:**
+
 1. **Distributed systems patterns**: Consistency, availability, failure handling
 2. **Performance optimization**: Real benchmarks, profiling data, GC tuning
 3. **Architectural patterns**: DDD, Event Sourcing, CQRS, Microservices
@@ -406,6 +426,7 @@ Unlike LinkedIn (short), Medium (long but community), or Dev.to (practical):
 ### Success Factors for JavaPro Publication
 
 ✅ **Gets accepted:**
+
 - Novel insight or comprehensive coverage
 - Production-proven patterns
 - Detailed implementation examples
@@ -414,6 +435,7 @@ Unlike LinkedIn (short), Medium (long but community), or Dev.to (practical):
 - Authoritative author voice
 
 ❌ **Gets rejected:**
+
 - Lacks originality (repeats known content)
 - Insufficient technical depth
 - Speculative or unproven approaches

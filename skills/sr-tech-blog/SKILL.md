@@ -8,6 +8,7 @@ description: Write comprehensive technical articles for personal or company blog
 ## When to Use This Skill
 
 Use this skill when:
+
 - Writing for your personal technical blog
 - Creating content for company/organization blog
 - Building long-form technical reference material
@@ -19,6 +20,7 @@ Use this skill when:
 ## Tech Blog Advantages
 
 **Personal/Company blogs offer:**
+
 - ✅ **Full creative control**: No editorial constraints
 - ✅ **Unlimited length**: Write as much as needed
 - ✅ **Custom formatting**: Design content specifically for your audience
@@ -31,6 +33,7 @@ Use this skill when:
 ## Blog Article Specifications
 
 ### Length & Depth
+
 - **Optimal length**: 2,000-10,000+ words (no upper limit)
 - **Sweet spot**: 3,000-5,000 words for comprehensive tutorials
 - **Mega-posts**: 8,000+ for ultimate guides, series finales
@@ -40,6 +43,7 @@ Use this skill when:
 ### Blog Post Types
 
 #### Tutorial/How-To
+
 - **Length**: 2,000-4,000 words
 - **Structure**: Introduction, prerequisites, steps, complete example, wrap-up
 - **Code ratio**: 30-40% code with detailed explanations
@@ -47,6 +51,7 @@ Use this skill when:
 - **Longevity**: Evergreen, relevant for years
 
 #### Deep Dive / Ultimate Guide
+
 - **Length**: 5,000-10,000+ words
 - **Structure**: Comprehensive coverage, multiple angles, references
 - **Chapters**: Organized into 8-15 sections
@@ -55,6 +60,7 @@ Use this skill when:
 - **Longevity**: Becomes go-to resource
 
 #### Case Study / Journey
+
 - **Length**: 3,000-5,000 words
 - **Structure**: Problem, solution, implementation, results, lessons
 - **Data**: Metrics, benchmarks, before/after comparisons
@@ -63,6 +69,7 @@ Use this skill when:
 - **Longevity**: Timeless example of how to solve problems
 
 #### Opinion / Thought Leadership
+
 - **Length**: 1,500-3,000 words
 - **Structure**: Thesis, evidence, counter-arguments, conclusion
 - **Debate**: Respectful engagement with alternative views
@@ -71,6 +78,7 @@ Use this skill when:
 - **Longevity**: Relevant for years if well-reasoned
 
 #### Benchmark / Comparison
+
 - **Length**: 2,500-4,000 words
 - **Structure**: Criteria, candidates, testing, results, recommendations
 - **Data**: Real benchmarks, testing methodology
@@ -79,6 +87,7 @@ Use this skill when:
 - **Longevity**: Evergreen if maintained
 
 #### Resource / Curated List
+
 - **Length**: 1,500-3,000 words
 - **Structure**: Categories, individual resources with description
 - **Commentary**: Why each resource is valuable
@@ -87,6 +96,7 @@ Use this skill when:
 - **Longevity**: Needs regular updates
 
 #### Announcement / News Commentary
+
 - **Length**: 800-1,500 words
 - **Structure**: What happened, why it matters, implications
 - **Timeliness**: Publish while still news
@@ -198,6 +208,7 @@ UPDATES SECTION (Optional)
 ### Headline Strategy
 
 ✅ **Good blog headlines:**
+
 - "The Ultimate Guide to Python Async/Await: From Basics to Production"
 - "Why Virtual Threads Are a Game-Changer (And How to Use Them in Java)"
 - "Building a High-Performance REST API: A Complete Guide With Benchmarks"
@@ -205,6 +216,7 @@ UPDATES SECTION (Optional)
 - "React Performance Optimization: 15 Techniques I Use in Production"
 
 ❌ **Avoid:**
+
 - Generic: "Introduction to Java"
 - Misleading: "This One Weird Trick..."
 - Vague: "Some Cool Stuff"
@@ -216,6 +228,7 @@ UPDATES SECTION (Optional)
 ### Blog Post Tone & Style
 
 **For technical blogs, aim for:**
+
 - **Authoritative but approachable**: You're the expert, but make it accessible
 - **Personal**: Share your experience and perspective
 - **Opinionated**: Take stances (thoughtfully and with reasoning)
@@ -230,6 +243,7 @@ UPDATES SECTION (Optional)
 ### Code Examples for Blog Posts
 
 #### Guidelines
+
 - **Complete and runnable**: Readers can copy and run
 - **Well-commented**: Explain the important parts
 - **Production-concerned**: Include error handling, logging
@@ -238,6 +252,7 @@ UPDATES SECTION (Optional)
 - **Modern**: Target the latest LTS versions (e.g., Java 25 LTS / Spring Boot 4.0, Python 3.13+, Node 24 LTS) unless the article is version-specific
 
 #### Formatting
+
 ```java
 // Code example with explanation
 // Key concept: explain architectural decision
@@ -254,6 +269,7 @@ public class ProductionExample {
 ```
 
 #### Full Code Repositories
+
 - Link to complete source code
 - GitHub repository with working example
 - Include build instructions (Maven, Gradle)
@@ -263,6 +279,7 @@ public class ProductionExample {
 ### Images & Multimedia
 
 #### Featured Image (REQUIRED)
+
 - **The featured image is a required deliverable** — a blog post is not deliverable without one
 - Design should reflect the post's actual content (diagram, code diff, comparison — not generic stock art); render with the `article-image-generator` skill
 - **Size**: 1200x628px (optimal for sharing; matches the 1200x630 OG standard)
@@ -273,6 +290,7 @@ public class ProductionExample {
 - **Tools**: Figma, Canva, custom design
 
 #### In-Article Images
+
 - **Frequency**: 3-6 per 3000-word article
 - **Types**: Diagrams, flowcharts, benchmarks, screenshots, photos
 - **Quality**: Sharp, legible, professional
@@ -280,6 +298,7 @@ public class ProductionExample {
 - **Alt text**: Descriptive text for accessibility
 
 #### Diagrams & Graphics
+
 - **Tools**: Draw.io, Lucidchart, OmniGraffle, Figma
 - **Types**:
   - Architecture diagrams
@@ -290,12 +309,14 @@ public class ProductionExample {
   - Code structure diagrams
 
 #### Code Screenshots
+
 - **When to use**: Highlighting syntax, showing IDE features
 - **Tools**: VS Code, IntelliJ, Sublime Text
 - **Quality**: Clear, properly formatted, readable
 - **Avoid**: Instead of code blocks when code is essential content
 
 #### Videos (Optional)
+
 - **Embedded videos**: Explain complex concepts
 - **Screen recordings**: Walk through implementation
 - **Demo videos**: Show the result in action
@@ -306,6 +327,7 @@ public class ProductionExample {
 #### Blogging Platforms
 
 **Hosted platforms** (fastest to start):
+
 - **Medium Pro** - Audience + monetization
 - **Substack Pro** - Newsletter-focused
 - **HashNode** - Developer-focused
@@ -313,6 +335,7 @@ public class ProductionExample {
 - **Wordpress.com** - Full flexibility
 
 **Self-hosted** (most control):
+
 - **Ghost (self-hosted)** - Elegant, fast, developer-focused
 - **Hugo/Jekyll** - Static site generators, GitHub Pages
 - **WordPress** - Full CMS, plugins, customization
@@ -320,6 +343,7 @@ public class ProductionExample {
 - **Next.js** - Full-featured web apps
 
 **Recommendation for SR Tech Writers:**
+
 - **Ghost (self-hosted)** or **Hugo** for full control + speed
 - **Substack** if building newsletter audience
 - **Medium Pro** if you want built-in audience
@@ -327,24 +351,28 @@ public class ProductionExample {
 ### Blog Monetization Strategies
 
 #### Advertising
+
 - **Google AdSense**: Easy setup, $0.25-5 per click typical
 - **Media.net**: Ad network for publishers
 - **Direct sponsorships**: Companies sponsor blog posts
 - **Affiliate advertising**: Recommend products, earn commission
 
 #### Subscriptions
+
 - **Paid tiers**: Premium content for subscribers
 - **Newsletter**: Substack, email monetization
 - **Membership**: Ongoing access for monthly fee
 - **One-time courses**: Packaged deep-dives
 
 #### Products/Services
+
 - **Digital products**: E-books, courses, templates
 - **Services**: Consulting, workshops, training
 - **Speaking**: Conference talks, workshops
 - **Products**: Tools built from your audience problems
 
 #### Best Practices
+
 - **Avoid aggressive monetization initially**: Build audience first
 - **Be transparent**: Disclose sponsorships and affiliations
 - **Value-first**: Revenue should follow, not precede value
@@ -353,6 +381,7 @@ public class ProductionExample {
 ### Blog SEO & Growth Strategy
 
 #### Content Pillar Strategy
+
 - **Core topics**: 5-7 main expertise areas
 - **Content clusters**: Deep coverage of each topic
 - **Pillar posts**: Comprehensive guides that link to sub-topics
@@ -360,6 +389,7 @@ public class ProductionExample {
 - **Authority**: Deep coverage builds domain authority
 
 **Example pillar structure (Java topic):**
+
 1. **Pillar**: "Complete Spring Boot Guide"
    - Sub-topic: "Spring Boot Security"
    - Sub-topic: "Spring Boot Testing"
@@ -367,6 +397,7 @@ public class ProductionExample {
    - Sub-topic: "Spring Boot Deployment"
 
 #### SEO Best Practices
+
 - **Keyword research**: Target 1 primary + 3-5 secondary keywords
 - **URL structure**: `/topic-name/` (descriptive slug, hyphens; avoid dates in URLs so evergreen posts don't look stale)
 - **Headlines**: Use H1 once, H2 for sections, H3 for subsections
@@ -377,6 +408,7 @@ public class ProductionExample {
 - **Mobile**: Responsive design, touch-friendly
 
 #### Growth Tactics
+
 - **Consistency**: Publish 1-2 articles per week (or realistic cadence)
 - **Promotion**: Share on Twitter, LinkedIn, Reddit (where relevant)
 - **Email**: Use newsletter to drive traffic to new posts
@@ -387,6 +419,7 @@ public class ProductionExample {
 ### Technical Blog Maintenance
 
 #### Keeping Content Fresh
+
 - **Review schedule**: Quarterly review of evergreen content
 - **Version updates**: Update code examples when frameworks update
 - **Accuracy**: Fix any outdated information
@@ -394,12 +427,14 @@ public class ProductionExample {
 - **Republish**: Update publish date if substantially revised
 
 #### Managing Archives
+
 - **404 redirects**: Maintain links when restructuring
 - **Archival dates**: Show when posts were published
 - **Status**: Mark deprecated posts as outdated
 - **Related posts**: Link newer posts to older ones
 
 #### Comment Moderation
+
 - **Engagement**: Respond to all meaningful comments
 - **Community**: Build discussion and relationships
 - **Spam**: Filter and remove spam comments
@@ -408,6 +443,7 @@ public class ProductionExample {
 ### Blog Analytics & Metrics
 
 #### Key Metrics to Track
+
 - **Page views**: Traffic per post and overall
 - **Unique visitors**: Actual audience size
 - **Time on page**: Engagement indicator
@@ -418,12 +454,14 @@ public class ProductionExample {
 - **Social shares**: Engagement on social platforms
 
 #### Tools
+
 - **Google Analytics**: Free traffic analysis
 - **Google Search Console**: Keyword data, indexing
 - **Substack/Email metrics**: Newsletter specific
 - **Social analytics**: Twitter, LinkedIn, Reddit
 
 #### Optimization
+
 - **A/B test headlines**: See what resonates
 - **Analyze top posts**: What topics, formats, lengths?
 - **Double down on winners**: Publish more in popular topics
@@ -455,6 +493,7 @@ public class ProductionExample {
 ### Time Management for Blog Writing
 
 **Realistic timeline for 3,000-word post:**
+
 - Research and outline: 2-3 hours
 - First draft: 4-6 hours
 - Code examples and testing: 2-4 hours
@@ -463,6 +502,7 @@ public class ProductionExample {
 - **Total: 12-18 hours** for publication-ready post
 
 **Sustainable publishing:**
+
 - 1 post/week: ~3 hours/day average
 - 1 post/month: ~4 hours/post per day equivalent
 - Choose cadence you can maintain

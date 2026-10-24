@@ -5,17 +5,20 @@ Complete catalog of all agents and skills in this repository, organized by purpo
 ## Main Agent
 
 ### Senior Technical Software Writer Agent
+
 **Location**: `agents/technical-writer/AGENT.md`
 
 The primary agent for this system. Orchestrates multiple skills to create professional technical content across platforms.
 
 **Expertise**:
+
 - Java, Python, JavaScript development
 - Platform-specific content strategy
 - Multi-platform content adaptation
 - Technical accuracy and code validation
 
 **Outputs**:
+
 - LinkedIn Pulse articles
 - Medium technical deep-dives
 - Dev.to tutorials and quick wins
@@ -29,10 +32,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ## Coder Skills (Generate Complete Production Projects)
 
 ### Java Coder
+
 **Location**: `skills/java-coder/SKILL.md`
 **Purpose**: Generate complete Maven/Spring Boot projects with source code, tests, and documentation
 
 **What it generates:**
+
 - pom.xml with all dependencies configured
 - Source code in src/main/java/ (controllers, services, repositories, models)
 - Tests in src/test/java/ (unit and integration tests)
@@ -40,6 +45,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Full project structure and setup
 
 **Best For:**
+
 - Java tutorials with runnable code
 - Design pattern implementations
 - REST API examples
@@ -47,6 +53,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Enterprise Java examples
 
 **Project Templates:**
+
 - REST API with Spring Boot
 - Design pattern showcase
 - Concurrent programming examples
@@ -55,10 +62,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Python Coder
+
 **Location**: `skills/python-coder/SKILL.md`
 **Purpose**: Generate complete poetry/uv projects with source code, tests, and documentation
 
 **What it generates:**
+
 - pyproject.toml with all dependencies configured
 - Source code in src/project_name/ (API, services, repositories, models)
 - Tests in tests/ with pytest (unit and integration tests)
@@ -66,6 +75,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Type hints throughout, full project structure
 
 **Best For:**
+
 - Python tutorials with runnable code
 - FastAPI/Django demonstrations
 - Design pattern implementations
@@ -73,6 +83,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Data processing examples
 
 **Project Templates:**
+
 - FastAPI REST API
 - Design pattern showcase
 - Async/concurrent programming examples
@@ -81,10 +92,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### JavaScript/TypeScript Coder
+
 **Location**: `skills/javascript-coder/SKILL.md`
 **Purpose**: Generate complete npm/pnpm React or Node.js projects with TypeScript
 
 **What it generates:**
+
 - package.json with all dependencies configured
 - tsconfig.json in strict mode
 - Source code in src/ (components, hooks, services, types)
@@ -93,6 +106,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Full TypeScript configuration and testing setup
 
 **Best For:**
+
 - React/TypeScript tutorials with runnable code
 - Node.js/Express demonstrations
 - Design pattern implementations
@@ -100,6 +114,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Async/promise pattern examples
 
 **Project Templates:**
+
 - React component library with hooks
 - Node.js REST API
 - Design pattern showcase
@@ -110,10 +125,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ## Language-Specific Content Skills
 
 ### Java Content Skill
+
 **Location**: `skills/java-content/SKILL.md`
 **Purpose**: Generate authentic, accurate Java content with best practices
 
 **Topics Covered**:
+
 - Modern Java features (Java 17+)
   - Records, sealed classes, pattern matching, text blocks
 - Concurrency & parallelism
@@ -126,6 +143,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
   - Gang of Four patterns, enterprise patterns, reactive patterns
 
 **Key Features**:
+
 - Article structure templates (tutorials, best practices, patterns)
 - Code example guidelines with proper Java idioms
 - Production-scale concerns and considerations
@@ -135,10 +153,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Python Content Skill
+
 **Location**: `skills/python-content/SKILL.md`
 **Purpose**: Create Pythonic technical content with modern best practices
 
 **Topics Covered**:
+
 - Modern Python features (3.9+)
   - Type hints, pattern matching, dataclasses, pydantic
 - Web development
@@ -153,6 +173,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
   - Poetry, uv, Ruff, testing with pytest
 
 **Key Features**:
+
 - Article structure templates for tutorials and best practices
 - Pythonic idiom guidance
 - Real-world async patterns
@@ -162,10 +183,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### JavaScript/TypeScript Content Skill
+
 **Location**: `skills/javascript-content/SKILL.md`
 **Purpose**: Generate engaging JavaScript and TypeScript technical content
 
 **Topics Covered**:
+
 - Modern JavaScript (ES2020+)
   - Optional chaining, nullish coalescing, BigInt, dynamic imports
 - TypeScript mastery
@@ -180,6 +203,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
   - Promises, async/await, concurrent requests, error handling
 
 **Key Features**:
+
 - React hook patterns and best practices
 - TypeScript discriminated union examples
 - Backend vs. frontend specific guidance
@@ -191,16 +215,19 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ## Platform-Specific Formatting Skills
 
 ### LinkedIn Pulse Formatter
+
 **Location**: `skills/linkedin-pulse-formatter/SKILL.md`
 **Purpose**: Optimize articles for LinkedIn Pulse professional network
 
 **Specifications**:
+
 - **Length**: 800-1,500 words
 - **Tone**: Professional but accessible
 - **Audience**: Career-focused developers
 - **Frequency**: 1-2 per week
 
 **Key Features**:
+
 - Headline crafting for engagement
 - Professional tone guidelines
 - Engagement strategies and CTAs
@@ -210,6 +237,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Optimal posting times and frequency
 
 **Best For**:
+
 - Career advice and growth
 - Industry trends and insights
 - Lessons learned from experience
@@ -218,10 +246,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### DZone Article Writer
+
 **Location**: `skills/dzone-article/SKILL.md`
 **Purpose**: Create curated technical articles for DZone publication
 
 **Specifications**:
+
 - **Length**: 1,500-4,000 words
 - **Tone**: Professional, practical, enterprise-focused
 - **Audience**: Enterprise developers and architects
@@ -229,6 +259,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - **Frequency**: Flexible (article-based submission)
 
 **Key Features**:
+
 - Article types (tutorials, patterns, case studies, research)
 - Editorial review guidance
 - DZone curation algorithm optimization
@@ -239,6 +270,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Submission process and requirements
 
 **Best For**:
+
 - Production patterns and techniques
 - Enterprise architecture insights
 - Data-driven technical articles
@@ -248,10 +280,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Sr Tech Blog Writer
+
 **Location**: `skills/sr-tech-blog/SKILL.md`
 **Purpose**: Write comprehensive technical articles for personal or company blog
 
 **Specifications**:
+
 - **Length**: 2,000-10,000+ words (unlimited)
 - **Tone**: Authoritative, personal, opinionated
 - **Audience**: Your target technical audience
@@ -259,6 +293,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - **Frequency**: Your pace (1-2/week recommended)
 
 **Key Features**:
+
 - Multiple post types (tutorials, deep dives, case studies, opinions, benchmarks)
 - Blog platform recommendations (Ghost, Hugo, Substack)
 - Monetization strategies (ads, sponsorships, products, subscriptions)
@@ -269,6 +304,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Long-form content mastery
 
 **Best For**:
+
 - Ultimate guides and definitive references
 - Building personal brand and authority
 - Monetizing technical content
@@ -278,16 +314,19 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Medium Optimizer
+
 **Location**: `skills/medium-optimizer/SKILL.md`
 **Purpose**: Create authoritative technical deep-dives for Medium
 
 **Specifications**:
+
 - **Length**: 2,000-7,000 words
 - **Tone**: Authoritative, detailed, educational
 - **Audience**: Learning-oriented developers
 - **Frequency**: 1-2 per month
 
 **Key Features**:
+
 - Article structure template for long-form content
 - Headline and subtitle optimization
 - Image guidelines and placement strategy
@@ -298,6 +337,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Curation strategies
 
 **Best For**:
+
 - In-depth technical tutorials
 - Architectural decisions and patterns
 - Case studies and lessons learned
@@ -306,16 +346,19 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Dev.to Formatter
+
 **Location**: `skills/devto-formatter/SKILL.md`
 **Purpose**: Create community-focused, practical tutorials for Dev.to
 
 **Specifications**:
+
 - **Length**: 1,000-3,000 words
 - **Tone**: Friendly, practical, community-focused
 - **Audience**: All skill levels, community-driven
 - **Frequency**: 1-2 per week
 
 **Key Features**:
+
 - Action-oriented headline formula
 - Community-friendly tone guidelines
 - Code example best practices
@@ -326,6 +369,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Algorithm signals and optimization
 
 **Best For**:
+
 - Quick-win tutorials
 - Beginner-friendly explanations
 - Code snippets and practical tips
@@ -335,16 +379,19 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Substack Newsletter Skill
+
 **Location**: `skills/substack-newsletter/SKILL.md`
 **Purpose**: Build sustainable technical newsletter with growth strategy
 
 **Specifications**:
+
 - **Length**: 1,500-3,000 words typically
 - **Frequency**: Weekly (best for growth) or bi-weekly minimum
 - **Audience**: Email subscribers, building community
 - **Model**: Free + paid tier option
 
 **Key Features**:
+
 - Newsletter structure (essay + curated links + CTA)
 - Subject line and preview text strategy
 - Opening hook techniques
@@ -356,6 +403,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Early launch checklist
 
 **Best For**:
+
 - Building loyal audience over time
 - Original, longer-form insights
 - Regular income from paid subscribers
@@ -365,16 +413,19 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### JavaPro Magazine Skill
+
 **Location**: `skills/javapro-magazine/SKILL.md`
 **Purpose**: Create enterprise-grade Java articles for professional publication
 
 **Specifications**:
+
 - **Length**: 3,000-6,000 words
 - **Tone**: Professional, authoritative, rigorous
 - **Audience**: Enterprise developers and architects
 - **Model**: Professional publication with editorial review
 
 **Key Features**:
+
 - Publication-grade article structure (7-10 sections)
 - Advanced architecture patterns coverage
 - Production considerations and observability
@@ -386,6 +437,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Research and validation checklist
 
 **Best For**:
+
 - Enterprise Java patterns
 - Architectural decisions at scale
 - Advanced topics for senior developers
@@ -397,10 +449,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ## Supporting/Cross-Platform Skills
 
 ### Architecture & Software Design
+
 **Location**: `skills/architecture-design/SKILL.md`
 **Purpose**: Write comprehensive articles on software architecture, system design, and architectural patterns
 
 **Key Features**:
+
 - Architectural patterns (monolithic, microservices, event-driven, CQRS, Event Sourcing, hexagonal)
 - Design principles (SOLID, DRY, KISS, YAGNI, GRASP)
 - System design concepts (scalability, reliability, consistency, databases, APIs, deployment)
@@ -410,6 +464,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Tools for architecture diagrams (Draw.io, Lucidchart, C4 model)
 
 **Best For**:
+
 - Architectural pattern articles
 - System design interview prep
 - Case studies on architectural decisions
@@ -419,34 +474,40 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Tech Content Series (pipeline: write)
+
 **Location**: `skills/tech-content-series/SKILL.md`
 **Purpose**: Turn one idea or repo into a series around one shared GitHub repo (single source of truth for examples, diagrams and docs): seven platform articles with different angles, titles and lengths, banners, diagrams and a Marp deck exported to PPTX/PDF for Google Slides and Speaker Deck. Writes local drafts only
 
 ---
 
 ### Content Series Review (pipeline: review and align)
+
 **Location**: `skills/content-series-review/SKILL.md`
 **Purpose**: `article-review` per platform draft plus scripted series-level checks (`scripts/check_series.py`: repo link, snippets vs repo, banner/diagrams/alt text/sources, limits, disclosures, footer, em dashes, forbidden words) with a per-platform pass/fail table; owns the local-vs-posted alignment check
 
 ---
 
 ### Article Cross-Posting (pipeline: post)
+
 **Location**: `skills/article-cross-posting/SKILL.md`
 **Purpose**: Only on the user's explicit per-platform command, post a finished article series to Dev.to, Medium, DZone, Substack, LinkedIn, InfoQ and JavaPro via browser automation (HTML clipboard pipeline, image placeholders, publish-vs-draft policy) and keep local and posted versions aligned
 
 ---
 
 ### Article Image Generator
+
 **Location**: `skills/article-image-generator/SKILL.md`
 **Purpose**: Render article banners in the house style (modern, abstract, futuristic, 0-4 words) at each platform's verified size, via a bundled Pillow script (`scripts/generate_banner.py`)
 
 ---
 
 ### Image Generator for Blog
+
 **Location**: `skills/image-generator-blog/SKILL.md`
 **Purpose**: Generate professional featured images and in-article visuals for technical blogs
 
 **Key Features**:
+
 - Featured image specifications (1200x628px, design approaches)
 - Design approaches (Figma templates, stock photos, Canva, screenshots)
 - In-article image types (diagrams, flowcharts, screenshots, comparisons, infographics, photos)
@@ -456,6 +517,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Workflow (fast 15-min vs quality 30-min approaches)
 
 **Tools Recommended**:
+
 - Canva Pro ($13/month) - Easiest, best value
 - Figma Free/Pro - Professional quality, reusable templates
 - Draw.io - Diagrams
@@ -463,6 +525,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - TinyPNG - Image optimization
 
 **Best For**:
+
 - Featured/hero images for blog posts
 - Architecture and flow diagrams
 - Code screenshots and tutorials
@@ -472,10 +535,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Mermaid Diagrams
+
 **Location**: `skills/diagram-mermaid/SKILL.md`
 **Purpose**: Generate diagrams using Mermaid diagram-as-code syntax (Git-friendly)
 
 **Diagram Types**:
+
 1. **Flowchart** - Process flows, decision trees
 2. **Sequence** - API interactions, protocols
 3. **Class** - OOP design, domain models
@@ -486,6 +551,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 8. **Timeline** - Milestones, processes
 
 **Key Features**:
+
 - Text-based, version control friendly
 - GitHub/GitLab native support
 - Simple syntax, quick to write
@@ -496,6 +562,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - API/microservice flows
 
 **Best For**:
+
 - Quick architecture diagrams
 - GitHub documentation
 - Blog posts and articles
@@ -508,10 +575,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### PlantUML Diagrams
+
 **Location**: `skills/diagram-plantuml/SKILL.md`
 **Purpose**: Generate professional UML and architecture diagrams with full UML notation
 
 **Diagram Types**:
+
 1. **Class Diagram** - OOP design, detailed classes
 2. **Sequence Diagram** - Complex interactions, advanced features
 3. **Use Case** - User stories, system capabilities
@@ -522,6 +591,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 8. **Object** - Instance diagrams
 
 **Key Features**:
+
 - Full UML 2.5 standard support
 - Professional-grade notation
 - Advanced styling and customization
@@ -531,6 +601,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Enterprise documentation support
 
 **Best For**:
+
 - Complex class hierarchies
 - UML documentation
 - Enterprise architecture
@@ -539,6 +610,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Professional publications
 
 **Best When**:
+
 - Microservices architecture (component diagram)
 - Object-oriented design documentation
 - Enterprise systems design
@@ -548,10 +620,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Markdown Formatter
+
 **Location**: `skills/markdown-formatter/SKILL.md`
 **Purpose**: Format all articles in standard Markdown for universal compatibility
 
 **Key Features**:
+
 - YAML front matter structure and metadata
 - Proper heading hierarchy (H1, H2, H3)
 - Code block formatting (all languages)
@@ -568,6 +642,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Export and compatibility
 
 **Covers**:
+
 - Markdown basics and best practices
 - All code languages (Java, Python, JavaScript, SQL, Bash, YAML)
 - Image and media handling
@@ -579,10 +654,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### SEO Optimizer
+
 **Location**: `skills/seo-optimizer/SKILL.md`
 **Purpose**: Improve long-term content discovery through search
 
 **Key Features**:
+
 - Keyword research methodology
 - Search intent analysis
 - Article structure optimization
@@ -597,6 +674,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Monitoring and iteration process
 
 **Covers**:
+
 - Keyword research from Ahrefs, SEMrush, Google Trends
 - On-page SEO optimization
 - Technical SEO fundamentals
@@ -606,10 +684,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Code Examples Generator
+
 **Location**: `skills/code-examples-generator/SKILL.md`
 **Purpose**: Generate production-ready code examples for all platforms
 
 **Key Features**:
+
 - Code quality standards and guidelines
 - Language-specific patterns (Java, Python, JavaScript/TypeScript)
 - Complete vs. snippet examples
@@ -622,6 +702,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Platform-specific code formatting
 
 **Covers**:
+
 - Java code with Spring Boot examples
 - Python code with FastAPI examples
 - TypeScript/JavaScript with Express examples
@@ -633,10 +714,12 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ---
 
 ### Article Review
+
 **Location**: `skills/article-review/SKILL.md`
 **Purpose**: Pre-publication editorial review gate for finished article drafts
 
 **Key Features**:
+
 - PASS / FIX / POLISH verdict before any platform submission
 - Catches fabricated statistics and unsourced numerical claims
 - Flags AI-sounding prose (per HUMANIZATION_GUIDE.md patterns)
@@ -645,20 +728,24 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - Validates links and metadata
 
 **Best For**:
+
 - Final gate before submitting to Medium, Dev.to, DZone, InfoQ, JavaPro, LinkedIn, Substack or a blog
 - Catching problems before editors or readers do
 
 ### MarkItDown
+
 **Location**: `skills/markitdown/SKILL.md`
 **Purpose**: Convert documents and media to Markdown using Microsoft's MarkItDown CLI
 
 **Key Features**:
+
 - Converts PDF, DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, EPub and ZIP archives
 - OCR for images, transcript extraction for YouTube URLs
 - Batch conversion patterns and quality gotchas (scanned PDFs, wide sheets)
 - Pairs with the doc-converter agent for large ingestion jobs
 
 **Best For**:
+
 - Ingesting source material (specs, decks, reports) into Markdown before drafting articles
 - Preparing document content as LLM context
 
@@ -667,18 +754,21 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ## How Skills Work Together
 
 ### Example 1: Java Article for Dev.to
+
 1. **java-content** - Provides Java expertise and code examples
 2. **devto-formatter** - Formats for community-focused platform
 3. **code-examples-generator** - Creates production-ready Java code
 4. **seo-optimizer** - Optimizes keywords for discoverability
 
 ### Example 2: Building a Python Substack Newsletter
+
 1. **python-content** - Provides Python topics and expertise
 2. **substack-newsletter** - Structures for weekly email
 3. **code-examples-generator** - Creates runnable examples
 4. **seo-optimizer** - Ensures long-term searchability
 
 ### Example 3: Enterprise Java Article for JavaPro
+
 1. **java-content** - Detailed Java patterns
 2. **javapro-magazine** - Professional publication standards
 3. **code-examples-generator** - Production-grade code
@@ -689,6 +779,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ## Quick Reference: Choosing Skills
 
 ### By Platform
+
 - **LinkedIn**: linkedin-pulse-formatter
 - **Medium**: medium-optimizer
 - **Dev.to**: devto-formatter
@@ -699,11 +790,13 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - **All platforms**: markdown-formatter, seo-optimizer, code-examples-generator, article-review
 
 ### By Language
+
 - **Java**: java-content, javapro-magazine or dzone-article (best combination)
 - **Python**: python-content, devto-formatter, substack-newsletter, or sr-tech-blog
 - **JavaScript**: javascript-content, medium-optimizer, devto-formatter, or sr-tech-blog
 
 ### By Content Type
+
 - **Tutorial**: code-examples-generator + (devto-formatter, medium-optimizer, or sr-tech-blog)
 - **Opinion/Insight**: linkedin-pulse-formatter or substack-newsletter
 - **Deep-dive**: medium-optimizer + (language-content skill)
@@ -713,6 +806,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - **Production Pattern**: dzone-article + java-content or python-content
 
 ### By Workflow
+
 - **Quick article** (1-2 hours): devto-formatter + code-examples-generator
 - **Medium depth** (2-3 hours): medium-optimizer or dzone-article + seo-optimizer
 - **Long-form** (4+ hours): sr-tech-blog + markdown-formatter + seo-optimizer
@@ -724,6 +818,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 ## Skill Maturity & Maintenance
 
 All skills are:
+
 - ✅ Production-ready
 - ✅ Tested with real platforms
 - ✅ Include real-world examples

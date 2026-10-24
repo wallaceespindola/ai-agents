@@ -10,12 +10,14 @@ description: Create engaging technical newsletters for Substack with subscriber 
 **NEVER invent or fabricate statistics, percentages, survey results or numerical claims.**
 
 ✅ **DO:**
+
 - Cite credible sources with links (e.g., "According to the latest Developer Survey [link], 65% of subscribers...")
 - Use your own data if you have it (e.g., "In my newsletter of 1,200 subscribers, 45% opened...")
 - Omit statistics entirely if you don't have verifiable data
 - Use qualitative statements instead (e.g., "Many subscribers prefer..." instead of "80% of subscribers prefer...")
 
 ❌ **DON'T:**
+
 - Make up percentages or statistics
 - Use vague attributions like "Studies show..." or "Research indicates..." without citing the actual study
 - Estimate statistics without clearly stating they are estimates
@@ -39,6 +41,7 @@ Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment c
 ## When to Use This Skill
 
 Use this skill when:
+
 - Writing weekly or monthly technical newsletters
 - Planning Substack content strategy and growth
 - Creating serialized deep-dives for paying subscribers
@@ -49,6 +52,7 @@ Use this skill when:
 ### Multi-Platform Strategy
 
 When repurposing articles from other platforms (Medium, DZone, Dev.to) into Substack newsletter content:
+
 - ✅ Use IDENTICAL code snippets linked to same GitHub repo (ensures consistency)
 - ✅ Create UNIQUE newsletter-specific introduction (different from article versions)
 - ✅ Adapt content for email reading (shorter sections, scannable format)
@@ -57,6 +61,7 @@ When repurposing articles from other platforms (Medium, DZone, Dev.to) into Subs
 - ✅ Include newsletter-specific CTA (subscribe, share, upgrade to paid)
 
 **Example:**
+
 ```
 GitHub Repo: async-patterns-python (single source of truth for code)
 
@@ -88,6 +93,7 @@ Strategy:
 ```
 
 **Benefits:**
+
 - Newsletter drives conversions (upgrade CTA)
 - Platform articles drive awareness (free content)
 - All link to same code repo (single source of truth)
@@ -151,9 +157,11 @@ Footer
 ### Subject Line Strategy
 
 #### Subject Line Formula
+
 **[Benefit/Curiosity] + [Topic] + [Specific Element]**
 
 ✅ **Good Substack subject lines:**
+
 - "Why Netflix Stopped Using Microservices (And You Might Too)"
 - "The Python Optimization That Made Us 40% Faster"
 - "What Senior Developers Know About Error Handling"
@@ -161,12 +169,14 @@ Footer
 - "How to Debug JavaScript Async Code Like a Pro"
 
 ❌ **Avoid:**
+
 - Generic: "This Week in Tech"
 - Misleading: Clickbait hurts unsubscribe rates
 - Vague: "Important Updates"
 - Spammy: "URGENT: Read This Now!!!"
 
 #### Subject Line Tips
+
 - **Keep short**: 50-60 characters (fits mobile)
 - **Create curiosity**: "Why?" or "How?" questions
 - **Specific over generic**: "Python async patterns" vs. "Python updates"
@@ -175,12 +185,14 @@ Footer
 - **Personal touch**: Use "I," "we," "you"
 
 #### Preview Text
+
 - **40-50 characters** that show in inbox preview
 - **Complete the subject**: "...Key takeaways"
 - **Add value statement**: "3 actionable insights inside"
 - **Intrigue without clickbait**: "You won't expect this turn"
 
 **Example:**
+
 - Subject: "The Bug That Cost Us 6 Hours"
 - Preview: "And the simple solution we missed"
 
@@ -203,6 +215,7 @@ The first paragraph determines if they read further:
 ### Main Essay Structure
 
 #### Option 1: Tutorial Deep-Dive
+
 - **Context**: Why this skill matters
 - **Theory**: Concepts and principles
 - **Implementation**: Step-by-step approach
@@ -211,6 +224,7 @@ The first paragraph determines if they read further:
 - **Further**: Next topics to explore
 
 #### Option 2: Insight/Opinion Piece
+
 - **Observation**: What you noticed
 - **Why it matters**: Context and impact
 - **Common misconception**: What people get wrong
@@ -219,6 +233,7 @@ The first paragraph determines if they read further:
 - **Discussion**: Invitation for feedback
 
 #### Option 3: Case Study/Story
+
 - **Situation**: The problem faced
 - **Challenge**: What made it hard
 - **Solution**: What was tried
@@ -229,6 +244,7 @@ The first paragraph determines if they read further:
 ### Curated Links Section
 
 **Format each link:**
+
 ```
 [Title] - [Source]
 [1-2 sentence description]
@@ -236,6 +252,7 @@ Why it matters: [Brief commentary]
 ```
 
 **Example:**
+
 ```
 "Profiling Python with Flamegraph" - PyCon Talk
 A fantastic video showing how to identify performance bottlenecks
@@ -246,6 +263,7 @@ how I approach optimization.
 ```
 
 #### Curation Strategy
+
 - **Mix sources**: Industry blogs, GitHub, Twitter/X, conferences
 - **Variety of types**: Articles, videos, tools, discussions
 - **Quality over quantity**: 3-5 great links better than 10 mediocre
@@ -256,6 +274,7 @@ how I approach optimization.
 ### Free vs. Paid Tier Strategy
 
 #### Free Tier Content
+
 - High-quality essays
 - Curated news and links
 - General insights applicable to wide audience
@@ -263,14 +282,16 @@ how I approach optimization.
 - Builds audience and trust
 
 #### Paid Subscriber Content
+
 - **Exclusive content**: Newsletter sections only for subscribers
 - **Continuation**: Extend free essays with advanced techniques
-- **Q&A: **Exclusive Q&A or AMA sessions
+- **Q&A:** Exclusive Q&A or AMA sessions
 - **Deep-dives**: Complex topics for serious developers
 - **Early access**: Paid subscribers see content 24-48 hours early
 - **Tools/resources**: Code repositories, templates, checklists
 
 #### Pricing Model
+
 - **Suggested**: $5-15/month or $40-120/year
 - **Growth phase**: Consider free initially to build audience
 - **Value prop**: 2-3 exclusive benefits to justify paid tier
@@ -278,6 +299,7 @@ how I approach optimization.
 ### Email Formatting & Design
 
 #### Best Practices
+
 - **Single column**: Email clients have varying widths
 - **Short lines**: 60-70 characters per line
 - **Plenty of whitespace**: Easier to scan and read
@@ -287,6 +309,7 @@ how I approach optimization.
 - **No images**: Text-based emails have best deliverability
 
 #### Code in Emails
+
 - **Avoid**: Code blocks often render poorly in email
 - **Use instead**: Link to GitHub/Gist, describe code in text
 - **Short snippets**: 2-3 line examples if absolutely necessary
@@ -295,6 +318,7 @@ how I approach optimization.
 ### Subscriber Growth Strategies
 
 #### Organic Growth
+
 - **Quality content**: Best marketing is great writing
 - **Consistency**: Regular publishing builds habit
 - **Social sharing**: Promote on Twitter, LinkedIn, Dev.to
@@ -303,6 +327,7 @@ how I approach optimization.
 - **Speaking**: Conference talks with newsletter CTA
 
 #### Growth Tactics
+
 - **Lead magnet**: Free resource (checklist, guide) for subscription
 - **Community cross-promotion**: Recommend other newsletters
 - **Email signature**: Add to all personal emails
@@ -310,6 +335,7 @@ how I approach optimization.
 - **Twitter thread**: Convert popular threads to newsletter sign-ups
 
 #### Retention Strategies
+
 - **Deliver consistently**: Publish on same day/time
 - **Respond to readers**: Reply to emails/comments
 - **Survey subscribers**: Ask what they want more of
@@ -329,11 +355,13 @@ how I approach optimization.
 ### Writing Schedule & Consistency
 
 #### Publishing Cadence
+
 - **Weekly**: Best for building audience (harder to maintain)
 - **Bi-weekly**: Good balance of consistency and effort
 - **Monthly**: Easier to maintain, but harder to build habit
 
 #### Writing Process
+
 - **Plan**: Start outline 2-3 weeks before publishing
 - **Research**: Gather references, code, examples
 - **Draft**: Write full first draft early in week
@@ -345,12 +373,14 @@ how I approach optimization.
 ### Substack Growth Numbers
 
 **Realistic timeline:**
+
 - **Month 1-2**: 50-100 subscribers (personal network)
 - **Month 3-6**: 200-500 subscribers (steady growth)
 - **Month 6-12**: 500-2,000 subscribers (compound growth)
 - **Year 2**: 2,000-5,000+ subscribers (quality content attracts)
 
 **Keys to faster growth:**
+
 - Consistent quality content
 - High-profile mentions/shares
 - Speaking at conferences
@@ -360,6 +390,7 @@ how I approach optimization.
 ### Building a Brand
 
 #### Newsletter Identity
+
 - **Voice**: Conversational, expert, personal
 - **Topics**: Clear focus (Java + architecture, Python + data science)
 - **Frequency**: Consistent, reliable schedule
@@ -367,6 +398,7 @@ how I approach optimization.
 - **Values**: What you stand for (quality, honesty, learning)
 
 #### Building Trust
+
 - ✅ Admit mistakes and wrong predictions
 - ✅ Credit others and share sources
 - ✅ Be authentic and vulnerable
@@ -416,24 +448,28 @@ how I approach optimization.
 ### Substack Specific Features
 
 #### Comments
+
 - Enable reader comments
 - Respond to all comments
 - Build community through discussion
 - Feature interesting comments in next issue
 
 #### Series
+
 - Create multi-part series (Part 1, 2, 3)
 - Keeps readers engaged over time
 - Great for book-length content
 - Helps build paid subscriber base
 
 #### Upgrade Wall
+
 - Set article count before asking for upgrade
 - Usually: 4-6 free issues, then paid
 - Don't paywall too early
 - Free content still valuable for discovery
 
 #### Recommendations
+
 - Recommend 3-5 other newsletters you love
 - Build relationships in creator community
 - Drive traffic between newsletters
