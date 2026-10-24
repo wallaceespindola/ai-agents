@@ -1,6 +1,6 @@
 ---
 name: article-cross-writing
-description: Turn one idea or repo into a technical content series around ONE GitHub repo that holds everything (code, examples, docs, diagrams, every platform article and the slides) - seven platform articles (Dev.to, DZone, Medium, LinkedIn Pulse, Substack, InfoQ, JavaPro), each with its own angle, title, length and tone, plus a Marp talk deck exported to PPTX/PDF for Google Slides and Speaker Deck. Use when asked to "write all cross articles", "write the cross-platform articles", "write/create an article series", "write articles for dev.to/medium/dzone/linkedin/substack/infoq/javapro about X", "turn this repo/idea into articles plus a talk", or "create the slides for this series" (a single deck from one finished article is slides-creator). Writes local drafts only, never posts; hands off to article-cross-review.
+description: Turn one idea or repo into a technical content series around ONE GitHub repo that holds everything (code, examples, docs, diagrams, every platform article and the slides) - seven platform articles (Dev.to, DZone, Medium, LinkedIn Pulse, Substack, InfoQ, JavaPro), each with its own angle, title, length and tone, plus every banner, diagram (source + PNG), the Marp talk deck and its PPTX and PDF exports for Google Slides, Keynote and Speaker Deck, all in one run. Use when asked to "write all cross articles", "write the cross-platform articles", "write/create an article series", "write articles for dev.to/medium/dzone/linkedin/substack/infoq/javapro about X", "turn this repo/idea into articles plus a talk", or "create the slides for this series" (a single deck from one finished article is slides-creator). Writes local drafts only, never posts; hands off to article-cross-review.
 ---
 
 # Tech content series (write phase)
@@ -16,6 +16,24 @@ Everything in a series lives in **one GitHub repo**: all code and runnable examp
 - Every article and the deck link the same repo, and every article ends with the same "Examples repository" line just before the footer.
 - The repo README is about the project's idea: its own banner, no list of or links to the articles.
 - The repo is committed and pushed before any article goes live, so every link resolves.
+
+## "Write all": what one run produces
+
+"Write all cross articles" means every deliverable below, in one run, without stopping between phases (pause only for real decisions: repo name, platform list, a missing fact). Nothing is posted.
+
+| Deliverable | Where | Done when |
+|---|---|---|
+| Series repo scaffold, README with its own banner and badges | repo root, `docs/images/banner.png` | `make lint` passes |
+| Code, examples, docs (spec/PRD, guides) | `docs/`, example folders | examples run or copy-paste cleanly |
+| 7 platform articles (Dev.to, DZone, Medium, LinkedIn, Substack, InfoQ, JavaPro) | `docs/articles/<platform>/article.md` | each meets its matrix row below |
+| 7 banners (InfoQ also JPEG) | `docs/articles/<platform>/banner.png` / `banner.jpg` | one per platform, own text |
+| Diagrams, source next to rendered PNG (InfoQ also JPEG) | `docs/articles/<platform>/diagrams/`, `docs/presentations/diagrams/` | `make diagrams` renders all, every article embeds at least one |
+| Talk deck source | `docs/presentations/slides.md` | Marp builds without errors |
+| PPTX (editable, Keynote and Google Slides compatible) | `docs/presentations/<deck>.pptx` | opens in Keynote |
+| PDF (Speaker Deck upload) | `docs/presentations/<deck>.pdf` | `make slides` exports it |
+| Google Slides / Keynote / Speaker Deck guide | `docs/presentations/GOOGLE_SLIDES.md` | written from the reference repo's |
+
+Finish by running `make diagrams lint links slides`, then hand off to `article-cross-review`. Commit and push the repo only when the user asks.
 
 ## Phase 0: create or confirm the repo
 
