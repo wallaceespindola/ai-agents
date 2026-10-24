@@ -57,6 +57,7 @@ For code-heavy topics, generate the examples with `java-coder`, `python-coder` o
 
 ## Phase 1: research
 
+- **Project context first:** in the target project (the series repo you are working in), read everything under `docs/` before writing anything: specs and PRDs (`docs/spec/`), feature designs (`docs/specs/`), architecture and team guides (`ARCHITECTURE.md`, `CODING_GUIDE.md`, `TESTING_GUIDE.md`), backlog/task examples, existing articles and presentations, plus the root `README.md`, `CLAUDE.md` and `AGENTS.md`. That is the source of truth for terms, names, process steps, numbers and examples: use its wording, quote its files, and link them. If an article needs something `docs/` does not cover, add it to `docs/` first (or ask), never invent it in the article. If `docs/` and an article disagree later, fix the article.
 - Read the repo's spec and examples end to end. Gather sources with links; verify anything that drifts (vendor billing, quotas, product names, CLI spellings, file locations) on the vendor's current docs, and give every article the same corrected facts.
 - No fabricated stats or anecdotes. If there is no data, say so ("a proposal, no adoption numbers yet").
 - Style base: read Wallace's newest `docs/articles/<platform>/article.md` across his repos, and his profile list (`~/git/wallaceespindola/README.md`, "Latest Articles, Publications and Tech-Talks") for title style. His topics usually land as Dev.to + Medium + LinkedIn + Substack, with DZone for enterprise patterns and one Speaker Deck talk per topic.

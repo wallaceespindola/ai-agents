@@ -200,6 +200,7 @@ Learned from a full 7-platform series; apply every time:
 
 - **Different angle and title per platform.** Dev.to hands-on setup, DZone governance/process, Medium opinion essay, LinkedIn leadership, Substack personal "Code & Coffee" note, JavaPro code walkthrough, InfoQ trend analysis. No shared paragraphs.
 - **Voice.** Write in Wallace's voice as profiled in `~/git/ai-agents/skills/article-cross-writing/references/AUTHOR_STYLE.md` (openings, person, headings, sourcing, CTA, per-platform table). It overrides the generic HUMANIZATION_GUIDE.md below where they conflict.
+- **Project context.** Work from the target project's `docs/` folder (specs/PRD, designs, architecture and team guides, examples, existing articles and slides) plus its `README.md`, `CLAUDE.md` and `AGENTS.md`. Read it all before drafting; take terms, facts and examples from it, link its files, and never invent what it doesn't say (add it to `docs/` first or ask). See `article-cross-writing` Phase 1.
 - **Style base.** Before writing, read Wallace's latest article for that platform (newest `docs/articles/<platform>/article.md` across his repos) and match its front matter, banner line and sign-off.
 - **Layout.** `docs/articles/<platform>/article.md`, `banner.png`, `diagrams/` with `.puml`/`.mmd` sources plus rendered PNGs.
 - **Author.** "Wallace Espindola, Solution Architect" with GitHub and LinkedIn links on every article.

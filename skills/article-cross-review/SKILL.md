@@ -29,6 +29,7 @@ Then, in the series repo: `make lint` and `make links` (CI runs both), and `make
 - Drifting facts (vendor billing, quotas, product names) are the same, and current, in every article.
 - DZone text was written or fully rewritten by the author (DZone rejects AI text). Flag it every time.
 - InfoQ (4-week exclusivity) and JavaPro (original, not republished) carry content that is not posted anywhere else.
+- Facts, terms, process steps and examples match the target project's `docs/` (specs, designs, guides); anything an article claims that `docs/` doesn't support is a FAIL until `docs/` or the article is fixed.
 - Banners belong to one family (`docs/articles/BANNER_DESIGN.md`); view them on one contact sheet.
 - Voice matches `article-cross-writing/references/AUTHOR_STYLE.md`; the humanizer and `ai-check` pass is recorded for every draft (score per platform).
 - Deck: `make slides` runs, the PPTX opens in Keynote (`slides-creator` test), the closing slide links the repo.
