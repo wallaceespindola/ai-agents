@@ -418,9 +418,21 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 
 ---
 
-### Article Cross-Posting
+### Tech Content Series (pipeline: write)
+**Location**: `skills/tech-content-series/SKILL.md`
+**Purpose**: Turn one idea or repo into a series around one shared GitHub repo (single source of truth for examples, diagrams and docs): seven platform articles with different angles, titles and lengths, banners, diagrams and a Marp deck exported to PPTX/PDF for Google Slides and Speaker Deck. Writes local drafts only
+
+---
+
+### Content Series Review (pipeline: review and align)
+**Location**: `skills/content-series-review/SKILL.md`
+**Purpose**: `article-review` per platform draft plus scripted series-level checks (`scripts/check_series.py`: repo link, snippets vs repo, banner/diagrams/alt text/sources, limits, disclosures, footer, em dashes, forbidden words) with a per-platform pass/fail table; owns the local-vs-posted alignment check
+
+---
+
+### Article Cross-Posting (pipeline: post)
 **Location**: `skills/article-cross-posting/SKILL.md`
-**Purpose**: Post a finished article series to Dev.to, Medium, DZone, Substack, LinkedIn, InfoQ and JavaPro via browser automation (HTML clipboard pipeline, image placeholders, publish-vs-draft policy) and keep local and posted versions aligned
+**Purpose**: Only on the user's explicit per-platform command, post a finished article series to Dev.to, Medium, DZone, Substack, LinkedIn, InfoQ and JavaPro via browser automation (HTML clipboard pipeline, image placeholders, publish-vs-draft policy) and keep local and posted versions aligned
 
 ---
 
@@ -704,7 +716,7 @@ The primary agent for this system. Orchestrates multiple skills to create profes
 - **Quick article** (1-2 hours): devto-formatter + code-examples-generator
 - **Medium depth** (2-3 hours): medium-optimizer or dzone-article + seo-optimizer
 - **Long-form** (4+ hours): sr-tech-blog + markdown-formatter + seo-optimizer
-- **Multi-platform** (3-4 hours): Write once, adapt with different formatters
+- **Multi-platform series**: tech-content-series -> content-series-review -> article-cross-posting (on command)
 - **Newsletter series**: substack-newsletter + language-content skill + markdown-formatter
 
 ---

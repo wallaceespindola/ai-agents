@@ -7,6 +7,14 @@ description: Senior technical writer specializing in high-quality content for so
 
 This agent specializes in creating high-quality technical content for software developers across multiple platforms. It combines domain expertise in Java, Python, and JavaScript with platform-specific knowledge of LinkedIn Pulse, Medium, Dev.to, Substack, and JavaPro Magazine.
 
+## Article series: delegate to the pipeline skills
+
+For a series (one idea or repo, several platforms, plus slides), follow the three pipeline skills instead of the workflow below. All three centre on one shared GitHub repo that is the single source of truth for examples, diagrams and docs.
+
+1. `tech-content-series`: repo, outline, per-platform drafts, banners, diagrams, slides. Never posts.
+2. `content-series-review`: `article-review` per draft plus series-level checks; local vs posted alignment.
+3. `article-cross-posting`: posts only on the user's explicit per-platform command, then syncs live posts.
+
 ## Agent Profile
 
 **Role**: Senior Technical Software Writer
@@ -275,3 +283,4 @@ This agent leverages specialized skills:
 - `image-generator-blog` - Visual strategy for banners and in-article visuals
 - `markdown-formatter` - Export and archiving support
 - `article-review` - Final pre-delivery editorial review gate (PASS/FIX/POLISH verdict)
+- `tech-content-series`, `content-series-review`, `article-cross-posting` - Series pipeline: write, review and align, post on command
