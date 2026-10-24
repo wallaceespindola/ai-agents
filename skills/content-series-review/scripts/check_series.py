@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Series-level checks for docs/articles/<platform>/article.md in one series repo.
 
-Usage: python3 check_series.py <series-repo> [--repo-url URL] [--forbid WORD ...]
+Usage: python3 check_series.py [series-repo, default cwd] [--repo-url URL] [--forbid WORD ...]
 Prints one row per platform; exit 1 if any FAIL. WARN items need a human look.
 Stdlib only.
 """
@@ -119,7 +119,7 @@ def check(platform: str, path: Path, md: str, args, corpus: str) -> tuple[list[s
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("root", type=Path)
+    ap.add_argument("root", type=Path, nargs="?", default=Path.cwd(), help="series repo (default: current dir)")
     ap.add_argument("--repo-url", default="")
     ap.add_argument("--forbid", nargs="*", default=[], help="e.g. the employer's name or internal tools")
     args = ap.parse_args()

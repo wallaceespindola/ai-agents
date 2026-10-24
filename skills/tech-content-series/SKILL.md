@@ -9,7 +9,7 @@ description: Turn one idea or repo into a technical content series around ONE sh
 
 ## The central rule: one repo per series
 
-Every article and the deck in a series share **one GitHub repo**, the single source of truth for examples, diagrams and documentation. Reference layout: `~/git/share-tokens-using-spec-driven-dev` (<https://github.com/wallaceespindola/share-tokens-using-spec-driven-dev>).
+Every article and the deck in a series share **one GitHub repo**, the single source of truth for examples, diagrams and documentation. That is the series repo you are working in (the current project), not this skill folder or the reference repo: its code, diagrams and docs are what articles copy and what review checks against. Reference layout only: `~/git/share-tokens-using-spec-driven-dev` (<https://github.com/wallaceespindola/share-tokens-using-spec-driven-dev>).
 
 - Code snippets and diagrams are made in the repo first, then embedded in articles by relative path. Platform copies are derived, never edited on their own. Changes flow repo -> articles -> posted versions.
 - Platforms differ in angle, title, length, tone and which subset of snippets and diagrams they use. Code never diverges.
