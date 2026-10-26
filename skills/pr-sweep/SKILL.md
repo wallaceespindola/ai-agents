@@ -21,7 +21,7 @@ for d in */; do d=${d%/}; [ -d "$d/.git" ] || continue
 done
 ```
 
-**Skip non-owned repos**: `awesome-claude-skills` (fork of BehiSecc), `skills` (anthropics clone), and any repo whose owner is not `wallaceespindola`, `W-Tech-IT-Solutions` or `Vinci-Trends`. Never merge or close PRs on upstream projects.
+**Skip non-owned repos**: `skills` (anthropics clone), and any repo whose owner is not `wallaceespindola`, `W-Tech-IT-Solutions` or `Vinci-Trends`. Never merge or close PRs on upstream projects.
 
 ## 2. Classify
 
