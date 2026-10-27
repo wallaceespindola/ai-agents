@@ -30,9 +30,9 @@ Run `scripts/scan.sh` (read-only, takes 1-3 min). It prints free space and the t
 Record `df -h /System/Volumes/Data` first.
 
 ```bash
+uvx pre-commit gc                # pre-commit is often not on PATH; uvx works. Run BEFORE uv cache clean (uvx refills it)
 uv cache clean
 npm cache clean --force          # EACCES on root-owned files -> mention `sudo chown -R $(whoami) ~/.npm`
-uvx pre-commit gc                # pre-commit is often not on PATH; uvx works
 pnpm store prune
 brew cleanup -s --prune=all
 pip3 cache purge
