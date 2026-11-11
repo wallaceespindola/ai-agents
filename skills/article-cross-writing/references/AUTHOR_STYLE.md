@@ -132,6 +132,7 @@ Don't:
 - Use em dashes, emojis, exclamation marks in prose, or Title Case headings (InfoQ title excepted).
 - Write one-sentence-paragraph runs, bold reveals or rhetorical question chains.
 - Invent stats, anecdotes, quotes or "teams I've worked with" stories.
+- Label figures or charts with disclaimers like "illustrative, not measured" (the author finds it unprofessional). Frame them as his own estimate instead: "where I'd expect the effort to sit", "reflects my own estimate".
 - Name his employer or internal tools.
 - Use hype words or motivational closers.
 

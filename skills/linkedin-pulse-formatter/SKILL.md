@@ -41,7 +41,10 @@ Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment c
 - Pasted `<br>` soft breaks collapse into spaces: emit each footer line as its own `<p>`.
 - Shift+Enter and JS-set selections are unreliable. To fix a region, select it with click + shift-click and paste replacement HTML.
 - Inline images: put a placeholder paragraph (e.g. `IMGMARK-name`) in the pasted HTML, then triple-click it, Delete, toolbar image button, file input, ALT, Add, Next.
-- Cover: "Upload from computer", file input, Next. 1920x1080 accepted.
+- The first paste into a new article can do nothing while the URL switches to `/article/edit/<id>/`: click the body again and re-paste.
+- The image button is the picture icon in the editor toolbar, next to the embed button; check the dialog title before uploading.
+- To replace a diagram, select the old image, Delete, then insert the new one with the same steps and the updated alt text.
+- Cover: "Upload from computer", file input, Next. 1920x1080 accepted. The cover is the banner, so leave the banner out of the body.
 - Inline code and fenced code blocks survive the paste.
 
 ## When to Use This Skill

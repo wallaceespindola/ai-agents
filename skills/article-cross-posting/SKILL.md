@@ -9,7 +9,7 @@ description: Post or cross-post finished, reviewed articles from a series repo t
 
 Every post comes from the series repo, the one repo that holds everything (code, examples, docs, diagrams, every platform article, slides): the local `docs/articles/<platform>/article.md` with its banner and diagrams, all linking that same repo. Push that repo before the first post so its links resolve, and run `article-cross-review` first.
 
-Workflow verified 2026-10-20 posting one series to all seven platforms. Editor quirks per platform live in each platform skill under "Posting via the browser editor (verified 2026-10-20)": `article-cross-writing`, `article-cross-review`, `profile-articles-sync`, `site-articles-sync`, `devto-formatter`, `medium-optimizer`, `dzone-article`, `linkedin-pulse-formatter`, `substack-newsletter`, `infoq-article`, `javapro-magazine`.
+Workflow verified 2026-10-20 posting one series to all seven platforms; updated 2026-11-11 after a second series (Dev.to, Medium, LinkedIn, Substack, DZone, Speaker Deck). Editor quirks per platform live in each platform skill under "Posting via the browser editor (verified 2026-10-20)": `article-cross-writing`, `article-cross-review`, `profile-articles-sync`, `site-articles-sync`, `devto-formatter`, `medium-optimizer`, `dzone-article`, `linkedin-pulse-formatter`, `substack-newsletter`, `infoq-article`, `javapro-magazine`.
 
 ## Post only on command
 
@@ -36,6 +36,12 @@ Workflow verified 2026-10-20 posting one series to all seven platforms. Editor q
 
 The browser and the macOS clipboard are one shared resource. Never run parallel agents that paste into editors at the same time. Set the clipboard right before each paste: other apps can overwrite it.
 
+- Never "select all + paste" to replace a body that already has content: some editors (Medium) append a second copy. Clear the body first, then paste once, and count blocks afterwards.
+- A tab created on `chrome://newtab` can fail to navigate; reuse an existing web tab of the group instead.
+- First click on a Save button often only blurs the editor. Confirm the save request in the network log (or a URL/badge change) and click again if nothing went out. Then reload and verify: a save can silently drop an image or keep an older body.
+- Long `javascript_exec` loops (several uploads in one call) time out at about 45 s and leave the page half-done: one upload per call.
+- Raw GitHub files are fetchable from page JS (`fetch('https://raw.githubusercontent.com/<user>/<repo>/<sha>/...')`): use it to rebuild a Markdown body or to get image `File`s for re-upload, pinned to a pushed commit.
+
 ## HTML clipboard pipeline
 
 Rich editors take pasted HTML far better than Markdown or typed text.
@@ -59,9 +65,14 @@ Where an editor won't take images from pasted HTML, put a placeholder paragraph 
 
 The banner plus every diagram, with the same alt text as the local `article.md`. Mermaid via mermaid-cli needs system Chrome: `npx -p @mermaid-js/mermaid-cli mmdc -p pptr.json -i x.mmd -o x.png` with `pptr.json` = `{"executablePath":"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome","headless":"new"}`.
 
+View every rendered diagram before posting. Mermaid edges between subgraphs, or invisible links used to force rows, render as arrows floating between groups instead of connecting the boxes they mean; edges that cross subgraphs also collapse `direction LR`. The author flags these as "strange arrows". When a flow needs exact node-to-node arrows in rows (phase flows, gates, pattern maps), hand-write an SVG source instead and render it with `rsvg-convert -z 2 -b white x.svg -o x.png` (`magick x.png -quality 85 x.jpg` for JPEG platforms); keep the `.svg` next to the PNG and have `make diagrams` render it. After a redraw, update the alt text to describe the new layout and re-upload the image to every draft that embeds it.
+
 ## Speaker Deck (talk PDF)
 
-On command only. Sign in is the author's. Click New Deck, upload the deck PDF from `docs/presentations/` (Speaker Deck takes PDF only, exported by `make slides`), set the title (same as the deck's title slide), description and category, and leave it unpublished for the author to review and publish. Google Slides import is the author's step, documented in the repo's `docs/presentations/GOOGLE_SLIDES.md`.
+On command only. Sign in is the author's. Open `https://speakerdeck.com/new`, upload the deck PDF from `docs/presentations/` (Speaker Deck takes PDF only, exported by `make slides`), set the title (same as the deck's title slide), description and category, and leave it unpublished for the author to review and publish.
+
+- **Visibility first.** The form defaults to "Anyone now", and selecting the PDF creates the deck at once (URL jumps to `/<user>/<slug>/edit`). Set `talk[view_policy]` to `private` ("Only me") *before* choosing the file, then fill `#talk_name`, `#talk_description`, `talk[category_id]` (Technology) and `talk[language_id]` (English) and click "Save this deck". The deck page then shows a "Draft" badge. If the PDF went up first, switch to "Only me" and save immediately, and tell the author it was briefly public.
+- Wait for "Processing slide N of M" to finish, reload, and check the first slide renders. Google Slides import is the author's step, documented in the repo's `docs/presentations/GOOGLE_SLIDES.md`.
 
 ## Keep local and posted aligned
 

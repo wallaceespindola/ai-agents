@@ -36,7 +36,8 @@ These override any conflicting numbers further down. Re-check the platform's hel
 Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
 
 - Policy: stop at draft (autosaves); the author publishes.
-- ProseMirror body. Title and subtitle are textareas (placeholders "Title" and "Add a subtitle…"): target them by ref; clicking by position can drop the text into the body after the page scrolls.
+- ProseMirror body. Title and subtitle are textareas (placeholders "Title" and "Add a subtitle…"): target them by ref; clicking by position can drop the text into the body after the page scrolls. A title typed into the wrong field looks set but reads empty after save: find the textarea with placeholder "Title", type there and re-check after autosave.
+- The subtitle takes the article's preview text. The suggested subject line is set in the send settings by the author when he publishes.
 
 ## When to Use This Skill
 

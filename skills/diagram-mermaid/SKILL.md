@@ -562,6 +562,7 @@ class C warning
 - Poor color contrast (test with color-blind simulator)
 - Overcrowding information (whitespace improves readability)
 - Nesting subgraphs too deeply (max 2 levels)
+- Edges from one subgraph to another, or invisible links (`~~~`) used to force rows: they render as arrows floating between groups, and cross-subgraph edges collapse `direction LR`. Connect specific nodes, and when a multi-row flow still comes out wrong, hand-write an SVG and render it with `rsvg-convert -z 2 -b white x.svg -o x.png`
 - Using colors alone to convey meaning (add text labels)
 - Forgetting legend (if using special styling, document it)
 

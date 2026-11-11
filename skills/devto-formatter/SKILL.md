@@ -40,7 +40,10 @@ Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment c
 
 - Policy: stop at draft (`published: false`, "Save draft"); the author reviews and publishes. Set local front matter `published: true` only after he confirms it is live. On a live post, "Save changes" publishes the edit: prepare it and let him click.
 - The body textarea `#article_body_markdown` is React-controlled: set it with the native value setter (`Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype,'value').set.call(el, md)`) and dispatch an `input` event, or the change is lost.
-- Body image upload input: `#image-upload-field`; cover image input: `#cover-image-input`.
+- Body image upload input: `#image-upload-field`; cover image input: `#cover-image-input`. An upload inserts `![Image description](https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/<id>.png)` at the cursor: note the URL, then rebuild the whole body from the local `article.md` (front matter stripped, local image paths replaced by the uploaded URLs) so the alt text matches.
+- If the edit page has no body textarea (console: `InstantClick is not defined`), reload with a cache-busting query such as `/edit?r=2`.
+- "Save Draft" can need a second click; it is done when `PUT /articles/<id>` returns 200 and the page redirects to the `?preview=` URL with the "Unpublished Post" banner. Reopen the editor and diff the saved body against the local file: an earlier draft's body can survive.
+- Tags set in the editor persist even when the tag field looks empty after reload; check them on the preview page.
 - Verify the live body via `https://dev.to/api/articles/<user>/<slug>` (`body_markdown`) and compare with the local file.
 
 ## When to Use This Skill

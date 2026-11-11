@@ -44,6 +44,13 @@ Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment c
 - Pasted code blocks can lose line breaks: rewrite each `pre > code` `textContent` from the source.
 - Title, meta description and TL;DR don't persist from typing or form_input. Set them on the AngularJS scope inside `$apply` (`angular.element(textarea).scope().article.title|metaDescription|tldr`), click Save (`ng-click="s.defaultAction()"`), confirm the POST to `/services/internal/ctype/article/<id>` returns 200, then reload to verify.
 - Save is silently blocked by validation: `s.checkValidation()` shows the errors, e.g. "Please add an author in the contributors field" (add yourself as Author via contributor search). Set Type (e.g. Analysis).
+- TL;DR must be 120-170 characters (warning outside that range). Keep the local metadata comment's TL;DR within it too.
+- Contributor search: click the "Select box" under Contributors and type the first name only ("wallace"); the full name returns nothing. Pick his profile; it is added with role Author.
+- Pasted remote images: re-upload each one in its own JS call (fetch the image from raw GitHub into a `File`, then `E.image.edit` + `E.image.upload`). All three in one call timed out and left two stuck as `blob:`.
+- After the first save, reload and count images: one diagram vanished, leaving an empty `<p><br></p>` above its caption. Put an `<img>` with the alt text back into that paragraph, re-upload, save again and re-verify.
+- First click on Save may not fire: check the network for `PUT /services/internal/ctype/article` (new) or `POST .../article/<id>` (existing) with 200; the URL becomes `/content/<id>/edit.html`.
+- A reloaded editor can raise a "Leave site?" dialog with nothing changed (Froala dirty flag). After verifying the saved state, clear `window.onbeforeunload` before navigating away.
+- No tags or zones field for contributors: DZone editors assign them.
 - The featured-image file input doesn't register. Paste the banner as the first body image instead and pick it in the featured-image carousel.
 
 ## When to Use This Skill
