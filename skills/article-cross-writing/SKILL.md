@@ -99,6 +99,7 @@ LinkedIn: https://www.linkedin.com/in/wallaceespindola/
 Speaker Deck: https://speakerdeck.com/wallacese
 ```
 
+- When the article shows the author's email (byline, front matter or contact line), the footer ends with one more line in the same style as the links above it: `Email: wallace.espindola@gmail.com`. Articles without the email get no Email line.
 - Sentence-case headings (InfoQ title excepted), no em dashes, no emojis, never name the author's employer or internal tools.
 - Use `seo-optimizer` for titles, descriptions and tags.
 - Parallel drafting is fine: give each agent its own output folder and its own scratch folder.

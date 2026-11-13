@@ -103,7 +103,7 @@ LinkedIn: https://www.linkedin.com/in/wallaceespindola/
 Speaker Deck: https://speakerdeck.com/wallacese
 ```
 
-Speaker Deck is `wallacese`; `speakerdeck.com/wallaceespindola` 404s.
+Speaker Deck is `wallacese`; `speakerdeck.com/wallaceespindola` 404s. Articles that show the author's email also end the footer with `Email: wallace.espindola@gmail.com` (see `article-cross-writing`).
 
 ## Checklist per platform
 
