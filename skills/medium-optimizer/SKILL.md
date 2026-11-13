@@ -30,7 +30,7 @@ description: Optimize technical articles for Medium platform, including SEO, sto
 These override any conflicting numbers further down. Re-check the platform's help pages if they look stale.
 
 - Up to 5 topics (tags).
-- AI-assisted writing must be disclosed in the first two paragraphs; undisclosed AI text gets network-only distribution.
+- Medium's policy asks for AI-assisted writing to be disclosed (undisclosed AI text can get network-only distribution). The author has decided not to put an AI-assistance sentence in his stories: never add one.
 - AI-generated images must be captioned as AI-generated.
 - Featured image: wide horizontal rectangle; images up to 25 MB. Keep subtitles short (about 140 characters) so previews don't cut them.
 

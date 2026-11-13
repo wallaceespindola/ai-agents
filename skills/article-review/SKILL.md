@@ -90,8 +90,8 @@ Check only the gates for the target platform(s):
 | DZone | Rejects text written partly or fully with AI tools, and may suspend the account; a disclosure does not fix it. AI-drafted text is a blocking FIX until the author rewrites it. Minimum 800 words; images about 100-200 KB each, 5 MB total |
 | InfoQ | 1,500-4,000 words; exactly 5 key takeaways, each one complete sentence; AI use disclosed; images as JPEG; 4-week exclusivity noted; title case title (60-80 characters is fine here) |
 | LinkedIn Pulse | 1000-1500 words; short scannable paragraphs; no Markdown tables (the editor drops them); cover 1920x1080 |
-| Medium | 2000-5000 words; clear H2/H3 hierarchy; max 5 topics; AI assistance disclosed in the first two paragraphs; subtitle about 140 characters or fewer |
-| Dev.to | Max 4 frontmatter tags; 1500-3000 words; AI assistance disclosed (statement or `#abotwrotethis`); cover 1000x420 |
+| Medium | 2000-5000 words; clear H2/H3 hierarchy; max 5 topics; no AI-assistance sentence in the text; subtitle about 140 characters or fewer |
+| Dev.to | Max 4 frontmatter tags; 1500-3000 words; no AI-assistance sentence or `#abotwrotethis` (the editor's AI selector covers it); cover 1000x420 |
 | Substack | Conversational voice; flowing prose, light headers; cover at least 1200x630 |
 | JavaPro | 15,000-25,000 characters including code (JavaPro counts characters, not words); full code listings with explanation; not republished from elsewhere |
 | Blog | Flexible 1500-4000 words; practitioner voice |

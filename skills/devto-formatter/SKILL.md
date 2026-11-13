@@ -31,7 +31,7 @@ These override any conflicting numbers further down. Re-check the platform's hel
 
 - Max 4 tags.
 - Cover image 1000x420; social previews can crop to about 800x418, so keep the focal point and any text centred-left.
-- AI-assisted posts must be disclosed: add the `#abotwrotethis` tag or a plain statement in the post (e.g. "I wrote this with AI assistance and reviewed it myself").
+- Dev.to asks for AI-assisted posts to be disclosed: use the editor's "AI" disclosure selector (the author picks it). Never add an AI-assistance sentence or `#abotwrotethis` to the body: the author finds it unnecessary.
 - `canonical_url` front matter is supported for cross-posts.
 
 ## Posting via the browser editor (verified 2026-10-20)

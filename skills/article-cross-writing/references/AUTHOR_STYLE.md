@@ -89,11 +89,11 @@ A senior engineer explaining a practical idea to peers. Plain, concrete, first p
   - LinkedIn: "... Let me know your thoughts in the comments." then the hashtag line.
 - Then the "Examples repository" line, then the fixed footer (see `SKILL.md`). InfoQ and JavaPro use an author bio instead of, or before, the footer.
 
-### AI disclosure wording
+### No AI-assistance statements
 
-- Dev.to, Medium, JavaPro: `*I wrote this article with AI assistance, then reviewed, fact-checked and edited it myself.*` (Medium: in the first two paragraphs; Dev.to: just before the closing lines.)
-- InfoQ: `**AI disclosure**: This article was drafted with AI assistance (Claude) for research support, outlining, drafting and editing, based on the author's own process definition and repository. ...`
-- DZone: no disclosure line; the author writes or fully rewrites the text.
+- Never put "I wrote this article with AI assistance, then reviewed, fact-checked and edited it myself" or any similar sentence (AI disclosure paragraph, "written with the help of AI", `#abotwrotethis`) in an article, newsletter, deck or post. The author finds it unnecessary.
+- Where a platform asks, answer in its own setting or form instead of the text: Dev.to "AI" disclosure selector in the editor, InfoQ submission form, Medium nothing in the body. The author decides those settings.
+- DZone: the author writes or fully rewrites the text himself.
 
 ## Words and phrases
 

@@ -38,7 +38,7 @@ These override any conflicting numbers further down. Re-check the platform's hel
 
 Shared workflow (clipboard HTML, image placeholders, local-vs-posted alignment check, publish-vs-draft policy): see `article-cross-posting`.
 
-- Policy: stop at draft; the author submits. The series carried no AI disclosure here: flag DZone's AI rule to the author before he submits.
+- Policy: stop at draft; the author submits. No AI-assistance sentence in the text (never, on any platform): flag DZone's AI rule to the author before he submits.
 - Froala 3 editor: `E = FroalaEditor.INSTANCES[0]`. After any DOM change call `E.undo.saveStep(); E.events.trigger('contentChanged')`.
 - Pasted images can stay stuck as `blob:`/`data:` URLs: re-upload each with `E.image.edit(E.$(img)); E.image.upload([file])`.
 - Pasted code blocks can lose line breaks: rewrite each `pre > code` `textContent` from the source.

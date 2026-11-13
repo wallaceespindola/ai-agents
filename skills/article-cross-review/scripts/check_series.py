@@ -21,9 +21,13 @@ LIMITS = {
     "infoq": ("words", 1500, 4000),
     "javapro": ("chars", 15000, 25000),
 }
-NEEDS_AI_NOTE = {"devto", "medium", "infoq"}
 EDITORIAL = {"infoq", "javapro"}
-AI_NOTE = re.compile(r"AI assistance|AI disclosure|AI-assisted|#abotwrotethis", re.IGNORECASE)
+# The author doesn't want AI-assistance statements in article bodies (platform settings and forms cover it).
+AI_NOTE = re.compile(
+    r"with AI assistance|AI disclosure|#abotwrotethis|(?:written|drafted|edited) with (?:the help of )?AI"
+    r"|AI-assisted (?:article|post|writing|draft)",
+    re.IGNORECASE,
+)
 IMG = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 FENCE = re.compile(r"^(`{3,}|~{3,})[^\n]*\n(.*?)^\1\s*$", re.MULTILINE | re.DOTALL)
 SOURCES = (".mmd", ".puml", ".svg")
@@ -95,8 +99,8 @@ def check(platform: str, path: Path, md: str, args, corpus: str) -> tuple[list[s
             fails.append(f"no .mmd/.puml/.svg source next to {src}")
         if platform == "infoq" and not src.lower().endswith((".jpg", ".jpeg")):
             fails.append(f"InfoQ image not JPEG: {src}")
-    if platform in NEEDS_AI_NOTE and not AI_NOTE.search(md):
-        fails.append("AI disclosure missing")
+    if AI_NOTE.search(prose):
+        fails.append("AI-assistance statement in the text (remove it; use the platform's AI setting or form)")
     if platform == "dzone":
         warns.append("DZone: author must write or fully rewrite the text before submitting")
     if platform == "linkedin" and re.search(r"^\s*\|.*\|\s*$", prose, re.MULTILINE):

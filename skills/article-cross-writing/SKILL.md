@@ -74,13 +74,13 @@ Each platform skill owns its format and its "Verified platform rules" block; rea
 
 | Platform | Angle | Length | Tone | Title style | Required elements | Owning skill |
 | --- | --- | --- | --- | --- | --- | --- |
-| Dev.to | Hands-on: the files you add and the steps | 1,500-3,000 words | Practical, friendly | Concrete, sentence case, "X, not Y: a Z workflow" | YAML front matter (`title`, `published`, `description`, max 4 `tags`); cover 1000x420; AI disclosure line; question CTA | `devto-formatter` |
+| Dev.to | Hands-on: the files you add and the steps | 1,500-3,000 words | Practical, friendly | Concrete, sentence case, "X, not Y: a Z workflow" | YAML front matter (`title`, `published`, `description`, max 4 `tags`); cover 1000x420; question CTA | `devto-formatter` |
 | DZone | Governance and process: roles, gates, metrics, trade-offs | 1,500-4,500 words (min 800) | In-the-weeds, production-focused | "Topic: governing/doing X" | H1, author block with companion repo; JPEG images about 100-200 KB; metadata comment (TL;DR, type, summary, zones, tags). **The author must write or fully rewrite it: DZone rejects AI text** | `dzone-article` |
-| Medium | Opinion essay: why it works, what changes | 2,000-5,000 words | Personal, reflective | Question or provocation, sentence case | Metadata comment (5 topics, meta description); italic subtitle about 140 chars; byline; AI disclosure in the first two paragraphs | `medium-optimizer` |
+| Medium | Opinion essay: why it works, what changes | 2,000-5,000 words | Personal, reflective | Question or provocation, sentence case | Metadata comment (5 topics, meta description); italic subtitle about 140 chars; byline | `medium-optimizer` |
 | LinkedIn Pulse | Leadership: what a lead or manager decides | 1,000-1,600 words | Professional | Short, punchy, two sentences | Front matter (author, description); cover 1920x1080; **no tables** (lists, in the local file too); hashtags line at the end | `linkedin-pulse-formatter` |
 | Substack | Personal "Code & Coffee" habit note | 1,500-2,000 words | Conversational, "Hey folks," | A habit or imperative | Front matter (`newsletter: Code & Coffee`); subject line and preview text; reply CTA | `substack-newsletter` |
-| InfoQ | Trend and pattern analysis for architects | 1,500-4,000 words | Editorial, neutral, cited | Title Case, 60-80 chars | Exactly 5 one-sentence key takeaways; JPEG banner and diagrams; references; About the author; AI disclosure; 4-week exclusivity note; own original diagrams | `infoq-article` |
-| JavaPro | Code walkthrough: from the spec to tested Java | 15,000-25,000 characters incl. code | Technical, enterprise | Concrete outcome, sentence case | Abstract; full listings with explanation; references; author bio; short AI note; original, not republished; own original diagrams | `javapro-magazine` |
+| InfoQ | Trend and pattern analysis for architects | 1,500-4,000 words | Editorial, neutral, cited | Title Case, 60-80 chars | Exactly 5 one-sentence key takeaways; JPEG banner and diagrams; references; About the author; 4-week exclusivity note; own original diagrams | `infoq-article` |
+| JavaPro | Code walkthrough: from the spec to tested Java | 15,000-25,000 characters incl. code | Technical, enterprise | Concrete outcome, sentence case | Abstract; full listings with explanation; references; author bio; original, not republished; own original diagrams | `javapro-magazine` |
 
 Every article:
 

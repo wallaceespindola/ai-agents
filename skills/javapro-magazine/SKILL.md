@@ -31,7 +31,7 @@ These override any conflicting numbers further down. Re-check the platform's hel
 
 - Length is measured in characters: 15,000-25,000 characters recommended (code included).
 - Exclusivity is not required, but content must not be republished from elsewhere, and teaser articles that link out are not featured. No promotional content.
-- No published AI rule; adding a short AI-assistance note is advisable.
+- No published AI rule. Never add an AI-assistance note: the author finds it unnecessary.
 
 ## Posting via the browser editor (verified 2026-10-20)
 

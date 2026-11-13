@@ -545,7 +545,7 @@ LinkedIn: [your profile URL]
 - ✅ **Author bio** - Professional background info (100-150 words)
 - ✅ **No marketing** - Educational, not promotional or vendor-specific
 - ✅ **Image rights** - You own or have permission for all images
-- ✅ **AI disclosure** - Must disclose any generative AI usage
+- ✅ **AI disclosure** - Must disclose any generative AI usage: the author does it in the submission form, not in the article text
 
 ### Content Originality Policy
 
@@ -735,7 +735,7 @@ Key Takeaway 5: Teams should evolve toward microservices from
 - [ ] Professional, polished writing
 - [ ] No grammatical errors
 - [ ] All images have proper rights/permissions
-- [ ] AI disclosure included (if applicable)
+- [ ] AI use declared in the InfoQ submission form by the author (never as a paragraph in the article)
 - [ ] Original content (not published elsewhere)
 - [ ] Banner image created and attached (proposed featured image; editors may replace it)
 - [ ] Title is specific and editorial
