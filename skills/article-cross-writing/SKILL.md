@@ -28,8 +28,8 @@ Everything in a series lives in **one GitHub repo**: all code and runnable examp
 | 7 platform articles (Dev.to, DZone, Medium, LinkedIn, Substack, InfoQ, JavaPro) | `docs/articles/<platform>/article.md` | each meets its matrix row below, matches `references/AUTHOR_STYLE.md`, and has a recorded humanizer and `ai-check` pass |
 | 7 banners (InfoQ also JPEG) | `docs/articles/<platform>/banner.png` / `banner.jpg` | one per platform, own text |
 | Diagrams, source next to rendered PNG (InfoQ also JPEG) | `docs/articles/<platform>/diagrams/`, `docs/presentations/diagrams/` | `make diagrams` renders all, every article embeds at least one |
-| Talk deck source | `docs/presentations/slides.md` | Marp builds without errors |
-| PPTX (editable, Keynote and Google Slides compatible) | `docs/presentations/<deck>.pptx` | opens in Keynote |
+| Talk deck source | `docs/presentations/slides.md` | Marp builds without errors; starts from `slides-creator/templates/marp-theme-slides.md` (house deck style) |
+| PPTX (editable, Keynote and Google Slides compatible) | `docs/presentations/<deck>.pptx` | built by `build_pptx.py` from `slides-creator/templates`; opens in Keynote |
 | PDF (Speaker Deck upload) | `docs/presentations/<deck>.pdf` | `make slides` exports it |
 | Google Slides / Keynote / Speaker Deck guide | `docs/presentations/GOOGLE_SLIDES.md` | written from the reference repo's |
 

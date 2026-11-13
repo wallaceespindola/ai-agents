@@ -72,7 +72,9 @@ View every rendered diagram before posting. Mermaid edges between subgraphs, or 
 On command only. Sign in is the author's. Open `https://speakerdeck.com/new`, upload the deck PDF from `docs/presentations/` (Speaker Deck takes PDF only, exported by `make slides`), set the title (same as the deck's title slide), description and category, and leave it unpublished for the author to review and publish.
 
 - **Visibility first.** The form defaults to "Anyone now", and selecting the PDF creates the deck at once (URL jumps to `/<user>/<slug>/edit`). Set `talk[view_policy]` to `private` ("Only me") *before* choosing the file, then fill `#talk_name`, `#talk_description`, `talk[category_id]` (Technology) and `talk[language_id]` (English) and click "Save this deck". The deck page then shows a "Draft" badge. If the PDF went up first, switch to "Only me" and save immediately, and tell the author it was briefly public.
-- Wait for "Processing slide N of M" to finish, reload, and check the first slide renders. Google Slides import is the author's step, documented in the repo's `docs/presentations/GOOGLE_SLIDES.md`.
+- Wait for "Processing slide N of M" to finish, reload, and check the first slide renders.
+- **Updating the deck:** open `/<user>/<slug>/edit`, click "Reupload", set the new PDF on the file input. Title, description and visibility are kept; check the visibility still reads "Only me" until the author publishes. Several reuploads in a row can sit at "Processing slide 1 of N" for minutes: wait, then reload the deck page. Upload Marp's native-size PDF; never upscale it (see `slides-creator`).
+- The deck itself follows the house style in `slides-creator` ("House deck style"). Google Slides import is the author's step, documented in the repo's `docs/presentations/GOOGLE_SLIDES.md`.
 
 ## Keep local and posted aligned
 

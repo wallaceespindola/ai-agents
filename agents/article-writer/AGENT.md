@@ -11,7 +11,7 @@ This agent specializes in creating high-quality technical content for software d
 
 For a series (one idea or repo, several platforms, plus slides), follow the three pipeline skills instead of the workflow below. All three centre on one shared GitHub repo that is the single source of truth for examples, diagrams and docs.
 
-1. `article-cross-writing`: repo, outline, per-platform drafts, banners, diagrams, slides. Never posts.
+1. `article-cross-writing`: repo, outline, per-platform drafts, banners, diagrams, slides. Never posts. Slides and their diagrams always use the house deck style and templates in `slides-creator` (Marp theme, SVG diagrams, editable PPTX builder).
 2. `article-cross-review`: `article-review` per draft plus series-level checks; local vs posted alignment.
 3. `article-cross-posting`: posts only on the user's explicit per-platform command, then syncs live posts.
 

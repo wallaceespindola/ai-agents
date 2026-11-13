@@ -424,6 +424,29 @@ Next steps:
 
 ---
 
+## House deck style (standard for every talk)
+
+Verified 2026-11-13 on the legacy-modernization-patterns talk; the author asked for this to be the default. Start every new deck from these templates instead of a stock Marp theme:
+
+- `templates/marp-theme-slides.md`: front matter with the house theme plus example title, content, diagram and closing slides. Copy it to `docs/presentations/slides.md`, set `footer:` to the deck title.
+  - Inter (Google Fonts) with JetBrains Mono for code (ligatures off so `->` stays `->`), palette navy `#0b1530`, teal `#14b8a6`, indigo `#6366f1`, amber `#f59e0b` for risk.
+  - `lead` class: navy-to-indigo gradient with teal glow, solid white title (no gradient-clipped text: it leaves a hairline in the PDF), accent bar, `_footer: ''` and `_paginate: false`.
+  - Content slides: gradient accent bar over the H1, gradient square bullets, numbered circles for ordered lists, a paragraph right after a list or table renders as a teal callout (use it for the takeaway), dark rounded code cards with highlight colors, full-width tables with navy header and zebra rows, footer left and a navy page-number pill right.
+  - `diagram` class: centered image on a white rounded card; size with `![w:1060]` or `![h:450]` so it clears the footer.
+- `templates/diagram_svg.py`: diagrams as hand-written SVG in the same palette (kinds legacy/bridge/modern/warn/neutral, rounded cards with shadow, labelled arrows, dashed amber loops for rollback or control, optional legend). Render with `rsvg-convert -z 2 -b white x.svg -o x.png`; keep the `.svg` next to the PNG and delete replaced `.mmd`/`.puml` so `make diagrams` can't overwrite the PNG. Mermaid only for throwaway sketches.
+- `templates/build_pptx.py`: the editable PPTX for Google Slides and Keynote, built from `slides.md` with the same palette in Arial and Courier New, speaker notes copied from the HTML comments, and the Keynote notes-master fix applied. Copy it to `docs/presentations/` and run it from `make slides`.
+- Make target:
+
+  ```makefile
+  slides:
+  	npx -y @marp-team/marp-cli $(DECK) --pdf --allow-local-files -o docs/presentations/$(NAME).pdf </dev/null
+  	npx -y @marp-team/marp-cli $(DECK) --pptx --allow-local-files -o docs/presentations/$(NAME)-marp.pptx </dev/null
+  	uv run -q --with python-pptx --with pillow docs/presentations/build_pptx.py
+  ```
+
+- Checks before delivery: render PNGs (`marp --images png`) and view a contact sheet; nothing may touch the footer, code and tables included. Export the PPTX through Keynote (`export ... as slide images`) and view that too, and read back the presenter notes.
+- Content stays the author's: restyling never changes slide text.
+
 ## Speaker Deck, PowerPoint and Google Slides delivery
 
 Learned from a full deck build; follow this layout for a talk that goes to all three:
@@ -436,8 +459,10 @@ Learned from a full deck build; follow this layout for a talk that goes to all t
 - **Testing in Keynote from the shell:** wrap the open in `with timeout of 40 seconds ... end timeout` and return `count of slides`. A number means it opened; `missing value` or an AppleEvent timeout (-1712) means Keynote rejected it and is showing a modal "invalid format" dialog, so run `killall Keynote` and reopen it (`open -ga Keynote`, wait ~10 s) before the next test. The first open after a cold start can also time out, so warm Keynote first. Bisect a failing deck by saving one-slide copies, and compare against a known-good file (a Marp PPTX opens fine). Read back `presenter notes of slide 1` to confirm the notes survived.
 - **Checking the PPTX:** LibreOffice is often missing, so measure text boxes for overflow with the real fonts, run the pptx skill's validator and the Keynote test above; still ask the author to open it once in PowerPoint or Google Slides.
 - **Import guide:** `GOOGLE_SLIDES.md` covers getting the file (clone or GitHub "Download raw file"), Google Slides (open, import into an existing deck, or via Drive), Keynote (File > Open) and Speaker Deck (PDF upload).
-- **Marp theme gotcha:** a background color set in front matter can override the dark title/closing slides; set colors per slide with `<!-- _backgroundColor: ... -->` on those slides.
-- **Charts without data:** for an illustrative chart (no real numbers), draw an SVG and label it "Illustrative, not measured data"; Mermaid bar charts force a numeric axis.
+- **Marp theme gotcha:** a background color set in front matter can override the dark title/closing slides. The house theme avoids this: no colors in front matter, the `lead` class styles title and closing slides.
+- **marp-cli hangs** when stdin is not a TTY (agents, CI): it waits on stdin. Always append `</dev/null`.
+- **Don't upscale the PDF** for Speaker Deck's "less than 1920px" warning: scaling pages with pypdf tiles CSS gradients into visible seams. Upload Marp's native 960x540 PDF; it renders sharp.
+- **Charts without data:** draw an SVG (Mermaid bar charts force a numeric axis) and frame it as the author's own estimate in the title or caption ("where I'd expect the effort to sit"). Never label it "illustrative, not measured": the author finds that unprofessional.
 - **Lint:** Marp has one H1 per slide, so disable MD025 for the presentations folder only.
 - Banner or title art: use `article-image-generator` with `--platform slide` (1920x1080).
 
