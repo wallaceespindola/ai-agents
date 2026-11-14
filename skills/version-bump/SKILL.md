@@ -97,9 +97,11 @@ inlines `package.json` version as `NEXT_PUBLIC_APP_VERSION`). **`main` takes PRs
    - `frontend-next/package.json` + `package-lock.json` — `cd frontend-next && npm version X --no-git-tag-version`
 4. **Verify**: `git diff --stat` = 4 files; `cd backend && uv lock --check`.
 5. **Commit**: `chore: bump version to X`.
-6. **Push the branch / open the PR only when the user asks.** Tag `vX` **after** the PR merges,
-   on the merge commit in `main` (`git pull && git tag vX && git push origin vX`).
-7. Deploy is separate (`deploy.py`) — never without an explicit request.
+6. **Always finish with the tag — a bump without `vX` is not done.** Push the branch, open the PR
+   (`gh pr create`), wait for CI (`gh pr checks <n> --watch`), merge it, then on the merge commit:
+   `git switch main && git pull --ff-only && git tag vX && git push origin vX`. If CI fails, stop and report.
+7. Deploy is separate (`deploy.py`) — never without an explicit request. Say so: the live
+   footer shows the new version only after a deploy.
 
 ## Any other repo
 
