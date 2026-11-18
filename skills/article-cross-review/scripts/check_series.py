@@ -135,14 +135,14 @@ def glossary_check(root: Path) -> tuple[list[str], list[str]]:
     gpath = root / "docs" / "glossary.md"
     if not gpath.exists():
         return ["docs/glossary.md missing (every series repo keeps a glossary of all acronyms in docs/)"], []
-    defined = set(re.findall(r"^\|\s*\**([A-Za-z0-9;&./-]+?)\**\s*\|", gpath.read_text(encoding="utf-8"), re.M))
+    defined = set(re.findall(r"^\|\s*\**([A-Za-z0-9;&./-]+?)\**\s*\|", gpath.read_text(encoding="utf-8"), re.MULTILINE))
     skip = {".git", "node_modules", "target", "build", "dist", ".venv"}
     used: dict[str, str] = {}
     for md in root.rglob("*.md"):
         if md == gpath or skip & set(md.relative_to(root).parts):
             continue
         text = INLINE_CODE.sub("", FENCE.sub("", md.read_text(encoding="utf-8", errors="ignore")))
-        text = re.sub(r"<!--.*?-->|\]\([^)]*\)|https?://\S+", "", text, flags=re.S)
+        text = re.sub(r"<!--.*?-->|\]\([^)]*\)|https?://\S+", "", text, flags=re.DOTALL)
         for a in ACRONYM.findall(text):
             if a not in NOT_ACRONYMS and not re.fullmatch(r"[A-Z]?\d+", a):
                 used.setdefault(a, str(md.relative_to(root)))
