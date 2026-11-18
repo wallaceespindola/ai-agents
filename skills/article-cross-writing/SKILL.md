@@ -25,6 +25,7 @@ Everything in a series lives in **one GitHub repo**: all code and runnable examp
 | --- | --- | --- |
 | Series repo scaffold, README with its own banner and badges | repo root, `docs/images/banner.png` | `make lint` passes |
 | Code, examples, docs (spec/PRD, guides) | `docs/`, example folders | examples run or copy-paste cleanly |
+| Glossary of every acronym in the repo docs | `docs/glossary.md` | one table row (acronym, expansion, how the project uses it) per acronym found in any Markdown file, articles and slides included; `check_series.py` reports none undefined |
 | 7 platform articles (Dev.to, DZone, Medium, LinkedIn, Substack, InfoQ, JavaPro) | `docs/articles/<platform>/article.md` | each meets its matrix row below, matches `references/AUTHOR_STYLE.md`, and has a recorded humanizer and `ai-check` pass |
 | 7 banners (InfoQ also JPEG) | `docs/articles/<platform>/banner.png` / `banner.jpg` | one per platform, own text |
 | Diagrams, source next to rendered PNG (InfoQ also JPEG) | `docs/articles/<platform>/diagrams/`, `docs/presentations/diagrams/` | `make diagrams` renders all, every article embeds at least one |
@@ -33,7 +34,7 @@ Everything in a series lives in **one GitHub repo**: all code and runnable examp
 | PDF (Speaker Deck upload) | `docs/presentations/<deck>.pdf` | `make slides` exports it |
 | Google Slides / Keynote / Speaker Deck guide | `docs/presentations/GOOGLE_SLIDES.md` | written from the reference repo's |
 
-Finish by running `make diagrams lint links slides`, then hand off to `article-cross-review`. Commit and push the repo only when the user asks.
+Finish by updating `docs/glossary.md` with every acronym the articles and slides introduced, running `make diagrams lint links slides`, then hand off to `article-cross-review`. Commit and push the repo only when the user asks.
 
 ## Phase 0: create or confirm the repo
 
@@ -48,6 +49,7 @@ CLAUDE.md                    what the repo is, layout, commands, prose conventio
 docs/spec/                   PRD-style definition of the idea
 docs/images/banner.png       README banner, 1280x400, about the idea (never an article banner)
 docs/<examples, guides>      runnable or copy-paste examples the articles quote
+docs/glossary.md             every acronym used anywhere in the docs, articles and slides (table)
 docs/articles/<platform>/    article.md, banner.png (InfoQ: banner.jpg), diagrams/*.{puml,mmd,png}
 docs/articles/BANNER_DESIGN.md   the series' banner philosophy
 docs/presentations/          slides.md, <deck>.pptx, <deck>.pdf, GOOGLE_SLIDES.md, diagrams/
@@ -124,6 +126,10 @@ Owned by `slides-creator` (its "Speaker Deck, PowerPoint and Google Slides deliv
 - `make slides` exports the PDF (Speaker Deck takes PDF only) and the Marp PPTX. For an editable deck that imports cleanly into Google Slides and Keynote, build the PPTX with python-pptx (Arial, Courier New, real speaker notes) and apply slides-creator's notes-master fix, then run its Keynote open test.
 - Write `docs/presentations/GOOGLE_SLIDES.md` from the reference repo's: get the file, open or import in Google Slides, Keynote, Speaker Deck PDF upload.
 
+## Phase 5b: glossary
+
+Every series repo keeps `docs/glossary.md`: a table with one row per acronym (`| Acronym | Stands for | In this project |`), sorted alphabetically, covering every acronym in any Markdown file in the repo (README, `CLAUDE.md`, `docs/`, all articles, `slides.md`). Write it after the drafts and slides are final, since they add acronyms. Find candidates by stripping code fences and inline code, then grepping for `\b[A-Z][A-Z0-9]{1,}s?\b`; drop SQL keywords and all-caps identifiers (table names, constants). Add a closing line for names that look like acronyms but aren't (product names). Link it from the README's documentation section and mention it in `CLAUDE.md` so later edits keep it current.
+
 ## Phase 6: hand off
 
 Commit the drafts to the series repo (ask before pushing if the repo is new), then run `article-cross-review`. Posting waits for the user's explicit command per platform (`article-cross-posting`).
@@ -138,4 +144,5 @@ Commit the drafts to the series repo (ask before pushing if the repo is new), th
 - [ ] **Humanizer:** `humanizer` agent (or `humanizer`, `avoid-ai-writing`, `ai-check`) run on every draft, facts/code/links/headings/footer unchanged, final `ai-check` score recorded
 - [ ] **Images:** banner per platform at verified size, at least one diagram each with alt text, sources next to PNGs
 - [ ] **Slides:** Marp source, PDF and PPTX exported, PPTX opens in Keynote, GOOGLE_SLIDES.md written
+- [ ] **Glossary:** `docs/glossary.md` defines every acronym used in the repo docs, articles and slides (run after the last draft lands)
 - [ ] **Hand off:** drafts committed, `article-cross-review` run, nothing posted

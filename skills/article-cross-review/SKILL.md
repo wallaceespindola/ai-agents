@@ -1,6 +1,6 @@
 ---
 name: article-cross-review
-description: Review a multi-platform article series built around one GitHub repo that holds everything (code, examples, docs, diagrams, all platform articles and slides) and keep local and posted versions aligned. Runs article-review on each platform draft plus series-level checks - same repo link everywhere, code snippets identical to the repo, banner and diagrams with sources and alt text, unique titles and angles, platform limits, no AI-assistance statements, footer, no em dashes, no employer name, lint and links - and reports a per-platform pass/fail table. Use when asked to "review/check my articles or article series", "is the series ready", or "align local and posted articles". Fixes only on request.
+description: Review a multi-platform article series built around one GitHub repo that holds everything (code, examples, docs, diagrams, all platform articles and slides) and keep local and posted versions aligned. Runs article-review on each platform draft plus series-level checks - same repo link everywhere, code snippets identical to the repo, a docs/glossary.md covering every acronym, banner and diagrams with sources and alt text, unique titles and angles, platform limits, no AI-assistance statements, footer, no em dashes, no employer name, lint and links - and reports a per-platform pass/fail table. Use when asked to "review/check my articles or article series", "is the series ready", or "align local and posted articles". Fixes only on request.
 ---
 
 # Content series review and alignment
@@ -16,7 +16,7 @@ python3 ~/git/ai-agents/skills/article-cross-review/scripts/check_series.py <ser
   --repo-url https://github.com/wallaceespindola/<repo> --forbid "<employer>" "<internal tool>"
 ```
 
-Per `docs/articles/<platform>/article.md` it checks: the repo URL and the "Examples repository" line, author line, footer (InfoQ and JavaPro need an author bio instead; footer is a warning there), no em dashes, forbidden words, banner present, at least one diagram, every image exists with alt text, a `.mmd`/`.puml`/`.svg` source next to each diagram, length against the `article-cross-writing` matrix (words; characters for JavaPro), no AI-assistance statement in any article body, no tables on LinkedIn, exactly 5 InfoQ key takeaways and JPEG images, duplicate titles, and code blocks not found verbatim in the repo. Exit 1 on any FAIL. Ask the user for the employer and internal-tool names to forbid; never write them into the repo.
+Per `docs/articles/<platform>/article.md` it checks: the repo URL and the "Examples repository" line, author line, footer (InfoQ and JavaPro need an author bio instead; footer is a warning there), no em dashes, forbidden words, banner present, at least one diagram, every image exists with alt text, a `.mmd`/`.puml`/`.svg` source next to each diagram, length against the `article-cross-writing` matrix (words; characters for JavaPro), no AI-assistance statement in any article body, no tables on LinkedIn, exactly 5 InfoQ key takeaways and JPEG images, duplicate titles, and code blocks not found verbatim in the repo. It then checks `docs/glossary.md`: missing is a FAIL, and each acronym used in any repo Markdown file (outside code) but not defined in the glossary table is a WARN. Exit 1 on any FAIL. Ask the user for the employer and internal-tool names to forbid; never write them into the repo.
 
 WARN items need judgment: a code block not in the repo is either drift (fix the article or add the code to the repo) or a deliberate illustration (file tree, command line). Word counts include Markdown syntax, so a count a few words over is fine.
 
@@ -32,6 +32,7 @@ Then, in the series repo: `make lint` and `make links` (CI runs both), and `make
 - Facts, terms, process steps and examples match the target project's `docs/` (specs, designs, guides); anything an article claims that `docs/` doesn't support is a FAIL until `docs/` or the article is fixed.
 - Banners belong to one family (`docs/articles/BANNER_DESIGN.md`); view them on one contact sheet.
 - Voice matches `article-cross-writing/references/AUTHOR_STYLE.md`; the humanizer and `ai-check` pass is recorded for every draft (score per platform).
+- Glossary: `docs/glossary.md` exists, is linked from the README, and every glossary WARN is either added to it or is an all-caps identifier rather than an acronym (table names, constants).
 - Deck: `make slides` runs, the PPTX opens in Keynote (`slides-creator` test), the closing slide links the repo.
 
 ## 3. Per-article editorial gate
@@ -65,6 +66,7 @@ Wrap console snippets in an IIFE to avoid `const` redeclaration errors on re-run
 ## Checklist
 
 - [ ] `check_series.py` exits 0; every WARN explained or fixed
+- [ ] `docs/glossary.md` present and covers every acronym in the repo docs, articles and slides
 - [ ] `make lint`, `make links` clean; diagrams re-rendered if sources changed
 - [ ] Manual series checks done (voice vs AUTHOR_STYLE.md and humanizer/ai-check pass recorded); DZone authorship flagged
 - [ ] `article-review` PASS for every platform

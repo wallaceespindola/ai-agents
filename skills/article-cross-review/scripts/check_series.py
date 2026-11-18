@@ -2,7 +2,7 @@
 """Series-level checks for docs/articles/<platform>/article.md in one series repo.
 
 Usage: python3 check_series.py [series-repo, default cwd] [--repo-url URL] [--forbid WORD ...]
-Prints one row per platform; exit 1 if any FAIL. WARN items need a human look.
+Prints one row per platform, then the docs/glossary.md check; exit 1 if any FAIL. WARN items need a human look.
 Stdlib only.
 """
 
@@ -31,6 +31,15 @@ AI_NOTE = re.compile(
 IMG = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 FENCE = re.compile(r"^(`{3,}|~{3,})[^\n]*\n(.*?)^\1\s*$", re.MULTILINE | re.DOTALL)
 SOURCES = (".mmd", ".puml", ".svg")
+# Acronyms: 2+ capitals/digits starting with a capital, optional plural "s". Inline code is stripped first.
+ACRONYM = re.compile(r"\b([A-Z][A-Z0-9]{1,})s?\b")
+INLINE_CODE = re.compile(r"`[^`\n]+`")
+# All-caps words that are not acronyms (SQL keywords, emphasis, file names).
+NOT_ACRONYMS = {
+    "ADD", "ALTER", "AND", "AS", "BY", "CREATE", "DELETE", "DROP", "FALSE", "FROM", "GET", "INSERT", "INTO",
+    "KEY", "NOT", "NULL", "OR", "PATCH", "POST", "PRIMARY", "PUT", "README", "SELECT", "SET", "TABLE", "TODO",
+    "TRUE", "UP", "UPDATE", "VALUES", "VIEW", "WHERE", "IDEA", "AGENTS", "CLAUDE", "LICENSE", "NOTE", "WARN", "FAIL", "PASS",
+}
 
 
 def strip_meta(md: str) -> str:
@@ -121,6 +130,27 @@ def check(platform: str, path: Path, md: str, args, corpus: str) -> tuple[list[s
     return fails, warns, f"{size} {unit}"
 
 
+def glossary_check(root: Path) -> tuple[list[str], list[str]]:
+    """docs/glossary.md must exist and define every acronym used in the repo's Markdown docs."""
+    gpath = root / "docs" / "glossary.md"
+    if not gpath.exists():
+        return ["docs/glossary.md missing (every series repo keeps a glossary of all acronyms in docs/)"], []
+    defined = set(re.findall(r"^\|\s*\**([A-Za-z0-9;&./-]+?)\**\s*\|", gpath.read_text(encoding="utf-8"), re.M))
+    skip = {".git", "node_modules", "target", "build", "dist", ".venv"}
+    used: dict[str, str] = {}
+    for md in root.rglob("*.md"):
+        if md == gpath or skip & set(md.relative_to(root).parts):
+            continue
+        text = INLINE_CODE.sub("", FENCE.sub("", md.read_text(encoding="utf-8", errors="ignore")))
+        text = re.sub(r"<!--.*?-->|\]\([^)]*\)|https?://\S+", "", text, flags=re.S)
+        for a in ACRONYM.findall(text):
+            if a not in NOT_ACRONYMS and not re.fullmatch(r"[A-Z]?\d+", a):
+                used.setdefault(a, str(md.relative_to(root)))
+    missing = sorted(a for a in used if a not in defined)
+    # ponytail: regex heuristic; all-caps identifiers outside backticks show up here as WARN, not FAIL
+    return [], [f"acronym not in glossary: {a} (first seen in {used[a]})" for a in missing]
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("root", type=Path, nargs="?", default=Path.cwd(), help="series repo (default: current dir)")
@@ -149,6 +179,13 @@ def main() -> int:
             print(f"{'':25}FAIL {item}")
         for item in warns:
             print(f"{'':25}WARN {item}")
+    gfails, gwarns = glossary_check(args.root)
+    bad |= bool(gfails)
+    print(f"{'glossary':10} {len(gwarns):>6} undef  {'FAIL' if gfails else 'PASS'}")
+    for item in gfails:
+        print(f"{'':25}FAIL {item}")
+    for item in gwarns:
+        print(f"{'':25}WARN {item}")
     return 1 if bad else 0
 
 
