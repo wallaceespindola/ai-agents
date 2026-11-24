@@ -21,6 +21,10 @@ cd ~/git/wtech-website && git pull && node scripts/sync-articles.mjs
   imports that vanished from *every* source run, so check `git status` for unexpected deletions).
 - Speaker Deck posts get slugs assigned after articles, so a deck never steals an existing article URL
   (they get a `-speakerdeck` suffix on title clashes).
+- `EXCLUDE` in `scripts/sync-articles.mjs` (normalized titles) is skipped on purpose: Substack
+  non-articles ("Coming soon", "Reader's survey", "Welcome to Code & Coffee") and three old decks
+  uploaded 2024-09-23 ("Java & UML" Infnet 2016, "IT Freelance Market in Belgium" 2023, "How to find
+  good java developers" 2022). Don't report or re-add them; add new unwanted items there.
 
 ## 2. DZone and LinkedIn (manual, browser)
 
