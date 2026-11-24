@@ -48,7 +48,16 @@ Close the tab when done.
 
 ## 2. Diff against the README
 
-A post is missing if its URL (strip query string) is not in the README. `grep -F` each URL. Skip non-articles (e.g. Substack "Reader's survey").
+A post is missing if its URL (strip query string) is not in the README. `grep -F` each URL. Skip non-articles and anything on the exclusion list.
+
+Exclusion list (never add, never report as missing):
+
+- https://wallaceespindola.substack.com/p/readers-survey
+- https://wallaceespindola.substack.com/p/welcome-to-code-and-coffee
+- https://wallaceespindola.substack.com/p/coming-soon
+- https://speakerdeck.com/wallacese/it-freelance-market-in-belgium-freelance-business-community-2023
+- https://speakerdeck.com/wallacese/how-to-find-good-java-developers-2022
+- https://speakerdeck.com/wallacese/apresentacao-java-e-uml-instituto-de-tecnologia-infnet-rj-jun-2016
 
 ## 3. Add missing entries
 
